@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
 	Spring,
 	animated,
@@ -17,7 +17,7 @@ const COLORS = [
 	'peachpuff',
 ];
 
-export default class BoxFour extends React.Component {
+class BoxFour extends Component {
 	state = { y: 0 };
 	el = React.createRef();
 	spring = React.createRef();
@@ -63,3 +63,5 @@ export default class BoxFour extends React.Component {
 		);
 	}
 }
+
+export default BoxFour;

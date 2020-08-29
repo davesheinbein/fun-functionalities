@@ -11,8 +11,10 @@ import BoxThree from '../BoxThree/BoxThree';
 import BoxFour from '../BoxFour/BoxFour';
 // 15-slot puzzle game
 import BoxFive from '../BoxFive/BoxFive';
-
+// Chuck Norris Fact Generator
 import BoxSix from '../BoxSix/BoxSix';
+
+import BoxSeven from '../BoxSeven/BoxSeven';
 
 import './style/Layout.css';
 
@@ -23,6 +25,7 @@ function Layout() {
 			<BoxTwo />
 			<BoxThree />
 			<BoxFour />
+			<BoxSeven />
 			<BoxFive />
 			<BoxSix />
 		</div>
