@@ -1,0 +1,28 @@
+@mixin heightWidth($hei, $wei) {
+	height: $hei;
+	width: $wei;
+}
+
+@mixin topLeftAbsolute($top, $left) {
+	position: absolute;
+	top: $top;
+	left: $left;
+}
+
+@mixin flexCenter($direction, $justified, $alignment) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justified;
+	align-items: $alignment;
+}
+
+@mixin contentMix($content) {
+	font-family: 'Cabin', sans-serif;
+	margin: 0.5em;
+	content: $content;
+}
+
+// Arcade Btn Css
+$bgArcadeBtn: #333;
+$push-color: hsla(10, 90%, 40%, 1);
+$push-size: 240px;

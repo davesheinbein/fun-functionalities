@@ -1,45 +1,60 @@
+@import '../../../mixins/mixins.scss';
+
 .boxFiveContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include flexCenter(column, center, flex-start);
 	width: 100%;
 	height: 100%;
-	background-color: red;
+	border: none;
+	// background-color: red;
 	.container {
-		// this is the one
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		width: 10vw;
-		height: 10vh;
-		.subContainer {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
+		@include flexCenter(column, center, center);
+		width: 100%;
+		height: 100%;
+		border: none;
+		.btnsContainer {
+			@include flexCenter(row, center, center);
+			background-color: none;
+			box-shadow: none;
 			width: 100%;
-			height: 100%;
+			height: 5vh;
+			border: none;
 			.segment {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
+				@include flexCenter(row, center, center);
 				width: 100%;
 				height: 100%;
+				border: none;
+				background-color: none;
+				margin: 1em 0px;
 				.btn {
+					@include flexCenter(row, center, center);
 					background-color: orange;
+					border: none;
 					font-size: 10px;
 					width: 100%;
 					height: 4vh;
+					box-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
 				}
 			}
 		}
 		.puzzleContainer {
-			width: 20vw;
-			height: 20vh;
-			.puzzlepieces {
-				background-color: palegreen;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+			border: none;
+			div {
+				border: none;
+				width: 4.7vw;
+				height: 4.5vh;
+				&:focus {
+					outline: transparent;
+				}
+			}
+			.piece {
+				border: none;
+				box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
 			}
 		}
 	}

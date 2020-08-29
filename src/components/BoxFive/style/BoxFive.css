@@ -2,21 +2,44 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
   height: 100%;
-  background-color: red;
+  border: none;
 }
 
 .boxFiveContainer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.boxFiveContainer .container .btnsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -27,11 +50,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 10vw;
-  height: 10vh;
+  background-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 100%;
+  height: 5vh;
+  border: none;
 }
 
-.boxFiveContainer .container .subContainer {
+.boxFiveContainer .container .btnsContainer .segment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,9 +74,12 @@
           align-items: center;
   width: 100%;
   height: 100%;
+  border: none;
+  background-color: none;
+  margin: 1em 0px;
 }
 
-.boxFiveContainer .container .subContainer .segment {
+.boxFiveContainer .container .btnsContainer .segment .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,23 +93,47 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.boxFiveContainer .container .subContainer .segment .btn {
   background-color: orange;
+  border: none;
   font-size: 10px;
   width: 100%;
   height: 4vh;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
 }
 
 .boxFiveContainer .container .puzzleContainer {
-  width: 20vw;
-  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
-.boxFiveContainer .container .puzzleContainer .puzzlepieces {
-  background-color: palegreen;
+.boxFiveContainer .container .puzzleContainer div {
+  border: none;
+  width: 4.7vw;
+  height: 4.5vh;
+}
+
+.boxFiveContainer .container .puzzleContainer div:focus {
+  outline: transparent;
+}
+
+.boxFiveContainer .container .puzzleContainer .piece {
+  border: none;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
 }
 /*# sourceMappingURL=BoxFive.css.map */
