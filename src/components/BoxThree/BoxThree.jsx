@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Spring, animated } from 'react-spring/renderprops';
 import { GradientPinkRed as Gradient } from '@vx/gradient';
 import * as easings from 'd3-ease';
+import './style/BoxThree.css';
 
 console.log(easings);
-
-export default class BoxThree extends React.Component {
+class BoxThree extends Component {
 	state = { offset: 0 };
 	path = React.createRef();
 	componentDidMount() {
@@ -17,6 +17,7 @@ export default class BoxThree extends React.Component {
 		const { offset } = this.state;
 		return (
 			<div
+				id='starContainer'
 				style={{
 					background: '#272727',
 					width: '100%',
@@ -27,11 +28,11 @@ export default class BoxThree extends React.Component {
 				}}
 				onClick={() => this.forceUpdate()}>
 				<svg width='180' viewBox='0 0 23 23'>
-					<Gradient id='gradient-dashoffset' />
+					<Gradient id='GradientPinkRed.fromOffset 0% GradientPinkRed.toOffset 10%' />
 					<g
 						fill='#373737'
-						stroke='url(#gradient-dashoffset)'
-						strokeWidth='0.5'>
+						stroke='url(#GradientPinkRed.fromOffset 0% GradientPinkRed.toOffset 10%)'
+						strokeWidth='0.75'>
 						<Spring
 							native
 							reset
@@ -56,3 +57,5 @@ export default class BoxThree extends React.Component {
 		);
 	}
 }
+
+export default BoxThree;

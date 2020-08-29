@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,cAAc,CAAC;ECUd,OAAO,EAAE,IAAI;EACb,cAAc,EDVM,MAAM;ECW1B,eAAe,EDXa,MAAM;ECYlC,WAAW,EDZyB,MAAM;ECF1C,MAAM,EDGe,IAAI;ECFzB,KAAK,EDEsB,IAAI;EAC/B,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,OAAO;CACf",
+    "sources": [
+        "BoxThree.scss",
+        "../../../mixins/mixins.scss"
+    ],
+    "names": [],
+    "file": "BoxThree.css"
+}

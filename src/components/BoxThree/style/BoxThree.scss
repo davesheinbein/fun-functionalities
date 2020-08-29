@@ -1,0 +1,8 @@
+@import '../../../mixins/mixins.scss';
+
+#starContainer {
+	@include flexCenter(column, center, center);
+	@include heightWidth(100%, 100%);
+	z-index: 3;
+	cursor: pointer;
+}

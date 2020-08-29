@@ -17,6 +17,7 @@
 }
 
 .profileContainer .sidebar-toggle {
+  z-index: 10;
   position: absolute;
   margin: 20px;
   color: #a0a0a0;
@@ -58,6 +59,10 @@
   line-height: 50px;
   border-radius: 50%;
   font-size: 3em !important;
+}
+
+.input {
+  background-color: red;
 }
 
 #submissionContainer .login-form-forgot {

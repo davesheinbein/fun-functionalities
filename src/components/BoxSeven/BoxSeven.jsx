@@ -60,26 +60,26 @@ const items = [
 		size='small'
 		prefix={
 			<UserOutlined
-				// type='user'
+				type='user'
 				style={{ color: 'rgba(0,0,0,.25)' }}
 				className='icon'
+				placeholder='Username'
+				className='input'
 			/>
 		}
-		placeholder='Username'
-		className='input'
 	/>,
 	<Input
 		size='small'
 		prefix={
 			<LockOutlined
-				// type='lock'
+				type='lock'
 				style={{ color: 'rgba(0,0,0,.25)' }}
 				className='icon'
+				type='password'
+				placeholder='Password'
+				className='input'
 			/>
 		}
-		type='password'
-		placeholder='Password'
-		className='input'
 	/>,
 	<Fragment id='submissionContainer'>
 		<Checkbox size='small' id='checkbox'>

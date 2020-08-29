@@ -3,6 +3,7 @@
 	@include flexCenter(column, center, center);
 	@include heightWidth(100%, 100%);
 	.sidebar-toggle {
+		z-index: 10;
 		position: absolute;
 		margin: 20px;
 		color: #a0a0a0;
@@ -43,6 +44,10 @@
 	font-size: 3em !important;
 }
 .icon {
+}
+
+.input {
+	background-color: red;
 }
 
 #submissionContainer {

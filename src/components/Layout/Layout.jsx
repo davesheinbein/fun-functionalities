@@ -13,8 +13,11 @@ import BoxFour from '../BoxFour/BoxFour';
 import BoxFive from '../BoxFive/BoxFive';
 // Chuck Norris Fact Generator
 import BoxSix from '../BoxSix/BoxSix';
-
+// profile slider
 import BoxSeven from '../BoxSeven/BoxSeven';
+// Slide animation
+import BoxEight from '../BoxEight/BoxEight';
+// ^^^^
 
 import './style/Layout.css';
 
@@ -28,6 +31,7 @@ function Layout() {
 			<BoxSeven />
 			<BoxFive />
 			<BoxSix />
+			<BoxEight />
 		</div>
 	);
 }
