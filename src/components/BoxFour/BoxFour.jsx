@@ -1,30 +1,65 @@
-import { render } from 'react-dom'
-import React, { useState, useEffect } from 'react'
-import { useTransition, animated, config } from 'react-spring'
-import './styles.css'
+import React from 'react';
+import {
+	Spring,
+	animated,
+	config,
+} from 'react-spring/renderprops';
+import './style/BoxFour.css';
 
-const slides = [
-  { id: 0, url: 'photo-1544511916-0148ccdeb877?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1901&q=80i' },
-  { id: 1, url: 'photo-1544572571-ab94fd872ce4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1534&q=80' },
-  { id: 2, url: 'reserve/bnW1TuTV2YGcoh1HyWNQ_IMG_0207.JPG?ixlib=rb-1.2.1&w=1534&q=80' },
-  { id: 3, url: 'photo-1540206395-68808572332f?ixlib=rb-1.2.1&w=1181&q=80' },
-]
+const COLORS = [
+	'crimson',
+	'teal',
+	'coral',
+	'hotpink',
+	'skyblue',
+	'salmon',
+	'seagreen',
+	'peachpuff',
+];
 
 export default class BoxFour extends React.Component {
-  const [index, set] = useState(0)
-  const transitions = useTransition(slides[index], item => item.id, {
-    from: { opacity: 0 },
-    enter: { opacity: 1 },
-    leave: { opacity: 0 },
-    config: config.molasses,
-  })
-  useEffect(() => void setInterval(() => set(state => (state + 1) % 4), 2000), [])
-  render() {return transitions.map(({ item, props, key }) => (
-    <animated.div
-      key={key}
-      class="bg"
-      style={{ ...props, backgroundImage: `url(https://images.unsplash.com/${item.url}&auto=format&fit=crop)` }}
-    />
-  ))
-  }
+	state = { y: 0 };
+	el = React.createRef();
+	spring = React.createRef();
+	setY = () =>
+		this.setState({
+			y: Math.round(Math.random() * 750) + 50,
+		});
+	// User interaction should stop animation in order to prevent scroll-hijacking
+	// Doing this on onWheel isn't enough, but just to illustrate ...
+	stop = () => this.spring.current.stop();
+	render() {
+		const y = this.el.current
+			? this.el.current.scrollTop
+			: 0;
+		return (
+			<>
+				<div className='scrolltop-main'>
+					<Spring
+						native
+						reset
+						from={{ y }}
+						to={{ y: this.state.y }}
+						ref={this.spring}
+						config={config.slow}>
+						{(props) => (
+							<animated.div
+								className='scrolltop-c'
+								ref={this.el}
+								onWheel={this.stop}
+								scrollTop={props.y}>
+								{COLORS.map((c) => (
+									<div
+										key={c}
+										style={{ height: 200, background: c }}
+									/>
+								))}
+							</animated.div>
+						)}
+					</Spring>
+				</div>
+				<div className='scrolltop-b' onClick={this.setY} />
+			</>
+		);
+	}
 }
