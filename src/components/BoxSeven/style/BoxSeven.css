@@ -17,7 +17,6 @@
 }
 
 .profileContainer .sidebar-toggle {
-  z-index: 10;
   position: absolute;
   margin: 20px;
   color: #a0a0a0;

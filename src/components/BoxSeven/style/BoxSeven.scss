@@ -3,8 +3,7 @@
 	@include flexCenter(column, center, center);
 	@include heightWidth(100%, 100%);
 	.sidebar-toggle {
-		z-index: 10;
-		position: absolute;
+        position: absolute;
 		margin: 20px;
 		color: #a0a0a0;
 		z-index: 100;

@@ -1,3 +1,22 @@
+.loadingContianer,
+.errorContianer {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .btnbackgroundContainer {
   background-color: turquoise;
   height: 100%;
@@ -15,6 +34,66 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.btnbackgroundContainer .alertNorrisFactContainer {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 3;
+  background-color: burlywood;
+  color: #333333;
+}
+
+.btnbackgroundContainer .alertNorrisFactContainer .close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10%;
+  width: 10%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: #ff4a4a;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  color: #333333;
+  font-size: 30px;
+  text-align: center;
+}
+
+.btnbackgroundContainer .alertNorrisFactContainer .close:hover {
+  background-color: rgba(254, 152, 152, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.btnbackgroundContainer .alertNorrisFactContainer .close:focus {
+  outline: transparent;
 }
 
 .btnbackgroundContainer [class*='push'] {

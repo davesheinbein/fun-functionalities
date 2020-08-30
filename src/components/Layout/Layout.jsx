@@ -17,6 +17,8 @@ import BoxSix from '../BoxSix/BoxSix';
 import BoxSeven from '../BoxSeven/BoxSeven';
 // Slide animation
 import BoxEight from '../BoxEight/BoxEight';
+
+import BoxNine from '../BoxNine/BoxNine';
 // ^^^^
 
 import './style/Layout.css';
@@ -27,11 +29,13 @@ function Layout() {
 			<BoxOne />
 			<BoxTwo />
 			<BoxThree />
+			<BoxThree />
 			<BoxFour />
 			<BoxSeven />
+			<BoxEight />
 			<BoxFive />
 			<BoxSix />
-			<BoxEight />
+			<BoxNine />
 		</div>
 	);
 }

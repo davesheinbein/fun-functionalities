@@ -1,9 +1,44 @@
 @import '../../../mixins/mixins.scss';
 
+.loadingContianer,
+.errorContianer {
+	@include heightWidth(100%, 100%);
+	@include flexCenter(row, center, center);
+}
+
 .btnbackgroundContainer {
 	background-color: turquoise;
 	@include heightWidth(100%, 100%);
 	@include flexCenter(row, center, center);
+	position: relative;
+
+	.alertNorrisFactContainer {
+		@include heightWidth(100%, 100%);
+		@include flexCenter(row, center, center);
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		z-index: 3;
+		background-color: burlywood;
+		color: #333333;
+		.close {
+			@include flexCenter(column, center, center);
+			@include heightWidth(10%, 10%);
+			@include topLeftAbsolute(0%, 0%);
+			background-color: rgba(255, 74, 74, 1);
+			border: 1px solid rgba(0, 0, 0, 0.25);
+			color: #333333;
+			font-size: 30px;
+			text-align: center;
+			&:hover {
+				background-color: rgba(254, 152, 152, 0.95);
+				border: 1px solid rgba(0, 0, 0, 0.5);
+			}
+			&:focus {
+				outline: transparent;
+			}
+		}
+	}
 
 	[class*='push'] {
 		position: relative;
