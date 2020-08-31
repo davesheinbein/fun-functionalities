@@ -19,7 +19,7 @@
 		background-clip: text;
 		background-size: 40vw;
 		font-size: 40px;
-		animation: headingAnimation 1s infinite 0s alternate;
+		animation: headingAnimation 5s infinite 0s alternate;
 	}
 	.list {
 		@include heightWidth(100%, 100%);
@@ -37,11 +37,4 @@
 	}
 }
 
-@keyframes headingAnimation {
-	0% {
-		background-size: 40vw;
-	}
-	100% {
-		background-size: 4vw;
-	}
-}
+@include gradientAnimationMix;

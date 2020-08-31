@@ -6,7 +6,10 @@
 	height: 100%;
 	@include heightWidth(100%, 100%);
 	border: none;
-	// background-color: red;
+	background-image: url('../../../images/cool-background.png');
+	background-clip: border-box;
+	background-size: 100vw;
+	animation: headingAnimation 4s infinite 0s alternate;
 	.boxFiveSubcontainer {
 		@include flexCenter(column, center, center);
 		width: 100%;
@@ -14,37 +17,33 @@
 		border: none;
 		.btnsContainer {
 			@include flexCenter(row, center, center);
-			background-color: none;
+			background-color: transparent;
 			box-shadow: none;
-			width: 100%;
-			height: 5vh;
+			@include heightWidth(5vh, 100%);
 			border: none;
 			.segment {
 				@include flexCenter(row, center, center);
-				width: 100%;
-				height: 100%;
+				@include heightWidth(100%, 100%);
 				border: none;
-				background-color: none;
 				margin: 1em 0px;
+				background-color: transparent;
 				.btn {
+					@include heightWidth(4vh, 100%);
 					@include flexCenter(row, center, center);
-					background-color: orange;
 					border: none;
-					font-size: 10px;
-					width: 100%;
-					height: 4vh;
+					background-color: orange;
+					color: #333333;
+					font-size: 14px;
 					box-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
 				}
 			}
 		}
 		.puzzleContainer {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+			@include flexCenter(column, center, center);
 			width: 100%;
 			height: 100%;
 			border: none;
+			background-color: transparent;
 			div {
 				border: none;
 				width: 4.7vw;
@@ -60,3 +59,5 @@
 		}
 	}
 }
+
+@include gradientAnimationMix;

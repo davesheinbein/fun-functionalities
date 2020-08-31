@@ -16,6 +16,17 @@
 	align-items: $alignment;
 }
 
+@mixin gradientAnimationMix {
+	@keyframes headingAnimation {
+		0% {
+			background-size: 100vw;
+		}
+		100% {
+			background-size: 200vw;
+		}
+	}
+}
+
 @mixin contentMix($content) {
 	font-family: 'Cabin', sans-serif;
 	margin: 0.5em;

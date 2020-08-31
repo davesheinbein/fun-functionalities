@@ -47,8 +47,8 @@
   background-clip: text;
   background-size: 40vw;
   font-size: 40px;
-  -webkit-animation: headingAnimation 1s infinite 0s alternate;
-          animation: headingAnimation 1s infinite 0s alternate;
+  -webkit-animation: headingAnimation 5s infinite 0s alternate;
+          animation: headingAnimation 5s infinite 0s alternate;
 }
 
 .navbarContainer .list {
@@ -109,19 +109,19 @@
 
 @-webkit-keyframes headingAnimation {
   0% {
-    background-size: 40vw;
+    background-size: contain;
   }
   100% {
-    background-size: 4vw;
+    background-size: 400vw;
   }
 }
 
 @keyframes headingAnimation {
   0% {
-    background-size: 40vw;
+    background-size: contain;
   }
   100% {
-    background-size: 4vw;
+    background-size: 400vw;
   }
 }
 /*# sourceMappingURL=Header.css.map */
