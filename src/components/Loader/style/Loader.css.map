@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,QAAQ,CAAC;ECDR,MAAM,EDEe,IAAI;ECDzB,KAAK,EDCsB,IAAI;ECS/B,OAAO,EAAE,IAAI;EACb,cAAc,EDTM,GAAG;ECUvB,eAAe,EDVU,MAAM;ECW/B,WAAW,EDXsB,MAAM;EACvC,gBAAgB,EAAE,SAAS;CAC3B",
+    "sources": [
+        "Loader.scss",
+        "../../../mixins/mixins.scss"
+    ],
+    "names": [],
+    "file": "Loader.css"
+}

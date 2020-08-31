@@ -1,4 +1,22 @@
-.loadingContianer,
+.loadingContianer {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: turquoise;
+}
+
 .errorContianer {
   height: 100%;
   width: 100%;
@@ -15,6 +33,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: turquoise;
 }
 
 .btnbackgroundContainer {
@@ -59,6 +78,12 @@
   z-index: 3;
   background-color: burlywood;
   color: #333333;
+  resize: both;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 0.5em;
 }
 
 .btnbackgroundContainer .alertNorrisFactContainer .close {
@@ -124,6 +149,8 @@
 }
 
 .btnbackgroundContainer .push--skeuo:active, .btnbackgroundContainer .push--skeuo.is-pushed {
+  height: 80%;
+  width: 80%;
   color: lightsalmon;
   text-shadow: inset 0 10px 0 #da2e0b, inset 0 -10px 4px #aa2409, 0 0 4px #c2290a, inset 0 0 8px #791a06, inset 0 0 8px rgba(51, 51, 51, 0.5), inset 0 0 4px 20px #c2290a, inset 0 -8px 6px 24px rgba(51, 51, 51, 0.7), inset 0 0 4px 24px #611405, inset 0 0 4px 24px rgba(51, 51, 51, 0.7), inset 0 0 6px 28.23529px black, inset 0 0 2px 32px rgba(247, 133, 110, 0.2), inset 0 12px 0 28px rgba(244, 71, 37, 0.5), inset 0 -12px 4px 28px rgba(97, 20, 5, 0.2), inset 0 0 0 43.63636px #b32609, inset 0 96px 32px #9b2108, inset 0 0 24px 40px #791a06, 0 6px 12px rgba(0, 0, 0, 0.5);
   background-color: #b8270a;
@@ -139,8 +166,8 @@
 .btnbackgroundContainer .push--skeuo:before {
   content: '';
   position: absolute;
-  bottom: 53.33333px;
-  left: 66.66667px;
+  bottom: 43.63636px;
+  left: 36.36364px;
   display: block;
   width: 109.09091px;
   height: 72.72727px;

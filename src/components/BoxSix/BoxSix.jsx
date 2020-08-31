@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { UncontrolledAlert } from 'reactstrap';
 import axios from 'axios';
-import lottie from 'lottie-web'
+import Loader from '../Loader/Loader';
 import './style/BoxSix.css';
 
 function BoxSix() {
+	const [toggled, toggle] = useState(false);
 	const [state, setState] = useState({
 		jokes: '',
 		error: null,
@@ -37,6 +38,7 @@ function BoxSix() {
 			});
 		};
 	};
+
 	const { error, isLoaded } = state;
 	if (error) {
 		return (
@@ -46,22 +48,36 @@ function BoxSix() {
 		);
 	} else if (!isLoaded) {
 		return (
-			<div className='loadingContianer'>Loading...</div>
+			<>
+				<div className='loadingContianer'>
+					<Loader />
+				</div>
+			</>
 		);
 	} else {
 		return (
 			<>
 				<div className='btnbackgroundContainer'>
-					<button class='push--skeuo'>
+					<button
+						className='push--skeuo'
+						onClick={
+							(() => fetchData(),
+							() => toggle((toggled) => !toggled))
+						}>
 						Chuck
 						<br />
 						Norris
 					</button>
-					<UncontrolledAlert
-						color='dark'
-						className='alertNorrisFactContainer'>
-						{state.jokes.value}
-					</UncontrolledAlert>
+					<div>
+						{toggled && (
+							<UncontrolledAlert
+								id={state.jokes.id}
+								color='dark'
+								className='alertNorrisFactContainer'>
+								{state.jokes.value}
+							</UncontrolledAlert>
+						)}
+					</div>
 				</div>
 			</>
 		);

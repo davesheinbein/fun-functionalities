@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { render } from 'react-dom';
 import { Frame } from 'framer';
 import './style/BoxNine.css';
 

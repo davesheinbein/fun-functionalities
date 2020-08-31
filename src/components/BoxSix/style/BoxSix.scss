@@ -1,9 +1,15 @@
 @import '../../../mixins/mixins.scss';
 
-.loadingContianer,
+.loadingContianer {
+	@include heightWidth(100%, 100%);
+	@include flexCenter(row, center, center);
+	background-color: turquoise;
+}
+
 .errorContianer {
 	@include heightWidth(100%, 100%);
 	@include flexCenter(row, center, center);
+	background-color: turquoise;
 }
 
 .btnbackgroundContainer {
@@ -15,12 +21,15 @@
 	.alertNorrisFactContainer {
 		@include heightWidth(100%, 100%);
 		@include flexCenter(row, center, center);
-		position: absolute;
-		top: 0%;
-		left: 0%;
+		@include topLeftAbsolute(0%, 0%);
 		z-index: 3;
 		background-color: burlywood;
 		color: #333333;
+		resize: both;
+		box-sizing: border-box;
+		font-size: 15px;
+		line-height: 15px;
+		padding: 0.5em;
 		.close {
 			@include flexCenter(column, center, center);
 			@include heightWidth(10%, 10%);
@@ -120,6 +129,7 @@
 		&:active,
           // &:hover,
           &.is-pushed {
+			@include heightWidth(80%, 80%);
 			color: lightsalmon;
 			text-shadow: inset 0 $push-size/24 0
 					lighten($push-color, 5%),
@@ -190,8 +200,8 @@
 		&:before {
 			content: '';
 			position: absolute;
-			bottom: $push-size/4.5;
-			left: $push-size/3.6;
+			bottom: $push-size/5.5;
+			left: $push-size/6.6;
 			display: block;
 			width: $push-size/2.2;
 			height: $push-size/3.3;
