@@ -1,5 +1,31 @@
-.container {
-	display: grid;
-	grid-template-columns: 25% 25% 25% 25%;
-	grid-template-rows: 25% 25% 25% 25%;
+@import '../../../mixins/mixins.scss';
+
+.layoutContatainer {
+	@include heightWidth(100vh, 100vw);
+	@include flexCenter(column, center, center);
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	.headerContainer {
+		position: absolute;
+		top: 0%;
+		@include heightWidth(4vh, 100%);
+		@include flexCenter(row, center, center);
+		z-index: 10;
+	}
+	.container {
+		margin-top: 4vh;
+		z-index: 9;
+		position: absolute;
+		display: grid;
+		grid-template-columns: 25% 25% 25% 25%;
+		grid-template-rows: 25% 25% 25% 25%;
+	}
+	.footer {
+		@include heightWidth(100%, 100%);
+		@include flexCenter(row, center, center);
+		position: absolute;
+		bottom: 0%;
+		left: 0%;
+	}
 }

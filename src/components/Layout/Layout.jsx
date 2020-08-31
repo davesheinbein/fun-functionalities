@@ -5,7 +5,7 @@ import React from 'react';
 import BoxOne from '../BoxOne/BoxOne';
 // Slide box
 import BoxTwo from '../BoxTwo/BoxTwo';
-// Draw shape path
+// Draw shape path Star
 import BoxThree from '../BoxThree/BoxThree';
 // Color Scroller
 import BoxFour from '../BoxFour/BoxFour';
@@ -17,25 +17,37 @@ import BoxSix from '../BoxSix/BoxSix';
 import BoxSeven from '../BoxSeven/BoxSeven';
 // Slide animation
 import BoxEight from '../BoxEight/BoxEight';
-
+// Framer Animation
 import BoxNine from '../BoxNine/BoxNine';
 // ^^^^
+
+// Heading
+import Header from '../../components/Header/Header';
+// Footer
+import Footer from '../../components/Footer/Footer';
 
 import './style/Layout.css';
 
 function Layout() {
 	return (
-		<div className='container'>
-			<BoxOne />
-			<BoxTwo />
-			<BoxThree />
-			<BoxThree />
-			<BoxFour />
-			<BoxSeven />
-			<BoxEight />
-			<BoxFive />
-			<BoxSix />
-			<BoxNine />
+		<div className='layoutContatainer'>
+			<div className='headerContainer'>
+				<Header />
+			</div>
+			<div className='container'>
+				<BoxOne />
+				<BoxTwo />
+				<BoxThree />
+				<BoxSeven />
+				<BoxEight />
+				<BoxFour />
+				<BoxFive />
+				<BoxSix />
+				<BoxNine />
+			</div>
+			<div className='footer'>
+				<Footer />
+			</div>
 		</div>
 	);
 }

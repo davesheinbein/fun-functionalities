@@ -1,4 +1,6 @@
-.scrollerContainer {
+.switchContainer {
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,12 +14,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
-  width: 100%;
 }
 
-.scrollerContainer .scrolltop-main {
-  position: relative;
+.switchContainer .switch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,52 +30,35 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow-y: scroll;
+  width: 10%;
+  margin: 1em;
+}
+
+.switchContainer .switch .ant-switch-inner {
   width: 100%;
   height: 100%;
 }
 
-.scrollerContainer .scrolltop-main .scrolltop-c {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background: peachpuff;
-  overflow: auto;
-  opacity: 0.6;
+.switchContainer .disableBtn {
+  width: 10vw;
 }
 
-.scrollerContainer .scrolltop-b {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 5px solid white;
-  background: lavender;
-  cursor: pointer;
+.switchContainer .disableBtn span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 0%;
+  width: 100%;
+  margin: 0px;
 }
-
-.scrollerContainer .scrolltop-b::after {
-  content: 'Scroll';
-  font-size: 1.2em;
-  font-weight: 100;
-  color: #6a5670;
-}
-
-.scrollerContainer .scrolltop-b:hover {
-  background: #d9cbda;
-}
-/*# sourceMappingURL=BoxFour.css.map */
+/*# sourceMappingURL=SwitchBtn.css.map */

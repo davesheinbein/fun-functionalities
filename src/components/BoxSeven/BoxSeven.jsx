@@ -49,7 +49,6 @@ const Content = Keyframes.Trail({
 	],
 	open: { x: 0, opacity: 1, delay: 100 },
 	close: { x: -100, opacity: 0, delay: 0 },
-	width: 0,
 });
 
 const items = [

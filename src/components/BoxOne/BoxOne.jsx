@@ -4,6 +4,7 @@ import {
 	animated,
 	interpolate,
 } from 'react-spring/renderprops';
+import './style/BoxOne.css';
 
 const TRIANGLE =
 	'M20,380 L380,380 L380,380 L200,20 L20,380 Z';
@@ -55,11 +56,13 @@ export default class BoxOne extends Component {
 					shape,
 				}) => (
 					<animated.div
+						className='shapeAnimationContainer'
 						style={{
 							...styles.container,
 							backgroundColor,
 						}}>
 						<animated.svg
+							className='shapeSVG'
 							style={{
 								...styles.shape,
 								fill,

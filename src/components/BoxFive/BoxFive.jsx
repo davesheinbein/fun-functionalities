@@ -25,7 +25,7 @@ class BoxFive extends Component {
 		return (
 			<>
 				<div className='boxFiveContainer'>
-					<Segment.Group className='container'>
+					<Segment.Group className='boxFiveSubcontainer'>
 						<Segment.Group
 							// vertical='true'
 							className='btnsContainer'>

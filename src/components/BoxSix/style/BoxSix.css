@@ -56,7 +56,28 @@
   position: relative;
 }
 
-.btnbackgroundContainer .alertNorrisFactContainer {
+.btnbackgroundContainer .alertContainer {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.btnbackgroundContainer .alertContainer .alertNorrisFactContainer {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -86,7 +107,7 @@
   padding: 0.5em;
 }
 
-.btnbackgroundContainer .alertNorrisFactContainer .close {
+.btnbackgroundContainer .alertContainer .alertNorrisFactContainer .close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,12 +133,12 @@
   text-align: center;
 }
 
-.btnbackgroundContainer .alertNorrisFactContainer .close:hover {
+.btnbackgroundContainer .alertContainer .alertNorrisFactContainer .close:hover {
   background-color: rgba(254, 152, 152, 0.95);
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.btnbackgroundContainer .alertNorrisFactContainer .close:focus {
+.btnbackgroundContainer .alertContainer .alertNorrisFactContainer .close:focus {
   outline: transparent;
 }
 

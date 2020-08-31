@@ -30,23 +30,10 @@ function BoxSix() {
 			jokes: result.data,
 			isLoaded: true,
 		});
-		const error = () => {
-			setState({
-				...state,
-				isLoaded: true,
-				error,
-			});
-		};
 	};
 
-	const { error, isLoaded } = state;
-	if (error) {
-		return (
-			<div className='errorContianer'>
-				Error: {error.message}
-			</div>
-		);
-	} else if (!isLoaded) {
+	const { isLoaded } = state;
+	if (!isLoaded) {
 		return (
 			<>
 				<div className='loadingContianer'>
@@ -68,7 +55,7 @@ function BoxSix() {
 						<br />
 						Norris
 					</button>
-					<div>
+					<div className='alertContainer'>
 						{toggled && (
 							<UncontrolledAlert
 								id={state.jokes.id}

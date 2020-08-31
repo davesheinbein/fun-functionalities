@@ -5,4 +5,11 @@
 	@include heightWidth(100%, 100%);
 	z-index: 3;
 	cursor: pointer;
+	#pathSVG {
+		@include flexCenter(row, center, center);
+		@include heightWidth(100%, 100%);
+		#starPath {
+			
+		}
+	}
 }

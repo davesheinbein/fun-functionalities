@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,wBAAwB,CAAC;ECUxB,OAAO,EAAE,IAAI;EACb,cAAc,EDVM,GAAG;ECWvB,eAAe,EDXU,MAAM;ECY/B,WAAW,EDZsB,MAAM;ECFvC,MAAM,EDGe,IAAI;ECFzB,KAAK,EDEsB,IAAI;CAK/B",
+    "sources": [
+        "BoxOne.scss",
+        "../../../mixins/mixins.scss"
+    ],
+    "names": [],
+    "file": "BoxOne.css"
+}

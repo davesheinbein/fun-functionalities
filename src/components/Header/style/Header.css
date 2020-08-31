@@ -1,0 +1,127 @@
+.navbarContainer {
+  z-index: 10;
+  height: 4vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  padding: 0px 1em;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  background-color: turquoise;
+}
+
+.navbarContainer .logo {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Hanalei', cursive;
+  color: rgba(39, 35, 249, 0.5);
+  background-image: url("../../../images/cool-background.png");
+  background-clip: text;
+  background-size: 40vw;
+  font-size: 40px;
+  -webkit-animation: headingAnimation 1s infinite 0s alternate;
+          animation: headingAnimation 1s infinite 0s alternate;
+}
+
+.navbarContainer .list {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 1em;
+}
+
+.navbarContainer .list .listItem {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbarContainer .switchBtn {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 1em;
+}
+
+@-webkit-keyframes headingAnimation {
+  0% {
+    background-size: 40vw;
+  }
+  100% {
+    background-size: 4vw;
+  }
+}
+
+@keyframes headingAnimation {
+  0% {
+    background-size: 40vw;
+  }
+  100% {
+    background-size: 4vw;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

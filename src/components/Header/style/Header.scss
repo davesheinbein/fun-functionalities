@@ -1,0 +1,47 @@
+@import '../../../mixins/mixins.scss';
+
+.navbarContainer {
+	z-index: 10;
+	@include heightWidth(4vh, 100%);
+	@include flexCenter(row, center, space-between);
+	@include topLeftAbsolute(0%, 0%);
+	padding: 0px 1em;
+	font-size: 20px;
+	text-align: center;
+	color: black;
+	background-color: turquoise;
+	.logo {
+		@include heightWidth(100%, 100%);
+		@include flexCenter(row, flex-start, center);
+		font-family: 'Hanalei', cursive;
+		color: rgba(39, 35, 249, 0.5);
+		background-image: url('../../../images/cool-background.png');
+		background-clip: text;
+		background-size: 40vw;
+		font-size: 40px;
+		animation: headingAnimation 1s infinite 0s alternate;
+	}
+	.list {
+		@include heightWidth(100%, 100%);
+		@include flexCenter(row, center, center);
+		margin: 0px 1em;
+		.listItem {
+			@include heightWidth(100%, 100%);
+			@include flexCenter(row, flex-end, center);
+		}
+	}
+	.switchBtn {
+		@include heightWidth(100%, 100%);
+		@include flexCenter(row, flex-end, center);
+		margin: 0px 1em;
+	}
+}
+
+@keyframes headingAnimation {
+	0% {
+		background-size: 40vw;
+	}
+	100% {
+		background-size: 4vw;
+	}
+}

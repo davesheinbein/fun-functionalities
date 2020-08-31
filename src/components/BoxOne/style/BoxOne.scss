@@ -1,0 +1,10 @@
+@import '../../../mixins/mixins.scss';
+
+.shapeAnimationContainer {
+	@include flexCenter(row, center, center);
+	@include heightWidth(100%, 100%);
+	.shapeSVG {
+		#path-1 {
+		}
+	}
+}

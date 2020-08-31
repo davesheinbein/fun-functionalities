@@ -33,7 +33,7 @@ class BoxFour extends Component {
 			? this.el.current.scrollTop
 			: 0;
 		return (
-			<>
+			<div className='scrollerContainer'>
 				<div className='scrolltop-main'>
 					<Spring
 						native
@@ -59,7 +59,7 @@ class BoxFour extends Component {
 					</Spring>
 				</div>
 				<div className='scrolltop-b' onClick={this.setY} />
-			</>
+			</div>
 		);
 	}
 }

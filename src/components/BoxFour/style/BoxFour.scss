@@ -1,25 +1,26 @@
-.scrolltop-main {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow-y: scroll;
-	width: 100%;
-	height: 100%;
-	.scrolltop-c {
-		margin: 0;
-		padding: 0;
-		height: 100%;
-		width: 100%;
-		user-select: none;
-		background: peachpuff;
-		overflow: auto;
-		opacity: 0.6;
-	}
+@import '../../../mixins/mixins.scss';
 
+.scrollerContainer {
+	@include flexCenter(row, center, center);
+	@include heightWidth(100%, 100%);
+	.scrolltop-main {
+		position: relative;
+		@include flexCenter(row, center, center);
+		overflow-y: scroll;
+		width: 100%;
+		height: 100%;
+		.scrolltop-c {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			width: 100%;
+			user-select: none;
+			background: peachpuff;
+			overflow: auto;
+			opacity: 0.6;
+		}
+	}
 	.scrolltop-b {
-		top: calc(50% - 50px);
-		left: calc(50% - 50px);
 		position: absolute;
 		width: 100px;
 		height: 100px;
@@ -30,16 +31,14 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
-
-	.scrolltop-b::after {
-		content: 'Scroll';
-		font-size: 1.2em;
-		font-weight: 100;
-		color: rgb(106, 86, 112);
-	}
-
-	.scrolltop-b:hover {
-		background: rgb(217, 203, 218);
+		&::after {
+			content: 'Scroll';
+			font-size: 1.2em;
+			font-weight: 100;
+			color: rgb(106, 86, 112);
+		}
+		&:hover {
+			background: rgb(217, 203, 218);
+		}
 	}
 }

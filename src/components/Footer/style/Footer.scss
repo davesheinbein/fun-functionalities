@@ -1,0 +1,9 @@
+@import '../../../mixins/mixins.scss';
+
+.footerContainer {
+	@include heightWidth(4vh, 100%);
+	@include flexCenter(row, center, center);
+	background-color: salmon;
+	position: absolute;
+	bottom: 0%;
+}

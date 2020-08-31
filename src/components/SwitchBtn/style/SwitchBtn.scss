@@ -1,0 +1,26 @@
+@import '../../../mixins/mixins.scss';
+
+.switchContainer {
+	@include heightWidth(100%, 100%);
+	@include flexCenter(row, center, center);
+	.switch {
+		@include flexCenter(row, center, center);
+		width: 10%;
+		margin: 1em;
+		.ant-switch-inner {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.disableBtn {
+		width: 10vw;
+		&:focus {
+		}
+		span {
+			@include flexCenter(row, flex-end, center);
+			@include heightWidth(0%, 100%);
+			margin: 0px;
+		}
+	}
+}
