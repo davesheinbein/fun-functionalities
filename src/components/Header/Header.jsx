@@ -7,7 +7,11 @@ function Header() {
 		<div className='navbarContainer'>
 			<div className='logo'>FunFunctionalities</div>
 			<ul className='list'>
-				<li className='listItem'>Github</li>
+				<li className='listItem'>
+					<a className='listItemLink' href='https://github.com/davesheinbein/fun-functionalities'>
+						Github
+					</a>
+				</li>
 				<li className='listItem'>Hello</li>
 			</ul>
 			<div className='switchBtn'>

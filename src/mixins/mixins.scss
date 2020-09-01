@@ -1,6 +1,21 @@
+@mixin noSelection() {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 @mixin heightWidth($hei, $wei) {
 	height: $hei;
 	width: $wei;
+}
+
+@mixin marginPadding($marginSize, $paddingSize) {
+	margin: $marginSize;
+	padding: $paddingSize;
 }
 
 @mixin topLeftAbsolute($top, $left) {
@@ -16,16 +31,18 @@
 	align-items: $alignment;
 }
 
-@mixin gradientAnimationMix {
-	@keyframes headingAnimation {
-		0% {
-			background-size: 100vw;
-		}
-		100% {
-			background-size: 200vw;
-		}
-	}
-}
+// @mixin gradientAnimationMix($sizeA, $sizeB, $posA, $posB) {
+// 	@keyframes headingAnimation {
+// 		0% {
+// 			background-size: $sizeA;
+// 			background-position: $posA;
+// 		}
+// 		100% {
+// 			background-size: $sizeB;
+// 			background-position: $posB;
+// 		}
+// 	}
+// }
 
 @mixin contentMix($content) {
 	font-family: 'Cabin', sans-serif;

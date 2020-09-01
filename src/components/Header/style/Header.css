@@ -38,15 +38,28 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Hanalei', cursive;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: 'Oleo Script', 'Hanalei', cursive;
   color: rgba(39, 35, 249, 0.5);
   background-image: url("../../../images/cool-background.png");
   background-clip: text;
   background-size: 40vw;
   font-size: 40px;
+  line-height: 43px;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
   -webkit-animation: headingAnimation 5s infinite 0s alternate;
           animation: headingAnimation 5s infinite 0s alternate;
 }
@@ -67,6 +80,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: 'Rokkitt', 'Hanalei', cursive, serif;
   margin: 0px 1em;
 }
 
@@ -80,12 +94,34 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 30px;
+  line-height: 55px;
+}
+
+.navbarContainer .list .listItem .listItemLink {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.navbarContainer .list .listItem .listItemLink:hover {
+  color: violet;
 }
 
 .navbarContainer .switchBtn {
@@ -109,19 +145,23 @@
 
 @-webkit-keyframes headingAnimation {
   0% {
-    background-size: contain;
+    background-size: 10vw;
+    background-position: left;
   }
   100% {
-    background-size: 400vw;
+    background-size: 100vw;
+    background-position: right;
   }
 }
 
 @keyframes headingAnimation {
   0% {
-    background-size: contain;
+    background-size: 10vw;
+    background-position: left;
   }
   100% {
-    background-size: 400vw;
+    background-size: 100vw;
+    background-position: right;
   }
 }
 /*# sourceMappingURL=Header.css.map */

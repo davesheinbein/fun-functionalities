@@ -50,8 +50,9 @@ class BoxFour extends Component {
 								scrollTop={props.y}>
 								{COLORS.map((c) => (
 									<div
+										className='colors'
 										key={c}
-										style={{ height: 200, background: c }}
+										style={{ height: 40000, background: c }}
 									/>
 								))}
 							</animated.div>

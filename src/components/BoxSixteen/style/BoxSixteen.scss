@@ -1,0 +1,164 @@
+@import '../../../breakpoints/breakpoints.scss';
+@import '../../../mixins/mixins.scss';
+
+.formContainer {
+	@include flexCenter(column, center, center);
+	@include heightWidth(100%, 100%);
+	background-color: red;
+	.contactTitle {
+		@include marginPadding(0px, 0px);
+		@include flexCenter(row, center, center);
+		@include heightWidth(100%, 100%);
+	}
+	#contact-form {
+		@include flexCenter(column, center, center);
+		@include heightWidth(100%, 100%);
+		background-color: transparent;
+		.label {
+			@include flexCenter(column, center, center);
+			@include heightWidth(100%, 1vw);
+			margin-left: 1em;
+		}
+		.iconSymbol {
+			@include flexCenter(row, center, center);
+			@include heightWidth(100%, 100%);
+		}
+		.input-field {
+			@include flexCenter(row, center, center);
+			@include heightWidth(100%, 100%);
+			outline: transparent;
+			border: 1px soild black;
+			margin: 0.5em;
+		}
+		textarea {
+			@include flexCenter(row, center, center);
+			@include heightWidth(100%, 100%);
+			outline: transparent;
+			border: 1px soild black;
+		}
+		#submit-btn {
+			margin: 1em 0 0;
+			@include flexCenter(row, center, center);
+			@include heightWidth(100%, 100%);
+			&:hover {
+				background-color: orchid;
+			}
+			&:focus {
+			}
+		}
+	}
+
+	@include media('<=phone') {
+		.contactTitle {
+			#contact-form {
+				.label {
+				}
+				.iconSymbol {
+				}
+				.input-field {
+				}
+				textarea {
+				}
+				#submit-btn {
+					&:hover {
+					}
+				}
+			}
+		}
+
+		@include media('>phone', '<=425px') {
+			.contactTitle {
+			}
+			#contact-form {
+				.label {
+				}
+				.iconSymbol {
+				}
+				.input-field {
+				}
+				textarea {
+				}
+				#submit-btn {
+					&:hover {
+					}
+				}
+			}
+		}
+
+		@include media('>425px', '<=tablet') {
+			.contactTitle {
+			}
+			#contact-form {
+				.label {
+				}
+				.iconSymbol {
+				}
+				.input-field {
+				}
+				textarea {
+				}
+				#submit-btn {
+					&:hover {
+					}
+				}
+			}
+		}
+
+		@include media('>tablet', '<desktop') {
+			.contactTitle {
+			}
+			#contact-form {
+				.label {
+				}
+				.iconSymbol {
+				}
+				.input-field {
+				}
+				textarea {
+				}
+				#submit-btn {
+					&:hover {
+					}
+				}
+			}
+		}
+
+		@include media('>=desktop') {
+			.contactTitle {
+			}
+			#contact-form {
+				.label {
+				}
+				.iconSymbol {
+				}
+				.input-field {
+				}
+				textarea {
+				}
+				#submit-btn {
+					&:hover {
+					}
+				}
+			}
+		}
+
+		@include media('>=LGdesktop', 'retina2x') {
+			.contactTitle {
+			}
+			#contact-form {
+				.label {
+				}
+				.iconSymbol {
+				}
+				.input-field {
+				}
+				textarea {
+				}
+				#submit-btn {
+					&:hover {
+					}
+				}
+			}
+		}
+	}
+}

@@ -7,9 +7,10 @@
 	@include heightWidth(100%, 100%);
 	border: none;
 	background-image: url('../../../images/cool-background.png');
-	background-clip: border-box;
+	background-clip: content-box;
 	background-size: 100vw;
-	animation: headingAnimation 4s infinite 0s alternate;
+	background-position: left;
+	animation: headingAnimation 5s infinite 0s alternate;
 	.boxFiveSubcontainer {
 		@include flexCenter(column, center, center);
 		width: 100%;
@@ -60,4 +61,15 @@
 	}
 }
 
-@include gradientAnimationMix;
+// @include gradientAnimationMix(2000vw, 4000vw, left, right);
+
+@keyframes headingAnimation {
+	0% {
+		// background-size: 100vw;
+		background-position: left;
+	}
+	100% {
+		// background-size: 200vw;
+		background-position: right;
+	}
+}

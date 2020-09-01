@@ -18,10 +18,11 @@
   width: 100%;
   border: none;
   background-image: url("../../../images/cool-background.png");
-  background-clip: border-box;
-  background-size: 10vw;
-  -webkit-animation: headingAnimation 1s infinite 0s alternate;
-          animation: headingAnimation 1s infinite 0s alternate;
+  background-clip: content-box;
+  background-size: 100vw;
+  background-position: left;
+  -webkit-animation: headingAnimation 5s infinite 0s alternate;
+          animation: headingAnimation 5s infinite 0s alternate;
 }
 
 .boxFiveContainer .boxFiveSubcontainer {
@@ -148,19 +149,19 @@
 
 @-webkit-keyframes headingAnimation {
   0% {
-    background-size: 100vw;
+    background-position: left;
   }
   100% {
-    background-size: 200vw;
+    background-position: right;
   }
 }
 
 @keyframes headingAnimation {
   0% {
-    background-size: 100vw;
+    background-position: left;
   }
   100% {
-    background-size: 200vw;
+    background-position: right;
   }
 }
 /*# sourceMappingURL=BoxFive.css.map */

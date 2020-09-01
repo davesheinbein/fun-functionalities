@@ -12,22 +12,34 @@
 	background-color: turquoise;
 	.logo {
 		@include heightWidth(100%, 100%);
-		@include flexCenter(row, flex-start, center);
-		font-family: 'Hanalei', cursive;
+		@include flexCenter(row, flex-start, flex-start);
+		font-family: 'Oleo Script', 'Hanalei', cursive;
 		color: rgba(39, 35, 249, 0.5);
 		background-image: url('../../../images/cool-background.png');
 		background-clip: text;
 		background-size: 40vw;
 		font-size: 40px;
+		line-height: 43px;
+		@include noSelection;
 		animation: headingAnimation 5s infinite 0s alternate;
 	}
 	.list {
 		@include heightWidth(100%, 100%);
 		@include flexCenter(row, center, center);
+		font-family: 'Rokkitt', 'Hanalei', cursive, serif;
 		margin: 0px 1em;
 		.listItem {
 			@include heightWidth(100%, 100%);
-			@include flexCenter(row, flex-end, center);
+			@include flexCenter(row, space-around, flex-start);
+			font-size: 30px;
+			line-height: 55px;
+			.listItemLink {
+				@include heightWidth(100%, 100%);
+				@include flexCenter(row, space-around, flex-start);
+				&:hover {
+					color: violet;
+				}
+			}
 		}
 	}
 	.switchBtn {
@@ -37,4 +49,13 @@
 	}
 }
 
-@include gradientAnimationMix;
+@keyframes headingAnimation {
+	0% {
+		background-size: 10vw;
+		background-position: left;
+	}
+	100% {
+		background-size: 100vw;
+		background-position: right;
+	}
+}

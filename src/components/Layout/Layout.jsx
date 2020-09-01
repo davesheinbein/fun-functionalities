@@ -19,6 +19,13 @@ import BoxSeven from '../BoxSeven/BoxSeven';
 import BoxEight from '../BoxEight/BoxEight';
 // Framer Animation
 import BoxNine from '../BoxNine/BoxNine';
+import BoxTen from '../BoxTen/BoxTen';
+import BoxEleven from '../BoxEleven/BoxEleven';
+import BoxTwelve from '../BoxTwelve/BoxTwelve';
+import BoxThirteen from '../BoxThirteen/BoxThirteen';
+import BoxFourteen from '../BoxFourteen/BoxFourteen';
+import BoxFifteen from '../BoxFifteen/BoxFifteen';
+import BoxSixteen from '../BoxSixteen/BoxSixteen';
 // ^^^^
 
 // Heading
@@ -44,9 +51,16 @@ function Layout() {
 				<BoxFive />
 				<BoxSix />
 				<BoxNine />
-			</div>
-			<div className='footer'>
-				<Footer />
+				<BoxTen />
+				<BoxEleven />
+				<BoxTwelve />
+				<BoxThirteen />
+				<BoxFourteen />
+				<BoxFifteen />
+				<BoxSixteen />
+				<div className='footer'>
+					<Footer />
+				</div>
 			</div>
 		</div>
 	);
