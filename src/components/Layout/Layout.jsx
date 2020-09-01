@@ -19,7 +19,7 @@ import BoxSeven from '../BoxSeven/BoxSeven';
 import BoxEight from '../BoxEight/BoxEight';
 // Framer Animation
 import BoxNine from '../BoxNine/BoxNine';
-// import BoxTen from '../BoxTen/BoxTen';
+import BoxTen from '../BoxTen/BoxTen';
 import BoxEleven from '../BoxEleven/BoxEleven';
 import BoxTwelve from '../BoxTwelve/BoxTwelve';
 import BoxThirteen from '../BoxThirteen/BoxThirteen';
@@ -51,7 +51,7 @@ function Layout() {
 				<BoxFive />
 				<BoxSix />
 				<BoxNine />
-				{/* <BoxTen /> */}
+				<BoxTen />
 				<BoxEleven />
 				<BoxTwelve />
 				<BoxThirteen />
