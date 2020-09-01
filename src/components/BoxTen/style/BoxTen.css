@@ -1,0 +1,49 @@
+.auto-main {
+  width: 100%;
+  height: 100%;
+  background: #575757;
+}
+
+.auto-main .buttons-list {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.auto-main .buttons-list button {
+  height: 50px;
+  border: 0;
+  cursor: pointer !important;
+  background: #777777;
+  color: white;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.auto-main .buttons-list button:hover {
+  background: #878787;
+}
+
+.auto-main .content {
+  text-align: left;
+  grid-column: span 1;
+  width: 100%;
+  height: 100%;
+}
+
+.auto-main .content .item {
+  background: indianred;
+  width: 100%;
+  height: 25%;
+  color: white;
+}
+
+.auto-main .content .itemp {
+  margin: 0;
+  padding: 10px;
+}
+/*# sourceMappingURL=BoxTen.css.map */
