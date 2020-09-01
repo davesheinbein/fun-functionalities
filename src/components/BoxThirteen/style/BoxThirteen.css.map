@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,GAAG,CAAC;ECyBH,OAAO,EAAE,IAAI;EACb,cAAc,EDzBM,GAAG;EC0BvB,eAAe,ED1BU,MAAM;EC2B/B,WAAW,ED3BsB,MAAM;ECQvC,MAAM,EDPe,IAAI;ECQzB,KAAK,EDRsB,IAAI;CAC/B",
+    "mappings": "AAEA,AAAA,qBAAqB,CAAC;ECyBrB,OAAO,EAAE,IAAI;EACb,cAAc,EDzBM,GAAG;EC0BvB,eAAe,ED1BU,MAAM;EC2B/B,WAAW,ED3BsB,MAAM;ECQvC,MAAM,EDPe,IAAI;ECQzB,KAAK,EDRsB,IAAI;EAC/B,gBAAgB,EAAE,SAAS;CAC3B",
     "sources": [
         "BoxThirteen.scss",
         "../../../mixins/mixins.scss"

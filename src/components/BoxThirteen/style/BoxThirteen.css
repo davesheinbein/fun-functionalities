@@ -1,4 +1,4 @@
-div {
+.boxThirteenContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,5 +14,6 @@ div {
           align-items: center;
   height: 100%;
   width: 100%;
+  background-color: burlywood;
 }
 /*# sourceMappingURL=BoxThirteen.css.map */

@@ -1,6 +1,7 @@
 @import '../../../mixins/mixins.scss';
 
-div {
+.boxThirteenContainer {
 	@include flexCenter(row, center, center);
 	@include heightWidth(100%, 100%);
+	background-color: burlywood;
 }
