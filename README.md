@@ -1,68 +1,69 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# **Fun Functionalities**
 
-## Available Scripts
+### Click the link to view the website
 
-In the project directory, you can run:
+[Fun Functionalities Webstite](http://www.davidsheinbeinportfolio.com/)
 
-### `npm start`
+### About Us
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Project Work:
+David Sheinbein - https://github.com/davesheinbein
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Jason Hur - https://github.com/jhur91
 
-### `npm test`
+LinkedIn:
+David Sheinbein - https://www.linkedin.com/in/david-sheinbein/
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Jason Hur - https://www.linkedin.com/in/jasonhur/
 
-### `npm run build`
+Full-Stack Software Engineering Skills:
+HTML5 | CSS | JavaScript | Express | Node.js | Django | Mongoose | MongoDB | Python | PostreSQL | React | React-spring | Animations | Axios | Nodemailer
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Developer Tools:
+Git | GitHub | MongoDB Atlas | Postman | Heroku | Namecheap | AWS | Third Party APIs
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Project Management Skills:
+Schedule and Timeline Management | Outreach Strategy and Management | Research | Microsoft Office Suite | Teamwork | Marketing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Creative Skills:
+Wireframing | Adobe Creative Suite | Photography | Videography | Canva | Web Design | Undraw | LottieFiles | Google Fonts
 
-### `npm run eject`
+## Screenshot:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!-- ![Home Page Sceenshot](screenshots/portfolio-screenshot.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[Home Page Sceenshot](https://imgur.com/UE1XA40) -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Technologies Used:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### 1. HTML5
 
-## Learn More
+#### 2. CSS
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### 3. JavaScript
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### 4. React
 
-### Code Splitting
+#### 5. React-spring
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+#### 6. Node.js
 
-### Analyzing the Bundle Size
+#### 7. Heroku
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+#### 8. Git
 
-### Making a Progressive Web App
+## Potential Next Steps:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+##### - [] Play with css more to make colors pop even more
 
-### Advanced Configuration
+##### - [] Use AWS to store data
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+##### - [] Update CSS further for additional media queries
 
-### Deployment
+##### - [] speed up animation animation
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+### Click the link to view David Sheinbeins Portfolio website
 
-### `npm run build` fails to minify
+[David Sheinbein Portfolio Webstite](http://www.davidsheinbeinportfolio.com/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<!-- [Jason Hur Portfolio Webstite]()  -->
