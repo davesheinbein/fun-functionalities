@@ -1,6 +1,30 @@
 @import '../../../mixins/mixins.scss';
 
-div {
+.boxThirteenContainer {
+	margin: 0;
+	padding: 0;
 	@include flexCenter(row, center, center);
 	@include heightWidth(100%, 100%);
+	background: radial-gradient(
+		circle,
+		rgba(238, 174, 202, 1) 0%,
+		rgba(148, 187, 233, 1) 100%
+	);
+	.iconContainer {
+		color: #ffffff;
+		@include flexCenter(column, center, center);
+		@include heightWidth(100%, 100%);
+		span {
+			@include flexCenter(column, center, center);
+			@include heightWidth(100%, 100%);
+			svg {
+				@include flexCenter(column, center, center);
+				@include heightWidth(100%, 100%);
+				path {
+					@include flexCenter(column, center, center);
+					@include heightWidth(100%, 100%);
+				}
+			}
+		}
+	}
 }
