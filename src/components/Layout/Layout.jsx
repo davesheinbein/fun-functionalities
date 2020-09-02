@@ -23,7 +23,7 @@ import BoxTen from '../BoxTen/BoxTen';
 import BoxEleven from '../BoxEleven/BoxEleven';
 import BoxTwelve from '../BoxTwelve/BoxTwelve';
 import BoxThirteen from '../BoxThirteen/BoxThirteen';
-import BoxFourteen from '../BoxFourteen/BoxFourteen';
+// import BoxFourteen from '../BoxFourteen/BoxFourteen';
 import BoxFifteen from '../BoxFifteen/BoxFifteen';
 import BoxSixteen from '../BoxSixteen/BoxSixteen';
 // ^^^^
@@ -55,7 +55,7 @@ function Layout() {
 				<BoxEleven />
 				<BoxTwelve />
 				<BoxThirteen />
-				<BoxFourteen />
+				{/* <BoxFourteen /> */}
 				<BoxFifteen />
 				<BoxSixteen />
 				<div className='footer'>
