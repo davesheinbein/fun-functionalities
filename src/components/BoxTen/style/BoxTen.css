@@ -36,7 +36,7 @@
 }
 
 .auto-main .buttons-list button {
-  height: 50px;
+  height: 100%;
   border: 0;
   cursor: pointer !important;
   background: #777777;
@@ -51,9 +51,6 @@
 
 .auto-main .content {
   text-align: left;
-  grid-column: span 1;
-  height: 100%;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,9 +68,6 @@
 
 .auto-main .content .item {
   background: indianred;
-  height: 20px;
-  width: 100%;
-  max-height: 143px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,11 +81,11 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  overflow: hidden;
   color: white;
 }
 
 .auto-main .content .itemp {
   margin: 0;
-  padding: 10px;
 }
 /*# sourceMappingURL=BoxTen.css.map */

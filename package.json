@@ -19,6 +19,11 @@
     "morgan": "^1.10.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+<<<<<<< HEAD
+    "react-pong": "^1.1.1",
+    "react-router-dom": "^5.2.0",
+=======
+>>>>>>> origin
     "react-scripts": "3.4.3",
     "react-sliding-tile-puzzle": "^1.0.5",
     "react-spring": "^8.0.27",

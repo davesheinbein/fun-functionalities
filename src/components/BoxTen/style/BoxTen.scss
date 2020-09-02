@@ -7,7 +7,7 @@
     @include heightWidth(50px, 100%);
     @include flexCenter(row, center, flex-start);
     button {
-      height: 50px;
+      height: 100%;
       border: 0;
       cursor: pointer !important;
       background: #777777;
@@ -21,19 +21,19 @@
   }
   .content {
     text-align: left;
-    grid-column: span 1;
-    @include heightWidth(100%, 100%);
+    // grid-column: span 1;
+    // @include heightWidth(100%, 100%);
     @include flexCenter(column, flex-start, flex-start);
     .item {
       background: indianred;
-      @include heightWidth(20px, 100%);
-      max-height: 143px;
+      // @include heightWidth(100%, 100%);
+      // max-height: 143px;
       @include flexCenter(column, flex-start, flex-start);
-      // overflow: hidden;
+      overflow: hidden;
       color: white;
       &p {
         margin: 0;
-        padding: 10px;
+        // padding: 10px;
       }
     }
   }
