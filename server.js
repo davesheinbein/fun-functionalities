@@ -24,7 +24,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 /*--- Spot for Routers ---*/
 app.use(require('./config/auth'));
 app.use('/api/users', require('./routes/api/users'));
-app.use('/api/comments', require('./routes/api/comments'));
 
 /*--- Spot for api routes ---*/
 app.use('/api/form', cors());
