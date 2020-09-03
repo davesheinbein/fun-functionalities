@@ -22,7 +22,7 @@
   font-size: 20px;
   text-align: center;
   color: black;
-  background-color: var(--mainColor);
+  background-color: var(--headerColor);
 }
 
 .navbarContainer .logo {

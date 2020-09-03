@@ -9,7 +9,7 @@
 	font-size: 20px;
 	text-align: center;
 	color: black;
-	background-color: var(--mainColor);
+	background-color: var(--headerColor);
 	.logo {
 		@include heightWidth(100%, 100%);
 		@include flexCenter(row, flex-start, flex-start);
