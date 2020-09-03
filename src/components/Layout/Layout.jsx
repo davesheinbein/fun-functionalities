@@ -35,11 +35,13 @@ import Footer from '../../components/Footer/Footer';
 
 import './style/Layout.css';
 
-function Layout() {
+function Layout(props) {
 	return (
 		<div className='layoutContatainer'>
 			<div className='headerContainer'>
-				<Header />
+				<Header
+					handleThemeChange={props.handleThemeChange}
+				/>
 			</div>
 			<div className='container'>
 				<BoxOne />
