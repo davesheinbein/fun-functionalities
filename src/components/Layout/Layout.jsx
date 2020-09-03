@@ -19,12 +19,17 @@ import BoxSeven from '../BoxSeven/BoxSeven';
 import BoxEight from '../BoxEight/BoxEight';
 // Framer Animation
 import BoxNine from '../BoxNine/BoxNine';
+// Toggle Text
 import BoxTen from '../BoxTen/BoxTen';
 import BoxEleven from '../BoxEleven/BoxEleven';
 import BoxTwelve from '../BoxTwelve/BoxTwelve';
+// Page effect
 import BoxThirteen from '../BoxThirteen/BoxThirteen';
+// Color Components generator
 import BoxFourteen from '../BoxFourteen/BoxFourteen';
+// Mouse effect
 import BoxFifteen from '../BoxFifteen/BoxFifteen';
+// Email - Nodemailer
 import BoxSixteen from '../BoxSixteen/BoxSixteen';
 // ^^^^
 
