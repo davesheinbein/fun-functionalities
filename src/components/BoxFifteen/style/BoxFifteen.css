@@ -1,4 +1,4 @@
-div {
+.boxFifteenContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,5 +14,47 @@ div {
           align-items: center;
   height: 100%;
   width: 100%;
+}
+
+.boxFifteenContainer #textBox {
+  color: aqua;
+  font-size: 20px;
+  position: absolute;
+  top: 88%;
+  left: 63%;
+  -webkit-transform: translate(88%, 63%);
+          transform: translate(88%, 63%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 0px;
+  width: 0px;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  z-index: 20000;
+}
+
+.boxFifteenContainer #textBox:hover {
+  color: orange;
 }
 /*# sourceMappingURL=BoxFifteen.css.map */

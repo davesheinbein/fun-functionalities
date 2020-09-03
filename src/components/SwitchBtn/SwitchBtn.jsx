@@ -13,13 +13,18 @@ export class SwitchBtn extends Component {
 		});
 	};
 
-	render() {
+	render(props) {
 		return (
 			<div className='switchContainer'>
 				<Switch
 					disabled={this.state.disabled}
 					defaultChecked
 					className='switch'
+					onClick={() => {
+						this.props.handleThemeChange(
+							'disabled' ? 'black' : 'default'
+						);
+					}}
 				/>
 				<br />
 				<Button

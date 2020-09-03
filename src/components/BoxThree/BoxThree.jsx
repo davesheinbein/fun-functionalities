@@ -19,7 +19,6 @@ class BoxThree extends Component {
 			<div
 				id='starContainer'
 				style={{
-					background: '#272727',
 					width: '100%',
 					height: '100%',
 					display: 'flex',

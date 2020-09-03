@@ -7,14 +7,14 @@ import {
 import './style/BoxFour.css';
 
 const COLORS = [
-	'crimson',
-	'teal',
-	'coral',
-	'hotpink',
-	'skyblue',
-	'salmon',
-	'seagreen',
-	'peachpuff',
+	'var(--colorOne)',
+	'var(--colorTwo)',
+	'var(--colorThree)',
+	'var(--colorFour)',
+	'var(--colorFive)',
+	'var(--colorSix)',
+	'var(--colorSeven)',
+	'var(--colorEight)',
 ];
 
 class BoxFour extends Component {

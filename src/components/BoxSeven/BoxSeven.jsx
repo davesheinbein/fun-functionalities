@@ -1,5 +1,5 @@
-import 'antd/dist/antd.css';
 import React, { Fragment, Component } from 'react';
+import { Link } from 'react-router-dom';
 import {
 	Keyframes,
 	animated,
@@ -7,7 +7,6 @@ import {
 import {
 	Avatar,
 	Form,
-	// Icon,
 	Input,
 	Button,
 	Checkbox,
@@ -18,6 +17,8 @@ import {
 	MenuFoldOutlined,
 } from '@ant-design/icons';
 import delay from 'delay';
+import userService from '../../services/userServices';
+import 'antd/dist/antd.css';
 import './style/BoxSeven.css';
 
 // Creates a spring with predefined animation slots
@@ -56,54 +57,135 @@ const items = [
 		src='https://semantic-ui.com/images/avatar2/large/elyse.png'
 		className='ant-avatar'
 	/>,
-	<Input
-		size='small'
-		prefix={
+	<div className='alignFlex'>
+		<div className='dirFlexContainer'>
 			<UserOutlined
 				type='user'
-				style={{ color: 'rgba(0,0,0,.25)' }}
+				style={{
+					color: 'rgba(0,0,0,1)',
+					width: '15%',
+					height: '3vh',
+					display: 'flex',
+					flexDirection: 'row',
+					justifyContent: 'center',
+					alignContent: 'center',
+					margin: 0,
+				}}
 				className='icon'
-				placeholder='Username'
-				className='input'
+				id='userIcon'
 			/>
-		}
-	/>,
-	<Input
-		size='small'
-		prefix={
+			Email
+		</div>
+		<Input
+			size='small'
+			style={{
+				height: '3vh',
+				display: 'flex',
+				flexDirection: 'column',
+				justifyContent: 'center',
+				alignContent: 'center',
+				margin: 0,
+				marginTop: '5px',
+			}}
+			type='email'
+			placeholder='Email'
+			name='email'
+			// value={this.state.email}
+			// onChange={this.handleChange}
+		/>
+	</div>,
+	<div className='alignFlex'>
+		<div className='dirFlexContainer'>
 			<LockOutlined
 				type='lock'
-				style={{ color: 'rgba(0,0,0,.25)' }}
+				style={{
+					color: 'rgba(0,0,0,1)',
+					width: '15%',
+					height: '3vh',
+					display: 'flex',
+					flexDirection: 'column',
+					justifyContent: 'center',
+					alignContent: 'center',
+				}}
 				className='icon'
-				type='password'
-				placeholder='Password'
-				className='input'
+				id='passwordIcon'
 			/>
-		}
-	/>,
-	<Fragment id='submissionContainer'>
-		<Checkbox size='small' id='checkbox'>
-			Remember me
-		</Checkbox>
-		<a
-			className='login-form-forgot'
-			href='#'
-			children='Forgot password'
-		/>
-		<Button
+			Password
+		</div>
+		<Input
 			size='small'
-			type='primary'
-			htmlType='submit'
-			className='login-form-button'
-			children='Log in'
+			style={{
+				height: '3vh',
+				display: 'flex',
+				flexDirection: 'column',
+				justifyContent: 'center',
+				alignContent: 'center',
+				margin: 0,
+				marginTop: '5px',
+			}}
+			type='password'
+			placeholder='Password'
+			name='pw'
+			// value={this.state.pw}
+			// onChange={this.handleChange}
 		/>
+	</div>,
+	<Fragment id='submissionContainer'>
+		<div className='flexDirContainer'>
+			<Checkbox size='small' id='checkbox'>
+				Remember me
+			</Checkbox>
+			<a
+				className='login-form-forgot'
+				href='#'
+				children='Forgot password'
+			/>
+		</div>
+		<div className='flexDirContainer'>
+			<Button
+				size='small'
+				type='primary'
+				htmlType='submit'
+				className='login-form-button'
+				children='Log in'
+				style={{
+					margin: '0px 1em',
+					padding: '0px 7px',
+				}}
+			/>
+			<Link to='/' className='signup'>
+				<button id='signup'>Signup</button>
+			</Link>
+		</div>
 	</Fragment>,
 ];
 
 class BoxSeven extends Component {
-	state = { open: undefined };
+	state = { open: undefined, email: '', pw: '' };
+
 	toggle = () =>
 		this.setState((state) => ({ open: !state.open }));
+
+	handleChange = (e) => {
+		// TODO: implement in an elegant way
+		this.setState({
+			// use Computed Property Names
+			[e.target.name]: e.target.value,
+		});
+	};
+
+	handleSubmit = async (e) => {
+		e.preventDefault();
+		try {
+			await userService.login(this.state);
+			this.props.handleSignupOrLogin();
+			// Successfully signed up - show GamePage
+			this.props.history.push('/');
+		} catch (err) {
+			alert('Invalid Credentials!');
+		}
+	};
+
 	render() {
 		const state =
 			this.state.open === undefined
@@ -149,7 +231,8 @@ class BoxSeven extends Component {
 											...props,
 										}}>
 										<Form.Item
-											className={i === 0 ? 'middle' : ''}>
+											className={i === 0 ? 'middle' : ''}
+											onSubmit={this.handleSubmit}>
 											{item}
 										</Form.Item>
 									</animated.div>

@@ -1,24 +1,29 @@
 var express = require('express');
+const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
 var path = require('path');
 var logger = require('morgan');
 var favicon = require('serve-favicon');
+var app = express();
+const cors = require('cors');
 
 /*--- Spot for database ---*/
 
-/*--- Spot for Routers ---*/
-
 require('dotenv').config();
+require('./config/database');
 
-var app = express();
 app.use(
 	favicon(path.join(__dirname, 'build', 'favicon.ico'))
 );
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'build')));
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+/*--- Spot for Routers ---*/
+app.use(require('./config/auth'));
+app.use('/api/users', require('./routes/api/users'));
 
 /*--- Spot for api routes ---*/
 app.use('/api/form', cors());
@@ -76,6 +81,11 @@ app.post('/api/form', (req, res) => {
 	});
 });
 /*--- Spot for catch all route ---*/
+
+// for a SPA's client-side routing to properly work
+app.get('/*', function (req, res) {
+	res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 const port = process.env.PORT || 3001;
 app.listen(port, function () {

@@ -17,7 +17,7 @@
   height: 100%;
   width: 100%;
   border: none;
-  background-image: url("../../../images/cool-background.png");
+  background-image: var(--boxFiveBg);
   background-clip: content-box;
   background-size: 100vw;
   background-position: left;

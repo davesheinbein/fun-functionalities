@@ -1,6 +1,19 @@
 @import '../../../mixins/mixins.scss';
 
-div {
+.boxFifteenContainer {
 	@include flexCenter(row, center, center);
 	@include heightWidth(100%, 100%);
+	#textBox {
+		color: aqua;
+		font-size: 20px;
+		@include topLeftAbsolute(88%, 63%);
+		transform: translate(88%, 63%);
+		@include flexCenter(row, center, center);
+		@include heightWidth(0px, 0px);
+		@include noSelection;
+		z-index: 20000;
+		&:hover{
+			color: orange;
+		}
+	}
 }
