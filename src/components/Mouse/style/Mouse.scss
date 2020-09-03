@@ -1,0 +1,42 @@
+@import '../../../mixins/mixins.scss';
+
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+.mouse {
+	background-color: #1b1b1b;
+	@include heightWidth(100%, 100%);
+	@include flexCenter(row, center, center);
+	@include noSelection;
+	padding: 0;
+	margin: 0;
+	z-index: 1;
+	.mouse-ball {
+		z-index: 100;
+		border-radius: 50%;
+		@include noSelection;
+		@include heightWidth(25px, 25px);
+		@include flexCenter(row, center, center);
+		@include topLeftAbsolute(0%, 0%);
+		@include noSelection;
+		// border: 1px solid lightblue;
+		animation: radiusAnimation 4s infinite 0s alternate
+			ease-in-out;
+	}
+}
+
+@keyframes radiusAnimation {
+	0% {
+		border-radius: 50%;
+		border: 1px solid lightblue;
+	}
+	100% {
+		border-radius: 0%;
+		border: 10px solid red;
+	}
+}

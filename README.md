@@ -28,6 +28,16 @@ Schedule and Timeline Management | Outreach Strategy and Management | Research |
 Creative Skills:
 Wireframing | Adobe Creative Suite | Photography | Videography | Canva | Web Design | Undraw | LottieFiles | Google Fonts
 
+### Dependency
+
+- npm i
+
+- npm install
+
+- npm install
+
+- npm install
+
 ## Screenshot:
 
 <!-- ![Home Page Sceenshot](screenshots/portfolio-screenshot.png)

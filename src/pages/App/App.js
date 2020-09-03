@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Layout from '../../components/Layout/Layout';
+import Mouse from '../../components/Mouse/Mouse';
 import { createGlobalStyle } from 'styled-components';
 import { Route, Switch } from 'react-router-dom';
 import './style/App.css';
@@ -28,6 +29,7 @@ ${(props) => {
 
 			--background: none;
 			--DisplayNone: none;
+
 		}`;
 		default:
 		case 'default':
@@ -51,6 +53,7 @@ ${(props) => {
 
 			--background: none;
 			--DisplayNone: none;
+
 		}`;
 	}
 }}
