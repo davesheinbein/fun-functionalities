@@ -2,68 +2,174 @@
 
 .profileContainer {
 	@include flexCenter(column, center, center);
-	@include heightWidth(100%, 100%);
+	@include heightWidth(100vh, 100vw);
+	position: relative;
 	overflow: hidden;
 	.sidebar-toggle {
-		position: relative;
-		@include flexCenter(row, center, center);
-		@include heightWidth(100%, 100%);
-		margin: 20px;
+		position: absolute;
+		top: 5%;
+		left: 0%;
+		transform: translate(0%, -5%);
+		z-index: 100;
+		@include flexCenter(column, center, flex-start);
+		@include heightWidth(3vh, 100%);
 		color: #a0a0a0;
 		z-index: 100;
 		font-size: 1.5em;
 		cursor: pointer;
 		svg {
-			// @include heightWidth(5%, 5%);
-			width: 20%;
+			@include heightWidth(100%, 20%);
+			@include flexCenter(column, center, flex-start);
+			path {
+				@include flexCenter(column, center, center);
+				@include heightWidth(100%, 100%);
+			}
 		}
 	}
 	.sidebar {
-		position: relative;
-		overflow: hidden;
-		height: 100%;
-		width: 280px;
+		@include flexCenter(column, center, center);
 		@include heightWidth(100%, 100%);
-		background: white;
-		padding: 20px;
+		background: radial-gradient(
+			circle,
+			rgba(123, 255, 130, 1) 0%,
+			rgba(148, 233, 223, 1) 100%
+		);
 		font-size: 15px;
-		.ant-form-item {
-			margin: 0;
-		}
-		.ant-form-item-control {
-			line-height: 29px;
-		}
-		.contentContainer {
-			.middle {
-				.ant-form-item-control {
-					display: flex;
-					justify-content: center;
+		overflow: hidden;
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		div {
+			@include flexCenter(column, center, center);
+			@include heightWidth(100%, 100%);
+			.ant-row {
+				@include flexCenter(column, center, center);
+				@include heightWidth(100%, 100%);
+				margin: 0%;
+				.ant-col {
+					@include flexCenter(column, center, center);
+					@include heightWidth(100%, 100%);
+					margin-bottom: 5%;
+					.ant-form-item-control-input {
+						@include flexCenter(column, center, center);
+						@include heightWidth(100%, 100%);
+						.ant-form-item-control-input-content {
+							@include flexCenter(column, center, center);
+							@include heightWidth(5vh, 100%);
+							.ant-avatar {
+								position: absolute;
+								top: 10%;
+								left: 50%;
+								transform: translate(-50%, 10%);
+								@include flexCenter(column, center, center);
+								@include heightWidth(4vh, 4vw);
+								img {
+									@include flexCenter(
+										column,
+										center,
+										center
+									);
+									@include heightWidth(100%, 100%);
+									border-radius: 50%;
+								}
+							}
+							.alignFlex {
+								@include flexCenter(column, center, center);
+								@include heightWidth(100%, 100%);
+								.dirFlexContainer {
+									@include flexCenter(
+										row,
+										center,
+										flex-end
+									);
+									font-size: 22px;
+									line-height: 20px;
+									@include heightWidth(100%, 100%);
+									.anticon {
+										@include flexCenter(
+											column,
+											center,
+											center
+										);
+										@include heightWidth(100%, 100%);
+										svg {
+											@include flexCenter(
+												column,
+												center,
+												center
+											);
+											@include heightWidth(100%, 100%);
+											path {
+											}
+										}
+									}
+								}
+							}
+						}
+						.flexDirContainer {
+							@include flexCenter(row, center, center);
+							@include heightWidth(100%, 100%);
+							.ant-checkbox-wrapper {
+								@include flexCenter(row, center, center);
+								@include heightWidth(100%, 100%);
+								.ant-checkbox {
+									@include flexCenter(row, center, center);
+									@include heightWidth(100%, 10%);
+									#checkbox {
+										@include flexCenter(
+											row,
+											center,
+											center
+										);
+										@include heightWidth(100%, 10%);
+									}
+									.ant-checkbox-inner {
+										@include flexCenter(
+											row,
+											center,
+											center
+										);
+									}
+									+ span {
+										@include flexCenter(
+											row,
+											center,
+											center
+										);
+										@include heightWidth(100%, 80%);
+										font-size: 10px;
+									}
+								}
+							}
+							.login-form-forgot {
+								@include flexCenter(row, center, center);
+								@include heightWidth(100%, 100%);
+								font-size: 10px;
+							}
+						}
+						.ant-btn {
+							width: 100%;
+							span {
+								@include flexCenter(row, center, center);
+								@include heightWidth(100%, 100%);
+							}
+						}
+					}
 				}
 			}
 		}
 	}
-}
-
-.ant-avatar {
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	border-radius: 50%;
-	font-size: 3em !important;
-}
-.icon {
-}
-
-.input {
-	background-color: red;
-}
-
-#submissionContainer {
-	.login-form-forgot {
-		float: right;
-	}
-
-	.login-form-button {
-		width: 100%;
+	.contentContainer {
+		@include flexCenter(column, center, center);
+		@include heightWidth(100%, 100%);
+		.middle {
+			@include flexCenter(column, center, center);
+			@include heightWidth(100%, 100%);
+			margin: 0%;
+			.ant-form-item-control {
+				@include flexCenter(column, center, center);
+				@include heightWidth(100%, 100%);
+			}
+		}
 	}
 }

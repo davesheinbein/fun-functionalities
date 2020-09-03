@@ -56,40 +56,83 @@ const items = [
 		src='https://semantic-ui.com/images/avatar2/large/elyse.png'
 		className='ant-avatar'
 	/>,
-	<Input
-		size='small'
-		prefix={
+	<div className='alignFlex'>
+		<div className='dirFlexContainer'>
 			<UserOutlined
 				type='user'
-				style={{ color: 'rgba(0,0,0,.25)' }}
+				style={{
+					color: 'rgba(0,0,0,1)',
+					width: '15%',
+					height: '3vh',
+					display: 'flex',
+					flexDirection: 'row',
+					justifyContent: 'center',
+					alignContent: 'center',
+					margin: 0,
+				}}
 				className='icon'
+				id='userIcon'
 				placeholder='Username'
-				className='input'
 			/>
-		}
-	/>,
-	<Input
-		size='small'
-		prefix={
+			Username
+		</div>
+		<Input
+			size='small'
+			style={{
+				height: '3vh',
+				display: 'flex',
+				flexDirection: 'column',
+				justifyContent: 'center',
+				alignContent: 'center',
+				margin: 0,
+				marginTop: '5px',
+			}}
+		/>
+	</div>,
+	<div className='alignFlex'>
+		<div className='dirFlexContainer'>
 			<LockOutlined
 				type='lock'
-				style={{ color: 'rgba(0,0,0,.25)' }}
+				style={{
+					color: 'rgba(0,0,0,1)',
+					width: '15%',
+					height: '3vh',
+					display: 'flex',
+					flexDirection: 'column',
+					justifyContent: 'center',
+					alignContent: 'center',
+				}}
 				className='icon'
+				id='passwordIcon'
 				type='password'
 				placeholder='Password'
-				className='input'
 			/>
-		}
-	/>,
-	<Fragment id='submissionContainer'>
-		<Checkbox size='small' id='checkbox'>
-			Remember me
-		</Checkbox>
-		<a
-			className='login-form-forgot'
-			href='#'
-			children='Forgot password'
+			Password
+		</div>
+		<Input
+			size='small'
+			style={{
+				height: '3vh',
+				display: 'flex',
+				flexDirection: 'column',
+				justifyContent: 'center',
+				alignContent: 'center',
+				margin: 0,
+				marginTop: '5px',
+			}}
 		/>
+	</div>,
+	<Fragment id='submissionContainer'>
+		<div className='flexDirContainer'>
+			<Checkbox size='small' id='checkbox'>
+				Remember me
+			</Checkbox>
+			<a
+				className='login-form-forgot'
+				href='#'
+				children='Forgot password'
+			/>
+		</div>
 		<Button
 			size='small'
 			type='primary'
