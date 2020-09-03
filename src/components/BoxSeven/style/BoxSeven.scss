@@ -109,6 +109,36 @@
 						.flexDirContainer {
 							@include flexCenter(row, center, center);
 							@include heightWidth(100%, 100%);
+							.signup {
+								@include flexCenter(row, center, center);
+								@include heightWidth(100%, 100%);
+								#signup {
+									@include flexCenter(row, center, center);
+									@include heightWidth(24px, 100%);
+									background-color: #ff4618;
+									border-color: #ff4618;
+									color: #fff;
+									border: 1px solid transparent;
+									text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+									box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+									border-radius: 2px;
+									font-size: 14px;
+									padding: 0px 7px;
+									outline: 0;
+									display: inline-block;
+									touch-action: manipulation;
+									user-select: none;
+									line-height: 1.5715;
+									white-space: nowrap;
+									margin-right: 1em;
+									font-weight: 400;
+									cursor: pointer;
+									&:hover {
+										background-color: #fa3301;
+										border-color: #fa3301;
+									}
+								}
+							}
 							.ant-checkbox-wrapper {
 								@include flexCenter(row, center, center);
 								@include heightWidth(100%, 100%);

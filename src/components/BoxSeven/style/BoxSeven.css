@@ -332,6 +332,70 @@
   width: 100%;
 }
 
+.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .signup #signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 24px;
+  width: 100%;
+  background-color: #ff4618;
+  border-color: #ff4618;
+  color: #fff;
+  border: 1px solid transparent;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+          box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 0px 7px;
+  outline: 0;
+  display: inline-block;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  line-height: 1.5715;
+  white-space: nowrap;
+  margin-right: 1em;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .signup #signup:hover {
+  background-color: #fa3301;
+  border-color: #fa3301;
+}
+
 .profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
