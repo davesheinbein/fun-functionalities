@@ -13,6 +13,7 @@ const RECTANGLE =
 const styles = {
 	container: {
 		height: '100%',
+		width: '100%',
 		display: 'flex',
 		justifyContent: 'center',
 		alignItems: 'center',
@@ -42,8 +43,8 @@ export default class BoxOne extends Component {
 					fill: toggle ? '#247BA0' : '#70C1B3',
 					backgroundColor: toggle ? '#A29B7F' : '#F3FFBD',
 					rotate: toggle ? '0deg' : '180deg',
-					scale: toggle ? 0.3 : 0.7,
-					shape: toggle ? TRIANGLE : RECTANGLE,
+					scale: toggle ? 0.25 : 0.75,
+					shape: toggle ? RECTANGLE : TRIANGLE,
 				}}
 				toggle={this.toggle}
 				onRest={() => console.log('done')}>

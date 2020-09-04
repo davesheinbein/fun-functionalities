@@ -5,6 +5,22 @@
 	@include heightWidth(100%, 100%);
 	.shapeSVG {
 		#path-1 {
+			&:hover {
+				opacity: 0.5;
+				// BtnHover color swap
+				fill: var(--BtnHover);
+				animation: colorAnim 3s infinite 0s alternate
+					ease-in-out;
+			}
 		}
+	}
+}
+
+@keyframes colorAnim {
+	0% {
+		opacity: 0.25;
+	}
+	100% {
+		opacity: 0.5;
 	}
 }

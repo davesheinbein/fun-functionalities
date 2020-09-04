@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Layout from '../../components/Layout/Layout';
-import Mouse from '../../components/Mouse/Mouse';
 import { createGlobalStyle } from 'styled-components';
 import { Route, Switch } from 'react-router-dom';
 import './style/App.css';
@@ -35,7 +34,7 @@ ${(props) => {
 			--TertiaryText: #ffffff;
 			
 			--Btn: #5E5E5E;
-			--BtnHover: #ffffff;
+			--BtnHover:  rgba(255, 55, 255, 1);
 			--BtnText: #000000;
 
 			--formColor: #b5b5b5;
@@ -75,7 +74,7 @@ ${(props) => {
 			--TertiaryText: #ffffff;
 			
 			--Btn: #084181;
-			--BtnHover: #ffffff
+			--BtnHover: rgba(0, 0, 0, 1);
 			--BtnText: #63dbff;
 
 			--formColor: #ffffff;

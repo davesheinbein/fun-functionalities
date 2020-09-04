@@ -15,4 +15,29 @@
   height: 100%;
   width: 100%;
 }
+
+.shapeAnimationContainer .shapeSVG #path-1:hover {
+  opacity: 0.5;
+  fill: var(--BtnHover);
+  -webkit-animation: colorAnim 3s infinite 0s alternate ease-in-out;
+          animation: colorAnim 3s infinite 0s alternate ease-in-out;
+}
+
+@-webkit-keyframes colorAnim {
+  0% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes colorAnim {
+  0% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
 /*# sourceMappingURL=BoxOne.css.map */
