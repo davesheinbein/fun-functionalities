@@ -3,35 +3,35 @@ import { Route, Switch } from 'react-router-dom';
 
 // Boxes V
 // Animate shape
-import BoxOne from '../BoxOne/BoxOne';
+import BoxOne from '../BoxGroups/BoxGroupA/BoxOne/BoxOne';
 // Slide box
-import BoxTwo from '../BoxTwo/BoxTwo';
+import BoxTwo from '../BoxGroups/BoxGroupA/BoxTwo/BoxTwo';
 // Draw shape path Star
-import BoxThree from '../BoxThree/BoxThree';
+import BoxThree from '../BoxGroups/BoxGroupA/BoxThree/BoxThree';
 // Color Scroller
-import BoxFour from '../BoxFour/BoxFour';
+import BoxFour from '../BoxGroups/BoxGroupB/BoxFour/BoxFour';
 // 15-slot puzzle game
-import BoxFive from '../BoxFive/BoxFive';
+import BoxFive from '../BoxGroups/BoxGroupB/BoxFive/BoxFive';
 // Chuck Norris Fact Generator
 import BoxSix from '../BoxSix/BoxSix';
 // profile slider
 import BoxSeven from '../BoxSeven/BoxSeven';
 // Slide animation
-import BoxEight from '../BoxEight/BoxEight';
+import BoxEight from '../BoxGroups/BoxGroupB/BoxEight/BoxEight';
 // Framer Animation
-import BoxNine from '../BoxNine/BoxNine';
+import BoxNine from '../BoxGroups/BoxGroupC/BoxNine/BoxNine';
 // Toggle Text
-import BoxTen from '../BoxTen/BoxTen';
-import BoxEleven from '../BoxEleven/BoxEleven';
-import BoxTwelve from '../BoxTwelve/BoxTwelve';
+import BoxTen from '../BoxGroups/BoxGroupC/BoxTen/BoxTen';
+import BoxEleven from '../BoxGroups/BoxGroupC/BoxEleven/BoxEleven';
+import BoxTwelve from '../BoxGroups/BoxGroupC/BoxTwelve/BoxTwelve';
 // Page effect
-import BoxThirteen from '../BoxThirteen/BoxThirteen';
+import BoxThirteen from '../BoxGroups/BoxGroupD/BoxThirteen/BoxThirteen';
 // Color Components generator
-import BoxFourteen from '../BoxFourteen/BoxFourteen';
+import BoxFourteen from '../BoxGroups/BoxGroupD/BoxFourteen/BoxFourteen';
 // Mouse effect
 import BoxFifteen from '../BoxFifteen/BoxFifteen';
 // Email - Nodemailer
-import BoxSixteen from '../BoxSixteen/BoxSixteen';
+import BoxSixteen from '../BoxGroups/BoxGroupD/BoxSixteen/BoxSixteen';
 // ^^^^
 
 // Heading

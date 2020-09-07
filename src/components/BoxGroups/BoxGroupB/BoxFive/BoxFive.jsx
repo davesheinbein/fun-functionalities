@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SlidingTilePuzzle from 'react-sliding-tile-puzzle';
 import { Button, Segment } from 'semantic-ui-react';
-import puzzleImg from '../../images/honey-yanibel-minaya-cruz-9d-67yV9T04-unsplash.jpg';
+import puzzleImg from '../../../../images/honey-yanibel-minaya-cruz-9d-67yV9T04-unsplash.jpg';
 import './style/BoxFive.css';
 
 class BoxFive extends Component {
