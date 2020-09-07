@@ -1,42 +1,38 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-// Boxes V
+// Box Groups
+// Box Group A
 // Animate shape
-import BoxOne from '../BoxGroups/BoxGroupA/BoxOne/BoxOne';
 // Slide box
-import BoxTwo from '../BoxGroups/BoxGroupA/BoxTwo/BoxTwo';
 // Draw shape path Star
-import BoxThree from '../BoxGroups/BoxGroupA/BoxThree/BoxThree';
-// Color Scroller
-import BoxFour from '../BoxGroups/BoxGroupB/BoxFour/BoxFour';
-// 15-slot puzzle game
-import BoxFive from '../BoxGroups/BoxGroupB/BoxFive/BoxFive';
-// Chuck Norris Fact Generator
-import BoxSix from '../BoxGroups/BoxGroupB/BoxSix/BoxSix';
 // profile slider
-import BoxSeven from '../BoxGroups/BoxGroupA/BoxSeven/BoxSeven';
+import BoxGroupA from '../BoxGroups/BoxGroupA/BoxGroupA';
+
+// Box Group B
+// // Color Scroller
+// 15-slot puzzle game
+// Chuck Norris Fact Generator
 // Slide animation
-import BoxEight from '../BoxGroups/BoxGroupB/BoxEight/BoxEight';
+import BoxGroupB from '../BoxGroups/BoxGroupB/BoxGroupB';
+
+// Box Group C
 // Framer Animation
-import BoxNine from '../BoxGroups/BoxGroupC/BoxNine/BoxNine';
 // Toggle Text
-import BoxTen from '../BoxGroups/BoxGroupC/BoxTen/BoxTen';
-import BoxEleven from '../BoxGroups/BoxGroupC/BoxEleven/BoxEleven';
-import BoxTwelve from '../BoxGroups/BoxGroupC/BoxTwelve/BoxTwelve';
+// Box 11
+// Box 12
+import BoxGroupC from '../BoxGroups/BoxGroupC/BoxGroupC';
+
+// Box Group D
 // Page effect
-import BoxThirteen from '../BoxGroups/BoxGroupD/BoxThirteen/BoxThirteen';
 // Color Components generator
-import BoxFourteen from '../BoxGroups/BoxGroupD/BoxFourteen/BoxFourteen';
 // Mouse effect
-import BoxFifteen from '../BoxGroups/BoxGroupD/BoxFifteen/BoxFifteen';
 // Email - Nodemailer
-import BoxSixteen from '../BoxGroups/BoxGroupD/BoxSixteen/BoxSixteen';
-// ^^^^
+import BoxGroupD from '../BoxGroups/BoxGroupD/BoxGroupD';
 
 // Heading
 import Header from '../../components/Header/Header';
-
+// Home Page
 import Home from '../../components/Home/Home';
 
 // Navigation
@@ -88,11 +84,8 @@ function Layout(props) {
 					render={() => (
 						<>
 							<NavHomeA />
-							<div className='container'>
-								<BoxOne />
-								<BoxTwo />
-								<BoxThree />
-								<BoxSeven />
+							<div>
+								<BoxGroupA />
 							</div>
 						</>
 					)}
@@ -103,11 +96,8 @@ function Layout(props) {
 					render={() => (
 						<>
 							<NavHomeB />
-							<div className='container'>
-								<BoxEight />
-								<BoxFour />
-								<BoxFive />
-								<BoxSix />
+							<div>
+								<BoxGroupB />
 							</div>
 						</>
 					)}
@@ -118,11 +108,8 @@ function Layout(props) {
 					render={() => (
 						<>
 							<NavHomeC />
-							<div className='container'>
-								<BoxNine />
-								<BoxTen />
-								<BoxEleven />
-								<BoxTwelve />
+							<div>
+								<BoxGroupC />
 							</div>
 						</>
 					)}
@@ -133,11 +120,8 @@ function Layout(props) {
 					render={() => (
 						<>
 							<NavHomeD />
-							<div className='container'>
-								<BoxThirteen />
-								<BoxFourteen />
-								<BoxFifteen />
-								<BoxSixteen />
+							<div>
+								<BoxGroupD />
 							</div>
 						</>
 					)}

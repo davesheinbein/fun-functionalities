@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,kBAAkB,CAAC;ECSlB,MAAM,EDRe,KAAK;ECS1B,KAAK,EDTuB,KAAK;EACjC,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,kBAAkB,EAAE,cAAc;EAElC,OAAO,EAAE,CAAC;CACV",
+    "sources": [
+        "BoxGroupD.scss",
+        "../../../../mixins/mixins.scss"
+    ],
+    "names": [],
+    "file": "BoxGroupD.css"
+}
