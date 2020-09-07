@@ -23,10 +23,10 @@ Developer Tools:
 Git | GitHub | MongoDB Atlas | Postman | Heroku | Namecheap | AWS | Third Party APIs
 
 Project Management Skills:
-Schedule and Timeline Management | Outreach Strategy and Management | Research | Microsoft Office Suite | Teamwork | Marketing
+Schedule | Timeline Management | Research | Teamwork |
 
 Creative Skills:
-Wireframing | Adobe Creative Suite | Photography | Videography | Canva | Web Design | Undraw | LottieFiles | Google Fonts
+Wireframing | Web Design | Google Fonts
 
 ### Dependency
 
@@ -50,17 +50,19 @@ Wireframing | Adobe Creative Suite | Photography | Videography | Canva | Web Des
 
 #### 2. CSS
 
-#### 3. JavaScript
+#### 3. Sass
 
-#### 4. React
+#### 4. JavaScript
 
-#### 5. React-spring
+#### 5. React
 
-#### 6. Node.js
+#### 6. React-spring
 
-#### 7. Heroku
+#### 7. Node.js
 
-#### 8. Git
+#### 8. Heroku
+
+#### 9. Git
 
 ## Potential Next Steps:
 
@@ -70,10 +72,10 @@ Wireframing | Adobe Creative Suite | Photography | Videography | Canva | Web Des
 
 ##### - [] Update CSS further for additional media queries
 
-##### - [] speed up animation animation
-
 ### Click the link to view David Sheinbeins Portfolio website
 
 [David Sheinbein Portfolio Webstite](http://www.davidsheinbeinportfolio.com/)
+
+<!-- ### Click the link to view Jason Hur Portfolio website -->
 
 <!-- [Jason Hur Portfolio Webstite]()  -->

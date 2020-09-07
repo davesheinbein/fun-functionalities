@@ -24,25 +24,24 @@
 	left: $left;
 }
 
+@mixin topRightAbsolute($top, $right) {
+	position: absolute;
+	top: $top;
+	right: $right;
+}
+
+@mixin bottomLeftAbsolute($bottom, $left) {
+	position: absolute;
+	bottom: $bottom;
+	left: $left;
+}
+
 @mixin flexCenter($direction, $justified, $alignment) {
 	display: flex;
 	flex-direction: $direction;
 	justify-content: $justified;
 	align-items: $alignment;
 }
-
-// @mixin gradientAnimationMix($sizeA, $sizeB, $posA, $posB) {
-// 	@keyframes headingAnimation {
-// 		0% {
-// 			background-size: $sizeA;
-// 			background-position: $posA;
-// 		}
-// 		100% {
-// 			background-size: $sizeB;
-// 			background-position: $posB;
-// 		}
-// 	}
-// }
 
 @mixin contentMix($content) {
 	font-family: 'Cabin', sans-serif;

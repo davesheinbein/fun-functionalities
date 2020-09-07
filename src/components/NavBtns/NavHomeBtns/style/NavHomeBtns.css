@@ -1,0 +1,81 @@
+/**
+*
+* Testing
+*
+**/
+.NavLink .rightHomeTriangle {
+  position: absolute;
+  top: 41.75%;
+  right: 1%;
+  -webkit-transform: translateX(-41.75%, -1%);
+          transform: translateX(-41.75%, -1%);
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+}
+
+.NavLink .rightHomeTriangle:hover {
+  border-left: 60px solid #19ffff;
+}
+
+.NavLink .leftHomeTriangle {
+  position: absolute;
+  top: 41.75%;
+  left: 0%;
+  -webkit-transform: translateX(-41.75%, 0%);
+          transform: translateX(-41.75%, 0%);
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-right: 60px solid rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+}
+
+.NavLink .leftHomeTriangle:hover {
+  border-right: 60px solid #19ffff;
+}
+
+.NavLink .bottomHomeTriangle {
+  position: absolute;
+  bottom: -1%;
+  left: 46.5%;
+  -webkit-transform: translateX(-1%, -46.5%);
+          transform: translateX(-1%, -46.5%);
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-right: 60px solid rgba(0, 0, 0, 0.5);
+  -webkit-transform: rotateZ(270deg);
+          transform: rotateZ(270deg);
+  z-index: 2000;
+}
+
+.NavLink .bottomHomeTriangle:hover {
+  border-right: 60px solid #19ffff;
+}
+
+.NavLink .topHomeTriangle {
+  position: absolute;
+  top: 1vh;
+  left: 46.5%;
+  -webkit-transform: translateX(-1vh, -46.5%);
+          transform: translateX(-1vh, -46.5%);
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-right: 60px solid rgba(0, 0, 0, 0.5);
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  z-index: 2000;
+}
+
+.NavLink .topHomeTriangle:hover {
+  border-right: 60px solid #19ffff;
+}
+/*# sourceMappingURL=NavHomeBtns.css.map */

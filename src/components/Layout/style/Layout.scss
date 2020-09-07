@@ -16,15 +16,13 @@
 		@include heightWidth(100vh, 100vw);
 		position: relative;
 		display: grid;
-		grid-template-columns: repeat(4, 25%);
-		grid-template-rows: repeat(4, 25%);
-		margin-top: 8vh;
+		grid-template-columns: repeat(2, 50%);
+		grid-template-rows: repeat(2, 50%);
+		// margin-top: 8vh;
 		z-index: 9;
-		.footer {
-			grid-column: 1 / 5;
-			grid-row: 5;
-			@include heightWidth(4vh, 100%);
-			@include flexCenter(row, center, center);
-		}
+	}
+	.footer {
+		@include heightWidth(4vh, 100%);
+		@include flexCenter(row, center, center);
 	}
 }

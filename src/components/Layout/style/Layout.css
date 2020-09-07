@@ -47,20 +47,14 @@
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (25%)[4];
-      grid-template-columns: repeat(4, 25%);
-  -ms-grid-rows: (25%)[4];
-      grid-template-rows: repeat(4, 25%);
-  margin-top: 8vh;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -ms-grid-rows: (50%)[2];
+      grid-template-rows: repeat(2, 50%);
   z-index: 9;
 }
 
-.layoutContatainer .container .footer {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
-  -ms-grid-row: 5;
-  grid-row: 5;
+.layoutContatainer .footer {
   height: 4vh;
   width: 100%;
   display: -webkit-box;

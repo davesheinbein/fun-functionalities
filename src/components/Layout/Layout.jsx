@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 // Boxes V
 // Animate shape
@@ -35,6 +36,19 @@ import BoxSixteen from '../BoxSixteen/BoxSixteen';
 
 // Heading
 import Header from '../../components/Header/Header';
+
+// Navigation
+// Nav Home
+import NavHomeA from '../NavBtns/NavHomeBtns/NavHomeA';
+import NavHomeB from '../NavBtns/NavHomeBtns/NavHomeB';
+import NavHomeC from '../NavBtns/NavHomeBtns/NavHomeC';
+import NavHomeD from '../NavBtns/NavHomeBtns/NavHomeD';
+// Nav Groups
+import NavGroupA from '../NavBtns/NavGroupLinks/NavGroupA';
+import NavGroupB from '../NavBtns/NavGroupLinks/NavGroupB';
+import NavGroupC from '../NavBtns/NavGroupLinks/NavGroupC';
+import NavGroupD from '../NavBtns/NavGroupLinks/NavGroupD';
+
 // Footer
 import Footer from '../../components/Footer/Footer';
 
@@ -48,26 +62,81 @@ function Layout(props) {
 					handleThemeChange={props.handleThemeChange}
 				/>
 			</div>
-			<div className='container'>
-				<BoxOne />
-				<BoxTwo />
-				<BoxThree />
-				<BoxSeven />
-				<BoxEight />
-				<BoxFour />
-				<BoxFive />
-				<BoxSix />
-				<BoxNine />
-				<BoxTen />
-				<BoxEleven />
-				<BoxTwelve />
-				<BoxThirteen />
-				<BoxFourteen />
-				<BoxFifteen />
-				<BoxSixteen />
-				<div className='footer'>
-					<Footer />
-				</div>
+			<Route
+				exact
+				path='/home'
+				render={() => (
+					<div className='container'>
+						{/* This will be the home section */}
+						<NavGroupA />
+						<NavGroupB />
+						<NavGroupC />
+						<NavGroupD />
+					</div>
+				)}
+			/>
+			<Route
+				exact
+				path='/boxGroupA'
+				render={() => (
+					<>
+						<NavHomeA />
+						<div className='container'>
+							<BoxOne />
+							<BoxTwo />
+							<BoxThree />
+							<BoxSeven />
+						</div>
+					</>
+				)}
+			/>
+			<Route
+				exact
+				path='/boxGroupB'
+				render={() => (
+					<>
+						<NavHomeB />
+						<div className='container'>
+							<BoxEight />
+							<BoxFour />
+							<BoxFive />
+							<BoxSix />
+						</div>
+					</>
+				)}
+			/>
+			<Route
+				exact
+				path='/boxGroupC'
+				render={() => (
+					<>
+						<NavHomeC />
+						<div className='container'>
+							<BoxNine />
+							<BoxTen />
+							<BoxEleven />
+							<BoxTwelve />
+						</div>
+					</>
+				)}
+			/>
+			<Route
+				exact
+				path='/boxGroupD'
+				render={() => (
+					<>
+						<NavHomeD />
+						<div className='container'>
+							<BoxThirteen />
+							<BoxFourteen />
+							<BoxFifteen />
+							<BoxSixteen />
+						</div>
+					</>
+				)}
+			/>
+			<div className='footer'>
+				<Footer />
 			</div>
 		</div>
 	);
