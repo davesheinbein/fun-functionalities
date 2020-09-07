@@ -4,4 +4,5 @@
 	@include heightWidth(100%, 100%);
 	@include flexCenter(row, center, center);
 	background-color: salmon;
+	z-index: 200;
 }

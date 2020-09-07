@@ -15,5 +15,6 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: salmon;
+  z-index: 200;
 }
 /*# sourceMappingURL=Footer.css.map */

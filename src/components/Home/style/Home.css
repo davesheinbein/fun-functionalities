@@ -1,1 +1,7 @@
-/* No CSS *//*# sourceMappingURL=Home.css.map */
+.parallaxHomeContainer {
+  background-color: #4158d0;
+  background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=Home.css.map */

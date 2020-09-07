@@ -6,14 +6,25 @@ const calc = (x, y) => [
 	x - window.innerWidth / 2,
 	y - window.innerHeight / 2,
 ];
+
+// blob
 const trans1 = (x, y) =>
-	`translate3d(${x / 10}px,${y / 10}px,0)`;
+	`translate3d(${x / 8 - 200}px,${y / 8}px,0)`;
+// blob
 const trans2 = (x, y) =>
-	`translate3d(${x / 8 + 35}px,${y / 8 - 230}px,0)`;
+	`translate3d(${x / 2 + 35}px,${y / 2 - 230}px,0)`;
+// computer, desk
 const trans3 = (x, y) =>
-	`translate3d(${x / 6 - 250}px,${y / 6 - 200}px,0)`;
+	`translate3d(${x / 2 + 200}px,${y / 2 - 100}px,0)`;
+// guy
 const trans4 = (x, y) =>
-	`translate3d(${x / 3.5}px,${y / 3.5}px,0)`;
+	`translate3d(${x / 3 + 400}px,${y / 2 - 50}px,0)`;
+// girl
+const trans5 = (x, y) =>
+	`translate3d(${x / 3.5 + 50}px,${y / 2 + 50}px,0)`;
+// tree
+const trans6 = (x, y) =>
+	`translate3d(${x / 2 + 400}px,${y / 3 - 100}px,0)`;
 
 function HomeParallax() {
 	const [props, set] = useSpring(() => ({
@@ -41,6 +52,15 @@ function HomeParallax() {
 			<animated.div
 				class='card4'
 				style={{ transform: props.xy.interpolate(trans4) }}
+			/>
+			<animated.div
+				class='card5'
+				style={{ transform: props.xy.interpolate(trans5) }}
+			/>
+
+			<animated.div
+				class='card6'
+				style={{ transform: props.xy.interpolate(trans6) }}
 			/>
 		</div>
 	);

@@ -69,15 +69,14 @@ function Layout(props) {
 				path='/home'
 				render={() => (
 					<>
-						<div className='container'>
-							{/* This will be the home section */}
+						<div className='homeContainer'>
+							<Home />
+						</div>
+						<div className='homeBtns'>
 							<NavGroupA />
 							<NavGroupB />
 							<NavGroupC />
 							<NavGroupD />
-						</div>
-						<div>
-							<Home />
 						</div>
 					</>
 				)}

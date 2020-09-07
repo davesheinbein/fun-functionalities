@@ -50,10 +50,10 @@
 
 .NavLink .bottomTriangle {
   position: absolute;
-  bottom: -2.75%;
+  bottom: -0.75%;
   left: 46.5%;
-  -webkit-transform: translateX(-2.75%, -46.5%);
-          transform: translateX(-2.75%, -46.5%);
+  -webkit-transform: translateX(-0.75%, -46.5%);
+          transform: translateX(-0.75%, -46.5%);
   width: 0;
   height: 0;
   border-top: 60px solid transparent;

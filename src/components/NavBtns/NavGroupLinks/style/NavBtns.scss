@@ -31,8 +31,8 @@
 		}
 	}
 	.bottomTriangle {
-		@include bottomLeftAbsolute(-2.75%, 46.5%);
-		transform: translateX(-2.75%, -46.5%);
+		@include bottomLeftAbsolute(-0.75%, 46.5%);
+		transform: translateX(-0.75%, -46.5%);
 		width: 0;
 		height: 0;
 		border-top: 60px solid transparent;
