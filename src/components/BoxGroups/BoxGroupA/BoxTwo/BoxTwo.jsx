@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withGesture } from 'react-with-gesture';
 import { Spring, animated } from 'react-spring/renderprops';
-import './styles/BoxTwo.css';
+import './style/BoxTwo.css';
 
 class BoxTwo extends Component {
 	render() {

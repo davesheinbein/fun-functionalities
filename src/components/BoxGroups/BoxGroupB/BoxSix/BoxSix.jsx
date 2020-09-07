@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { UncontrolledAlert } from 'reactstrap';
 import axios from 'axios';
-import Loader from '../Loader/Loader';
+import Loader from '../../../Loader/Loader';
 import './style/BoxSix.css';
 
 function BoxSix() {

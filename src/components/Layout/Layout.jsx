@@ -13,9 +13,9 @@ import BoxFour from '../BoxGroups/BoxGroupB/BoxFour/BoxFour';
 // 15-slot puzzle game
 import BoxFive from '../BoxGroups/BoxGroupB/BoxFive/BoxFive';
 // Chuck Norris Fact Generator
-import BoxSix from '../BoxSix/BoxSix';
+import BoxSix from '../BoxGroups/BoxGroupB/BoxSix/BoxSix';
 // profile slider
-import BoxSeven from '../BoxSeven/BoxSeven';
+import BoxSeven from '../BoxGroups/BoxGroupA/BoxSeven/BoxSeven';
 // Slide animation
 import BoxEight from '../BoxGroups/BoxGroupB/BoxEight/BoxEight';
 // Framer Animation
@@ -29,13 +29,15 @@ import BoxThirteen from '../BoxGroups/BoxGroupD/BoxThirteen/BoxThirteen';
 // Color Components generator
 import BoxFourteen from '../BoxGroups/BoxGroupD/BoxFourteen/BoxFourteen';
 // Mouse effect
-import BoxFifteen from '../BoxFifteen/BoxFifteen';
+import BoxFifteen from '../BoxGroups/BoxGroupD/BoxFifteen/BoxFifteen';
 // Email - Nodemailer
 import BoxSixteen from '../BoxGroups/BoxGroupD/BoxSixteen/BoxSixteen';
 // ^^^^
 
 // Heading
 import Header from '../../components/Header/Header';
+
+import Home from '../../components/Home/Home';
 
 // Navigation
 // Nav Home
@@ -66,13 +68,18 @@ function Layout(props) {
 				exact
 				path='/home'
 				render={() => (
-					<div className='container'>
-						{/* This will be the home section */}
-						<NavGroupA />
-						<NavGroupB />
-						<NavGroupC />
-						<NavGroupD />
-					</div>
+					<>
+						<div className='container'>
+							{/* This will be the home section */}
+							<NavGroupA />
+							<NavGroupB />
+							<NavGroupC />
+							<NavGroupD />
+						</div>
+						<div>
+							<Home />
+						</div>
+					</>
 				)}
 			/>
 			<Route

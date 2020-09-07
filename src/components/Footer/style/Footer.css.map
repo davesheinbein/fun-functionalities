@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,gBAAgB,CAAC;ECShB,MAAM,EDRe,IAAI;ECSzB,KAAK,EDTsB,IAAI;ECwB/B,OAAO,EAAE,IAAI;EACb,cAAc,EDxBM,GAAG;ECyBvB,eAAe,EDzBU,MAAM;EC0B/B,WAAW,ED1BsB,MAAM;EACvC,gBAAgB,EAAE,MAAM;CACxB",
+    "mappings": "AAEA,AAAA,gBAAgB,CAAC;ECShB,MAAM,EDRe,IAAI;ECSzB,KAAK,EDTsB,IAAI;ECoC/B,OAAO,EAAE,IAAI;EACb,cAAc,EDpCM,GAAG;ECqCvB,eAAe,EDrCU,MAAM;ECsC/B,WAAW,EDtCsB,MAAM;EACvC,gBAAgB,EAAE,MAAM;CACxB",
     "sources": [
         "Footer.scss",
         "../../../mixins/mixins.scss"

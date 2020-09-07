@@ -17,7 +17,7 @@ import {
 	MenuFoldOutlined,
 } from '@ant-design/icons';
 import delay from 'delay';
-import userService from '../../services/userServices';
+import userService from '../../../../services/userServices';
 import 'antd/dist/antd.css';
 import './style/BoxSeven.css';
 
