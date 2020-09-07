@@ -64,83 +64,85 @@ function Layout(props) {
 					handleThemeChange={props.handleThemeChange}
 				/>
 			</div>
-			<Route
-				exact
-				path='/home'
-				render={() => (
-					<>
-						<div className='homeContainer'>
-							<Home />
-						</div>
-						<div className='homeBtns'>
-							<NavGroupA />
-							<NavGroupB />
-							<NavGroupC />
-							<NavGroupD />
-						</div>
-					</>
-				)}
-			/>
-			<Route
-				exact
-				path='/boxGroupA'
-				render={() => (
-					<>
-						<NavHomeA />
-						<div className='container'>
-							<BoxOne />
-							<BoxTwo />
-							<BoxThree />
-							<BoxSeven />
-						</div>
-					</>
-				)}
-			/>
-			<Route
-				exact
-				path='/boxGroupB'
-				render={() => (
-					<>
-						<NavHomeB />
-						<div className='container'>
-							<BoxEight />
-							<BoxFour />
-							<BoxFive />
-							<BoxSix />
-						</div>
-					</>
-				)}
-			/>
-			<Route
-				exact
-				path='/boxGroupC'
-				render={() => (
-					<>
-						<NavHomeC />
-						<div className='container'>
-							<BoxNine />
-							<BoxTen />
-							<BoxEleven />
-							<BoxTwelve />
-						</div>
-					</>
-				)}
-			/>
-			<Route
-				exact
-				path='/boxGroupD'
-				render={() => (
-					<>
-						<NavHomeD />
-						<div className='container'>
-							<BoxThirteen />
-							<BoxFourteen />
-							<BoxFifteen />
-							<BoxSixteen />
-						</div>
-					</>
-				)}
-			/>
+			<Switch>
+				<Route
+					exact
+					path='/home'
+					render={() => (
+						<>
+							<div className='homeContainer'>
+								<Home />
+							</div>
+							<div className='homeBtns'>
+								<NavGroupA />
+								<NavGroupB />
+								<NavGroupC />
+								<NavGroupD />
+							</div>
+						</>
+					)}
+				/>
+				<Route
+					exact
+					path='/boxGroupA'
+					render={() => (
+						<>
+							<NavHomeA />
+							<div className='container'>
+								<BoxOne />
+								<BoxTwo />
+								<BoxThree />
+								<BoxSeven />
+							</div>
+						</>
+					)}
+				/>
+				<Route
+					exact
+					path='/boxGroupB'
+					render={() => (
+						<>
+							<NavHomeB />
+							<div className='container'>
+								<BoxEight />
+								<BoxFour />
+								<BoxFive />
+								<BoxSix />
+							</div>
+						</>
+					)}
+				/>
+				<Route
+					exact
+					path='/boxGroupC'
+					render={() => (
+						<>
+							<NavHomeC />
+							<div className='container'>
+								<BoxNine />
+								<BoxTen />
+								<BoxEleven />
+								<BoxTwelve />
+							</div>
+						</>
+					)}
+				/>
+				<Route
+					exact
+					path='/boxGroupD'
+					render={() => (
+						<>
+							<NavHomeD />
+							<div className='container'>
+								<BoxThirteen />
+								<BoxFourteen />
+								<BoxFifteen />
+								<BoxSixteen />
+							</div>
+						</>
+					)}
+				/>
+			</Switch>
 			<div className='footer'>
 				<Footer />
 			</div>
