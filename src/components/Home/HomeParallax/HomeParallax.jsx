@@ -9,7 +9,7 @@ const calc = (x, y) => [
 
 // blob
 const trans1 = (x, y) =>
-	`translate3d(${x / 8 - 200}px,${y / 8}px,0)`;
+	`translate3d(${x / 3 - 200}px,${y / 8}px,0)`;
 // blob
 const trans2 = (x, y) =>
 	`translate3d(${x / 2 + 35}px,${y / 2 - 230}px,0)`;
@@ -21,10 +21,13 @@ const trans4 = (x, y) =>
 	`translate3d(${x / 3 + 400}px,${y / 2 - 50}px,0)`;
 // girl
 const trans5 = (x, y) =>
-	`translate3d(${x / 3.5 + 50}px,${y / 2 + 50}px,0)`;
+	`translate3d(${x / 3.5 + 50}px,${y / 2 - 50}px,0)`;
 // tree
 const trans6 = (x, y) =>
 	`translate3d(${x / 2 + 400}px,${y / 3 - 100}px,0)`;
+// tree
+const trans7 = (x, y) =>
+	`translate3d(${x / 2 + 200}px,${y / 3 - 250}px,0)`;
 
 function HomeParallax() {
 	const [props, set] = useSpring(() => ({
@@ -61,6 +64,10 @@ function HomeParallax() {
 			<animated.div
 				class='card6'
 				style={{ transform: props.xy.interpolate(trans6) }}
+			/>
+			<animated.div
+				class='card7'
+				style={{ transform: props.xy.interpolate(trans7) }}
 			/>
 		</div>
 	);

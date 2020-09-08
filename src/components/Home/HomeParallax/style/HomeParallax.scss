@@ -3,7 +3,8 @@
 .card3,
 .card4,
 .card5,
-.card6 {
+.card6,
+.card7 {
 	position: absolute;
 	margin-left: 25vw;
 	margin-top: 20vh;
@@ -14,6 +15,7 @@
 	will-change: transform;
 }
 
+// Blog
 .card1 {
 	min-width: 60ch;
 	min-height: 60ch;
@@ -24,6 +26,7 @@
 	background-image: url(../../../../images/blob.png);
 }
 
+// Blog
 .card2 {
 	min-width: 60ch;
 	min-height: 60ch;
@@ -34,29 +37,42 @@
 	background-image: url(../../../../images/blob.png);
 }
 
+// Computer
 .card3 {
 	width: 25ch;
 	height: 32ch;
+	z-index: 2;
 	background-image: url(../../../../images/computer.png);
 }
 
+// Guy
 .card4 {
 	width: 25ch;
 	height: 45ch;
+	z-index: 3;
 	background-image: url(../../../../images/guy.png);
 	z-index: 3;
 }
 
+// Girl
 .card5 {
 	width: 25ch;
 	height: 45ch;
+	z-index: 3;
 	background-image: url(../../../../images/girl.png);
 }
-
+// Tree
 .card6 {
 	width: 25ch;
 	height: 36ch;
 	background-image: url(../../../../images/tree.png);
+}
+// Blackboard
+.card7 {
+	width: 60ch;
+	height: 60ch;
+	z-index: 1;
+	background-image: url(https://image.flaticon.com/icons/svg/2135/2135039.svg);
 }
 
 .container {
