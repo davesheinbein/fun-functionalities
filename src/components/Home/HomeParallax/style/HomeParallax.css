@@ -60,6 +60,7 @@
 .card6 {
   width: 25ch;
   height: 36ch;
+  z-index: 2;
   background-image: url(../../../../images/tree.png);
 }
 
@@ -67,7 +68,7 @@
   width: 60ch;
   height: 60ch;
   z-index: 1;
-  background-image: url(https://image.flaticon.com/icons/svg/2135/2135039.svg);
+  background-image: url(../../../../images/blackboard.png);
 }
 
 .container {

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Layout from '../../components/Layout/Layout';
 import { createGlobalStyle } from 'styled-components';
-import { Route, Switch } from 'react-router-dom';
 import './style/App.css';
 
 const GlobalStyle = createGlobalStyle`
@@ -90,6 +89,7 @@ ${(props) => {
 }}
 `;
 
+// Icons made by https://www.flaticon.com/authors/inipagistudio - https://www.flaticon.com/
 class App extends Component {
 	/*--- State ---*/
 	constructor(props) {
