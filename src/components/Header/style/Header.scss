@@ -1,7 +1,7 @@
 @import '../../../mixins/mixins.scss';
 
 .navbarContainer {
-	z-index: 10;
+	z-index: 10000;
 	@include heightWidth(4vh, 100%);
 	@include flexCenter(row, center, space-between);
 	@include topLeftAbsolute(0%, 0%);

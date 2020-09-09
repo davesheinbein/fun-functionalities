@@ -1,9 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,gBAAgB,CAAC;EAChB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;ECuBV,OAAO,EAAE,IAAI;EACb,cAAc,EDvBM,GAAG;ECwBvB,eAAe,EDxBU,MAAM;ECyB/B,WAAW,EDzBsB,MAAM;ECMvC,MAAM,EDLe,IAAI;ECMzB,KAAK,EDNsB,IAAI;EAC5B,UAAU,EAAE,OAAmB;CAClC",
+    "mappings": "AAEA,AAAA,gBAAgB,CAAC;EAChB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;ECmCV,OAAO,EAAE,IAAI;EACb,cAAc,EDnCM,GAAG;ECoCvB,eAAe,EDpCU,MAAM;ECqC/B,WAAW,EDrCsB,MAAM;ECMvC,MAAM,EDLe,IAAI;ECMzB,KAAK,EDNsB,IAAI;EAC/B,UAAU,EAAE,OAAmB;CAC/B",
     "sources": [
         "BoxNine.scss",
-        "../../../mixins/mixins.scss"
+        "../../../../../mixins/mixins.scss"
     ],
     "names": [],
     "file": "BoxNine.css"

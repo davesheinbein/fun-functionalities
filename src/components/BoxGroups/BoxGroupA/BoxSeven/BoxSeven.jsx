@@ -71,7 +71,6 @@ const items = [
 					alignContent: 'center',
 					margin: 0,
 				}}
-				className='icon'
 				id='userIcon'
 			/>
 			Email
@@ -107,7 +106,6 @@ const items = [
 					justifyContent: 'center',
 					alignContent: 'center',
 				}}
-				className='icon'
 				id='passwordIcon'
 			/>
 			Password

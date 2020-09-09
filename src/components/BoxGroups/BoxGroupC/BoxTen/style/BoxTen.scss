@@ -1,4 +1,5 @@
-@import '../../../mixins/mixins.scss';
+@import '../../../../../mixins/mixins.scss';
+
 .auto-main {
   @include heightWidth(100%, 100%);
   @include flexCenter(column, center, center);

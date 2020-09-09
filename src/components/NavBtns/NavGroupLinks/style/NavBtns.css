@@ -15,57 +15,58 @@
 .NavLink .rightTriangle {
   position: absolute;
   top: 41.75%;
-  right: 1%;
-  -webkit-transform: translateX(-41.75%, -1%);
-          transform: translateX(-41.75%, -1%);
-  width: 0;
-  height: 0;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-left: 60px solid rgba(0, 0, 0, 0.5);
+  right: -3vw;
+  -webkit-transform: translateX(-41.75%, -3vw);
+          transform: translateX(-41.75%, -3vw);
+  height: 50px;
+  width: 100px;
+  border-radius: 100px 100px 0 0;
+  -webkit-transform: rotateZ(270deg);
+          transform: rotateZ(270deg);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 2000;
 }
 
 .NavLink .rightTriangle:hover {
-  border-left: 60px solid #19ffff;
+  background: rgba(25, 255, 255, 0.5);
 }
 
 .NavLink .leftTriangle {
   position: absolute;
   top: 41.75%;
-  left: 0%;
-  -webkit-transform: translateX(-41.75%, 0%);
-          transform: translateX(-41.75%, 0%);
-  width: 0;
-  height: 0;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-right: 60px solid rgba(0, 0, 0, 0.5);
+  left: -3vw;
+  -webkit-transform: translateX(-41.75%, -3vw);
+          transform: translateX(-41.75%, -3vw);
+  height: 50px;
+  width: 100px;
+  border-radius: 100px 100px 0 0;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 2000;
 }
 
 .NavLink .leftTriangle:hover {
-  border-right: 60px solid #19ffff;
+  background: rgba(25, 255, 255, 0.5);
 }
 
 .NavLink .bottomTriangle {
   position: absolute;
-  bottom: -0.75%;
+  bottom: 2%;
   left: 46.5%;
-  -webkit-transform: translateX(-0.75%, -46.5%);
-          transform: translateX(-0.75%, -46.5%);
-  width: 0;
-  height: 0;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-right: 60px solid rgba(0, 0, 0, 0.5);
-  -webkit-transform: rotateZ(270deg);
-          transform: rotateZ(270deg);
+  -webkit-transform: translateX(2%, -46.5%);
+          transform: translateX(2%, -46.5%);
+  height: 50px;
+  width: 100px;
+  border-radius: 100px 100px 0 0;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 2000;
 }
 
 .NavLink .bottomTriangle:hover {
-  border-right: 60px solid #19ffff;
+  background: rgba(25, 255, 255, 0.5);
 }
 
 .NavLink .topTriangle {
@@ -74,17 +75,16 @@
   left: 46.5%;
   -webkit-transform: translateX(-1vh, -46.5%);
           transform: translateX(-1vh, -46.5%);
-  width: 0;
-  height: 0;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-right: 60px solid rgba(0, 0, 0, 0.5);
-  -webkit-transform: rotateZ(90deg);
-          transform: rotateZ(90deg);
+  height: 50px;
+  width: 100px;
+  border-radius: 100px 100px 0 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 2000;
 }
 
 .NavLink .topTriangle:hover {
-  border-right: 60px solid #19ffff;
+  background: rgba(25, 255, 255, 0.5);
 }
 /*# sourceMappingURL=NavBtns.css.map */

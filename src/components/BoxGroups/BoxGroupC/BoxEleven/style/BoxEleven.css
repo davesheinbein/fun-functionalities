@@ -1,4 +1,9 @@
-div {
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.boxEleven {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,5 +19,33 @@ div {
           align-items: center;
   height: 100%;
   width: 100%;
+  background: lightblue;
+}
+
+.boxEleven .boxElevenContainer {
+  grid-gap: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.boxEleven .boxElevenContainer:hover {
+  border-radius: 50%;
+}
+
+.boxEleven .boxElevenContainer .boxElevenItem {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 5px;
+  will-change: transform, opacity;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.boxEleven .boxElevenContainer .boxElevenItem:hover {
+  border-radius: 50%;
 }
 /*# sourceMappingURL=BoxEleven.css.map */

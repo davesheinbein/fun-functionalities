@@ -1,5 +1,5 @@
 .navbarContainer {
-  z-index: 10;
+  z-index: 10000;
   height: 4vh;
   width: 100%;
   display: -webkit-box;

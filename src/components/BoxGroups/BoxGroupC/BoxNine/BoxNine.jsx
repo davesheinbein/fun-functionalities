@@ -14,8 +14,10 @@ function BoxNine() {
 					duration: getRandomInt(10),
 					loop: Infinity,
 				}}
-				size={160}
-				background={'#fff'}
+				size={300}
+				background={
+					'radial-gradient(circle, rgba(208,239,255,1) 0%, rgba(0,240,255,1) 100%)'
+				}
 				radius={40}
 			/>
 
@@ -25,8 +27,10 @@ function BoxNine() {
 					duration: getRandomInt(10),
 					loop: Infinity,
 				}}
-				size={120}
-				background={'#333333'}
+				size={200}
+				background={
+					'radial-gradient(circle, rgba(239,255,208,1) 0%, rgba(11,255,0,1) 100%)'
+				}
 				radius={30}
 			/>
 
@@ -36,8 +40,10 @@ function BoxNine() {
 					duration: getRandomInt(10),
 					loop: Infinity,
 				}}
-				size={80}
-				background={'#555555'}
+				size={125}
+				background={
+					'radial-gradient(circle, rgba(210,208,255,1) 0%, rgba(82,0,255,1) 100%)'
+				}
 				radius={20}
 			/>
 			<Frame
@@ -46,8 +52,10 @@ function BoxNine() {
 					duration: getRandomInt(10),
 					loop: Infinity,
 				}}
-				size={45}
-				background={'#647382'}
+				size={75}
+				background={
+					'radial-gradient(circle, rgba(255,225,208,1) 0%, rgba(255,124,0,1) 100%)'
+				}
 				radius={10}
 			/>
 
@@ -57,8 +65,10 @@ function BoxNine() {
 					duration: getRandomInt(10),
 					loop: Infinity,
 				}}
-				size={25}
-				background={'#739439'}
+				size={45}
+				background={
+					'radial-gradient(circle, rgba(255,208,244,1) 0%, rgba(255,0,79,1) 100%)'
+				}
 				radius={5}
 			/>
 
@@ -68,8 +78,10 @@ function BoxNine() {
 					duration: getRandomInt(10),
 					loop: Infinity,
 				}}
-				size={10}
-				background={'#498534'}
+				size={20}
+				background={
+					'radial-gradient(circle, rgba(255,208,214,1) 0%, rgba(0,255,236,1) 100%)'
+				}
 				radius={3}
 			/>
 		</div>

@@ -18,12 +18,13 @@
 
 .boxFifteenContainer #textBox {
   color: aqua;
-  font-size: 20px;
+  font-size: 80px;
+  line-height: 80px;
   position: absolute;
-  top: 88%;
-  left: 63%;
-  -webkit-transform: translate(88%, 63%);
-          transform: translate(88%, 63%);
+  top: 25%;
+  left: 25%;
+  -webkit-transform: translate(25%, 25%);
+          transform: translate(25%, 25%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,5 +57,6 @@
 
 .boxFifteenContainer #textBox:hover {
   color: orange;
+  pointer-events: none;
 }
 /*# sourceMappingURL=BoxFifteen.css.map */

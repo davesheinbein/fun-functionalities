@@ -3,57 +3,55 @@
 
 .NavLink {
 	.rightHomeTriangle {
-		@include topRightAbsolute(41.75%, 1%);
-		transform: translateX(-41.75%, -1%);
-		width: 0;
-		height: 0;
-		border-top: 60px solid transparent;
-		border-bottom: 60px solid transparent;
-		border-left: 60px solid rgba(0, 0, 0, 0.5);
+		@include topRightAbsolute(41.75%, -3vw);
+		transform: translateX(-41.75%, -3vw);
+		height: 50px;
+		width: 100px;
+		border-radius: 100px 100px 0 0;
+		transform: rotateZ(270deg);
+		background: rgba(0, 0, 0, 0.5);
 		z-index: 2000;
 		&:hover {
-			border-left: 60px solid rgba(25, 255, 255, 1);
+			background: rgba(25, 255, 255, 0.5);
 		}
 	}
 	.leftHomeTriangle {
-		@include topLeftAbsolute(41.75%, 0%);
-		transform: translateX(-41.75%, -0%);
-		width: 0;
-		height: 0;
-		border-top: 60px solid transparent;
-		border-bottom: 60px solid transparent;
-		border-right: 60px solid rgba(0, 0, 0, 0.5);
+		@include topLeftAbsolute(41.75%, -3vw);
+		transform: translateX(-41.75%, -3vw);
+		height: 50px;
+		width: 100px;
+		border-radius: 100px 100px 0 0;
+		transform: rotateZ(90deg);
+		background: rgba(0, 0, 0, 0.5);
 		z-index: 2000;
 		&:hover {
-			border-right: 60px solid rgba(25, 255, 255, 1);
+			background: rgba(25, 255, 255, 0.5);
 		}
 	}
 	.bottomHomeTriangle {
-		@include bottomLeftAbsolute(-1%, 46.5%);
-		transform: translateX(-1%, -46.5%);
-		width: 0;
-		height: 0;
-		border-top: 60px solid transparent;
-		border-bottom: 60px solid transparent;
-		border-right: 60px solid rgba(0, 0, 0, 0.5);
-		transform: rotateZ(270deg);
+		@include bottomLeftAbsolute(2%, 46.5%);
+		transform: translateX(2%, -46.5%);
+		height: 50px;
+		width: 100px;
+		border-radius: 100px 100px 0 0;
+		transform: rotateZ(0deg);
+		background: rgba(0, 0, 0, 0.5);
 		z-index: 2000;
 		&:hover {
-			border-right: 60px solid rgba(25, 255, 255, 1);
+			background: rgba(25, 255, 255, 0.5);
 		}
 	}
 	.topHomeTriangle {
-		@include topLeftAbsolute(1vh, 46.5%);
-		transform: translateX(-1vh, -46.5%);
-		width: 0;
-		height: 0;
-		border-top: 60px solid transparent;
-		border-bottom: 60px solid transparent;
-		border-right: 60px solid rgba(0, 0, 0, 0.5);
-		transform: rotateZ(90deg);
+		@include topLeftAbsolute(4vh, 46.5%);
+		transform: translateX(4vh, -46.5%);
+		height: 50px;
+		width: 100px;
+		border-radius: 100px 100px 0 0;
+		transform: rotateZ(180deg);
+		background: rgba(0, 0, 0, 0.5);
 		z-index: 2000;
 		&:hover {
-			border-right: 60px solid rgba(25, 255, 255, 1);
+			background: rgba(25, 255, 255, 0.5);
 		}
 	}
 }

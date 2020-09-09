@@ -9,7 +9,8 @@
 	.headerContainer {
 		@include heightWidth(4vh, 100%);
 		@include flexCenter(row, center, center);
-		z-index: 10;
+		// z-index: 10000;
+		// background: blue;
 		grid-column: 1 / 5;
 	}
 	.container {

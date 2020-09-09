@@ -25,6 +25,7 @@ const BoxFourteen = () => (
 					<ul className='nav'>
 						<NavLink to='/red'>Red</NavLink>
 						<NavLink to='/green'>Green</NavLink>
+						<NavLink to='/blue'>Blue</NavLink>
 					</ul>
 					<div className='content'>
 						<Transition
@@ -58,6 +59,12 @@ const BoxFourteen = () => (
 										path='/green'
 										render={(props) =>
 											Green({ ...props, style })
+										}
+									/>
+									<Route
+										path='/blue'
+										render={(props) =>
+											Blue({ ...props, style })
 										}
 									/>
 									<Route
@@ -185,6 +192,59 @@ const UltraGreen = ({ match: { params }, style }) => (
 		className='subRoute'
 		style={{ ...style, background: `#388E3C` }}>
 		Ultra Green
+	</animated.div>
+);
+
+const Blue = ({ style }) => (
+	<animated.div
+		className='mainRoute'
+		style={{ ...style, background: `blue ` }}>
+		<div className='mainRouteItem'>
+			<p>Blue</p>
+			<NavLink to='/blue/ultra'>Ultra Blue</NavLink>
+		</div>
+		<Route
+			render={({ location }) => (
+				<div>
+					<Transition
+						native
+						items={location}
+						keys={location.pathname}
+						from={{
+							transform: 'translateY(100px)',
+							opacity: 0,
+						}}
+						enter={{
+							transform: 'translateY(0px)',
+							opacity: 1,
+						}}
+						leave={{
+							transform: 'translateY(100px)',
+							opacity: 0,
+						}}>
+						{(loc) => (style) => (
+							<Switch location={loc}>
+								<Route
+									exact
+									path='/blue/ultra'
+									render={(props) =>
+										UltraBlue({ ...props, style })
+									}
+								/>
+							</Switch>
+						)}
+					</Transition>
+				</div>
+			)}
+		/>
+	</animated.div>
+);
+
+const UltraBlue = ({ match: { params }, style }) => (
+	<animated.div
+		className='subRoute'
+		style={{ ...style, background: `darkblue ` }}>
+		Ultra Blue
 	</animated.div>
 );
 

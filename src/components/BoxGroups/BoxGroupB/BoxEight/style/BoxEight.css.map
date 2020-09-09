@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAC;EACJ,MAAM,EAAE,OAAO;EACf,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,gBAAgB,EAAE,OAAO;EACzB,WAAW,EAAE,SAAS;CACtB",
+    "mappings": "AAEA,AAAA,IAAI,CAAC;EACJ,MAAM,EAAE,OAAO;EACf,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,gBAAgB,EAAE,OAAO;EACzB,WAAW,EAAE,SAAS;CACtB",
     "sources": [
-        "BoxEight.scss"
+        "BoxEight.scss",
+        "../../../../../mixins/mixins.scss"
     ],
     "names": [],
     "file": "BoxEight.css"
