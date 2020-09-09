@@ -69,7 +69,7 @@ function Layout(props) {
 			enter: { opacity: 1, transform: 'rotateZ(0deg)' },
 			leave: {
 				opacity: 0,
-				transform: 'rotateZ(360deg)',
+				transform: 'rotateZ(-360deg)',
 			},
 		}
 	);
@@ -84,7 +84,7 @@ function Layout(props) {
 			enter: { opacity: 1, transform: 'translate(0%, 0%)' },
 			leave: {
 				opacity: 0,
-				transform: 'translate(100%, 0%)',
+				transform: 'translate(-100%, 0%)',
 			},
 		}
 	);
@@ -109,12 +109,12 @@ function Layout(props) {
 		{
 			from: {
 				opacity: 0,
-				transform: 'translate(100%, 0%)',
+				transform: 'translate(0%, 100%)',
 			},
 			enter: { opacity: 1, transform: 'translate(0%, 0%)' },
 			leave: {
 				opacity: 0,
-				transform: 'translate(100%, 0%)',
+				transform: 'translate(0%, 100%)',
 			},
 		}
 	);

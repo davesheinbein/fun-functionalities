@@ -21,11 +21,12 @@
 		@include heightWidth(100%, 100%);
 		@include flexCenter(row, center, center);
 		@include topLeftAbsolute(0%, 0%);
+		pointer-events: none;
 		.alertNorrisFactContainer {
 			@include heightWidth(100%, 100%);
 			@include flexCenter(row, center, center);
 			@include topLeftAbsolute(0%, 0%);
-			z-index: 3;
+			z-index: 10;
 			background-color: burlywood;
 			color: #333333;
 			resize: both;
@@ -42,7 +43,12 @@
 				color: #333333;
 				font-size: 30px;
 				text-align: center;
+				pointer-events: auto;
+				line-height: 42px;
+				border-radius: 5px;
+				transition: all 0.5s ease-in-out;
 				&:hover {
+					border-radius: 50%;
 					background-color: rgba(254, 152, 152, 0.95);
 					border: 1px solid rgba(0, 0, 0, 0.5);
 				}
@@ -204,11 +210,11 @@
 		&:before {
 			content: '';
 			position: absolute;
-			bottom: $push-size/5.5;
-			left: $push-size/6.6;
+			bottom: $push-size/4.5;
+			left: $push-size/2.4;
 			display: block;
-			width: $push-size/2.2;
-			height: $push-size/3.3;
+			width: $push-size/1.5;
+			height: $push-size/4.3;
 			background: transparentize(
 				lighten($push-color, 30%),
 				0.8

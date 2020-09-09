@@ -75,6 +75,7 @@
   position: absolute;
   top: 0%;
   left: 0%;
+  pointer-events: none;
 }
 
 .btnbackgroundContainer .alertContainer .alertNorrisFactContainer {
@@ -96,7 +97,7 @@
   position: absolute;
   top: 0%;
   left: 0%;
-  z-index: 3;
+  z-index: 10;
   background-color: burlywood;
   color: #333333;
   resize: both;
@@ -131,9 +132,15 @@
   color: #333333;
   font-size: 30px;
   text-align: center;
+  pointer-events: auto;
+  line-height: 42px;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .btnbackgroundContainer .alertContainer .alertNorrisFactContainer .close:hover {
+  border-radius: 50%;
   background-color: rgba(254, 152, 152, 0.95);
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
@@ -187,11 +194,11 @@
 .btnbackgroundContainer .push--skeuo:before {
   content: '';
   position: absolute;
-  bottom: 43.63636px;
-  left: 36.36364px;
+  bottom: 53.33333px;
+  left: 100px;
   display: block;
-  width: 109.09091px;
-  height: 72.72727px;
+  width: 160px;
+  height: 55.81395px;
   background: rgba(247, 133, 110, 0.2);
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(250, 173, 158, 0.3)), to(rgba(194, 41, 10, 0.1)));
   background: linear-gradient(to top, rgba(250, 173, 158, 0.3) 0%, rgba(194, 41, 10, 0.1) 100%);
