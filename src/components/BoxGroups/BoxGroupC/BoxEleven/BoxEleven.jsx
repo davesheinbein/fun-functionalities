@@ -19,7 +19,7 @@ function BoxEleven() {
 		from: { size: '20%', background: 'hotpink' },
 		to: {
 			size: open ? '100%' : '20%',
-			background: open ? 'white' : 'hotpink',
+			background: open ? 'rgba(0, 0, 0, .25)' : 'hotpink',
 		},
 	});
 

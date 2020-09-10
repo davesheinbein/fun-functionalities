@@ -14,9 +14,18 @@
 		color: #ffffff;
 		@include flexCenter(column, center, center);
 		@include heightWidth(100%, 100%);
+		transition: all 0.5s ease-in-out;
+		&:hover {
+			transform: scale(1.1);
+		}
+		.iconText {
+			@include heightWidth(fit-content, fit-content);
+			font-size: 5rem;
+		}
 		span {
 			@include flexCenter(column, center, center);
 			@include heightWidth(100%, 100%);
+			margin: 2em 0px;
 			svg {
 				@include flexCenter(column, center, center);
 				@include heightWidth(100%, 100%);

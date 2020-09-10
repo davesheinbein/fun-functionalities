@@ -1,80 +1,48 @@
 @import '../../../../../mixins/mixins.scss';
 
-.fill {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	line-height: 0px;
-	// background: #272727;
-	.nav {
-		// padding: 0px;
-		// margin: 0px;
-		// top: 0%;
-		// left: 0%;
-		// @include heightWidth(10vh, 100%);
-		// display: flex;
-		// justify-content: center;
-		// align-items: center;
-		// background-color: lightgray;
-		// z-index: 1;
-		.navItem {
-			// display: flex;
-			// flex-direction: row;
-			// justify-content: center;
-			// align-items: center;
-			// text-align: center;
-			// align-self: center;
-			// list-style-type: none;
-			// padding: 10px;
-			// z-index: 10;
-			// @include heightWidth(100%, 100%);
-		}
-	}
-	.content {
-		// font-size: 20px;
-		// color: white;
-		// height: 100%;
-		.mainRoute {
-			// @include heightWidth(50%, 100%);
-			// display: flex;
-			// justify-content: center;
-			// align-items: flex-start;
-			.mainRouteItem {
-				// text-align: center;
-				// display: flex;
-				// flex-direction: row;
-				// justify-content: center;
-				// align-items: flex-start;
-				p {
-					// height: 50%;
+// @include heightWidth(50%, 100%);
+// @include topLeftAbsolute(0%, 0%);
+// @include flexCenter(row, center, center);
+.boxFourteenContain {
+	@include heightWidth(100%, 100%);
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+	background-color: #7ff585;
+	.trails-main {
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+		@include heightWidth(100%, 100%);
+		@include flexCenter(row, center, center);
+		.trails-container {
+			@include flexCenter(column, center, center);
+			.trails-text {
+				position: relative;
+				@include heightWidth(80px, 100%);
+				line-height: 80px;
+				color: rgba(150, 90, 62, 0.75);
+				font-size: 6em;
+				font-weight: 800;
+				font-family: 'Hanalei', cursive;
+				text-transform: uppercase;
+				will-change: transform, opacity;
+				overflow: hidden;
+				transition: all 0.5s ease-in-out;
+				&:hover {
+					color: rgba(150, 90, 62, 1);
+					font-size: 6.5em;
 				}
-				.navItem {
-					// text-align: center;
-					// align-self: center;
-					// flex: 1;
-					// list-style-type: none;
-					// padding: 10px;
-					// @include heightWidth(100%, 100%);
-					a {
-						// line-height: 20px;
-					}
+				> div {
+					overflow: hidden;
 				}
-
-				// .navItemUltra {
-				// 	margin-top: 64px;
-				// }
-			}
-			.subRoute {
-				// position: absolute;
-				// left: 0;
-				// top: 100%;
-				// width: 100%;
-				// height: 100%;
-				// display: flex;
-				// justify-content: center;
-				// align-items: center;
 			}
 		}
 	}

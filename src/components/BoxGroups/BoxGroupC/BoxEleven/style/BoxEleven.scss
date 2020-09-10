@@ -7,7 +7,11 @@
 .boxEleven {
 	@include flexCenter(row, center, center);
 	@include heightWidth(100%, 100%);
-	background: lightblue;
+	background: linear-gradient(
+		to top,
+		#a18cd1 0%,
+		#fbc2eb 100%
+	);
 	.boxElevenContainer {
 		grid-gap: 5px;
 		padding: 5px;

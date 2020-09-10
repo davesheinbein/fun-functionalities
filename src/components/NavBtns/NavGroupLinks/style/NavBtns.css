@@ -12,7 +12,7 @@
   height: fit-content;
 }
 
-.NavLink .rightTriangle {
+.NavLink .rightCircle {
   position: absolute;
   top: 41.75%;
   right: -3vw;
@@ -29,15 +29,11 @@
   transition: all 1s ease-in-out;
 }
 
-.NavLink .rightTriangle:hover {
+.NavLink .rightCircle:hover {
   background: rgba(25, 255, 255, 0.5);
-  -webkit-transform: rotateZ(270deg);
-          transform: rotateZ(270deg);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
-.NavLink .leftTriangle {
+.NavLink .leftCircle {
   position: absolute;
   top: 41.75%;
   left: -3vw;
@@ -54,20 +50,16 @@
   transition: all 1s ease-in-out;
 }
 
-.NavLink .leftTriangle:hover {
+.NavLink .leftCircle:hover {
   background: rgba(25, 255, 255, 0.5);
-  -webkit-transform: rotateZ(90deg);
-          transform: rotateZ(90deg);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
-.NavLink .bottomTriangle {
+.NavLink .bottomCircle {
   position: absolute;
-  bottom: 0%;
+  bottom: 4%;
   left: 46.5%;
-  -webkit-transform: translateX(0%, -46.5%);
-          transform: translateX(0%, -46.5%);
+  -webkit-transform: translateX(4%, -46.5%);
+          transform: translateX(4%, -46.5%);
   height: 50px;
   width: 100px;
   border-radius: 100px 100px 0 0;
@@ -79,15 +71,11 @@
   transition: all 1s ease-in-out;
 }
 
-.NavLink .bottomTriangle:hover {
+.NavLink .bottomCircle:hover {
   background: rgba(25, 255, 255, 0.5);
-  -webkit-transform: rotateZ(0deg);
-          transform: rotateZ(0deg);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
-.NavLink .topTriangle {
+.NavLink .topCircle {
   position: absolute;
   top: 4vh;
   left: 46.5%;
@@ -104,9 +92,7 @@
   transition: all 1s ease-in-out;
 }
 
-.NavLink .topTriangle:hover {
+.NavLink .topCircle:hover {
   background: rgba(25, 255, 255, 0.5);
-  -webkit-transform: scaleY(1.1);
-          transform: scaleY(1.1);
 }
 /*# sourceMappingURL=NavBtns.css.map */

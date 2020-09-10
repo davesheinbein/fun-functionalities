@@ -5,7 +5,7 @@ import './style/NavBtns.css';
 export default function NavGroupB() {
 	return (
 		<Link to='/boxGroupB' className='NavLink'>
-			<div className='bottomTriangle'></div>
+			<div className='bottomCircle'></div>
 		</Link>
 	);
 }

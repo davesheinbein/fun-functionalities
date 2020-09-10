@@ -5,7 +5,7 @@ import './style/NavBtns.css';
 export default function NavGroupD() {
 	return (
 		<Link to='/boxGroupD' className='NavLink'>
-			<div className='topTriangle'></div>
+			<div className='topCircle'></div>
 		</Link>
 	);
 }

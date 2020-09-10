@@ -1,7 +1,40 @@
-.fill {
-  position: relative;
-  width: 100%;
+.boxFourteenContain {
   height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  background-color: #7ff585;
+}
+
+.boxFourteenContain .trails-main {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxFourteenContain .trails-main .trails-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,6 +42,36 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  line-height: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxFourteenContain .trails-main .trails-container .trails-text {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+  color: rgba(150, 90, 62, 0.75);
+  font-size: 6em;
+  font-weight: 800;
+  font-family: 'Hanalei', cursive;
+  text-transform: uppercase;
+  will-change: transform, opacity;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.boxFourteenContain .trails-main .trails-container .trails-text:hover {
+  color: #965a3e;
+  font-size: 6.5em;
+}
+
+.boxFourteenContain .trails-main .trails-container .trails-text > div {
+  overflow: hidden;
 }
 /*# sourceMappingURL=BoxFourteen.css.map */

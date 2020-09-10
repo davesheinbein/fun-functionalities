@@ -27,7 +27,7 @@ import BoxGroupC from '../BoxGroups/BoxGroupC/BoxGroupC';
 
 // Box Group D
 // Page effect - Box Thirteen
-// Color Components generator - Box Fourteen
+// ?? - Box Fourteen
 // Mouse effect - Box Fifteen
 // Email - Nodemailer - Box Sixteen
 import BoxGroupD from '../BoxGroups/BoxGroupD/BoxGroupD';
@@ -39,10 +39,7 @@ import Home from '../Home/Home';
 
 // Navigation
 // Nav Home
-import NavHomeA from '../NavBtns/NavHomeBtns/NavHomeA';
-import NavHomeB from '../NavBtns/NavHomeBtns/NavHomeB';
-import NavHomeC from '../NavBtns/NavHomeBtns/NavHomeC';
-import NavHomeD from '../NavBtns/NavHomeBtns/NavHomeD';
+import NavHome from '../NavBtns/NavHomeBtns/NavHomeBtn';
 // Nav Groups
 import NavGroupA from '../NavBtns/NavGroupLinks/NavGroupA';
 import NavGroupB from '../NavBtns/NavGroupLinks/NavGroupB';
@@ -58,28 +55,7 @@ function Layout(props) {
 	const { location } = useContext(__RouterContext);
 	console.log('location', location);
 	console.log('__RouterContext', __RouterContext);
-	const transitionsHome = useTransition(
-		location,
-		(location) => location.pathname,
-		{
-			from: {
-				opacity: 0,
-				transform: 'rotateZ(360deg)',
-				zIndex: 2,
-			},
-			enter: {
-				opacity: 1,
-				transform: 'rotateZ(0deg)',
-				zIndex: 2,
-			},
-			leave: {
-				opacity: 0,
-				transform: 'rotateZ(-360deg)',
-				zIndex: 2,
-			},
-		}
-	);
-	const transitionsLeft = useTransition(
+	const transition = useTransition(
 		location,
 		(location) => location.pathname,
 		{
@@ -91,59 +67,6 @@ function Layout(props) {
 			},
 			leave: {
 				opacity: 0,
-			},
-		}
-	);
-	const transitionsRight = useTransition(
-		location,
-		(location) => location.pathname,
-		{
-			from: {
-				opacity: 0,
-			},
-			enter: {
-				opacity: 1,
-			},
-			leave: {
-				opacity: 0,
-			},
-		}
-	);
-	const transitionsTop = useTransition(
-		location,
-		(location) => location.pathname,
-		{
-			from: {
-				opacity: 0,
-				transform: 'translate(0%, 100%)',
-			},
-			enter: {
-				opacity: 1,
-				transform: 'translate(0%, -180%)',
-				zIndex: 4,
-			},
-			leave: {
-				opacity: 0,
-				transform: 'translate(0%, 100%)',
-			},
-		}
-	);
-	const transitionsBottom = useTransition(
-		location,
-		(location) => location.pathname,
-		{
-			from: {
-				opacity: 0,
-				transform: 'translate(0%, -800%)',
-			},
-			enter: {
-				opacity: 1,
-				transform: 'translate(0%, -380%)',
-				zIndex: 3,
-			},
-			leave: {
-				opacity: 0,
-				transform: 'translate(0%, -800%)',
 			},
 		}
 	);
@@ -155,7 +78,7 @@ function Layout(props) {
 					handleThemeChange={props.handleThemeChange}
 				/>
 			</div>
-			{transitionsHome.map(({ item, props, key }) => (
+			{transition.map(({ item, props, key }) => (
 				<animated.div key={key} style={props}>
 					<Switch location={item}>
 						<Route
@@ -178,7 +101,7 @@ function Layout(props) {
 					</Switch>
 				</animated.div>
 			))}
-			{transitionsLeft.map(({ item, props, key }) => (
+			{transition.map(({ item, props, key }) => (
 				<animated.div key={key} style={props}>
 					<Switch location={item}>
 						<Route
@@ -187,9 +110,9 @@ function Layout(props) {
 							render={() => (
 								<div className='absoluteContainer'>
 									<div className='navHomeContainer'>
-										<NavHomeA />
+										<NavHome />
 									</div>
-									<div>
+									<div className='boxGroupsContainer'>
 										<BoxGroupA />
 									</div>
 								</div>
@@ -198,7 +121,7 @@ function Layout(props) {
 					</Switch>
 				</animated.div>
 			))}
-			{transitionsTop.map(({ item, props, key }) => (
+			{transition.map(({ item, props, key }) => (
 				<animated.div key={key} style={props}>
 					<Switch location={item}>
 						<Route
@@ -207,9 +130,9 @@ function Layout(props) {
 							render={() => (
 								<div className='absoluteContainer'>
 									<div className='navHomeContainer'>
-										<NavHomeB />
+										<NavHome />
 									</div>
-									<div>
+									<div className='boxGroupsContainer'>
 										<BoxGroupB />
 									</div>
 								</div>
@@ -218,7 +141,7 @@ function Layout(props) {
 					</Switch>
 				</animated.div>
 			))}
-			{transitionsRight.map(({ item, props, key }) => (
+			{transition.map(({ item, props, key }) => (
 				<animated.div key={key} style={props}>
 					<Switch location={item}>
 						<Route
@@ -227,9 +150,9 @@ function Layout(props) {
 							render={() => (
 								<div className='absoluteContainer'>
 									<div className='navHomeContainer'>
-										<NavHomeC />
+										<NavHome />
 									</div>
-									<div>
+									<div className='boxGroupsContainer'>
 										<BoxGroupC />
 									</div>
 								</div>
@@ -238,7 +161,7 @@ function Layout(props) {
 					</Switch>
 				</animated.div>
 			))}
-			{transitionsBottom.map(({ item, props, key }) => (
+			{transition.map(({ item, props, key }) => (
 				<animated.div key={key} style={props}>
 					<Switch location={item}>
 						<Route
@@ -247,9 +170,9 @@ function Layout(props) {
 							render={() => (
 								<div className='absoluteContainer'>
 									<div className='navHomeContainer'>
-										<NavHomeD />
+										<NavHome />
 									</div>
-									<div>
+									<div className='boxGroupsContainer'>
 										<BoxGroupD />
 									</div>
 								</div>

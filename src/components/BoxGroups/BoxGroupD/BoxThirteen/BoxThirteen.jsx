@@ -18,8 +18,8 @@ export function BoxThirteen() {
 		<div className='boxThirteenContainer'>
 			<Page
 				currentPage={0}
-				width={150}
-				height={150}
+				width={350}
+				height={350}
 				radius={30}
 				alignment='center'
 				defaultEffect={'pile'}
@@ -37,7 +37,7 @@ export function BoxThirteen() {
 				}}>
 				<Frame size={150} radius={30} background={'#111'}>
 					<div className='iconContainer'>
-						Hey
+						<div className='iconText'>Penguin</div>
 						<QqOutlined
 							style={{
 								fill: 'blue',
@@ -50,7 +50,7 @@ export function BoxThirteen() {
 				</Frame>
 				<Frame size={150} radius={30} background={'#222'}>
 					<div className='iconContainer'>
-						Smile
+						<div className='iconText'>User</div>
 						<UserOutlined
 							style={{
 								fill: 'blue',
@@ -63,7 +63,7 @@ export function BoxThirteen() {
 				</Frame>
 				<Frame size={150} radius={30} background={'#333'}>
 					<div className='iconContainer'>
-						Person
+						<div className='iconText'>Smile</div>
 						<SmileOutlined
 							style={{
 								fill: 'blue',
@@ -76,7 +76,7 @@ export function BoxThirteen() {
 				</Frame>
 				<Frame size={150} radius={30} background={'#444'}>
 					<div className='iconContainer'>
-						Hey
+						<div className='iconText'>Shirt</div>
 						<SkinOutlined
 							style={{
 								fill: 'blue',
@@ -89,7 +89,7 @@ export function BoxThirteen() {
 				</Frame>
 				<Frame size={150} radius={30} background={'#555'}>
 					<div className='iconContainer'>
-						Smile
+						<div className='iconText'>Rocket</div>
 						<RocketOutlined
 							style={{
 								fill: 'blue',
@@ -102,7 +102,7 @@ export function BoxThirteen() {
 				</Frame>
 				<Frame size={150} radius={30} background={'#666'}>
 					<div className='iconContainer'>
-						Person
+						<div className='iconText'>Cart</div>
 						<ShoppingCartOutlined
 							style={{
 								fill: 'blue',
@@ -115,7 +115,7 @@ export function BoxThirteen() {
 				</Frame>
 				<Frame size={150} radius={30} background={'#777'}>
 					<div className='iconContainer'>
-						Person
+						<div className='iconText'>Star</div>
 						<StarOutlined
 							style={{
 								fill: 'blue',
@@ -128,7 +128,7 @@ export function BoxThirteen() {
 				</Frame>
 				<Frame size={150} radius={30} background={'#888'}>
 					<div className='iconContainer'>
-						Person
+						<div className='iconText'>Wifi</div>
 						<WifiOutlined
 							style={{
 								fill: 'blue',
@@ -141,7 +141,7 @@ export function BoxThirteen() {
 				</Frame>
 				<Frame size={150} radius={30} background={'#999'}>
 					<div className='iconContainer'>
-						Person
+						<div className='iconText'>Lightning</div>
 						<ThunderboltOutlined
 							style={{
 								fill: 'blue',

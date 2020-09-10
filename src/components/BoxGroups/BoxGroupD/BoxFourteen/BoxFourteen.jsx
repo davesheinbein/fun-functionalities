@@ -1,251 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useTrail, animated } from 'react-spring';
+
 import './style/BoxFourteen.css';
-import {
-	Transition,
-	animated,
-} from 'react-spring/renderprops';
-import {
-	HashRouter as Router,
-	Switch,
-	Route,
-	Link,
-	Redirect,
-} from 'react-router-dom';
 
-const BoxFourteen = () => (
-	<Router>
-		<Route
-			render={({ location, ...rest }) => (
-				<div className='fill'>
-					<Route
-						exact
-						path='/'
-						render={() => <Redirect to='/red' />}
-					/>
-					<ul className='nav'>
-						<NavLink to='/red'>Red</NavLink>
-						<NavLink to='/green'>Green</NavLink>
-						<NavLink to='/blue'>Blue</NavLink>
-					</ul>
-					<div className='content'>
-						<Transition
-							native
-							items={location}
-							keys={location.pathname.split('/')[1]}
-							from={{
-								transform: 'translateY(100px)',
-								opacity: 0,
-							}}
-							enter={{
-								transform: 'translateY(0px)',
-								opacity: 1,
-							}}
-							leave={{
-								transform: 'translateY(100px)',
-								opacity: 0,
+const items = ['Hello', 'You!', 'Click', 'Me!'];
+const config = { mass: 5, tension: 2000, friction: 200 };
+
+function BoxFourteen() {
+	const [toggle, set] = useState(true);
+	const trail = useTrail(items.length, {
+		config,
+		opacity: toggle ? 1 : 0,
+		x: toggle ? 0 : 20,
+		height: toggle ? 80 : 0,
+		from: { opacity: 0, x: 20, height: 0 },
+	});
+
+	return (
+		<div className='boxFourteenContain'>
+			<div
+				className='trails-main'
+				onClick={() => set((state) => !state)}>
+				<div className='trails-container'>
+					{trail.map(({ x, height, ...rest }, index) => (
+						<animated.div
+							key={items[index]}
+							className='trails-text'
+							style={{
+								...rest,
+								transform: x.interpolate(
+									(x) => `translate3d(0,${x}px,0)`
+								),
 							}}>
-							{(loc, state) => (style) => (
-								<Switch
-									location={
-										state === 'update' ? location : loc
-									}>
-									<Route
-										path='/red'
-										render={(props) =>
-											Red({ ...props, style })
-										}
-									/>
-									<Route
-										path='/green'
-										render={(props) =>
-											Green({ ...props, style })
-										}
-									/>
-									<Route
-										path='/blue'
-										render={(props) =>
-											Blue({ ...props, style })
-										}
-									/>
-									<Route
-										render={() => <div>Not Found</div>}
-									/>
-								</Switch>
-							)}
-						</Transition>
-					</div>
+							<animated.div style={{ height }}>
+								{items[index]}
+							</animated.div>
+						</animated.div>
+					))}
 				</div>
-			)}
-		/>
-	</Router>
-);
-
-const NavLink = (props) => (
-	<li className='navItem'>
-		<Link
-			{...props}
-			style={{ cursor: 'pointer', color: 'inherit' }}
-		/>
-	</li>
-);
-
-const Red = ({ style }) => (
-	<animated.div
-		className='mainRoute'
-		style={{ ...style, background: `#ef5350` }}>
-		<div className='mainRouteItem'>
-			<p>Red</p>
-			<NavLink to='/red/ultra'>Ultra Red</NavLink>
+			</div>
 		</div>
-		<Route
-			render={({ location }) => (
-				<div>
-					<Transition
-						native
-						items={location}
-						keys={location.pathname}
-						from={{
-							transform: 'translateY(100px)',
-							opacity: 0,
-						}}
-						enter={{
-							transform: 'translateY(0px)',
-							opacity: 1,
-						}}
-						leave={{
-							transform: 'translateY(100px)',
-							opacity: 0,
-						}}>
-						{(loc, state) => (style) => (
-							<Switch location={loc}>
-								<Route
-									exact
-									path='/red/ultra'
-									render={(props) =>
-										UltraRed({ ...props, style })
-									}
-								/>
-							</Switch>
-						)}
-					</Transition>
-				</div>
-			)}
-		/>
-	</animated.div>
-);
-
-const UltraRed = ({ style }) => (
-	<animated.div
-		className='subRoute'
-		style={{ ...style, background: '#d32f2f' }}>
-		Ultra Red
-	</animated.div>
-);
-
-const Green = ({ style }) => (
-	<animated.div
-		className='mainRoute'
-		style={{ ...style, background: `#4CAF50` }}>
-		<div className='mainRouteItem'>
-			<p>Green</p>
-			<NavLink to='/green/ultra'>Ultra Green</NavLink>
-		</div>
-		<Route
-			render={({ location }) => (
-				<div>
-					<Transition
-						native
-						items={location}
-						keys={location.pathname}
-						from={{
-							transform: 'translateY(100px)',
-							opacity: 0,
-						}}
-						enter={{
-							transform: 'translateY(0px)',
-							opacity: 1,
-						}}
-						leave={{
-							transform: 'translateY(100px)',
-							opacity: 0,
-						}}>
-						{(loc) => (style) => (
-							<Switch location={loc}>
-								<Route
-									exact
-									path='/green/ultra'
-									render={(props) =>
-										UltraGreen({ ...props, style })
-									}
-								/>
-							</Switch>
-						)}
-					</Transition>
-				</div>
-			)}
-		/>
-	</animated.div>
-);
-
-const UltraGreen = ({ match: { params }, style }) => (
-	<animated.div
-		className='subRoute'
-		style={{ ...style, background: `#388E3C` }}>
-		Ultra Green
-	</animated.div>
-);
-
-const Blue = ({ style }) => (
-	<animated.div
-		className='mainRoute'
-		style={{ ...style, background: `blue ` }}>
-		<div className='mainRouteItem'>
-			<p>Blue</p>
-			<NavLink to='/blue/ultra'>Ultra Blue</NavLink>
-		</div>
-		<Route
-			render={({ location }) => (
-				<div>
-					<Transition
-						native
-						items={location}
-						keys={location.pathname}
-						from={{
-							transform: 'translateY(100px)',
-							opacity: 0,
-						}}
-						enter={{
-							transform: 'translateY(0px)',
-							opacity: 1,
-						}}
-						leave={{
-							transform: 'translateY(100px)',
-							opacity: 0,
-						}}>
-						{(loc) => (style) => (
-							<Switch location={loc}>
-								<Route
-									exact
-									path='/blue/ultra'
-									render={(props) =>
-										UltraBlue({ ...props, style })
-									}
-								/>
-							</Switch>
-						)}
-					</Transition>
-				</div>
-			)}
-		/>
-	</animated.div>
-);
-
-const UltraBlue = ({ match: { params }, style }) => (
-	<animated.div
-		className='subRoute'
-		style={{ ...style, background: `darkblue ` }}>
-		Ultra Blue
-	</animated.div>
-);
+	);
+}
 
 export default BoxFourteen;

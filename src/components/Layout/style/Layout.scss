@@ -2,7 +2,7 @@
 
 .layoutContatainer {
 	position: relative;
-	@include heightWidth(100vh, 100vw);
+	@include heightWidth(100%, 100vw);
 	@include flexCenter(column, center, center);
 	margin: 0px;
 	padding: 0px;
@@ -22,20 +22,24 @@
 		// margin-top: 8vh;
 		z-index: 9;
 	}
-	.relativeContainer {
-		// position: relative;
-		// // z-index: 20;
-		// pointer-events: none;
+	.absoluteContainer {
+		@include topLeftAbsolute(0%, 0%);
+		@include heightWidth(100%, 100vw);
 		.homeContainer {
 			@include heightWidth(100%, 100%);
 			@include flexCenter(column, center, center);
-
 		}
 		.homeBtns {
 			pointer-events: auto;
 			@include heightWidth(100%, 100%);
-			@include topLeftAbsolute(0%, 0%);
-			z-index: 200;
+		}
+		.navHomeContainer {
+			@include heightWidth(fit-content, fit-content);
+			z-index: 200000;
+		}
+
+		.boxGroupsContainer {
+			@include heightWidth(100%, 100%);
 		}
 	}
 

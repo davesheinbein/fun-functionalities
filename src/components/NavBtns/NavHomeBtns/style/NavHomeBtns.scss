@@ -1,65 +1,24 @@
 @import '../../../../breakpoints/breakpoints.scss';
 @import '../../../../mixins/mixins.scss';
 
-.NavLink {
-	.rightHomeCircle {
-		@include topRightAbsolute(41.75%, -3vw);
-		transform: translateX(-41.75%, -3vw);
-		height: 50px;
-		width: 100px;
-		border-radius: 100px 100px 0 0;
-		transform: rotateZ(270deg);
-		background: rgba(0, 0, 0, 0.5);
+.HomeNavLink {
+	@include topRightAbsolute(0%, 0%);
+	// @include heightWidth(fit-content, fit-content);
+	pointer-events: none;
+	z-index: 2000;
+	.HomeCircle {
+		pointer-events: visible;
+		@include topRightAbsolute(45%, -6%);
+		transform: translateX(45%, -6%);
 		z-index: 2000;
+		height: 100px;
+		width: 100px;
+		@include heightWidth(100px, 100px);
+		border-radius: 50%;
+		background: rgba(0, 0, 0, 0.5);
 		transition: all 1s ease-in-out;
 		&:hover {
 			background: rgba(25, 255, 255, 0.5);
-			transform: scale(1.1);
-		}
-	}
-	.leftHomeCircle {
-		@include topLeftAbsolute(41.75%, -3vw);
-		transform: translateX(-41.75%, -3vw);
-		height: 50px;
-		width: 100px;
-		border-radius: 100px 100px 0 0;
-		transform: rotateZ(90deg);
-		background: rgba(0, 0, 0, 0.5);
-		z-index: 2000;
-		transition: all 1s ease-in-out;
-		&:hover {
-			background: rgba(25, 255, 255, 0.5);
-			transform: scale(1.1);
-		}
-	}
-	.bottomHomeCircle {
-		@include bottomLeftAbsolute(-72.5vh, 46.5%);
-		transform: translateX(-72.5vh, -46.5%);
-		height: 50px;
-		width: 100px;
-		border-radius: 100px 100px 0 0;
-		transform: rotateZ(0deg);
-		background: rgba(0, 0, 0, 0.5);
-		z-index: 2000;
-		transition: all 1s ease-in-out;
-		&:hover {
-			background: rgba(25, 255, 255, 0.5);
-			transform: scale(1.1);
-		}
-	}
-	.topHomeCircle {
-		@include topLeftAbsolute(4vh, 46.5%);
-		transform: translateX(4vh, -46.5%);
-		height: 50px;
-		width: 100px;
-		border-radius: 100px 100px 0 0;
-		transform: rotateZ(180deg);
-		background: rgba(0, 0, 0, 0.5);
-		z-index: 2000;
-		transition: all 1s ease-in-out;
-		&:hover {
-			background: rgba(25, 255, 255, 0.5);
-			transform: scale(1.1);
 		}
 	}
 }

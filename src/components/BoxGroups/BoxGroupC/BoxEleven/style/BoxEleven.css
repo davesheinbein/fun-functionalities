@@ -19,7 +19,8 @@
           align-items: center;
   height: 100%;
   width: 100%;
-  background: lightblue;
+  background: -webkit-gradient(linear, left bottom, left top, from(#a18cd1), to(#fbc2eb));
+  background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 
 .boxEleven .boxElevenContainer {

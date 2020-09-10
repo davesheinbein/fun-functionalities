@@ -1,6 +1,6 @@
 .layoutContatainer {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,7 +53,15 @@
   z-index: 9;
 }
 
-.layoutContatainer .relativeContainer .homeContainer {
+.layoutContatainer .absoluteContainer {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100vw;
+}
+
+.layoutContatainer .absoluteContainer .homeContainer {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -71,14 +79,25 @@
           align-items: center;
 }
 
-.layoutContatainer .relativeContainer .homeBtns {
+.layoutContatainer .absoluteContainer .homeBtns {
   pointer-events: auto;
   height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  z-index: 200;
+}
+
+.layoutContatainer .absoluteContainer .navHomeContainer {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 200000;
+}
+
+.layoutContatainer .absoluteContainer .boxGroupsContainer {
+  height: 100%;
+  width: 100%;
 }
 
 .layoutContatainer .footer {
