@@ -1,6 +1,6 @@
 @import '../../../../../mixins/mixins.scss';
 
-div {
-	@include flexCenter(row, center, center);
-	@include heightWidth(100%, 100%);
+.boxTwelveContainer {
+	// @include flexCenter(row, center, center);
+	// @include heightWidth(100%, 100%);
 }

@@ -123,6 +123,7 @@ class BoxTwelve extends Component {
 								cursor: 'pointer',
 								background: '#FF1C68',
 							}}
+							className='boxTwelveContainer'
 							onClick={this.toggle}>
 							<svg
 								style={{ position: 'absolute', bottom: 0 }}

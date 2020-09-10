@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,GAAG,CAAC;ECqCH,OAAO,EAAE,IAAI;EACb,cAAc,EDrCM,GAAG;ECsCvB,eAAe,EDtCU,MAAM;ECuC/B,WAAW,EDvCsB,MAAM;ECQvC,MAAM,EDPe,IAAI;ECQzB,KAAK,EDRsB,IAAI;CAC/B",
+    "mappings": "",
     "sources": [
         "BoxTwelve.scss",
         "../../../../../mixins/mixins.scss"
