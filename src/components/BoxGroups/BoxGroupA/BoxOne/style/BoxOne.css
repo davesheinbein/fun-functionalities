@@ -16,28 +16,33 @@
   width: 100%;
 }
 
+.shapeAnimationContainer .shapeSVG #path-1 {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 .shapeAnimationContainer .shapeSVG #path-1:hover {
   opacity: 0.5;
   fill: var(--BtnHover);
-  -webkit-animation: colorAnim 3s infinite 0s alternate ease-in-out;
-          animation: colorAnim 3s infinite 0s alternate ease-in-out;
+  -webkit-animation: colorAnim 5s infinite 0s alternate ease-in-out;
+          animation: colorAnim 5s infinite 0s alternate ease-in-out;
 }
 
 @-webkit-keyframes colorAnim {
   0% {
-    opacity: 0.25;
+    opacity: 0.5;
   }
   100% {
-    opacity: 0.5;
+    opacity: 0.75;
   }
 }
 
 @keyframes colorAnim {
   0% {
-    opacity: 0.25;
+    opacity: 0.5;
   }
   100% {
-    opacity: 0.5;
+    opacity: 0.75;
   }
 }
 /*# sourceMappingURL=BoxOne.css.map */

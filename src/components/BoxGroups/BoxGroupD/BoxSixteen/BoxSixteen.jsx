@@ -69,60 +69,76 @@ export default class BoxSixteen extends Component {
 					id='contact-form'
 					onSubmit={this.handleSubmit}>
 					<FormGroup>
-						<Label for='name' className='label'>
-							<i
-								className='fa fa-user iconSymbol'
-								aria-hidden='true'></i>
-						</Label>
-						<Input
-							type='text'
-							name='name'
-							className='input-field'
-							onChange={this.handleChange}
-							placeholder='Name'
-						/>
+						<div className='form-inputs-container'>
+							<Label for='name' className='label'>
+								<i
+									className='fa fa-user iconSymbol'
+									aria-hidden='true'></i>
+								<div className='label-text'>User</div>
+							</Label>
+							<Input
+								type='text'
+								name='name'
+								className='input-field'
+								onChange={this.handleChange}
+								placeholder='Name'
+								autoComplete='off'
+							/>
+						</div>
 					</FormGroup>
 					<FormGroup>
-						<Label for='email' className='label'>
-							<i
-								className='fa fa-envelope iconSymbol'
-								aria-hidden='true'></i>
-						</Label>
-						<Input
-							type='email'
-							name='email'
-							className='input-field'
-							onChange={this.handleChange}
-							placeholder='Email'
-						/>
+						<div className='form-inputs-container'>
+							<Label for='email' className='label'>
+								<i
+									className='fa fa-envelope iconSymbol'
+									aria-hidden='true'></i>
+								<div className='label-text'>Email</div>
+							</Label>
+							<Input
+								type='email'
+								name='email'
+								className='input-field'
+								onChange={this.handleChange}
+								placeholder='Email'
+								autoComplete='off'
+							/>
+						</div>
 					</FormGroup>
 					<FormGroup>
-						<Label for='subject' className='label'>
-							<i
-								className='fa fa-sticky-note iconSymbol'
-								aria-hidden='true'></i>
-						</Label>
-						<Input
-							type='text'
-							name='subject'
-							className='input-field'
-							onChange={this.handleChange}
-							placeholder='Subject'
-						/>
+						<div className='form-inputs-container'>
+							<Label for='subject' className='label'>
+								<i
+									className='fa fa-sticky-note iconSymbol'
+									aria-hidden='true'></i>
+								<div className='label-text'>Subject</div>
+							</Label>
+							<Input
+								type='text'
+								name='subject'
+								className='input-field'
+								onChange={this.handleChange}
+								placeholder='Subject'
+								autoComplete='off'
+							/>
+						</div>
 					</FormGroup>
 					<FormGroup>
-						<Label for='message' className='label'>
-							<i
-								className='fa fa-pencil iconSymbol'
-								aria-hidden='true'></i>
-						</Label>
-						<Input
-							type='textarea'
-							name='message'
-							className='input-field'
-							onChange={this.handleChange}
-							placeholder='Message'
-						/>
+						<div className='form-inputs-container'>
+							<Label for='message' className='label'>
+								<i
+									className='fa fa-pencil iconSymbol'
+									aria-hidden='true'></i>
+								<div className='label-text'>Message</div>
+							</Label>
+							<Input
+								type='textarea'
+								name='message'
+								className='input-field input-textarea'
+								onChange={this.handleChange}
+								placeholder='Message'
+								autoComplete='off'
+							/>
+						</div>
 					</FormGroup>
 					<Button id='submit-btn' type='submit'>
 						Submit

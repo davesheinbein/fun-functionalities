@@ -1,115 +1,117 @@
 // Gradients taken from: https://webgradients.com/
 export default [
 	{
-		name: 'Rare Wind',
-		description: '#a8edea → #fed6e3',
+		name: 'Aloha',
+		description: '#4158D0 → #C850C0 → #FFCC70',
 		css:
-			'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
+			'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
+
 		height: 200,
 	},
 	{
-		name: 'Saint Petersburg',
-		description: '#f5f7fa → #c3cfe2',
+		name: 'Blue Wave',
+		description: '#0093E9 → #80D0C7',
 		css:
-			'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+			'linear-gradient(160deg, #0093E9 0%, #80D0C7 100%)',
 		height: 400,
 	},
 	{
-		name: 'Deep Blue',
-		description: '#e0c3fc → #8ec5fc',
+		name: 'Pink Skys',
+		description: '#8EC5FC → #E0C3FC',
 		css:
-			'linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%)',
+			'linear-gradient(135deg, #8EC5FC 0%, #E0C3FC 100%)',
+
 		height: 400,
 	},
 	{
-		name: 'Ripe Malinka',
-		description: '#f093fb → #f5576c',
+		name: 'Rocket Pop',
+		description: '#FFFFFF → #6284FF → #FF0000',
 		css:
-			'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+			'linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%)',
 		height: 400,
 	},
 	{
-		name: 'Perfect White',
-		description: '#fdfbfb → #ebedee',
-		css:
-			'linear-gradient(135deg, #E3FDF5 0%, #FFE6FA 100%)',
+		name: 'Goop Jell',
+		description: '#00DBDE → #FC00FF',
+		css: 'linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%)',
 		height: 400,
 	},
 	{
-		name: 'Near Moon',
-		description: '#5ee7df → #b490ca',
-		css:
-			'linear-gradient(135deg, #5ee7df 0%, #b490ca 100%)',
+		name: 'Morning Mist',
+		description: '#FFDEE9 → #B5FFFC',
+		css: 'linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%)',
 		height: 400,
 	},
 	{
-		name: 'Wild Apple',
-		description: '#d299c2 → #fef9d7',
-		css:
-			'linear-gradient(135deg, #d299c2 0%, #fef9d7 100%)',
+		name: 'Sun Setting',
+		description: '#FFE53B → #FF2525',
+		css: 'linear-gradient(147deg, #FFE53B 0%, #FF2525 74%)',
 		height: 200,
 	},
 	{
-		name: 'Ladoga Bottom',
-		description: '#ebc0fd → #d9ded8',
-		css:
-			'linear-gradient(135deg, #ebc0fd 0%, #d9ded8 100%)',
+		name: 'Purple Passion',
+		description: '#21D4FD → #B721FF',
+		css: 'linear-gradient(19deg, #21D4FD 0%, #B721FF 100%)',
 		height: 400,
 	},
 	{
-		name: 'Sunny Morning',
-		description: '#f6d365 → #fda085',
+		name: 'Funky Fresh',
+		description: '#FA8BFF → #2BD2FF → #2BFF88',
 		css:
-			'linear-gradient(135deg, #f6d365 0%, #fda085 100%)',
+			'linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%)',
+
 		height: 200,
 	},
 	{
-		name: 'Lemon Gate',
-		description: '#96fbc4 → #f9f586',
+		name: 'Grassy Noel',
+		description: '#F4D03F → #16A085',
 		css:
-			'linear-gradient(135deg, #96fbc4 0%, #f9f586 100%)',
+			'linear-gradient(132deg, #F4D03F 0%, #16A085 100%)',
 		height: 400,
 	},
 	{
-		name: 'Salt Mountain',
-		description: ' #FFFEFF → #D7FFFE',
+		name: 'Pink Brink',
+		description: ' #A9C9FF → #FFBBEC',
 		css:
-			'linear-gradient(135deg, #FFFEFF 0%, #D7FFFE 100%)',
+			'linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%)',
 		height: 200,
 	},
 	{
-		name: 'New York',
-		description: ' #fff1eb → #ace0f9',
+		name: 'Early Morning',
+		description: ' #FF3CAC → #784BA0 → #2B86C5',
 		css:
-			'linear-gradient(135deg, #fff1eb 0%, #ace0f9 100%)',
+			'linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)',
 		height: 400,
 	},
 	{
-		name: 'Soft Grass',
+		name: 'Threat Level Midnight',
 		description: ' #c1dfc4 → #deecdd',
 		css:
-			'linear-gradient(135deg, #c1dfc4 0%, #deecdd 100%)',
+			'linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% )',
 		height: 400,
 	},
 	{
-		name: 'Japan Blush',
-		description: ' #ddd6f3 → #faaca8',
+		name: 'Tie Dye Corner',
+		description:
+			' rgba(62,133,238,1) → rgba(227,137,240,1) → rgba(243,193,124,1) 89.7% )',
 		css:
-			'linear-gradient(135deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%)',
+			'radial-gradient( circle farthest-corner at 10% 20%,  rgba(62,133,238,1) 1.1%, rgba(227,137,240,1) 43.7%, rgba(243,193,124,1) 89.7% )',
 		height: 200,
 	},
 	{
-		name: 'Lol',
-		description: ' #c1dfc4 → #deecdd',
+		name: 'Rainbow Pink',
+		description:
+			' rgba(204,156,223,1) → rgba(155,219,245,1) → rgba(245,183,208,1) → rgba(250,186,98,1) → rgba(234,238,240,1) → rgba(250,245,171,1)',
 		css:
-			'linear-gradient(135deg, #c1dfc4 0%, #deecdd 100%)',
+			'linear-gradient( 89.8deg,  rgba(204,156,223,1) 0.3%, rgba(155,219,245,1) 20.4%, rgba(245,183,208,1) 40.2%, rgba(250,186,98,1) 62.9%, rgba(234,238,240,1) 81.9%, rgba(250,245,171,1) 99.2% )',
 		height: 400,
 	},
 	{
 		name: 'JLo',
-		description: ' #ddd6f3 → #faaca8',
+		description:
+			' rgba(56,248,249,1) → rgba(213,141,240,1) → rgba(249,56,152,1)',
 		css:
-			'linear-gradient(135deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%)',
+			'linear-gradient( 65.4deg,  rgba(56,248,249,1) -9.1%, rgba(213,141,240,1) 48%, rgba(249,56,152,1) 111.1% )',
 		height: 200,
 	},
 ];

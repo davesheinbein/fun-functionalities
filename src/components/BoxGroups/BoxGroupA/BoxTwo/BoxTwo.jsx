@@ -6,7 +6,7 @@ import './style/BoxTwo.css';
 class BoxTwo extends Component {
 	render() {
 		const {
-			delta: [xDelta], 
+			delta: [xDelta],
 			down,
 		} = this.props;
 		const to = { x: down ? xDelta : 0 };
@@ -21,7 +21,7 @@ class BoxTwo extends Component {
 							className='gestures-item'
 							style={{
 								backgroundColor:
-									xDelta < 0 ? '#FF1C68' : '#14D790',
+									xDelta < 0 ? '#F6416C' : '#81FBB8',
 							}}>
 							<animated.div
 								className='gestures-bubble'
@@ -44,7 +44,7 @@ class BoxTwo extends Component {
 										(x) => `translate3d(${x}px,0,0)`
 									),
 								}}>
-								Slide me
+								Slide me!
 							</animated.div>
 						</animated.div>
 					)}

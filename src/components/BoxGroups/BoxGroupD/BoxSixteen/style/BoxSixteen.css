@@ -19,27 +19,31 @@
           align-items: center;
   height: 100%;
   width: 100%;
-  background-color: red;
+  background: radial-gradient(circle farthest-corner at 12.3% 19.3%, #5558da 0%, #5fd1f9 100.2%);
 }
 
 .formContainer .contactTitle {
-  margin: 0px;
-  padding: 0px;
+  margin-top: 0.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
-  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 3rem;
 }
 
 .formContainer #contact-form {
@@ -61,7 +65,7 @@
   background-color: transparent;
 }
 
-.formContainer #contact-form .label {
+.formContainer #contact-form .form-inputs-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,12 +79,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
-  width: 1vw;
-  margin-left: 1em;
 }
 
-.formContainer #contact-form .iconSymbol {
+.formContainer #contact-form .form-inputs-container .label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,7 +99,7 @@
   width: 100%;
 }
 
-.formContainer #contact-form .input-field {
+.formContainer #contact-form .form-inputs-container .label .iconSymbol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,34 +114,70 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  width: 0;
+  margin: 0 0 0 1.5em;
+  font-size: 20px;
+}
+
+.formContainer #contact-form .form-inputs-container .label .label-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
   width: 100%;
+  margin: 0px 0.75em;
+  font-size: 20px;
+}
+
+.formContainer #contact-form .form-inputs-container .input-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 90%;
   outline: transparent;
-  border: 1px soild black;
-  margin: 0.5em;
+  border: 1px solid transparent;
+  border-bottom: 1px solid black;
+  margin: 0.5em 0em;
+  padding: 0.5em 1em;
 }
 
-.formContainer #contact-form textarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-  outline: transparent;
-  border: 1px soild black;
+.formContainer #contact-form .form-inputs-container .input-textarea {
+  resize: none;
+  padding: 1.5em 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.formContainer #contact-form .form-inputs-container .input-textarea::-webkit-scrollbar {
+  display: none;
 }
 
 .formContainer #contact-form #submit-btn {
-  margin: 1em 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,10 +192,28 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  width: 100%;
+  width: 80%;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  margin: 1em;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
 }
 
 .formContainer #contact-form #submit-btn:hover {
-  background-color: orchid;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #fdbac6;
+  border-color: #fdbee1;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+.formContainer #contact-form #submit-btn:focus {
+  outline: none;
 }
 /*# sourceMappingURL=BoxSixteen.css.map */

@@ -22,7 +22,7 @@
 	pointer-events: auto;
 	transform-origin: 50% 50% 0px;
 	border-radius: 4px;
-	color: white;
+	color: rgb(248, 201, 201);
 	line-height: 70px;
 	padding-left: 32px;
 	padding-right: 32px;
@@ -30,6 +30,7 @@
 	display: grid;
 	align-items: center;
 	text-align: center;
+	transform: scale(1.5);
 }
 
 .gestures-fg {

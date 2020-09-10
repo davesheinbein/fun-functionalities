@@ -40,10 +40,10 @@ export default class BoxOne extends Component {
 				native
 				from={{ fill: 'black' }}
 				to={{
-					fill: toggle ? '#247BA0' : '#70C1B3',
-					backgroundColor: toggle ? '#A29B7F' : '#F3FFBD',
+					fill: toggle ? '#FCCF31' : '#70C1B3',
+					backgroundColor: toggle ? '#9F44D3' : '#F3FFBD',
 					rotate: toggle ? '0deg' : '180deg',
-					scale: toggle ? 0.25 : 0.75,
+					scale: toggle ? 0.5 : 1,
 					shape: toggle ? RECTANGLE : TRIANGLE,
 				}}
 				toggle={this.toggle}

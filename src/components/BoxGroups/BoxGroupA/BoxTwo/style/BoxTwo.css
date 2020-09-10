@@ -27,7 +27,7 @@
   -webkit-transform-origin: 50% 50% 0px;
           transform-origin: 50% 50% 0px;
   border-radius: 4px;
-  color: white;
+  color: #f8c9c9;
   line-height: 70px;
   padding-left: 32px;
   padding-right: 32px;
@@ -39,6 +39,8 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .gestures-fg {

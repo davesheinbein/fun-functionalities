@@ -21,7 +21,7 @@ import BoxGroupB from '../BoxGroups/BoxGroupB/BoxGroupB';
 // Box Group C
 // Framer Animation - Box Nine
 // Toggle Text - Box Ten
-// Color Gradient Display - Box ?
+// Color Gradient Display - Box Eleven
 // Box 12 - Box ?
 import BoxGroupC from '../BoxGroups/BoxGroupC/BoxGroupC';
 
