@@ -10,6 +10,7 @@
     "@vx/curve": "0.0.199",
     "@vx/gradient": "0.0.198",
     "@vx/responsive": "0.0.199",
+    "@vx/scale": "0.0.199",
     "antd": "^4.6.1",
     "axios": "^0.20.0",
     "bcrypt": "^5.0.0",
