@@ -13,8 +13,11 @@
 		transform: rotateZ(270deg);
 		background: rgba(0, 0, 0, 0.5);
 		z-index: 2000;
+		transition: all 1s ease-in-out;
 		&:hover {
 			background: rgba(25, 255, 255, 0.5);
+			transform: rotateZ(270deg);
+			transform: scale(1.1);
 		}
 	}
 	.leftTriangle {
@@ -26,21 +29,27 @@
 		transform: rotateZ(90deg);
 		background: rgba(0, 0, 0, 0.5);
 		z-index: 2000;
+		transition: all 1s ease-in-out;
 		&:hover {
 			background: rgba(25, 255, 255, 0.5);
+			transform: rotateZ(90deg);
+			transform: scale(1.1);
 		}
 	}
 	.bottomTriangle {
-		@include bottomLeftAbsolute(2%, 46.5%);
-		transform: translateX(2%, -46.5%);
+		@include bottomLeftAbsolute(0%, 46.5%);
+		transform: translateX(0%, -46.5%);
 		height: 50px;
 		width: 100px;
 		border-radius: 100px 100px 0 0;
 		transform: rotateZ(0deg);
 		background: rgba(0, 0, 0, 0.5);
 		z-index: 2000;
+		transition: all 1s ease-in-out;
 		&:hover {
 			background: rgba(25, 255, 255, 0.5);
+			transform: rotateZ(0deg);
+			transform: scale(1.1);
 		}
 	}
 	.topTriangle {
@@ -52,8 +61,10 @@
 		transform: rotateZ(180deg);
 		background: rgba(0, 0, 0, 0.5);
 		z-index: 2000;
+		transition: all 1s ease-in-out;
 		&:hover {
 			background: rgba(25, 255, 255, 0.5);
+			transform: scaleY(1.1);
 		}
 	}
 }

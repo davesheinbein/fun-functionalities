@@ -22,14 +22,23 @@
 		// margin-top: 8vh;
 		z-index: 9;
 	}
-	.homeContainer {
-		@include heightWidth(100%, 100%);
-		@include flexCenter(column, center, center);
+	.relativeContainer {
+		// position: relative;
+		// // z-index: 20;
+		// pointer-events: none;
+		.homeContainer {
+			@include heightWidth(100%, 100%);
+			@include flexCenter(column, center, center);
+
+		}
+		.homeBtns {
+			pointer-events: auto;
+			@include heightWidth(100%, 100%);
+			@include topLeftAbsolute(0%, 0%);
+			z-index: 200;
+		}
 	}
-	.homeBtns {
-		@include heightWidth(100%, 100%);
-		@include topLeftAbsolute(0%, 0%);
-	}
+
 	.footer {
 		@include heightWidth(4vh, 100%);
 		@include flexCenter(row, center, center);

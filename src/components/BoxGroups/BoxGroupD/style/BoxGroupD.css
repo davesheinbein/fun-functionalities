@@ -1,7 +1,10 @@
 .boxGroupContainer {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   position: relative;
+  position: absolute;
+  top: 0%;
+  left: 0%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (50%)[2];

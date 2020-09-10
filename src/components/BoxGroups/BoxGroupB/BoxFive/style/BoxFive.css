@@ -12,8 +12,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 100%;
   height: 100%;
   width: 100%;
   border: none;
@@ -39,8 +37,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   height: 100%;
+  width: 100%;
   border: none;
 }
 
@@ -55,9 +53,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -109,9 +107,12 @@
   font-size: 14px;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+  z-index: 4;
 }
 
 .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,16 +126,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   height: 100%;
+  width: 100%;
   border: none;
   background-color: transparent;
+  pointer-events: none;
 }
 
 .boxFiveContainer .boxFiveSubcontainer .puzzleContainer div {
+  pointer-events: none;
   border: none;
-  width: 4.7vw;
-  height: 4.5vh;
+  height: 4.3vh;
+  width: 4.2vw;
+  margin: 2px;
 }
 
 .boxFiveContainer .boxFiveSubcontainer .puzzleContainer div:focus {
@@ -145,6 +149,21 @@
   border: none;
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  translate: all 1s ease-in-out;
+  pointer-events: auto;
+}
+
+.boxFiveContainer .boxFiveSubcontainer .puzzleContainer .piece:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
+}
+
+.boxFiveContainer .boxFiveSubcontainer .puzzleContainer .piece div {
+  margin: 1em;
 }
 
 @-webkit-keyframes headingAnimation {

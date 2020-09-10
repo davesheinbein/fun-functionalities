@@ -21,7 +21,7 @@ import BoxGroupB from '../BoxGroups/BoxGroupB/BoxGroupB';
 // Box Group C
 // Framer Animation - Box Nine
 // Toggle Text - Box Ten
-// Box 11 - Box ?
+// Color Gradient Display - Box ?
 // Box 12 - Box ?
 import BoxGroupC from '../BoxGroups/BoxGroupC/BoxGroupC';
 
@@ -65,11 +65,17 @@ function Layout(props) {
 			from: {
 				opacity: 0,
 				transform: 'rotateZ(360deg)',
+				zIndex: 2,
 			},
-			enter: { opacity: 1, transform: 'rotateZ(0deg)' },
+			enter: {
+				opacity: 1,
+				transform: 'rotateZ(0deg)',
+				zIndex: 2,
+			},
 			leave: {
 				opacity: 0,
 				transform: 'rotateZ(-360deg)',
+				zIndex: 2,
 			},
 		}
 	);
@@ -79,12 +85,12 @@ function Layout(props) {
 		{
 			from: {
 				opacity: 0,
-				transform: 'translate(100%, 0%)',
 			},
-			enter: { opacity: 1, transform: 'translate(0%, 0%)' },
+			enter: {
+				opacity: 1,
+			},
 			leave: {
 				opacity: 0,
-				transform: 'translate(-100%, 0%)',
 			},
 		}
 	);
@@ -94,12 +100,12 @@ function Layout(props) {
 		{
 			from: {
 				opacity: 0,
-				transform: 'translate(100%, 0%)',
 			},
-			enter: { opacity: 1, transform: 'translate(0%, 0%)' },
+			enter: {
+				opacity: 1,
+			},
 			leave: {
 				opacity: 0,
-				transform: 'translate(100%, 0%)',
 			},
 		}
 	);
@@ -111,7 +117,11 @@ function Layout(props) {
 				opacity: 0,
 				transform: 'translate(0%, 100%)',
 			},
-			enter: { opacity: 1, transform: 'translate(0%, 0%)' },
+			enter: {
+				opacity: 1,
+				transform: 'translate(0%, -180%)',
+				zIndex: 4,
+			},
 			leave: {
 				opacity: 0,
 				transform: 'translate(0%, 100%)',
@@ -124,12 +134,16 @@ function Layout(props) {
 		{
 			from: {
 				opacity: 0,
-				transform: 'translate(100%, 0%)',
+				transform: 'translate(0%, -800%)',
 			},
-			enter: { opacity: 1, transform: 'translate(0%, 0%)' },
+			enter: {
+				opacity: 1,
+				transform: 'translate(0%, -380%)',
+				zIndex: 3,
+			},
 			leave: {
 				opacity: 0,
-				transform: 'translate(100%, 0%)',
+				transform: 'translate(0%, -800%)',
 			},
 		}
 	);
@@ -148,7 +162,7 @@ function Layout(props) {
 							exact
 							path='/'
 							render={() => (
-								<>
+								<div className='absoluteContainer'>
 									<div className='homeContainer'>
 										<Home />
 									</div>
@@ -158,7 +172,7 @@ function Layout(props) {
 										<NavGroupC />
 										<NavGroupD />
 									</div>
-								</>
+								</div>
 							)}
 						/>
 					</Switch>
@@ -171,12 +185,14 @@ function Layout(props) {
 							exact
 							path='/boxGroupA'
 							render={() => (
-								<>
-									<NavHomeA />
+								<div className='absoluteContainer'>
+									<div className='navHomeContainer'>
+										<NavHomeA />
+									</div>
 									<div>
 										<BoxGroupA />
 									</div>
-								</>
+								</div>
 							)}
 						/>
 					</Switch>
@@ -189,12 +205,14 @@ function Layout(props) {
 							exact
 							path='/boxGroupB'
 							render={() => (
-								<>
-									<NavHomeB />
+								<div className='absoluteContainer'>
+									<div className='navHomeContainer'>
+										<NavHomeB />
+									</div>
 									<div>
 										<BoxGroupB />
 									</div>
-								</>
+								</div>
 							)}
 						/>
 					</Switch>
@@ -207,12 +225,14 @@ function Layout(props) {
 							exact
 							path='/boxGroupC'
 							render={() => (
-								<>
-									<NavHomeC />
+								<div className='absoluteContainer'>
+									<div className='navHomeContainer'>
+										<NavHomeC />
+									</div>
 									<div>
 										<BoxGroupC />
 									</div>
-								</>
+								</div>
 							)}
 						/>
 					</Switch>
@@ -225,12 +245,14 @@ function Layout(props) {
 							exact
 							path='/boxGroupD'
 							render={() => (
-								<>
-									<NavHomeD />
+								<div className='absoluteContainer'>
+									<div className='navHomeContainer'>
+										<NavHomeD />
+									</div>
 									<div>
 										<BoxGroupD />
 									</div>
-								</>
+								</div>
 							)}
 						/>
 					</Switch>

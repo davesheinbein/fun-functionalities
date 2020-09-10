@@ -25,10 +25,16 @@
           transform: rotateZ(270deg);
   background: rgba(0, 0, 0, 0.5);
   z-index: 2000;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .NavLink .rightTriangle:hover {
   background: rgba(25, 255, 255, 0.5);
+  -webkit-transform: rotateZ(270deg);
+          transform: rotateZ(270deg);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .NavLink .leftTriangle {
@@ -44,18 +50,24 @@
           transform: rotateZ(90deg);
   background: rgba(0, 0, 0, 0.5);
   z-index: 2000;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .NavLink .leftTriangle:hover {
   background: rgba(25, 255, 255, 0.5);
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .NavLink .bottomTriangle {
   position: absolute;
-  bottom: 2%;
+  bottom: 0%;
   left: 46.5%;
-  -webkit-transform: translateX(2%, -46.5%);
-          transform: translateX(2%, -46.5%);
+  -webkit-transform: translateX(0%, -46.5%);
+          transform: translateX(0%, -46.5%);
   height: 50px;
   width: 100px;
   border-radius: 100px 100px 0 0;
@@ -63,10 +75,16 @@
           transform: rotateZ(0deg);
   background: rgba(0, 0, 0, 0.5);
   z-index: 2000;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .NavLink .bottomTriangle:hover {
   background: rgba(25, 255, 255, 0.5);
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .NavLink .topTriangle {
@@ -82,9 +100,13 @@
           transform: rotateZ(180deg);
   background: rgba(0, 0, 0, 0.5);
   z-index: 2000;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .NavLink .topTriangle:hover {
   background: rgba(25, 255, 255, 0.5);
+  -webkit-transform: scaleY(1.1);
+          transform: scaleY(1.1);
 }
 /*# sourceMappingURL=NavBtns.css.map */

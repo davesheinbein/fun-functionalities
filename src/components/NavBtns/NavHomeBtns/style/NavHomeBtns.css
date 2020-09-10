@@ -3,7 +3,7 @@
 * Testing
 *
 **/
-.NavLink .rightHomeTriangle {
+.NavLink .rightHomeCircle {
   position: absolute;
   top: 41.75%;
   right: -3vw;
@@ -16,13 +16,17 @@
           transform: rotateZ(270deg);
   background: rgba(0, 0, 0, 0.5);
   z-index: 2000;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-.NavLink .rightHomeTriangle:hover {
+.NavLink .rightHomeCircle:hover {
   background: rgba(25, 255, 255, 0.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.NavLink .leftHomeTriangle {
+.NavLink .leftHomeCircle {
   position: absolute;
   top: 41.75%;
   left: -3vw;
@@ -35,18 +39,22 @@
           transform: rotateZ(90deg);
   background: rgba(0, 0, 0, 0.5);
   z-index: 2000;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-.NavLink .leftHomeTriangle:hover {
+.NavLink .leftHomeCircle:hover {
   background: rgba(25, 255, 255, 0.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.NavLink .bottomHomeTriangle {
+.NavLink .bottomHomeCircle {
   position: absolute;
-  bottom: 2%;
+  bottom: -72.5vh;
   left: 46.5%;
-  -webkit-transform: translateX(2%, -46.5%);
-          transform: translateX(2%, -46.5%);
+  -webkit-transform: translateX(-72.5vh, -46.5%);
+          transform: translateX(-72.5vh, -46.5%);
   height: 50px;
   width: 100px;
   border-radius: 100px 100px 0 0;
@@ -54,13 +62,17 @@
           transform: rotateZ(0deg);
   background: rgba(0, 0, 0, 0.5);
   z-index: 2000;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-.NavLink .bottomHomeTriangle:hover {
+.NavLink .bottomHomeCircle:hover {
   background: rgba(25, 255, 255, 0.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.NavLink .topHomeTriangle {
+.NavLink .topHomeCircle {
   position: absolute;
   top: 4vh;
   left: 46.5%;
@@ -73,9 +85,13 @@
           transform: rotateZ(180deg);
   background: rgba(0, 0, 0, 0.5);
   z-index: 2000;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-.NavLink .topHomeTriangle:hover {
+.NavLink .topHomeCircle:hover {
   background: rgba(25, 255, 255, 0.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=NavHomeBtns.css.map */

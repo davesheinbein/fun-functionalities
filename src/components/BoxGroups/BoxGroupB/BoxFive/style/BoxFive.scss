@@ -2,8 +2,6 @@
 
 .boxFiveContainer {
 	@include flexCenter(column, center, center);
-	width: 100%;
-	height: 100%;
 	@include heightWidth(100%, 100%);
 	border: none;
 	background-image: var(--boxFiveBg);
@@ -13,11 +11,10 @@
 	animation: headingAnimation 5s infinite 0s alternate;
 	.boxFiveSubcontainer {
 		@include flexCenter(column, center, center);
-		width: 100%;
-		height: 100%;
+		@include heightWidth(100%, 100%);
 		border: none;
 		.btnsContainer {
-			@include flexCenter(row, center, center);
+			@include flexCenter(row, center, flex-start);
 			background-color: transparent;
 			box-shadow: none;
 			@include heightWidth(5vh, 100%);
@@ -36,19 +33,22 @@
 					color: #333333;
 					font-size: 14px;
 					box-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+					z-index: 4;
 				}
 			}
 		}
 		.puzzleContainer {
+			transform: scale(2.5);
 			@include flexCenter(column, center, center);
-			width: 100%;
-			height: 100%;
+			@include heightWidth(100%, 100%);
 			border: none;
 			background-color: transparent;
+			pointer-events: none;
 			div {
+				pointer-events: none;
 				border: none;
-				width: 4.7vw;
-				height: 4.5vh;
+				@include heightWidth(4.3vh, 4.2vw);
+				margin: 2px;
 				&:focus {
 					outline: transparent;
 				}
@@ -56,6 +56,16 @@
 			.piece {
 				border: none;
 				box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+				transform: scale(1);
+				translate: all 1s ease-in-out;
+				pointer-events: auto;
+				&:hover {
+					transform: scale(1.1);
+					box-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
+				}
+				div {
+					margin: 1em;
+				}
 			}
 		}
 	}

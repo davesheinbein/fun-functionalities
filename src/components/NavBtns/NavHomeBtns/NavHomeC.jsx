@@ -5,7 +5,7 @@ import './style/NavHomeBtns.css';
 export default function NavHomeC() {
 	return (
 		<Link to='/' className='NavLink'>
-			<div className='rightHomeTriangle'></div>
+			<div className='rightHomeCircle'></div>
 		</Link>
 	);
 }

@@ -53,7 +53,7 @@
   z-index: 9;
 }
 
-.layoutContatainer .homeContainer {
+.layoutContatainer .relativeContainer .homeContainer {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -71,12 +71,14 @@
           align-items: center;
 }
 
-.layoutContatainer .homeBtns {
+.layoutContatainer .relativeContainer .homeBtns {
+  pointer-events: auto;
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0%;
   left: 0%;
+  z-index: 200;
 }
 
 .layoutContatainer .footer {
