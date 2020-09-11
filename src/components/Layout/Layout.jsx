@@ -22,12 +22,12 @@ import BoxGroupB from '../BoxGroups/BoxGroupB/BoxGroupB';
 // Framer Animation - Box Nine
 // Toggle Text - Box Ten
 // Color Gradient Display - Box Eleven
-// Box 12 - Box ?
+// Box 12 - Box Twelve
 import BoxGroupC from '../BoxGroups/BoxGroupC/BoxGroupC';
 
 // Box Group D
 // Page effect - Box Thirteen
-// ?? - Box Fourteen
+// Text Show/Hide - Box Fourteen
 // Mouse effect - Box Fifteen
 // Email - Nodemailer - Box Sixteen
 import BoxGroupD from '../BoxGroups/BoxGroupD/BoxGroupD';

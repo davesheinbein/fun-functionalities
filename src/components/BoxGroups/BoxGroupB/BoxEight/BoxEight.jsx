@@ -14,7 +14,7 @@ class BoxEight extends Component {
 		return (
 			<div
 				style={{
-					backgroundColor: '#247BA0',
+					backgroundColor: '#E0C3FC',
 					position: 'relative',
 					width: '100%',
 					height: '100%',

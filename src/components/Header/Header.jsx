@@ -14,7 +14,13 @@ function Header(props) {
 						Github
 					</a>
 				</li>
-				<li className='listItem'>Hello</li>
+				<li className='listItem'>
+					<a
+						className='listItemLink'
+						href='https://www.linkedin.com/in/david-sheinbein/'>
+						LinkedIn
+					</a>
+				</li>
 			</ul>
 			<div className='switchBtn'>
 				<SwitchBtn
