@@ -98,12 +98,6 @@ function Layout(props) {
 								</div>
 							)}
 						/>
-					</Switch>
-				</animated.div>
-			))}
-			{transition.map(({ item, props, key }) => (
-				<animated.div key={key} style={props}>
-					<Switch location={item}>
 						<Route
 							exact
 							path='/boxGroupA'
@@ -118,12 +112,6 @@ function Layout(props) {
 								</div>
 							)}
 						/>
-					</Switch>
-				</animated.div>
-			))}
-			{transition.map(({ item, props, key }) => (
-				<animated.div key={key} style={props}>
-					<Switch location={item}>
 						<Route
 							exact
 							path='/boxGroupB'
@@ -138,12 +126,6 @@ function Layout(props) {
 								</div>
 							)}
 						/>
-					</Switch>
-				</animated.div>
-			))}
-			{transition.map(({ item, props, key }) => (
-				<animated.div key={key} style={props}>
-					<Switch location={item}>
 						<Route
 							exact
 							path='/boxGroupC'
@@ -158,12 +140,6 @@ function Layout(props) {
 								</div>
 							)}
 						/>
-					</Switch>
-				</animated.div>
-			))}
-			{transition.map(({ item, props, key }) => (
-				<animated.div key={key} style={props}>
-					<Switch location={item}>
 						<Route
 							exact
 							path='/boxGroupD'

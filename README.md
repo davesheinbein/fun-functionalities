@@ -2,7 +2,7 @@
 
 ### Click the link to view the website
 
-[Fun Functionalities Webstite](http://www.davidsheinbeinportfolio.com/)
+<!-- [Fun Functionalities Webstite](http://www.davidsheinbeinportfolio.com/) -->
 
 ### About Us
 
@@ -23,12 +23,12 @@ Developer Tools:
 Git | GitHub | MongoDB Atlas | Postman | Heroku | Namecheap | AWS | Third Party APIs
 
 Project Management Skills:
-Schedule | Timeline Management | Research | Teamwork |
+Scheduling | Timeline Management | Research | Teamwork |
 
 Creative Skills:
 Wireframing | Web Design | Google Fonts
 
-### Dependency
+<!-- ### Dependency
 
 - npm i
 
@@ -36,7 +36,7 @@ Wireframing | Web Design | Google Fonts
 
 - npm install
 
-- npm install
+- npm install -->
 
 ## Screenshot:
 
@@ -66,7 +66,7 @@ Wireframing | Web Design | Google Fonts
 
 ## Potential Next Steps:
 
-##### - [] Play with css more to make colors pop even more
+##### - [C] Play with css more to make colors pop even more
 
 ##### - [] Use AWS to store data
 
