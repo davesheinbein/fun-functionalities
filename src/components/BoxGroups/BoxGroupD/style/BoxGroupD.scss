@@ -1,9 +1,10 @@
 @import '../../../../mixins/mixins.scss';
 
 .boxGroupContainer {
-	@include heightWidth(96vh, 100vw);
+	@include heightWidth(92vh, 100vw);
 	position: relative;
 	@include topLeftAbsolute(0%, 0%);
+	margin-top: 4vh;
 	display: grid;
 	grid-template-columns: repeat(2, 50%);
 	grid-template-rows: repeat(2, 50%);

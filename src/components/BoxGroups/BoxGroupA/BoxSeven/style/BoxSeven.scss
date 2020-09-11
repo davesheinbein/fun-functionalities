@@ -6,10 +6,8 @@
 	position: relative;
 	overflow: hidden;
 	.sidebar-toggle {
-		position: absolute;
-		top: 5%;
-		left: 0%;
-		transform: translate(0%, -5%);
+		@include topLeftAbsolute(3%, 0%);
+		transform: translate(-3%, 3%);
 		z-index: 100;
 		@include flexCenter(column, center, flex-start);
 		@include heightWidth(3vh, 100%);
@@ -36,9 +34,7 @@
 		);
 		font-size: 15px;
 		overflow: hidden;
-		position: absolute;
-		top: 0%;
-		left: 0%;
+		@include topLeftAbsolute(0%, 0%);
 		div {
 			@include flexCenter(column, center, center);
 			@include heightWidth(100%, 100%);
@@ -57,12 +53,10 @@
 							@include flexCenter(column, center, center);
 							@include heightWidth(5vh, 100%);
 							.ant-avatar {
-								position: absolute;
-								top: 10%;
-								left: 50%;
+								@include topLeftAbsolute(10%, 50%);
 								transform: translate(-50%, 10%);
 								@include flexCenter(column, center, center);
-								@include heightWidth(4vh, 4vw);
+								@include heightWidth(10vh, 11vw);
 								img {
 									@include flexCenter(
 										column,
@@ -77,6 +71,7 @@
 								@include flexCenter(column, center, center);
 								@include heightWidth(100%, 100%);
 								.dirFlexContainer {
+									@include heightWidth(100%, 100%);
 									@include flexCenter(
 										row,
 										center,
@@ -84,7 +79,6 @@
 									);
 									font-size: 22px;
 									line-height: 20px;
-									@include heightWidth(100%, 100%);
 									.anticon {
 										@include flexCenter(
 											column,

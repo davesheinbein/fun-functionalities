@@ -65,7 +65,12 @@
   background-color: transparent;
 }
 
-.formContainer #contact-form .form-inputs-container {
+.formContainer #contact-form .form-group {
+  height: 100%;
+  width: 100%;
+}
+
+.formContainer #contact-form .form-group .form-inputs-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,9 +84,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
-.formContainer #contact-form .form-inputs-container .label {
+.formContainer #contact-form .form-group .form-inputs-container .label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,7 +106,7 @@
   width: 100%;
 }
 
-.formContainer #contact-form .form-inputs-container .label .iconSymbol {
+.formContainer #contact-form .form-group .form-inputs-container .label .iconSymbol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,7 +126,7 @@
   font-size: 20px;
 }
 
-.formContainer #contact-form .form-inputs-container .label .label-text {
+.formContainer #contact-form .form-group .form-inputs-container .label .label-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,7 +146,7 @@
   font-size: 20px;
 }
 
-.formContainer #contact-form .form-inputs-container .input-field {
+.formContainer #contact-form .form-group .form-inputs-container .input-field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,9 +169,10 @@
   padding: 0.5em 1em;
 }
 
-.formContainer #contact-form .form-inputs-container .input-textarea {
+.formContainer #contact-form .form-group .form-inputs-container .input-textarea {
   resize: none;
-  padding: 1.5em 1em;
+  padding: 1em;
+  margin-bottom: 0em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -ms-overflow-style: none;
@@ -173,7 +181,7 @@
   /* Firefox */
 }
 
-.formContainer #contact-form .form-inputs-container .input-textarea::-webkit-scrollbar {
+.formContainer #contact-form .form-group .form-inputs-container .input-textarea::-webkit-scrollbar {
   display: none;
 }
 
@@ -192,7 +200,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  width: 80%;
+  width: 90%;
   border-radius: 30px;
   border: 1px solid rgba(0, 0, 0, 0.75);
   margin: 1em;
@@ -205,8 +213,8 @@
 }
 
 .formContainer #contact-form #submit-btn:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   background-color: #fdbac6;
   border-color: #fdbee1;
   -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
