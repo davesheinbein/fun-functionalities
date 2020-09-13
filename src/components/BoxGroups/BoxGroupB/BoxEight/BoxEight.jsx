@@ -13,6 +13,7 @@ class BoxEight extends Component {
 		const { toggle, items } = this.state;
 		return (
 			<div
+				className='boxEightContainer'
 				style={{
 					backgroundColor: '#E0C3FC',
 					position: 'relative',
@@ -42,6 +43,55 @@ class BoxEight extends Component {
 						/>
 					)}
 				</Trail>
+				<div className='boxEightText'>
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+					<br />
+					Hello
+				</div>
 			</div>
 		);
 	}

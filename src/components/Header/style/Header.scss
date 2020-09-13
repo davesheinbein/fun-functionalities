@@ -9,15 +9,17 @@
 	font-size: 20px;
 	text-align: center;
 	color: black;
-	background-color: var(--headerColor);
+	background: var(--headerColor);
+	background-size: 400%;
+	animation: headingAnimation 5s infinite 0s alternate;
 	.logo {
 		@include heightWidth(100%, 100%);
 		@include flexCenter(row, flex-start, flex-start);
 		font-family: 'Oleo Script', 'Hanalei', cursive;
-		color: rgba(39, 35, 249, 0.5);
+		color: transparent;
 		background-image: url('../../../images/cool-background.png');
 		background-clip: text;
-		background-size: 40vw;
+		background-size: 400%;
 		font-size: 40px;
 		line-height: 43px;
 		@include noSelection;
@@ -51,11 +53,9 @@
 
 @keyframes headingAnimation {
 	0% {
-		background-size: 10vw;
 		background-position: left;
 	}
 	100% {
-		background-size: 100vw;
 		background-position: right;
 	}
 }

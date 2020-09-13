@@ -51,7 +51,7 @@
   width: 1vmin;
   position: absolute;
   top: -6px;
-  left: 0.43vmin;
+  left: 0.55vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,7 +113,7 @@
   height: 100%;
   width: 100%;
   text-align: center;
-  margin: 0px 1em;
+  margin: 0px 1em 0px 0.5em;
   color: rgba(0, 0, 0, 0.75);
   font-size: calc(1vw + 12px);
   font-weight: 800;

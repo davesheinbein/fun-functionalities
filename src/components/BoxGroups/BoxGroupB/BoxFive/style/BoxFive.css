@@ -15,12 +15,10 @@
   height: 100%;
   width: 100%;
   border: none;
+  background-size: 400%;
   background-image: var(--boxFiveBg);
-  background-clip: content-box;
-  background-size: 100vw;
-  background-position: left;
-  -webkit-animation: headingAnimation 5s infinite 0s alternate;
-          animation: headingAnimation 5s infinite 0s alternate;
+  -webkit-animation: bgAnimation 5s infinite alternate;
+          animation: bgAnimation 5s infinite alternate;
 }
 
 .boxFiveContainer .boxFiveSubcontainer {
@@ -174,21 +172,21 @@
   margin: 1em;
 }
 
-@-webkit-keyframes headingAnimation {
+@-webkit-keyframes bgAnimation {
   0% {
-    background-position: left;
+    background-position: top left;
   }
   100% {
-    background-position: right;
+    background-position: bottom right;
   }
 }
 
-@keyframes headingAnimation {
+@keyframes bgAnimation {
   0% {
-    background-position: left;
+    background-position: top left;
   }
   100% {
-    background-position: right;
+    background-position: bottom right;
   }
 }
 /*# sourceMappingURL=BoxFive.css.map */

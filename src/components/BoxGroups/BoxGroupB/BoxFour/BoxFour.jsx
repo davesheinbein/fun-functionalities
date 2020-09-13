@@ -23,10 +23,8 @@ class BoxFour extends Component {
 	spring = React.createRef();
 	setY = () =>
 		this.setState({
-			y: Math.round(Math.random() * 750) + 50,
+			y: Math.round(Math.random() * 1500) + 100,
 		});
-	// User interaction should stop animation in order to prevent scroll-hijacking
-	// Doing this on onWheel isn't enough, but just to illustrate ...
 	stop = () => this.spring.current.stop();
 	render() {
 		const y = this.el.current
@@ -52,7 +50,7 @@ class BoxFour extends Component {
 									<div
 										className='colors'
 										key={c}
-										style={{ height: 40000, background: c }}
+										style={{ height: 500, background: c }}
 									/>
 								))}
 							</animated.div>

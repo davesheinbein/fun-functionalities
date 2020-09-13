@@ -1,9 +1,60 @@
-.box {
+.boxEightContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.boxEightContainer .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
   cursor: pointer;
   position: relative;
   width: 50%;
   height: 20%;
-  background-color: #8EC5FC;
+  background-color: #8ec5fc;
   will-change: transform;
+  z-index: 2;
+}
+
+.boxEightContainer .boxEightText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  pointer-events: none;
+  margin: 0px 1.5em;
+  text-align: center;
+  font-size: 40px;
+  color: #fffce6;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 /*# sourceMappingURL=BoxEight.css.map */

@@ -4,10 +4,12 @@ import './style/BoxTen.css';
 
 const Words = [
 	`Hello world`,
-	' Hey',
-	' Hola',
+	' I Love You',
 	' Yo',
 	' Elo',
+	' lol',
+	' Hey',
+	' Hola',
 ];
 
 export default class BoxTen extends React.Component {

@@ -18,7 +18,7 @@
 		border-radius: 5px;
 		.tip {
 			@include heightWidth(5px, 1vmin);
-			@include topLeftAbsolute(-6px, 0.43vmin);
+			@include topLeftAbsolute(-6px, 0.55vw);
 			@include flexCenter(row, center, center);
 			background-color: rgba(136, 168, 168, 0.75);
 			border-top-left-radius: 5px;
@@ -40,7 +40,7 @@
 		@include flexCenter(column, center, center);
 		@include heightWidth(100%, 100%);
 		text-align: center;
-		margin: 0px 1em;
+		margin: 0px 1em 0px 0.5em;
 		color: rgba(0, 0, 0, 0.75);
 		font-size: calc(1vw + 12px);
 		font-weight: 800;

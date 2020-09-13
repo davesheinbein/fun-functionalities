@@ -1,4 +1,10 @@
 .scrollerContainer {
+  height: 105%;
+  width: 105%;
+}
+
+.scrollerContainer .scrolltop-main {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,42 +20,10 @@
           align-items: center;
   height: 100%;
   width: 100%;
-}
-
-.scrollerContainer .scrolltop-main {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
   overflow-y: scroll;
 }
 
 .scrollerContainer .scrolltop-main .scrolltop-c {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -63,7 +37,33 @@
   opacity: 0.6;
 }
 
-.scrollerContainer .scrolltop-main .scrolltop-c .colors {
+.scrollerContainer .scrolltop-main .scrolltop-c .colors::after {
+  content: 'hello';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0px 3rem;
+  font-size: 60px;
+  color: var(--mainText);
+  font-family: 'Permanent Marker', cursive;
+}
+
+.scrollerContainer .scrolltop-b {
+  position: absolute;
+  height: 100px;
+  width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,41 +77,26 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.scrollerContainer .scrolltop-b {
   position: absolute;
-  height: 100px;
-  width: 100px;
+  top: calc(50% + 200px);
+  left: calc(50% - 175px);
   border-radius: 50%;
-  border: 5px solid white;
-  background: lavender;
+  border: 5px solid rgba(255, 255, 255, 0.55);
+  background: rgba(250, 250, 230, 0.75);
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .scrollerContainer .scrolltop-b::after {
-  content: 'Scroll';
+  content: 'Random Scroll';
   font-size: 1.2em;
   font-weight: 100;
-  color: #6a5670;
+  color: black;
 }
 
 .scrollerContainer .scrolltop-b:hover {
-  background: #d9cbda;
+  background: rgba(255, 221, 159, 0.75);
+  border-color: rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=BoxFour.css.map */

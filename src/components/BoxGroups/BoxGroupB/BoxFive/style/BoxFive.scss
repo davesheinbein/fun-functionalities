@@ -4,11 +4,9 @@
 	@include flexCenter(column, center, center);
 	@include heightWidth(100%, 100%);
 	border: none;
+	background-size: 400%;
 	background-image: var(--boxFiveBg);
-	background-clip: content-box;
-	background-size: 100vw;
-	background-position: left;
-	animation: headingAnimation 5s infinite 0s alternate;
+	animation: bgAnimation 5s infinite alternate;
 	.boxFiveSubcontainer {
 		@include flexCenter(column, center, center);
 		@include heightWidth(100%, 100%);
@@ -83,13 +81,11 @@
 	}
 }
 
-@keyframes headingAnimation {
+@keyframes bgAnimation {
 	0% {
-		// background-size: 100vw;
-		background-position: left;
+		background-position: top left;
 	}
 	100% {
-		// background-size: 200vw;
-		background-position: right;
+		background-position: bottom right;
 	}
 }

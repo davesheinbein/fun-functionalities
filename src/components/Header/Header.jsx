@@ -1,11 +1,14 @@
 import React from 'react';
 import SwitchBtn from '../SwitchBtn/SwitchBtn';
+import { Link } from 'react-router-dom';
 import './style/Header.css';
 
 function Header(props) {
 	return (
 		<div className='navbarContainer'>
-			<div className='logo'>FunFunctionalities</div>
+			<Link to='/' className='logo'>
+				<div className='logo'>FunFunctionalities</div>
+			</Link>
 			<ul className='list'>
 				<li className='listItem'>
 					<a

@@ -8,7 +8,7 @@ ${(props) => {
 	switch (props.color) {
 		case 'black':
 			return `:root{
-			--headerColor: #000000;
+			--headerColor: linear-gradient(90deg, #2b5876 0%, #4e4376 100%);
 			--titleColor: #000000;
 			--secondaryColor: #0B0A0A;
 
@@ -25,7 +25,7 @@ ${(props) => {
 			// Box Backgrounds
 			--boxTwoBg: radial-gradient(circle, rgba(255,199,123,1) 0%, rgba(224,148,233,1) 100%);
 			--boxThreeBg: radial-gradient(circle, rgba(233,216,148,1) 0%, rgba(123,189,255,1) 100%);
-			--boxFiveBg: linear-gradient(90deg, rgba(148,233,219,1) 0%, rgba(255,175,123,1) 100%);
+			--boxFiveBg: radial-gradient( circle farthest-corner at 10% 20%,  rgba(62,133,238,1) 1.1%, rgba(227,137,240,1) 43.7%, rgba(243,193,124,1) 89.7% );
 
 			--mainText: #ffffff;
 			--subText: rgba(255, 255, 255, .75);
@@ -48,7 +48,7 @@ ${(props) => {
 		default:
 		case 'default':
 			return `:root {
-			--headerColor:#ffffff;
+			--headerColor: linear-gradient(90deg, #ff6e7f 0%, #bfe9ff 100%);
 			--titleColor: #F1F1F1;
 			--secondaryColor:#FFFCFC;
 

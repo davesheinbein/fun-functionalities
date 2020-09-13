@@ -22,7 +22,10 @@
   font-size: 20px;
   text-align: center;
   color: black;
-  background-color: var(--headerColor);
+  background: var(--headerColor);
+  background-size: 400%;
+  -webkit-animation: headingAnimation 5s infinite 0s alternate;
+          animation: headingAnimation 5s infinite 0s alternate;
 }
 
 .navbarContainer .logo {
@@ -42,10 +45,10 @@
       -ms-flex-align: start;
           align-items: flex-start;
   font-family: 'Oleo Script', 'Hanalei', cursive;
-  color: rgba(39, 35, 249, 0.5);
+  color: transparent;
   background-image: url("../../../images/cool-background.png");
   background-clip: text;
-  background-size: 40vw;
+  background-size: 400%;
   font-size: 40px;
   line-height: 43px;
   -webkit-touch-callout: none;
@@ -145,22 +148,18 @@
 
 @-webkit-keyframes headingAnimation {
   0% {
-    background-size: 10vw;
     background-position: left;
   }
   100% {
-    background-size: 100vw;
     background-position: right;
   }
 }
 
 @keyframes headingAnimation {
   0% {
-    background-size: 10vw;
     background-position: left;
   }
   100% {
-    background-size: 100vw;
     background-position: right;
   }
 }

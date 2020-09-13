@@ -1,15 +1,14 @@
 @import '../../../../../mixins/mixins.scss';
 
 .scrollerContainer {
-	@include flexCenter(row, center, center);
-	@include heightWidth(100%, 100%);
+	// @include flexCenter(row, center, center);
+	@include heightWidth(105%, 105%);
 	.scrolltop-main {
 		position: relative;
-		@include flexCenter(column, center, center);
+		@include flexCenter(row, center, center);
 		@include heightWidth(100%, 100%);
 		overflow-y: scroll;
 		.scrolltop-c {
-			@include flexCenter(column, center, center);
 			@include heightWidth(100%, 100%);
 			margin: 0;
 			padding: 0;
@@ -18,27 +17,40 @@
 			overflow: auto;
 			opacity: 0.6;
 			.colors {
-				@include flexCenter(row, center, center);
-				@include heightWidth(100%, 100%);
+				&::after {
+					content: 'hello';
+					@include flexCenter(row, flex-start, center);
+					@include heightWidth(100%, 100%);
+					margin: 0px 3rem;
+					font-size: 60px;
+					color: var(--mainText);
+					font-family: 'Permanent Marker', cursive;
+				}
 			}
 		}
 	}
 	.scrolltop-b {
 		position: absolute;
 		@include heightWidth(100px, 100px);
+		@include flexCenter(row, center, center);
+		@include topLeftAbsolute(
+			calc(50% + 200px),
+			calc(50% - 175px)
+		);
 		border-radius: 50%;
-		border: 5px solid white;
-		background: lavender;
+		border: 5px solid rgba(255, 255, 255, 0.55);
+		background: rgba(250, 250, 230, 0.75);
 		cursor: pointer;
-		@include flexCenter(column, center, center);
+		transition: all 0.5s ease-in-out;
 		&::after {
-			content: 'Scroll';
+			content: 'Random Scroll';
 			font-size: 1.2em;
 			font-weight: 100;
-			color: rgb(106, 86, 112);
+			color: rgba(0, 0, 0, 075);
 		}
 		&:hover {
-			background: rgb(217, 203, 218);
+			background: rgba(255, 221, 159, 0.75);
+			border-color: rgba(0, 0, 0, 0.5);
 		}
 	}
 }

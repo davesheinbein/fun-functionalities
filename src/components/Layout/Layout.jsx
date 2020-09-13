@@ -8,11 +8,11 @@ import { useTransition, animated } from 'react-spring';
 // Animate shape - Box One
 // Slide box - Box Two
 // Draw shape path Star - Box Three
-// profile slider - Box Seven
+// Login profile slider - Box Seven
 import BoxGroupA from '../BoxGroups/BoxGroupA/BoxGroupA';
 
 // Box Group B
-// // Color Scroller - Box Four
+// Color Scroller - Box Four
 // 15-slot puzzle game - Box Five
 // Chuck Norris Fact Generator - Box Six
 // Color Slide animation - Box Eight
