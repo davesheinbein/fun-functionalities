@@ -274,8 +274,9 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-size: 22px;
-  line-height: 20px;
+  font-family: 'Patua One', cursive;
+  font-size: 28px;
+  line-height: 22px;
 }
 
 .profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex .dirFlexContainer .anticon {
@@ -312,6 +313,12 @@
           align-items: center;
   height: 100%;
   width: 100%;
+}
+
+.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex .ant-input {
+  height: 100%;
+  width: 90%;
+  padding: 1em;
 }
 
 .profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer {
@@ -366,8 +373,8 @@
           align-items: center;
   height: 24px;
   width: 100%;
-  background-color: #ff4618;
-  border-color: #ff4618;
+  background-color: rgba(255, 70, 24, 0.75);
+  border-color: rgba(212, 60, 22, 0.75);
   color: #fff;
   border: 1px solid transparent;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
@@ -389,11 +396,33 @@
   margin-right: 1em;
   font-weight: 400;
   cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .signup #signup:hover {
-  background-color: #fa3301;
-  border-color: #fa3301;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #ff4618;
+  border-color: #d43c16;
+}
+
+.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .login-form-button {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: rgba(1, 221, 250, 0.85);
+  border-color: rgba(4, 173, 196, 0.85);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .login-form-button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #01ddfa;
+  border-color: #04adc4;
 }
 
 .profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper {
@@ -428,8 +457,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
-  width: 10%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 3em;
 }
 
 .profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper .ant-checkbox #checkbox {
@@ -447,7 +481,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  width: 10%;
+  width: 100%;
 }
 
 .profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper .ant-checkbox .ant-checkbox-inner {
@@ -481,8 +515,8 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  width: 80%;
-  font-size: 10px;
+  width: 100%;
+  font-size: 16px;
 }
 
 .profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .login-form-forgot {
@@ -501,7 +535,7 @@
           align-items: center;
   height: 100%;
   width: 100%;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .ant-btn {
@@ -579,5 +613,41 @@
           align-items: center;
   height: 100%;
   width: 100%;
+}
+
+.profileContainer .boxSevenText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 2em;
+  line-height: 50px;
+  font-size: 50px;
+  font-family: 'Bungee Shade', cursive;
+  color: transparent;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(3, 0, 30, 0.75)), color-stop(rgba(115, 3, 192, 0.75)), color-stop(rgba(236, 56, 188, 0.75)), to(rgba(253, 239, 249, 0.75)));
+  background: linear-gradient(to top, rgba(3, 0, 30, 0.75), rgba(115, 3, 192, 0.75), rgba(236, 56, 188, 0.75), rgba(253, 239, 249, 0.75));
+  background-size: cover;
+  background-clip: text;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.profileContainer .boxSevenText:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#03001e), color-stop(#7303c0), color-stop(#ec38bc), to(#fdeff9));
+  background: linear-gradient(to top, #03001e, #7303c0, #ec38bc, #fdeff9);
+  background-size: cover;
+  background-clip: text;
 }
 /*# sourceMappingURL=BoxSeven.css.map */

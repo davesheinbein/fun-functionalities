@@ -42,6 +42,10 @@
   border: none;
 }
 
+.boxFiveContainer .boxFiveSubcontainer > .ui.segments {
+  margin: 1em 0;
+}
+
 .boxFiveContainer .boxFiveSubcontainer .btnsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,11 +60,14 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 4vh;
+  width: 100%;
   background-color: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
-  height: 5vh;
-  width: 100%;
   border: none;
 }
 
@@ -81,13 +88,12 @@
   height: 100%;
   width: 100%;
   border: none;
-  margin: 1em 0px;
   background-color: transparent;
 }
 
 .boxFiveContainer .boxFiveSubcontainer .btnsContainer .segment .btn {
   height: 4vh;
-  width: 100%;
+  width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,8 +108,8 @@
       -ms-flex-align: center;
           align-items: center;
   border: none;
-  background-color: orange;
   color: #333333;
+  background: linear-gradient(89.8deg, #cc9cdf 0.3%, #9bdbf5 20.4%, #f5b7d0 40.2%, #faba62 62.9%, #eaeef0 81.9%, #faf5ab 99.2%);
   font-size: 14px;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
@@ -128,6 +134,9 @@
           align-items: center;
   height: 100%;
   width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
   border: none;
   background-color: transparent;
   pointer-events: none;
@@ -136,9 +145,8 @@
 .boxFiveContainer .boxFiveSubcontainer .puzzleContainer div {
   pointer-events: none;
   border: none;
-  height: 4.3vh;
-  width: 4.2vw;
-  margin: 2px;
+  height: 4vh;
+  width: 4.7vw;
 }
 
 .boxFiveContainer .boxFiveSubcontainer .puzzleContainer div:focus {
@@ -156,8 +164,8 @@
 }
 
 .boxFiveContainer .boxFiveSubcontainer .puzzleContainer .piece:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
 }

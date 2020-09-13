@@ -6,10 +6,20 @@
 	z-index: 3;
 	cursor: pointer;
 	background: var(--boxThreeBg);
+	position: relative;
 	#pathSVG {
 		@include flexCenter(row, center, center);
 		@include heightWidth(100%, 100%);
 		#starPath {
 		}
+	}
+	.starText {
+		@include heightWidth(100%, 100%);
+		@include flexCenter(row, center, center);
+		@include topLeftAbsolute(0, 0);
+		color: white;
+		font-size: 4rem;
+		font-family: 'Permanent Marker', cursive;
+		pointer-events: none;
 	}
 }

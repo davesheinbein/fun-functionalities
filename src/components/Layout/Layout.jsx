@@ -22,7 +22,7 @@ import BoxGroupB from '../BoxGroups/BoxGroupB/BoxGroupB';
 // Framer Animation - Box Nine
 // Toggle Text - Box Ten
 // Color Gradient Display - Box Eleven
-// Box 12 - Box Twelve
+// D3 Graph - Box Twelve
 import BoxGroupC from '../BoxGroups/BoxGroupC/BoxGroupC';
 
 // Box Group D

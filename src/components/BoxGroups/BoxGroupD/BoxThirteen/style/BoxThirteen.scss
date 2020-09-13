@@ -14,6 +14,9 @@
 		color: #ffffff;
 		@include flexCenter(column, center, center);
 		@include heightWidth(100%, 100%);
+		background: linear-gradient(to right, #ffb347, #ffcc33);
+		color: transparent;
+		background-clip: text;
 		transition: all 0.5s ease-in-out;
 		&:hover {
 			transform: scale(1.1);
@@ -21,6 +24,8 @@
 		.iconText {
 			@include heightWidth(fit-content, fit-content);
 			font-size: 5rem;
+			font-family: 'Patua One', cursive;
+			margin-bottom: 0.5em;
 		}
 		span {
 			@include flexCenter(column, center, center);
@@ -28,6 +33,11 @@
 			margin: 2em 0px;
 			svg {
 				@include flexCenter(column, center, center);
+				// background: linear-gradient(
+				// 	to right,
+				// 	#7b4397,
+				// 	#dc2430
+				// );
 				@include heightWidth(100%, 100%);
 				path {
 					@include flexCenter(column, center, center);

@@ -62,6 +62,7 @@
   text-transform: uppercase;
   will-change: transform, opacity;
   overflow: hidden;
+  text-shadow: 2px 4px 2px #373737;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -69,6 +70,7 @@
 .boxFourteenContain .trails-main .trails-container .trails-text:hover {
   color: #965a3e;
   font-size: 6.5em;
+  text-shadow: 2px 4px 2px black;
 }
 
 .boxFourteenContain .trails-main .trails-container .trails-text > div {

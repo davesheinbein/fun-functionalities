@@ -40,7 +40,6 @@ export function BoxThirteen() {
 						<div className='iconText'>Penguin</div>
 						<QqOutlined
 							style={{
-								fill: 'blue',
 								color: '#fff',
 								width: '25%',
 								height: '25%',
@@ -53,7 +52,6 @@ export function BoxThirteen() {
 						<div className='iconText'>User</div>
 						<UserOutlined
 							style={{
-								fill: 'blue',
 								color: '#fff',
 								width: '25%',
 								height: '25%',
@@ -66,7 +64,6 @@ export function BoxThirteen() {
 						<div className='iconText'>Smile</div>
 						<SmileOutlined
 							style={{
-								fill: 'blue',
 								color: '#fff',
 								width: '25%',
 								height: '25%',
@@ -79,7 +76,6 @@ export function BoxThirteen() {
 						<div className='iconText'>Shirt</div>
 						<SkinOutlined
 							style={{
-								fill: 'blue',
 								color: '#fff',
 								width: '25%',
 								height: '25%',
@@ -92,7 +88,6 @@ export function BoxThirteen() {
 						<div className='iconText'>Rocket</div>
 						<RocketOutlined
 							style={{
-								fill: 'blue',
 								color: '#fff',
 								width: '25%',
 								height: '25%',
@@ -105,7 +100,6 @@ export function BoxThirteen() {
 						<div className='iconText'>Cart</div>
 						<ShoppingCartOutlined
 							style={{
-								fill: 'blue',
 								color: '#fff',
 								width: '25%',
 								height: '25%',
@@ -118,7 +112,6 @@ export function BoxThirteen() {
 						<div className='iconText'>Star</div>
 						<StarOutlined
 							style={{
-								fill: 'blue',
 								color: '#fff',
 								width: '25%',
 								height: '25%',
@@ -131,7 +124,6 @@ export function BoxThirteen() {
 						<div className='iconText'>Wifi</div>
 						<WifiOutlined
 							style={{
-								fill: 'blue',
 								color: '#fff',
 								width: '25%',
 								height: '25%',
@@ -144,7 +136,6 @@ export function BoxThirteen() {
 						<div className='iconText'>Lightning</div>
 						<ThunderboltOutlined
 							style={{
-								fill: 'blue',
 								color: '#fff',
 								width: '25%',
 								height: '25%',

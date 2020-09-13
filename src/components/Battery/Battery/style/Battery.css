@@ -1,6 +1,4 @@
-.boxThirteenContainer {
-  margin: 0;
-  padding: 0;
+.batteryContain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,12 +13,64 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  width: 100%;
-  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+  width: 16vw;
+  background: rgba(238, 129, 27, 0.75);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  padding-left: 2em;
+  border-left: 2px solid rgba(51, 51, 51, 0.25);
 }
 
-.boxThirteenContainer .iconContainer {
-  color: #ffffff;
+.batteryContain:hover {
+  background: #ee811b;
+}
+
+.batteryContain .battery {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75%;
+  width: 3em;
+  border: 3px solid rgba(136, 168, 168, 0.75);
+  border-radius: 5px;
+}
+
+.batteryContain .battery .tip {
+  height: 5px;
+  width: 1vmin;
+  position: absolute;
+  top: -6px;
+  left: 0.43vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(136, 168, 168, 0.75);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.batteryContain .battery .level {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,32 +86,17 @@
           align-items: center;
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#ffb347), to(#ffcc33));
-  background: linear-gradient(to right, #ffb347, #ffcc33);
-  color: transparent;
-  background-clip: text;
+  background: rgba(60, 232, 26, 0.75);
+  font-size: calc(1vw + 12px);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.boxThirteenContainer .iconContainer:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.batteryContain .battery .level:hover {
+  background: #3ce81a;
 }
 
-.boxThirteenContainer .iconContainer .iconText {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 5rem;
-  font-family: 'Patua One', cursive;
-  margin-bottom: 0.5em;
-}
-
-.boxThirteenContainer .iconContainer span {
+.batteryContain .batteryText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,42 +112,18 @@
           align-items: center;
   height: 100%;
   width: 100%;
-  margin: 2em 0px;
+  text-align: center;
+  margin: 0px 1em;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: calc(1vw + 12px);
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.boxThirteenContainer .iconContainer span svg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
+.batteryContain .batteryText:hover {
+  color: black;
+  background: rgba(255, 255, 255, 0.5);
 }
-
-.boxThirteenContainer .iconContainer span svg path {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-}
-/*# sourceMappingURL=BoxThirteen.css.map */
+/*# sourceMappingURL=Battery.css.map */

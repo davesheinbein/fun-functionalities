@@ -20,7 +20,6 @@ function BoxNine() {
 				}
 				radius={40}
 			/>
-
 			<Frame
 				animate={{ rotate: -360 }}
 				transition={{

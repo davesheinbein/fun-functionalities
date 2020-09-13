@@ -27,11 +27,12 @@ class BoxThree extends Component {
 				}}
 				onClick={() => this.forceUpdate()}>
 				<svg width='180' viewBox='0 0 23 23' id='pathSVG'>
-					<Gradient id='GradientPinkRed.fromOffset 0% GradientPinkRed.toOffset 10%' />
+					<Gradient id='gradient-dashoffset' />
 					<g
 						fill='#373737'
-						stroke='url(#GradientPinkRed.fromOffset 0% GradientPinkRed.toOffset 10%)'
-						strokeWidth='0.75'>
+						stroke='url(#gradient-dashoffset)'
+						strokeWidth='0.5'
+						strokeLinecap='round'>
 						<Spring
 							native
 							reset
@@ -53,6 +54,7 @@ class BoxThree extends Component {
 						</Spring>
 					</g>
 				</svg>
+				<div className='starText'>Hello</div>
 			</div>
 		);
 	}

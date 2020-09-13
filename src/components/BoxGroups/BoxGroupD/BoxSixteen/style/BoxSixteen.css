@@ -44,6 +44,14 @@
   width: -moz-fit-content;
   width: fit-content;
   font-size: 3rem;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 2px 4px 2px rgba(235, 88, 88, 0.75);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.formContainer .contactTitle:hover {
+  text-shadow: 2px 4px 2px #eb5858;
 }
 
 .formContainer #contact-form {
@@ -104,6 +112,7 @@
           align-items: center;
   height: 100%;
   width: 100%;
+  font-family: 'Oleo Script', cursive;
 }
 
 .formContainer #contact-form .form-group .form-inputs-container .label .iconSymbol {

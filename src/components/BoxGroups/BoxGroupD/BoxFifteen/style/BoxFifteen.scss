@@ -4,7 +4,7 @@
 	@include flexCenter(row, center, center);
 	@include heightWidth(100%, 100%);
 	#textBox {
-		color: aqua;
+		color: rgba(0, 255, 255, 0.75);
 		font-size: 80px;
 		line-height: 80px;
 		@include topLeftAbsolute(25%, 25%);
@@ -13,9 +13,10 @@
 		@include heightWidth(0px, 0px);
 		@include noSelection;
 		z-index: 20000;
+		font-family: 'Montserrat Subrayada', sans-serif;
 		&:hover {
-			color: orange;
 			pointer-events: none;
+			color: rgba(255, 255, 100, 0.75);
 		}
 	}
 }

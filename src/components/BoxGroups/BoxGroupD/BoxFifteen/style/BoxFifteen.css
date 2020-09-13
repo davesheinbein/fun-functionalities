@@ -17,7 +17,7 @@
 }
 
 .boxFifteenContainer #textBox {
-  color: aqua;
+  color: rgba(0, 255, 255, 0.75);
   font-size: 80px;
   line-height: 80px;
   position: absolute;
@@ -53,10 +53,11 @@
   /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
   z-index: 20000;
+  font-family: 'Montserrat Subrayada', sans-serif;
 }
 
 .boxFifteenContainer #textBox:hover {
-  color: orange;
   pointer-events: none;
+  color: rgba(255, 255, 100, 0.75);
 }
 /*# sourceMappingURL=BoxFifteen.css.map */

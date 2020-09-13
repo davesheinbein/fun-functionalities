@@ -239,6 +239,7 @@ class BoxSeven extends Component {
 						</animated.div>
 					)}
 				</Sidebar>
+				<div className="boxSevenText">Click the button to Login</div>
 			</div>
 		);
 	}

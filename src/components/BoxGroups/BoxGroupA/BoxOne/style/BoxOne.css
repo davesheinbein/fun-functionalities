@@ -22,7 +22,7 @@
 }
 
 .shapeAnimationContainer .shapeSVG #path-1:hover {
-  opacity: 0.5;
+  opacity: 0.25;
   fill: var(--BtnHover);
   -webkit-animation: colorAnim 5s infinite 0s alternate ease-in-out;
           animation: colorAnim 5s infinite 0s alternate ease-in-out;

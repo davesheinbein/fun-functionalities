@@ -6,4 +6,25 @@
 	@include flexCenter(row, center, center);
 	background-color: salmon;
 	z-index: 200;
+	.footerText {
+		@include heightWidth(100%, 100%);
+		@include flexCenter(row, flex-start, center);
+		font-family: 'Nunito', sans-serif;
+		margin: 0px 1em;
+		font-weight: 800;
+		.footerLink {
+			color: rgba(250, 250, 24, 0.75);
+			@include heightWidth(fit-content, fit-content);
+			@include flexCenter(row, center, center);
+			margin: 0;
+			transition: all .5s ease-in-out;
+			&:hover {
+				color: rgb(0, 238, 198);
+			}
+		}
+	}
+	.batteryContainer {
+		@include heightWidth(100%, 100%);
+		@include flexCenter(row, flex-end, center);
+	}
 }

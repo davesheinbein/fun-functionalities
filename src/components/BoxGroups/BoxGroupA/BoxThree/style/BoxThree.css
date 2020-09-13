@@ -17,6 +17,7 @@
   z-index: 3;
   cursor: pointer;
   background: var(--boxThreeBg);
+  position: relative;
 }
 
 #starContainer #pathSVG {
@@ -35,5 +36,30 @@
           align-items: center;
   height: 100%;
   width: 100%;
+}
+
+#starContainer .starText {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 4rem;
+  font-family: 'Permanent Marker', cursive;
+  pointer-events: none;
 }
 /*# sourceMappingURL=BoxThree.css.map */

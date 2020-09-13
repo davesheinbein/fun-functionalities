@@ -77,8 +77,9 @@
 										center,
 										flex-end
 									);
-									font-size: 22px;
-									line-height: 20px;
+									font-family: 'Patua One', cursive;
+									font-size: 28px;
+									line-height: 22px;
 									.anticon {
 										@include flexCenter(
 											column,
@@ -98,6 +99,10 @@
 										}
 									}
 								}
+								.ant-input {
+									@include heightWidth(100%, 90%);
+									padding: 1em;
+								}
 							}
 						}
 						.flexDirContainer {
@@ -109,8 +114,8 @@
 								#signup {
 									@include flexCenter(row, center, center);
 									@include heightWidth(24px, 100%);
-									background-color: #ff4618;
-									border-color: #ff4618;
+									background-color: rgba(255, 70, 24, 0.75);
+									border-color: rgba(212, 60, 22, 0.75);
 									color: #fff;
 									border: 1px solid transparent;
 									text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
@@ -127,10 +132,24 @@
 									margin-right: 1em;
 									font-weight: 400;
 									cursor: pointer;
+									transform: scale(1);
+									transition: all 0.5s ease-in-out;
 									&:hover {
-										background-color: #fa3301;
-										border-color: #fa3301;
+										transform: scale(1.1);
+										background-color: rgba(255, 70, 24, 1);
+										border-color: rgba(212, 60, 22, 1);
 									}
+								}
+							}
+							.login-form-button {
+								transform: scale(1);
+								background-color: rgba(1, 221, 250, 0.85);
+								border-color: rgba(4, 173, 196, 0.85);
+								transition: all 0.5s ease-in-out;
+								&:hover {
+									transform: scale(1.1);
+									background-color: rgba(1, 221, 250, 1);
+									border-color: rgba(4, 173, 196, 1);
 								}
 							}
 							.ant-checkbox-wrapper {
@@ -138,14 +157,18 @@
 								@include heightWidth(100%, 100%);
 								.ant-checkbox {
 									@include flexCenter(row, center, center);
-									@include heightWidth(100%, 10%);
+									@include heightWidth(
+										fit-content,
+										fit-content
+									);
+									margin-left: 3em;
 									#checkbox {
 										@include flexCenter(
 											row,
 											center,
 											center
 										);
-										@include heightWidth(100%, 10%);
+										@include heightWidth(100%, 100%);
 									}
 									.ant-checkbox-inner {
 										@include flexCenter(
@@ -160,15 +183,15 @@
 											center,
 											center
 										);
-										@include heightWidth(100%, 80%);
-										font-size: 10px;
+										@include heightWidth(100%, 100%);
+										font-size: 16px;
 									}
 								}
 							}
 							.login-form-forgot {
 								@include flexCenter(row, center, center);
 								@include heightWidth(100%, 100%);
-								font-size: 10px;
+								font-size: 16px;
 							}
 						}
 						.ant-btn {
@@ -194,6 +217,36 @@
 				@include flexCenter(column, center, center);
 				@include heightWidth(100%, 100%);
 			}
+		}
+	}
+	.boxSevenText {
+		@include flexCenter(column, center, center);
+		@include heightWidth(100%, 100%);
+		padding: 2em;
+		line-height: 50px;
+		font-size: 50px;
+		font-family: 'Bungee Shade', cursive;
+		color: transparent;
+		background: linear-gradient(
+			to top,
+			rgba(3, 0, 30, 0.75),
+			rgba(115, 3, 192, 0.75),
+			rgba(236, 56, 188, 0.75),
+			rgba(253, 239, 249, 0.75)
+		);
+		background-size: cover;
+		background-clip: text;
+		transition: all 1s ease-in-out;
+		&:hover {
+			background: linear-gradient(
+				to top,
+				rgba(3, 0, 30, 1),
+				rgba(115, 3, 192, 1),
+				rgba(236, 56, 188, 1),
+				rgba(253, 239, 249, 1)
+			);
+			background-size: cover;
+			background-clip: text;
 		}
 	}
 }
