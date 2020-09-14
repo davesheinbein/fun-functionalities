@@ -86,6 +86,7 @@ const items = [
 				margin: 0,
 				marginTop: '5px',
 			}}
+			autoComplete='none'
 			type='email'
 			placeholder='Email'
 			name='email'
@@ -121,6 +122,7 @@ const items = [
 				margin: 0,
 				marginTop: '5px',
 			}}
+			autoComplete='none'
 			type='password'
 			placeholder='Password'
 			name='pw'
@@ -187,6 +189,7 @@ class BoxSeven extends Component {
 	};
 
 	render() {
+		console.log(this.state, '<<<<<  this.state');
 		const state =
 			this.state.open === undefined
 				? 'peek'

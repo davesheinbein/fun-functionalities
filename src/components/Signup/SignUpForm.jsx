@@ -100,7 +100,6 @@ export class Signup extends Component {
 							<Button
 								disabled={this.isFormInvalid()}
 								size='small'
-								type='primary'
 								type='submit'
 								className='signupSubmitFormButton'
 								children='Submit'

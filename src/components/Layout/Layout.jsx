@@ -60,8 +60,8 @@ import './style/Layout.css';
 
 function Layout(props) {
 	const { location } = useContext(__RouterContext);
-	console.log('location', location);
-	console.log('__RouterContext', __RouterContext);
+	console.log('<<<< location', location);
+	console.log('<<<< __RouterContext', __RouterContext);
 	const transition = useTransition(
 		location,
 		(location) => location.pathname,
