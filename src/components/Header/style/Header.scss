@@ -11,7 +11,7 @@
 	color: black;
 	background: var(--headerColor);
 	background-size: 400%;
-	animation: headingAnimation 5s infinite 0s alternate;
+	animation: bgAnimation 5s infinite 0s alternate;
 	.logo {
 		@include heightWidth(100%, 100%);
 		@include flexCenter(row, flex-start, flex-start);
@@ -23,7 +23,7 @@
 		font-size: 40px;
 		line-height: 43px;
 		@include noSelection;
-		animation: headingAnimation 5s infinite 0s alternate;
+		animation: bgAnimation 5s infinite 0s alternate;
 	}
 	.list {
 		@include heightWidth(100%, 100%);
@@ -48,14 +48,5 @@
 		@include heightWidth(100%, 100%);
 		@include flexCenter(row, flex-end, center);
 		margin: 0px 1em;
-	}
-}
-
-@keyframes headingAnimation {
-	0% {
-		background-position: left;
-	}
-	100% {
-		background-position: right;
 	}
 }

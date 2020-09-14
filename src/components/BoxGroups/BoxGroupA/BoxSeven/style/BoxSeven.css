@@ -1,3 +1,21 @@
+@-webkit-keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
 .profileContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,8 +40,6 @@
   position: absolute;
   top: 3%;
   left: 0%;
-  -webkit-transform: translate(-3%, 3%);
-          transform: translate(-3%, 3%);
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,7 +140,28 @@
   width: 100%;
 }
 
-.profileContainer .sidebar div .ant-row {
+.profileContainer .sidebar div .formLoginContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.profileContainer .sidebar div .formLoginContainer .ant-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +180,7 @@
   margin: 0%;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,7 +199,7 @@
   margin-bottom: 5%;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,7 +217,7 @@
   width: 100%;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,7 +235,7 @@
   width: 100%;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .ant-avatar {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .ant-avatar {
   position: absolute;
   top: 10%;
   left: 50%;
@@ -221,7 +258,7 @@
   width: 11vw;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .ant-avatar img {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .ant-avatar img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,7 +277,7 @@
   border-radius: 50%;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,7 +295,7 @@
   width: 100%;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex .dirFlexContainer {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex .dirFlexContainer {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -279,7 +316,7 @@
   line-height: 22px;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex .dirFlexContainer .anticon {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex .dirFlexContainer .anticon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,7 +334,7 @@
   width: 100%;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex .dirFlexContainer .anticon svg {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex .dirFlexContainer .anticon svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,13 +352,13 @@
   width: 100%;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex .ant-input {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex .ant-input {
   height: 100%;
   width: 90%;
   padding: 1em;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,7 +376,7 @@
   width: 100%;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .signup {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .signup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,7 +394,7 @@
   width: 100%;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .signup #signup {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .signup #signup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,14 +439,14 @@
   transition: all 0.5s ease-in-out;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .signup #signup:hover {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .signup #signup:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background-color: #ff4618;
   border-color: #d43c16;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .login-form-button {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .login-form-button {
   -webkit-transform: scale(1);
           transform: scale(1);
   background-color: rgba(1, 221, 250, 0.85);
@@ -418,14 +455,14 @@
   transition: all 0.5s ease-in-out;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .login-form-button:hover {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .login-form-button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background-color: #01ddfa;
   border-color: #04adc4;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -443,7 +480,7 @@
   width: 100%;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper .ant-checkbox {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper .ant-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,7 +503,7 @@
   margin-left: 3em;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper .ant-checkbox #checkbox {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper .ant-checkbox #checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,7 +521,7 @@
   width: 100%;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper .ant-checkbox .ant-checkbox-inner {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper .ant-checkbox .ant-checkbox-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,26 +537,7 @@
           align-items: center;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper .ant-checkbox + span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-  font-size: 16px;
-}
-
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .login-form-forgot {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper .ant-checkbox + span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,11 +556,30 @@
   font-size: 16px;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .ant-btn {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .login-form-forgot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+}
+
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-btn {
   width: 100%;
 }
 
-.profileContainer .sidebar div .ant-row .ant-col .ant-form-item-control-input .ant-btn span {
+.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-btn span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,7 +597,7 @@
   width: 100%;
 }
 
-.profileContainer .contentContainer {
+.profileContainer .sidebar .contentContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -578,7 +615,7 @@
   width: 100%;
 }
 
-.profileContainer .contentContainer .middle {
+.profileContainer .sidebar .contentContainer .middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -597,7 +634,7 @@
   margin: 0%;
 }
 
-.profileContainer .contentContainer .middle .ant-form-item-control {
+.profileContainer .sidebar .contentContainer .middle .ant-form-item-control {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

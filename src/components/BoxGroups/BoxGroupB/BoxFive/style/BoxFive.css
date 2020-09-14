@@ -17,8 +17,8 @@
   border: none;
   background-size: 400%;
   background-image: var(--boxFiveBg);
-  -webkit-animation: bgAnimation 5s infinite alternate;
-          animation: bgAnimation 5s infinite alternate;
+  -webkit-animation: headingAnimation 5s infinite alternate;
+          animation: headingAnimation 5s infinite alternate;
 }
 
 .boxFiveContainer .boxFiveSubcontainer {
@@ -187,6 +187,24 @@
   }
   100% {
     background-position: bottom right;
+  }
+}
+
+@-webkit-keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
   }
 }
 /*# sourceMappingURL=BoxFive.css.map */

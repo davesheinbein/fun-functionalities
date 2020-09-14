@@ -46,6 +46,13 @@ import NavGroupB from '../NavBtns/NavGroupLinks/NavGroupB';
 import NavGroupC from '../NavBtns/NavGroupLinks/NavGroupC';
 import NavGroupD from '../NavBtns/NavGroupLinks/NavGroupD';
 
+// Signup
+import SignUpPage from '../Signup/SignUpPage';
+// Forgot
+import Forgot from '../../components/Forgot/Forgot';
+// Reset
+import Reset from '../../components/Reset/Reset';
+
 // Footer
 import Footer from '../../components/Footer/Footer';
 
@@ -107,7 +114,12 @@ function Layout(props) {
 										<NavHome />
 									</div>
 									<div className='boxGroupsContainer'>
-										<BoxGroupA />
+										<BoxGroupA
+											handleSignupOrLogin={
+												props.handleSignupOrLogin
+											}
+											{...props}
+										/>
 									</div>
 								</div>
 							)}
@@ -150,6 +162,44 @@ function Layout(props) {
 									</div>
 									<div className='boxGroupsContainer'>
 										<BoxGroupD />
+									</div>
+								</div>
+							)}
+						/>
+						<Route
+							exact
+							path='/signup'
+							render={() => (
+								<div className='absoluteContainer'>
+									<div className='profileFormsContainer'>
+										<SignUpPage
+											handleSignupOrLogin={
+												props.handleSignupOrLogin
+											}
+											{...props}
+										/>
+									</div>
+								</div>
+							)}
+						/>
+						<Route
+							exact
+							path='/forgot'
+							render={() => (
+								<div className='absoluteContainer'>
+									<div className='profileFormsContainer'>
+										<Forgot />
+									</div>
+								</div>
+							)}
+						/>
+						<Route
+							exact
+							path='/reset'
+							render={() => (
+								<div className='absoluteContainer'>
+									<div className='profileFormsContainer'>
+										<Reset />
 									</div>
 								</div>
 							)}

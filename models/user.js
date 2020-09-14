@@ -13,8 +13,6 @@ const userSchema = new mongoose.Schema(
 			unique: true,
 		},
 		password: String,
-		location: String,
-		contactNumber: Number,
 	},
 	{
 		timestamps: true,

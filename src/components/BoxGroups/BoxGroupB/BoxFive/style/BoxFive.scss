@@ -6,7 +6,7 @@
 	border: none;
 	background-size: 400%;
 	background-image: var(--boxFiveBg);
-	animation: bgAnimation 5s infinite alternate;
+	animation: headingAnimation 5s infinite alternate;
 	.boxFiveSubcontainer {
 		@include flexCenter(column, center, center);
 		@include heightWidth(100%, 100%);
@@ -81,11 +81,4 @@
 	}
 }
 
-@keyframes bgAnimation {
-	0% {
-		background-position: top left;
-	}
-	100% {
-		background-position: bottom right;
-	}
-}
+@include bgAnimationMix(top left, bottom right);

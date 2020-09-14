@@ -1,0 +1,311 @@
+@-webkit-keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.signUpPage {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.signupFormContainer {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#76b852), to(#3d806a));
+  background: linear-gradient(90deg, #76b852 0%, #3d806a 100%);
+  background-size: 400%;
+  -webkit-animation: bgAnimation 5s infinite 0s alternate;
+          animation: bgAnimation 5s infinite 0s alternate;
+}
+
+.signupFormContainer .signupForm {
+  height: 50%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(255, 151, 151, 0.75);
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  font-family: 'Quicksand', sans-serif;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.signupFormContainer .signupForm .signupFormText {
+  margin-top: 1em;
+  pointer-events: initial;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.75);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.signupFormContainer .signupForm .signupFormText:hover {
+  color: white;
+}
+
+.signupFormContainer .signupForm .signupFormSubText {
+  pointer-events: initial;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.75);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+}
+
+.signupFormContainer .signupForm .signupFormSubText:hover {
+  color: white;
+}
+
+.signupFormContainer .signupForm .inputSignupContainer {
+  height: 3vh;
+  width: 90%;
+  margin-bottom: 5em;
+  pointer-events: initial;
+}
+
+.signupFormContainer .signupForm .inputSignupContainer .formItems {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signupFormContainer .signupForm .inputSignupContainer .formItems .ant-form-item-control-input {
+  height: 100%;
+  width: 100%;
+}
+
+.signupFormContainer .signupForm .inputSignupContainer .formItems .ant-form-item-control-input .inputSignup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 1em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.signupFormContainer .signupForm .inputSignupContainer .formItems .ant-form-item-control-input .signupSubmitFormButton {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 1em;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 186, 125, 0.75);
+  border-color: rgba(255, 186, 125, 0.5);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.signupFormContainer .signupForm .inputSignupContainer .formItems .ant-form-item-control-input .signupSubmitFormButton:hover {
+  color: black;
+  background: #ffba7d;
+  border-color: #ffba7d;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.signupFormContainer .signupForm .inputSignupContainer .cancelLink {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em 0px;
+  padding: 0px 1em;
+  font-size: 20px;
+}
+
+.signupFormContainer .signupForm .inputSignupContainer .cancelLink .cancelLinkText {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 1em;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  color: bl;
+  color: rgba(255, 255, 255, 0.75);
+  background: rgba(125, 181, 255, 0.75);
+  border-color: rgba(125, 181, 255, 0.5);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.signupFormContainer .signupForm .inputSignupContainer .cancelLink .cancelLinkText:hover {
+  color: white;
+  background: #7db5ff;
+  border-color: #7db5ff;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.signupFormContainer .gooContain {
+  z-index: 1;
+}
+/*# sourceMappingURL=SignupForm.css.map */

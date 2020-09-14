@@ -1,0 +1,128 @@
+@import '../../../breakpoints/breakpoints.scss';
+@import '../../../mixins/mixins.scss';
+
+html,
+body,
+#root {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.gooContainer {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	font-family: -apple-system, BlinkMacSystemFont,
+		avenir next, avenir, helvetica neue, helvetica, ubuntu,
+		roboto, noto, segoe ui, arial, sans-serif;
+	background: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+	.hooks-main {
+		z-index: 999999;
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		width: 100%;
+		height: 100%;
+		filter: url('#goo');
+		overflow: hidden;
+		> div {
+			display: block;
+			animation: colorAnimation linear 0s infinite forwards;
+			animation-duration: 10s;
+			animation-direction: alternate;
+			animation-timing-function: ease-in-out;
+			position: absolute;
+			will-change: transform;
+			transform-style: preserve-3d;
+			border-radius: 50%;
+			background: radial-gradient(
+				circle,
+				rgba(249, 208, 255, 1) 0%,
+				rgba(89, 30, 241, 1) 100%
+			);
+			cursor: pointer;
+			box-shadow: 0 0 10px rgba(30, 241, 189, 0.5);
+			opacity: 0.6;
+			&:nth-child(1) {
+				width: 120px;
+				height: 120px;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+			}
+
+			&:nth-child(2) {
+				width: 250px;
+				height: 250px;
+				&::after {
+					top: 70px;
+					left: 70px;
+					width: 70px;
+					height: 70px;
+				}
+			}
+
+			&:nth-child(3) {
+				width: 150px;
+				height: 150px;
+				&::after {
+					top: 50px;
+					left: 50px;
+					width: 50px;
+					height: 50px;
+				}
+			}
+		}
+		@keyframes colorAnimation {
+			0% {
+				box-shadow: 0 0 10px $shadowGreen,
+					0 0 20px $shadowGreen, 0 0 40px $shadowGreen,
+					0 0 60px $shadowGreen, 0 0 80px $shadowGreen,
+					0 0 90px $shadowGreen;
+			}
+			25% {
+				box-shadow: 0 0 10px $shadowBlue,
+					0 0 20px $shadowBlue, 0 0 40px $shadowBlue,
+					0 0 60px $shadowBlue, 0 0 80px $shadowBlue,
+					0 0 100px $shadowBlue;
+			}
+			50% {
+				box-shadow: 0 0 10px $shadowRed, 0 0 20px $shadowRed,
+					0 0 40px $shadowRed, 0 0 60px $shadowRed,
+					0 0 80px $shadowRed, 0 0 100px $shadowRed;
+			}
+			75% {
+				box-shadow: 0 0 10px $shadowBrown,
+					0 0 20px $shadowBrown, 0 0 40px $shadowBrown,
+					0 0 60px $shadowBrown, 0 0 80px $shadowBrown,
+					0 0 100px $shadowBrown;
+			}
+			100% {
+				box-shadow: 0 0 10px $shadowPurple,
+					0 0 20px $shadowPurple, 0 0 40px $shadowPurple,
+					0 0 60px $shadowPurple, 0 0 80px $shadowPurple,
+					0 0 100px $shadowPurple, 0 0 120px $shadowPurple,
+					0 0 140px $shadowPurple, 0 0 160px $shadowPurple,
+					0 0 200px $shadowPurple, 0 0 300px $shadowPurple,
+					0 0 400px $shadowPurple;
+			}
+		}
+	}
+}

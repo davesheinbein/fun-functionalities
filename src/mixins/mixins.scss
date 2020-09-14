@@ -49,7 +49,23 @@
 	content: $content;
 }
 
+@keyframes headingAnimation {
+	0% {
+		background-position: left;
+	}
+	100% {
+		background-position: right;
+	}
+}
+
 // Arcade Btn Css
 $bgArcadeBtn: #333;
 $push-color: hsla(10, 90%, 40%, 1);
 $push-size: 240px;
+
+// Goo Mixin
+$shadowGreen: rgba(30, 241, 189, 0.5);
+$shadowBlue: rgba(64, 188, 249, 0.5);
+$shadowRed: rgba(249, 83, 64, 0.5);
+$shadowBrown: rgba(255, 153, 0, 0.5);
+$shadowPurple: rgba(64, 85, 249, 0.5);

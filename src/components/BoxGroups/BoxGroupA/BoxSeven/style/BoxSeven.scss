@@ -7,7 +7,6 @@
 	overflow: hidden;
 	.sidebar-toggle {
 		@include topLeftAbsolute(3%, 0%);
-		transform: translate(-3%, 3%);
 		z-index: 100;
 		@include flexCenter(column, center, flex-start);
 		@include heightWidth(3vh, 100%);
@@ -38,184 +37,215 @@
 		div {
 			@include flexCenter(column, center, center);
 			@include heightWidth(100%, 100%);
-			.ant-row {
-				@include flexCenter(column, center, center);
+			.formLoginContainer {
+				@include flexCenter(row, center, center);
 				@include heightWidth(100%, 100%);
-				margin: 0%;
-				.ant-col {
+				@include topLeftAbsolute(0%, 0%);
+				.ant-row {
 					@include flexCenter(column, center, center);
 					@include heightWidth(100%, 100%);
-					margin-bottom: 5%;
-					.ant-form-item-control-input {
+					margin: 0%;
+					.ant-col {
 						@include flexCenter(column, center, center);
 						@include heightWidth(100%, 100%);
-						.ant-form-item-control-input-content {
+						margin-bottom: 5%;
+						.ant-form-item-control-input {
 							@include flexCenter(column, center, center);
-							@include heightWidth(5vh, 100%);
-							.ant-avatar {
-								@include topLeftAbsolute(10%, 50%);
-								transform: translate(-50%, 10%);
+							@include heightWidth(100%, 100%);
+							.ant-form-item-control-input-content {
 								@include flexCenter(column, center, center);
-								@include heightWidth(10vh, 11vw);
-								img {
+								@include heightWidth(5vh, 100%);
+								.ant-avatar {
+									@include topLeftAbsolute(10%, 50%);
+									transform: translate(-50%, 10%);
 									@include flexCenter(
 										column,
 										center,
 										center
 									);
-									@include heightWidth(100%, 100%);
-									border-radius: 50%;
-								}
-							}
-							.alignFlex {
-								@include flexCenter(column, center, center);
-								@include heightWidth(100%, 100%);
-								.dirFlexContainer {
-									@include heightWidth(100%, 100%);
-									@include flexCenter(
-										row,
-										center,
-										flex-end
-									);
-									font-family: 'Patua One', cursive;
-									font-size: 28px;
-									line-height: 22px;
-									.anticon {
+									@include heightWidth(10vh, 11vw);
+									img {
 										@include flexCenter(
 											column,
 											center,
 											center
 										);
 										@include heightWidth(100%, 100%);
-										svg {
+										border-radius: 50%;
+									}
+								}
+								.alignFlex {
+									@include flexCenter(
+										column,
+										center,
+										center
+									);
+									@include heightWidth(100%, 100%);
+									.dirFlexContainer {
+										@include heightWidth(100%, 100%);
+										@include flexCenter(
+											row,
+											center,
+											flex-end
+										);
+										font-family: 'Patua One', cursive;
+										font-size: 28px;
+										line-height: 22px;
+										.anticon {
 											@include flexCenter(
 												column,
 												center,
 												center
 											);
 											@include heightWidth(100%, 100%);
-											path {
+											svg {
+												@include flexCenter(
+													column,
+													center,
+													center
+												);
+												@include heightWidth(100%, 100%);
+												path {
+												}
 											}
 										}
 									}
-								}
-								.ant-input {
-									@include heightWidth(100%, 90%);
-									padding: 1em;
+									.ant-input {
+										@include heightWidth(100%, 90%);
+										padding: 1em;
+									}
 								}
 							}
-						}
-						.flexDirContainer {
-							@include flexCenter(row, center, center);
-							@include heightWidth(100%, 100%);
-							.signup {
+							.flexDirContainer {
 								@include flexCenter(row, center, center);
 								@include heightWidth(100%, 100%);
-								#signup {
+								.signup {
 									@include flexCenter(row, center, center);
-									@include heightWidth(24px, 100%);
-									background-color: rgba(255, 70, 24, 0.75);
-									border-color: rgba(212, 60, 22, 0.75);
-									color: #fff;
-									border: 1px solid transparent;
-									text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
-									box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
-									border-radius: 2px;
-									font-size: 14px;
-									padding: 0px 7px;
-									outline: 0;
-									display: inline-block;
-									touch-action: manipulation;
-									user-select: none;
-									line-height: 1.5715;
-									white-space: nowrap;
-									margin-right: 1em;
-									font-weight: 400;
-									cursor: pointer;
+									@include heightWidth(100%, 100%);
+									#signup {
+										@include flexCenter(
+											row,
+											center,
+											center
+										);
+										@include heightWidth(24px, 100%);
+										background-color: rgba(
+											255,
+											70,
+											24,
+											0.75
+										);
+										border-color: rgba(212, 60, 22, 0.75);
+										color: #fff;
+										border: 1px solid transparent;
+										text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+										box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+										border-radius: 2px;
+										font-size: 14px;
+										padding: 0px 7px;
+										outline: 0;
+										display: inline-block;
+										touch-action: manipulation;
+										user-select: none;
+										line-height: 1.5715;
+										white-space: nowrap;
+										margin-right: 1em;
+										font-weight: 400;
+										cursor: pointer;
+										transform: scale(1);
+										transition: all 0.5s ease-in-out;
+										&:hover {
+											transform: scale(1.1);
+											background-color: rgba(
+												255,
+												70,
+												24,
+												1
+											);
+											border-color: rgba(212, 60, 22, 1);
+										}
+									}
+								}
+								.login-form-button {
 									transform: scale(1);
+									background-color: rgba(1, 221, 250, 0.85);
+									border-color: rgba(4, 173, 196, 0.85);
 									transition: all 0.5s ease-in-out;
 									&:hover {
 										transform: scale(1.1);
-										background-color: rgba(255, 70, 24, 1);
-										border-color: rgba(212, 60, 22, 1);
+										background-color: rgba(1, 221, 250, 1);
+										border-color: rgba(4, 173, 196, 1);
 									}
 								}
-							}
-							.login-form-button {
-								transform: scale(1);
-								background-color: rgba(1, 221, 250, 0.85);
-								border-color: rgba(4, 173, 196, 0.85);
-								transition: all 0.5s ease-in-out;
-								&:hover {
-									transform: scale(1.1);
-									background-color: rgba(1, 221, 250, 1);
-									border-color: rgba(4, 173, 196, 1);
-								}
-							}
-							.ant-checkbox-wrapper {
-								@include flexCenter(row, center, center);
-								@include heightWidth(100%, 100%);
-								.ant-checkbox {
+								.ant-checkbox-wrapper {
 									@include flexCenter(row, center, center);
-									@include heightWidth(
-										fit-content,
-										fit-content
-									);
-									margin-left: 3em;
-									#checkbox {
+									@include heightWidth(100%, 100%);
+									.ant-checkbox {
 										@include flexCenter(
 											row,
 											center,
 											center
 										);
-										@include heightWidth(100%, 100%);
-									}
-									.ant-checkbox-inner {
-										@include flexCenter(
-											row,
-											center,
-											center
+										@include heightWidth(
+											fit-content,
+											fit-content
 										);
-									}
-									+ span {
-										@include flexCenter(
-											row,
-											center,
-											center
-										);
-										@include heightWidth(100%, 100%);
-										font-size: 16px;
+										margin-left: 3em;
+										#checkbox {
+											@include flexCenter(
+												row,
+												center,
+												center
+											);
+											@include heightWidth(100%, 100%);
+										}
+										.ant-checkbox-inner {
+											@include flexCenter(
+												row,
+												center,
+												center
+											);
+										}
+										+ span {
+											@include flexCenter(
+												row,
+												center,
+												center
+											);
+											@include heightWidth(100%, 100%);
+											font-size: 16px;
+										}
 									}
 								}
+								.login-form-forgot {
+									@include flexCenter(row, center, center);
+									@include heightWidth(100%, 100%);
+									font-size: 16px;
+								}
 							}
-							.login-form-forgot {
-								@include flexCenter(row, center, center);
-								@include heightWidth(100%, 100%);
-								font-size: 16px;
-							}
-						}
-						.ant-btn {
-							width: 100%;
-							span {
-								@include flexCenter(row, center, center);
-								@include heightWidth(100%, 100%);
+							.ant-btn {
+								width: 100%;
+								span {
+									@include flexCenter(row, center, center);
+									@include heightWidth(100%, 100%);
+								}
 							}
 						}
 					}
 				}
 			}
 		}
-	}
-	.contentContainer {
-		@include flexCenter(column, center, center);
-		@include heightWidth(100%, 100%);
-		.middle {
+		.contentContainer {
 			@include flexCenter(column, center, center);
 			@include heightWidth(100%, 100%);
-			margin: 0%;
-			.ant-form-item-control {
+			.middle {
 				@include flexCenter(column, center, center);
 				@include heightWidth(100%, 100%);
+				margin: 0%;
+				.ant-form-item-control {
+					@include flexCenter(column, center, center);
+					@include heightWidth(100%, 100%);
+				}
 			}
 		}
 	}

@@ -133,11 +133,13 @@ const items = [
 			<Checkbox size='small' id='checkbox'>
 				Remember me
 			</Checkbox>
-			<a
-				className='login-form-forgot'
-				href='#'
-				children='Forgot password'
-			/>
+			<Link to='/forgot' className='signup'>
+				<a
+					className='login-form-forgot'
+					children='Forgot password'
+					href='/forgot'
+				/>
+			</Link>
 		</div>
 		<div className='flexDirContainer'>
 			<Button
@@ -151,7 +153,7 @@ const items = [
 					padding: '0px 7px',
 				}}
 			/>
-			<Link to='/' className='signup'>
+			<Link to='/signup' className='signup'>
 				<button id='signup'>Signup</button>
 			</Link>
 		</div>
@@ -191,7 +193,7 @@ class BoxSeven extends Component {
 				: this.state.open
 				? 'open'
 				: 'close';
-		const icon = this.state.open ? 'fold' : 'unfold';
+		// const icon = this.state.open ? 'fold' : 'unfold';
 		return (
 			<div
 				className='profileContainer'
@@ -228,18 +230,22 @@ class BoxSeven extends Component {
 											),
 											...props,
 										}}>
-										<Form.Item
-											className={i === 0 ? 'middle' : ''}
-											onSubmit={this.handleSubmit}>
-											{item}
-										</Form.Item>
+										<Form className='formLoginContainer'>
+											<Form.Item
+												className={i === 0 ? 'middle' : ''}
+												onSubmit={this.handleSubmit}>
+												{item}
+											</Form.Item>
+										</Form>
 									</animated.div>
 								)}
 							</Content>
 						</animated.div>
 					)}
 				</Sidebar>
-				<div className="boxSevenText">Click the button to Login</div>
+				<div className='boxSevenText'>
+					Click the button to Login
+				</div>
 			</div>
 		);
 	}

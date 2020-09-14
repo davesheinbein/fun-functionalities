@@ -1,3 +1,21 @@
+@-webkit-keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
 .batteryContain {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,14 +104,15 @@
           align-items: center;
   height: 100%;
   width: 100%;
-  background: rgba(60, 232, 26, 0.75);
+  background: #3ce81a;
+  opacity: 0.75;
   font-size: calc(1vw + 12px);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .batteryContain .battery .level:hover {
-  background: #3ce81a;
+  opacity: 1;
 }
 
 .batteryContain .batteryText {

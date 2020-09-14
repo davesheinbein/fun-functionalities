@@ -1,1 +1,17 @@
-/* No CSS *//*# sourceMappingURL=mixins.css.map */
+@-webkit-keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+@keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+/*# sourceMappingURL=mixins.css.map */

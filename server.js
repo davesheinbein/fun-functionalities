@@ -22,10 +22,15 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 /*--- Spot for Routers ---*/
+// User Auth
 app.use(require('./config/auth'));
-app.use('/api/users', require('./routes/api/users'));
 
 /*--- Spot for api routes ---*/
+
+// Users
+app.use('/api/users', require('./routes/api/users'));
+
+// Emails
 app.use('/api/form', cors());
 app.post('/api/form', (req, res) => {
 	const gmailLogin = process.env.GMAILLOGIN;

@@ -5,13 +5,16 @@ import BoxThree from './BoxThree/BoxThree';
 import BoxSeven from './BoxSeven/BoxSeven';
 import './style/BoxGroupA.css';
 
-function BoxGroupA() {
+function BoxGroupA(props) {
 	return (
 		<div className='boxGroupContainer'>
 			<BoxOne />
 			<BoxTwo />
 			<BoxThree />
-			<BoxSeven />
+			<BoxSeven
+				handleSignupOrLogin={props.handleSignupOrLogin}
+				{...props}
+			/>
 		</div>
 	);
 }

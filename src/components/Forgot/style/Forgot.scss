@@ -1,0 +1,82 @@
+@import '../../../mixins/mixins.scss';
+
+.forgotContainer {
+	@include topLeftAbsolute(0%, 0%);
+	@include heightWidth(100%, 100%);
+	@include flexCenter(row, center, center);
+	background: linear-gradient(
+		90deg,
+		rgb(118, 184, 82) 0%,
+		rgb(61, 128, 106) 100%
+	);
+	background-size: 400%;
+	animation: bgAnimation 5s infinite 0s alternate;
+	.forgotForm {
+		@include heightWidth(30%, 80%);
+		@include topLeftAbsolute(50%, 50%);
+		transform: translate(-50%, -50%);
+		@include flexCenter(column, center, center);
+		background: rgba(255, 151, 151, 0.75);
+		border-radius: 25px;
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+		font-family: 'Quicksand', sans-serif;
+		z-index: 10;
+		pointer-events: none;
+		.forgotFormText {
+			pointer-events: initial;
+			font-size: 60px;
+			color: rgba(255, 255, 255, 0.75);
+			@include heightWidth(fit-content, 100%);
+			@include flexCenter(row, center, center);
+			margin-bottom: 0.5em;
+			transition: all 0.5s ease-in-out;
+			&:hover {
+				color: rgba(255, 255, 255, 1);
+			}
+		}
+		.forgotFormSubText {
+			pointer-events: initial;
+			font-size: 20px;
+			color: rgba(255, 255, 255, 0.75);
+			@include heightWidth(fit-content, 100%);
+			@include flexCenter(row, center, center);
+			margin-bottom: 1em;
+			&:hover {
+				color: rgba(255, 255, 255, 1);
+			}
+		}
+		.inputForgotContainer {
+			pointer-events: initial;
+			@include heightWidth(3vh, 90%);
+			margin-bottom: 3em;
+			.inputForgot {
+				@include heightWidth(100%, 100%);
+				@include flexCenter(row, center, center);
+				padding: 0px 1em;
+				border-radius: 5px;
+				margin-bottom: 1em;
+				box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+			}
+			.emailSubmitFormButton {
+				@include heightWidth(100%, 100%);
+				@include flexCenter(row, center, center);
+				padding: 0px 1em;
+				border-radius: 5px;
+				box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+				font-size: 20px;
+				background: rgba(255, 186, 125, 0.75);
+				border-color: rgba(255, 186, 125, 0.5);
+				transform: scale(1);
+				transition: all 0.5s ease-in-out;
+				&:hover {
+					background: rgba(255, 186, 125, 1);
+					border-color: rgba(255, 186, 125, 1);
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+	.gooContain {
+		z-index: 1;
+	}
+}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Layout from '../../components/Layout/Layout';
 import { createGlobalStyle } from 'styled-components';
+import userService from '../../services/userServices';
 import './style/App.css';
 
 const GlobalStyle = createGlobalStyle`
@@ -98,6 +99,7 @@ class App extends Component {
 
 		this.state = {
 			color: 'default',
+			user: userService.getUser(),
 		};
 		this.handleThemeChange = this.handleThemeChange.bind(
 			this
@@ -112,6 +114,15 @@ class App extends Component {
 		});
 	}
 
+	handleLogout = () => {
+		userService.logout();
+		this.setState({ user: null });
+	};
+
+	handleSignupOrLogin = () => {
+		this.setState({ user: userService.getUser() });
+	};
+
 	/*--- Lifecycle Methods ---*/
 
 	render() {
@@ -120,6 +131,7 @@ class App extends Component {
 				<GlobalStyle color={this.state.color} />
 				<Layout
 					handleThemeChange={this.handleThemeChange}
+					handleSignupOrLogin={this.handleSignupOrLogin}
 				/>
 			</div>
 		);
