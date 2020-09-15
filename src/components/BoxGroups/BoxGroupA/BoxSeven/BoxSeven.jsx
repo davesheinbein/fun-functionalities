@@ -5,21 +5,22 @@ import {
 	animated,
 } from 'react-spring/renderprops';
 import {
-	Avatar,
+	// Avatar,
 	Form,
-	Input,
-	Button,
-	Checkbox,
+	// Input,
+	// Button,
+	// Checkbox,
 } from 'antd';
 import {
-	UserOutlined,
-	LockOutlined,
+	// UserOutlined,
+	// LockOutlined,
 	MenuFoldOutlined,
 } from '@ant-design/icons';
 import delay from 'delay';
 import userService from '../../../../services/userServices';
 import 'antd/dist/antd.css';
 import './style/BoxSeven.css';
+import LoginForm from '../../../LoginForm/LoginForm';
 
 // Creates a spring with predefined animation slots
 const Sidebar = Keyframes.Spring({
@@ -53,113 +54,114 @@ const Content = Keyframes.Trail({
 });
 
 const items = [
-	<Avatar
-		src='https://semantic-ui.com/images/avatar2/large/elyse.png'
-		className='ant-avatar'
-	/>,
-	<div className='alignFlex'>
-		<div className='dirFlexContainer'>
-			<UserOutlined
-				type='user'
-				style={{
-					color: 'rgba(0,0,0,1)',
-					width: '15%',
-					height: '3vh',
-					display: 'flex',
-					flexDirection: 'row',
-					justifyContent: 'center',
-					alignContent: 'center',
-					margin: 0,
-				}}
-				id='userIcon'
-			/>
-			Email
-		</div>
-		<Input
-			size='small'
-			style={{
-				height: '3vh',
-				display: 'flex',
-				flexDirection: 'column',
-				justifyContent: 'center',
-				alignContent: 'center',
-				margin: 0,
-				marginTop: '5px',
-			}}
-			autoComplete='none'
-			type='email'
-			placeholder='Email'
-			name='email'
-			// value={this.state.email}
-			// onChange={this.props.handleChange}
-		/>
-	</div>,
-	<div className='alignFlex'>
-		<div className='dirFlexContainer'>
-			<LockOutlined
-				type='lock'
-				style={{
-					color: 'rgba(0,0,0,1)',
-					width: '15%',
-					height: '3vh',
-					display: 'flex',
-					flexDirection: 'column',
-					justifyContent: 'center',
-					alignContent: 'center',
-				}}
-				id='passwordIcon'
-			/>
-			Password
-		</div>
-		<Input
-			size='small'
-			style={{
-				height: '3vh',
-				display: 'flex',
-				flexDirection: 'column',
-				justifyContent: 'center',
-				alignContent: 'center',
-				margin: 0,
-				marginTop: '5px',
-			}}
-			autoComplete='none'
-			type='password'
-			placeholder='Password'
-			name='pw'
-			// value={this.state.pw}
-			// onChange={this.handleChange}
-		/>
-	</div>,
-	<Fragment id='submissionContainer'>
-		<div className='flexDirContainer'>
-			<Checkbox size='small' id='checkbox'>
-				Remember me
-			</Checkbox>
-			<Link to='/forgot' className='signup'>
-				<a
-					className='login-form-forgot'
-					children='Forgot password'
-					href='/forgot'
-				/>
-			</Link>
-		</div>
-		<div className='flexDirContainer'>
-			<Button
-				size='small'
-				type='primary'
-				htmlType='submit'
-				className='login-form-button'
-				children='Log in'
-				style={{
-					margin: '0px 1em',
-					padding: '0px 7px',
-				}}
-			/>
-			<Link to='/signup' className='signup'>
-				<button id='signup'>Signup</button>
-			</Link>
-		</div>
-	</Fragment>,
+	<LoginForm />,
+	// <Avatar
+	// 	src='https://semantic-ui.com/images/avatar2/large/elyse.png'
+	// 	className='ant-avatar'
+	// />,
+	// <div className='alignFlex'>
+	// 	<div className='dirFlexContainer'>
+	// 		<UserOutlined
+	// 			type='user'
+	// 			style={{
+	// 				color: 'rgba(0,0,0,1)',
+	// 				width: '15%',
+	// 				height: '3vh',
+	// 				display: 'flex',
+	// 				flexDirection: 'row',
+	// 				justifyContent: 'center',
+	// 				alignContent: 'center',
+	// 				margin: 0,
+	// 			}}
+	// 			id='userIcon'
+	// 		/>
+	// 		Email
+	// 	</div>
+	// 	<Input
+	// 		size='small'
+	// 		style={{
+	// 			height: '3vh',
+	// 			display: 'flex',
+	// 			flexDirection: 'column',
+	// 			justifyContent: 'center',
+	// 			alignContent: 'center',
+	// 			margin: 0,
+	// 			marginTop: '5px',
+	// 		}}
+	// 		autoComplete='none'
+	// 		type='email'
+	// 		placeholder='Email'
+	// 		name='email'
+	// 		// value={this.state.email}
+	// 		// onChange={this.props.handleChange}
+	// 	/>
+	// </div>,
+	// <div className='alignFlex'>
+	// 	<div className='dirFlexContainer'>
+	// 		<LockOutlined
+	// 			type='lock'
+	// 			style={{
+	// 				color: 'rgba(0,0,0,1)',
+	// 				width: '15%',
+	// 				height: '3vh',
+	// 				display: 'flex',
+	// 				flexDirection: 'column',
+	// 				justifyContent: 'center',
+	// 				alignContent: 'center',
+	// 			}}
+	// 			id='passwordIcon'
+	// 		/>
+	// 		Password
+	// 	</div>
+	// 	<Input
+	// 		size='small'
+	// 		style={{
+	// 			height: '3vh',
+	// 			display: 'flex',
+	// 			flexDirection: 'column',
+	// 			justifyContent: 'center',
+	// 			alignContent: 'center',
+	// 			margin: 0,
+	// 			marginTop: '5px',
+	// 		}}
+	// 		autoComplete='none'
+	// 		type='password'
+	// 		placeholder='Password'
+	// 		name='pw'
+	// 		// value={this.state.pw}
+	// 		// onChange={this.handleChange}
+	// 	/>
+	// </div>,
+	// <Fragment id='submissionContainer'>
+	// 	<div className='flexDirContainer'>
+	// 		<Checkbox size='small' id='checkbox'>
+	// 			Remember me
+	// 		</Checkbox>
+	// 		<Link to='/forgot' className='signup'>
+	// 			<a
+	// 				className='login-form-forgot'
+	// 				children='Forgot password'
+	// 				href='/forgot'
+	// 			/>
+	// 		</Link>
+	// 	</div>
+	// 	<div className='flexDirContainer'>
+	// 		<Button
+	// 			size='small'
+	// 			type='primary'
+	// 			htmlType='submit'
+	// 			className='login-form-button'
+	// 			children='Log in'
+	// 			style={{
+	// 				margin: '0px 1em',
+	// 				padding: '0px 7px',
+	// 			}}
+	// 		/>
+	// 		<Link to='/signup' className='signup'>
+	// 			<button id='signup'>Signup</button>
+	// 		</Link>
+	// 	</div>
+	// </Fragment>,
 ];
 
 class BoxSeven extends Component {
@@ -233,16 +235,16 @@ class BoxSeven extends Component {
 											),
 											...props,
 										}}>
-										<Form
+										{/* <Form
 											className='formLoginContainer'
-											onSubmit={this.handleSubmit}>
-											<Form.Item
+											onSubmit={this.handleSubmit}> */}
+											<div
 												className={i === 0 ? 'middle' : ''}
 												onChange={this.handleChange}
 												onSubmit={this.handleSubmit}>
 												{item}
-											</Form.Item>
-										</Form>
+											</div>
+										{/* </Form> */}
 									</animated.div>
 								)}
 							</Content>

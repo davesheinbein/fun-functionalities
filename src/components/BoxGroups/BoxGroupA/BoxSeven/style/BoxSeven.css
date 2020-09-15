@@ -140,14 +140,14 @@
   width: 100%;
 }
 
-.profileContainer .sidebar div .formLoginContainer {
+.profileContainer .sidebar div .middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -159,9 +159,28 @@
   position: absolute;
   top: 0%;
   left: 0%;
+  margin: 0%;
 }
 
-.profileContainer .sidebar div .formLoginContainer .ant-row {
+.profileContainer .sidebar div .middle .contentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.profileContainer .sidebar div .middle .contentContainer .middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,26 +199,7 @@
   margin: 0%;
 }
 
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-  margin-bottom: 5%;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input {
+.profileContainer .sidebar div .middle .contentContainer .middle .ant-form-item-control {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,442 +217,7 @@
   width: 100%;
 }
 
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 5vh;
-  width: 100%;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .ant-avatar {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 10%);
-          transform: translate(-50%, 10%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 10vh;
-  width: 11vw;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .ant-avatar img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex .dirFlexContainer {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  font-family: 'Patua One', cursive;
-  font-size: 28px;
-  line-height: 22px;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex .dirFlexContainer .anticon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex .dirFlexContainer .anticon svg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .alignFlex .ant-input {
-  height: 100%;
-  width: 90%;
-  padding: 1em;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .signup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .signup #signup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 24px;
-  width: 100%;
-  background-color: rgba(255, 70, 24, 0.75);
-  border-color: rgba(212, 60, 22, 0.75);
-  color: #fff;
-  border: 1px solid transparent;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
-  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
-          box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
-  border-radius: 2px;
-  font-size: 14px;
-  padding: 0px 7px;
-  outline: 0;
-  display: inline-block;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  line-height: 1.5715;
-  white-space: nowrap;
-  margin-right: 1em;
-  font-weight: 400;
-  cursor: pointer;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .signup #signup:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  background-color: #ff4618;
-  border-color: #d43c16;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .login-form-button {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  background-color: rgba(1, 221, 250, 0.85);
-  border-color: rgba(4, 173, 196, 0.85);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .login-form-button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  background-color: #01ddfa;
-  border-color: #04adc4;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper .ant-checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-left: 3em;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper .ant-checkbox #checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper .ant-checkbox .ant-checkbox-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .ant-checkbox-wrapper .ant-checkbox + span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-  font-size: 16px;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .flexDirContainer .login-form-forgot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-  font-size: 16px;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-btn {
-  width: 100%;
-}
-
-.profileContainer .sidebar div .formLoginContainer .ant-row .ant-col .ant-form-item-control-input .ant-btn span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.profileContainer .sidebar .contentContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.profileContainer .sidebar .contentContainer .middle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-  margin: 0%;
-}
-
-.profileContainer .sidebar .contentContainer .middle .ant-form-item-control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.profileContainer .boxSevenText {
+.profileContainer .sidebar div .middle .boxSevenText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,7 +246,7 @@
   transition: all 1s ease-in-out;
 }
 
-.profileContainer .boxSevenText:hover {
+.profileContainer .sidebar div .middle .boxSevenText:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(#03001e), color-stop(#7303c0), color-stop(#ec38bc), to(#fdeff9));
   background: linear-gradient(to top, #03001e, #7303c0, #ec38bc, #fdeff9);
   background-size: cover;

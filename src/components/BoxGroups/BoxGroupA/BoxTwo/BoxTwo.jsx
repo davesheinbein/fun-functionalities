@@ -30,12 +30,16 @@ class BoxTwo extends Component {
 			down,
 		} = this.props;
 		const to = { x: down ? xDelta : 0 };
-		if (this.props.delta[0] < [100]) {
+		if (this.props.delta[0] < [1]) {
 			this.state.counter = this.state.counter + 1;
 		}
-		if (this.props.delta[0] > [-100]) {
+		if (this.props.delta[0] > [-1]) {
 			this.state.counter = this.state.counter - 1;
 		}
+		if (this.props.delta[0] == [0]) {
+			this.state.counter = this.state.counter * 0;
+		}
+
 		return (
 			<div className='gestures-main'>
 				<Spring
@@ -77,7 +81,8 @@ class BoxTwo extends Component {
 				</Spring>
 				<div className='countTextContainer'>
 					<div className='countText'>
-						{this.state.counter}
+						<div className='countTextHeading'>Last X-Pos</div>
+						<div className='countTextBody'>{this.state.counter}</div>
 					</div>
 				</div>
 			</div>

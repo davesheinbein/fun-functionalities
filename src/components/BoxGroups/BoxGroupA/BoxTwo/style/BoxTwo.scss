@@ -19,14 +19,40 @@
 		z-index: 10000;
 		@include heightWidth(100%, 100%);
 		@include flexCenter(row, center, flex-start);
-		margin: 4em 0px;
+		margin: 1em 0px;
 		@include topLeftAbsolute(0, 0);
+		pointer-events: none;
 		.countText {
-			font-size: 40px;
-			background: rgba(91, 0, 176, 0.5);
 			@include heightWidth(fit-content, fit-content);
-			@include flexCenter(row, center, center);
+			@include flexCenter(column, center, center);
+			font-size: 40px;
+			line-height: 40px;
+			color: rgba(255, 255, 255, 0.75);
+			background: rgba(91, 0, 176, 0.5);
+			border-radius: 5px;
+			font-family: 'Patua One', cursive;
+			text-align: center;
 			padding: 0.5em;
+			transition: all 0.5s ease-in-out;
+			pointer-events: auto;
+			&:hover {
+				color: rgba(255, 255, 255, 1);
+				background: rgba(91, 0, 176, 1);
+			}
+			.countTextHeading {
+				font-size: 20px;
+				@include heightWidth(fit-content, fit-content);
+				@include flexCenter(row, center, center);
+				transition: all 0.5s ease-in-out;
+			}
+			.countTextBody {
+				@include heightWidth(fit-content, fit-content);
+				@include flexCenter(row, center, center);
+				transition: all 0.5s ease-in-out;
+				&:hover {
+					font-size: 50px;
+				}
+			}
 		}
 	}
 }
@@ -37,7 +63,7 @@
 	height: 70px;
 	pointer-events: auto;
 	transform-origin: 50% 50% 0px;
-	border-radius: 4px;
+	border-radius: 5px;
 	color: rgb(248, 201, 201);
 	line-height: 70px;
 	padding-left: 32px;
@@ -56,11 +82,18 @@
 	width: 100%;
 	top: 0;
 	left: 0;
-	border-radius: 4px;
+	border-radius: 5px;
 	cursor: move;
 	cursor: grab;
 	cursor: -moz-grab;
 	cursor: -webkit-grab;
+	pointer-events: auto;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+	&:hover {
+		color: rgba(255, 255, 255, 1);
+		background: rgb(78, 166, 213);
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
+	}
 }
 
 .gestures-bubble {
@@ -68,4 +101,5 @@
 	height: 50px;
 	border-radius: 50%;
 	background-color: white;
+	transition: all 0.5s ease-in-out;
 }

@@ -1,0 +1,148 @@
+@import '../../../mixins/mixins.scss';
+
+.loginFormContainer {
+	@include flexCenter(row, center, center);
+	@include heightWidth(100%, 100%);
+	@include topLeftAbsolute(0%, 0%);
+	.formLoginContainer {
+		@include flexCenter(column, center, center);
+		@include heightWidth(100%, 100%);
+		margin-top: 10em;
+		.ant-avatar {
+			@include topLeftAbsolute(5%, 50%);
+			transform: translate(-50%, 5%);
+			@include flexCenter(column, center, center);
+			@include heightWidth(10vh, 11vw);
+			img {
+				@include flexCenter(column, center, center);
+				@include heightWidth(100%, 100%);
+				border-radius: 50%;
+			}
+		}
+		.alignFlex {
+			@include flexCenter(column, center, center);
+			@include heightWidth(100%, 100%);
+			.ant-row {
+				@include flexCenter(row, center, center);
+				@include heightWidth(100%, 100%);
+				margin: 0%;
+				.ant-col {
+					@include flexCenter(column, center, center);
+					@include heightWidth(100%, 100%);
+					margin-bottom: 5%;
+					.ant-form-item-control-input {
+						@include flexCenter(column, center, center);
+						@include heightWidth(100%, 100%);
+						.ant-form-item-control-input-content {
+							@include flexCenter(column, center, center);
+							@include heightWidth(5vh, 100%);
+							.ant-input {
+								@include heightWidth(100%, 90%);
+								padding: 1em 0.5em;
+							}
+						}
+					}
+				}
+			}
+			.dirFlexContainer {
+				@include heightWidth(100%, 100%);
+				@include flexCenter(row, flex-start, flex-end);
+				font-family: 'Patua One', cursive;
+				margin-left: 0.5em;
+				font-size: 28px;
+				line-height: 24px;
+				.anticon {
+					@include flexCenter(column, center, center);
+					@include heightWidth(100%, 100%);
+					svg {
+						@include flexCenter(column, center, center);
+						@include heightWidth(100%, 100%);
+						path {
+						}
+					}
+				}
+			}
+		}
+		.flexDirContainer {
+			@include flexCenter(row, center, center);
+			@include heightWidth(100%, 100%);
+			.signup {
+				@include flexCenter(row, center, center);
+				@include heightWidth(100%, 100%);
+				#signup {
+					@include flexCenter(row, center, center);
+					@include heightWidth(24px, 100%);
+					background-color: rgba(255, 70, 24, 0.75);
+					border-color: rgba(212, 60, 22, 0.75);
+					color: #fff;
+					border: 1px solid transparent;
+					text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+					box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+					border-radius: 2px;
+					font-size: 14px;
+					padding: 0px 7px;
+					outline: 0;
+					display: inline-block;
+					touch-action: manipulation;
+					user-select: none;
+					line-height: 1.5715;
+					white-space: nowrap;
+					margin-right: 1em;
+					font-weight: 400;
+					cursor: pointer;
+					transform: scale(1);
+					transition: all 0.5s ease-in-out;
+					&:hover {
+						transform: scale(1.1);
+						background-color: rgba(255, 70, 24, 1);
+						border-color: rgba(212, 60, 22, 1);
+					}
+				}
+			}
+			.login-form-button {
+				transform: scale(1);
+				background-color: rgba(1, 221, 250, 0.85);
+				border-color: rgba(4, 173, 196, 0.85);
+				transition: all 0.5s ease-in-out;
+				&:hover {
+					transform: scale(1.1);
+					background-color: rgba(1, 221, 250, 1);
+					border-color: rgba(4, 173, 196, 1);
+				}
+			}
+			.ant-checkbox-wrapper {
+				@include flexCenter(row, center, center);
+				@include heightWidth(100%, 100%);
+				.ant-checkbox {
+					@include flexCenter(row, center, center);
+					@include heightWidth(fit-content, fit-content);
+					margin-left: 3em;
+					#checkbox {
+						@include flexCenter(row, center, center);
+						@include heightWidth(100%, 100%);
+					}
+					.ant-checkbox-inner {
+						@include flexCenter(row, center, center);
+					}
+					+ span {
+						@include flexCenter(row, center, center);
+						@include heightWidth(100%, 100%);
+						font-size: 16px;
+					}
+				}
+			}
+			.login-form-forgot {
+				@include flexCenter(row, center, center);
+				@include heightWidth(100%, 100%);
+				font-size: 16px;
+			}
+		}
+		.ant-btn {
+			width: 100%;
+			span {
+				@include flexCenter(row, center, center);
+				@include heightWidth(100%, 100%);
+			}
+		}
+	}
+}
