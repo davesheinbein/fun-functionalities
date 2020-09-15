@@ -1,3 +1,21 @@
+@-webkit-keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
 .boxFifteenContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,10 +72,11 @@
                                   supported by Chrome, Edge, Opera and Firefox */
   z-index: 20000;
   font-family: 'Montserrat Subrayada', sans-serif;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .boxFifteenContainer #textBox:hover {
-  pointer-events: none;
   color: rgba(255, 255, 100, 0.75);
 }
 /*# sourceMappingURL=BoxFifteen.css.map */

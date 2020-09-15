@@ -61,6 +61,13 @@ export default class BoxSixteen extends Component {
 		document.getElementById('contact-form').reset();
 	}
 
+	foo(obj) {
+		obj.disabled = true;
+		setTimeout(() => {
+			obj.disabled = false;
+		}, 2000);
+	}
+
 	render() {
 		return (
 			<div className='formContainer'>
@@ -83,6 +90,7 @@ export default class BoxSixteen extends Component {
 								onChange={this.handleChange}
 								placeholder='Name'
 								autoComplete='off'
+								required
 							/>
 						</div>
 					</FormGroup>
@@ -101,6 +109,7 @@ export default class BoxSixteen extends Component {
 								onChange={this.handleChange}
 								placeholder='Email'
 								autoComplete='off'
+								required
 							/>
 						</div>
 					</FormGroup>
@@ -119,6 +128,7 @@ export default class BoxSixteen extends Component {
 								onChange={this.handleChange}
 								placeholder='Subject'
 								autoComplete='off'
+								required
 							/>
 						</div>
 					</FormGroup>
@@ -137,10 +147,14 @@ export default class BoxSixteen extends Component {
 								onChange={this.handleChange}
 								placeholder='Message'
 								autoComplete='off'
+								required
 							/>
 						</div>
 					</FormGroup>
-					<Button id='submit-btn' type='submit'>
+					<Button
+						id='submit-btn'
+						type='submit'
+						onclick={this.foo}>
 						Submit
 					</Button>
 				</Form>

@@ -11,10 +11,29 @@ import {
 	UserOutlined,
 	LockOutlined,
 } from '@ant-design/icons';
+import userService from '../../services/userServices';
 import 'antd/dist/antd.css';
 import './style/LoginForm.css';
 
 export class LoginForm extends Component {
+	state = { email: '', password: '' };
+
+	handleChange = (e) => {
+		this.setState({
+			[e.target.name]: e.target.value,
+		});
+	};
+
+	handleSubmit = async (e) => {
+		e.preventDefault();
+		try {
+			await userService.login(this.state);
+			this.props.handleSignupOrLogin();
+			this.props.history.push('/');
+		} catch (err) {
+			alert('Invalid Credentials!');
+		}
+	};
 	render() {
 		return (
 			<div className='loginFormContainer'>
@@ -47,20 +66,19 @@ export class LoginForm extends Component {
 							<Input
 								size='small'
 								style={{
-									height: '3vh',
+									height: '4vh',
 									display: 'flex',
 									flexDirection: 'column',
 									justifyContent: 'center',
 									alignContent: 'center',
 									margin: 0,
-									marginTop: '5px',
 								}}
 								autoComplete='none'
 								type='email'
 								placeholder='Email'
 								name='email'
-								// value={this.state.email}
-								// onChange={this.props.handleChange}
+								value={this.state.email}
+								onChange={this.props.handleChange}
 							/>
 						</Form.Item>
 					</div>
@@ -85,20 +103,19 @@ export class LoginForm extends Component {
 							<Input
 								size='small'
 								style={{
-									height: '3vh',
+									height: '4vh',
 									display: 'flex',
 									flexDirection: 'column',
 									justifyContent: 'center',
 									alignContent: 'center',
 									margin: 0,
-									marginTop: '5px',
 								}}
 								autoComplete='none'
 								type='password'
 								placeholder='Password'
-								name='pw'
-								// value={this.state.pw}
-								// onChange={this.handleChange}
+								name='password'
+								value={this.state.password}
+								onChange={this.handleChange}
 							/>
 						</Form.Item>
 					</div>
@@ -124,7 +141,7 @@ export class LoginForm extends Component {
 								children='Log in'
 								style={{
 									margin: '0px 1em',
-									padding: '0px 7px',
+									padding: '1em 7px',
 								}}
 							/>
 							<Link to='/signup' className='signup'>

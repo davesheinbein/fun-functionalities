@@ -16,8 +16,10 @@
 		font-size: 3rem;
 		font-family: 'Permanent Marker', cursive;
 		text-shadow: 2px 4px 2px rgba(235, 88, 88, 0.75);
+		transform: scale(1);
 		transition: all 0.5s ease-in-out;
 		&:hover {
+			transform: scale(1.1);
 			text-shadow: 2px 4px 2px rgba(235, 88, 88, 1);
 		}
 	}

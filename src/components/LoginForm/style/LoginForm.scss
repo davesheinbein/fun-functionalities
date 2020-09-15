@@ -29,7 +29,7 @@
 				.ant-col {
 					@include flexCenter(column, center, center);
 					@include heightWidth(100%, 100%);
-					margin-bottom: 5%;
+					margin-bottom: 1em;
 					.ant-form-item-control-input {
 						@include flexCenter(column, center, center);
 						@include heightWidth(100%, 100%);
@@ -70,7 +70,7 @@
 				@include flexCenter(row, center, center);
 				@include heightWidth(100%, 100%);
 				#signup {
-					@include flexCenter(row, center, center);
+					@include flexCenter(column, center, center);
 					@include heightWidth(24px, 100%);
 					background-color: rgba(255, 70, 24, 0.75);
 					border-color: rgba(212, 60, 22, 0.75);
@@ -80,7 +80,7 @@
 					box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
 					border-radius: 2px;
 					font-size: 14px;
-					padding: 0px 7px;
+					padding: 1em 7px;
 					outline: 0;
 					display: inline-block;
 					touch-action: manipulation;
@@ -102,12 +102,12 @@
 			.login-form-button {
 				transform: scale(1);
 				background-color: rgba(1, 221, 250, 0.85);
-				border-color: rgba(4, 173, 196, 0.85);
+				border-color: rgba(47, 197, 216, 0.85);
 				transition: all 0.5s ease-in-out;
 				&:hover {
 					transform: scale(1.1);
 					background-color: rgba(1, 221, 250, 1);
-					border-color: rgba(4, 173, 196, 1);
+					border-color: rgba(47, 197, 216, 1);
 				}
 			}
 			.ant-checkbox-wrapper {

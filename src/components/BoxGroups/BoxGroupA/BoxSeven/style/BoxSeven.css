@@ -217,7 +217,7 @@
   width: 100%;
 }
 
-.profileContainer .sidebar div .middle .boxSevenText {
+.profileContainer .boxSevenText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,7 +246,7 @@
   transition: all 1s ease-in-out;
 }
 
-.profileContainer .sidebar div .middle .boxSevenText:hover {
+.profileContainer .boxSevenText:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(#03001e), color-stop(#7303c0), color-stop(#ec38bc), to(#fdeff9));
   background: linear-gradient(to top, #03001e, #7303c0, #ec38bc, #fdeff9);
   background-size: cover;

@@ -34,9 +34,9 @@ app.use('/api/users', require('./routes/api/users'));
 app.use('/api/form', cors());
 app.post('/api/form', (req, res) => {
 	const gmailLogin = process.env.GMAILLOGIN;
-	console.log('gmailLogin', gmailLogin);
+	// console.log('gmailLogin', gmailLogin);
 	const gmailPassword = process.env.GMAILPASSWORD;
-	console.log('gmailPassword', gmailPassword);
+	// console.log('gmailPassword', gmailPassword);
 
 	var name = req.body.name;
 	console.log('name', name);
@@ -64,10 +64,10 @@ app.post('/api/form', (req, res) => {
 		text:
 			'Name: ' +
 			name +
-			'\nSubject: ' +
-			subject +
 			'\nEmail: ' +
 			email +
+			'\nSubject: ' +
+			subject +
 			'\nMessage: ' +
 			message,
 	};

@@ -151,7 +151,7 @@
           align-items: center;
   height: 100%;
   width: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 1em;
 }
 
 .loginFormContainer .formLoginContainer .alignFlex .ant-row .ant-col .ant-form-item-control-input {
@@ -294,10 +294,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -315,7 +315,7 @@
           box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
   border-radius: 2px;
   font-size: 14px;
-  padding: 0px 7px;
+  padding: 1em 7px;
   outline: 0;
   display: inline-block;
   -ms-touch-action: manipulation;
@@ -346,7 +346,7 @@
   -webkit-transform: scale(1);
           transform: scale(1);
   background-color: rgba(1, 221, 250, 0.85);
-  border-color: rgba(4, 173, 196, 0.85);
+  border-color: rgba(47, 197, 216, 0.85);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -355,7 +355,7 @@
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background-color: #01ddfa;
-  border-color: #04adc4;
+  border-color: #2fc5d8;
 }
 
 .loginFormContainer .formLoginContainer .flexDirContainer .ant-checkbox-wrapper {

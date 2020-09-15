@@ -1,15 +1,23 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import { Frame, Page } from 'framer';
 import {
+	ArrowLeftOutlined,
 	QqOutlined,
 	UserOutlined,
 	SmileOutlined,
-	SkinOutlined,
 	RocketOutlined,
+	GithubOutlined,
 	ShoppingCartOutlined,
 	StarOutlined,
 	WifiOutlined,
 	ThunderboltOutlined,
+	SwapOutlined,
+	PieChartOutlined,
+	LinkedinOutlined,
+	QuestionOutlined,
+	FullscreenOutlined,
+	ArrowRightOutlined,
 } from '@ant-design/icons';
 import './style/BoxThirteen.css';
 
@@ -35,112 +43,233 @@ export function BoxThirteen() {
 						'<<< previous'
 					);
 				}}>
+				<Frame size={150} radius={30} background={'#000'}>
+					<div className='iconContainer'>
+						<div className='iconText'>Swipe</div>
+						<div className='hrefContainer'>
+							<ArrowLeftOutlined
+								style={{
+									color: '#fff',
+									width: '25%',
+									height: '25%',
+								}}
+							/>
+						</div>
+					</div>
+				</Frame>
 				<Frame size={150} radius={30} background={'#111'}>
 					<div className='iconContainer'>
 						<div className='iconText'>Penguin</div>
-						<QqOutlined
-							style={{
-								color: '#fff',
-								width: '25%',
-								height: '25%',
-							}}
-						/>
+						<div className='hrefContainer'>
+							<QqOutlined
+								style={{
+									color: '#fff',
+									width: '25%',
+									height: '25%',
+								}}
+							/>
+						</div>
 					</div>
 				</Frame>
+
 				<Frame size={150} radius={30} background={'#222'}>
 					<div className='iconContainer'>
-						<div className='iconText'>User</div>
-						<UserOutlined
-							style={{
-								color: '#fff',
-								width: '25%',
-								height: '25%',
-							}}
-						/>
+						<div className='iconText'>New User</div>
+						<Link to='/signup' className='hrefContainer'>
+							<UserOutlined
+								style={{
+									color: '#fff',
+									width: '25%',
+									height: '25%',
+								}}
+							/>
+						</Link>
 					</div>
 				</Frame>
 				<Frame size={150} radius={30} background={'#333'}>
 					<div className='iconContainer'>
 						<div className='iconText'>Smile</div>
-						<SmileOutlined
-							style={{
-								color: '#fff',
-								width: '25%',
-								height: '25%',
-							}}
-						/>
+						<div className='hrefContainer'>
+							<SmileOutlined
+								style={{
+									color: '#fff',
+									width: '25%',
+									height: '25%',
+								}}
+							/>
+						</div>
 					</div>
 				</Frame>
 				<Frame size={150} radius={30} background={'#444'}>
 					<div className='iconContainer'>
-						<div className='iconText'>Shirt</div>
-						<SkinOutlined
-							style={{
-								color: '#fff',
-								width: '25%',
-								height: '25%',
-							}}
-						/>
+						<div className='iconText'>Fullscreen</div>
+						<div className='hrefContainer'>
+							<FullscreenOutlined
+								style={{
+									color: '#fff',
+									width: '25%',
+									height: '25%',
+								}}
+							/>
+						</div>
 					</div>
 				</Frame>
 				<Frame size={150} radius={30} background={'#555'}>
 					<div className='iconContainer'>
 						<div className='iconText'>Rocket</div>
-						<RocketOutlined
-							style={{
-								color: '#fff',
-								width: '25%',
-								height: '25%',
-							}}
-						/>
+						<div className='hrefContainer'>
+							<RocketOutlined
+								style={{
+									color: '#fff',
+									width: '25%',
+									height: '25%',
+								}}
+							/>
+						</div>
 					</div>
 				</Frame>
 				<Frame size={150} radius={30} background={'#666'}>
 					<div className='iconContainer'>
 						<div className='iconText'>Cart</div>
-						<ShoppingCartOutlined
-							style={{
-								color: '#fff',
-								width: '25%',
-								height: '25%',
-							}}
-						/>
+						<div className='hrefContainer'>
+							<ShoppingCartOutlined
+								style={{
+									color: '#fff',
+									width: '25%',
+									height: '25%',
+								}}
+							/>
+						</div>
 					</div>
 				</Frame>
 				<Frame size={150} radius={30} background={'#777'}>
 					<div className='iconContainer'>
 						<div className='iconText'>Star</div>
-						<StarOutlined
-							style={{
-								color: '#fff',
-								width: '25%',
-								height: '25%',
-							}}
-						/>
+						<div className='hrefContainer'>
+							<StarOutlined
+								style={{
+									color: '#fff',
+									width: '25%',
+									height: '25%',
+								}}
+							/>
+						</div>
 					</div>
 				</Frame>
 				<Frame size={150} radius={30} background={'#888'}>
 					<div className='iconContainer'>
 						<div className='iconText'>Wifi</div>
-						<WifiOutlined
-							style={{
-								color: '#fff',
-								width: '25%',
-								height: '25%',
-							}}
-						/>
+						<div className='hrefContainer'>
+							<WifiOutlined
+								style={{
+									color: '#fff',
+									width: '25%',
+									height: '25%',
+								}}
+							/>
+						</div>
 					</div>
 				</Frame>
 				<Frame size={150} radius={30} background={'#999'}>
 					<div className='iconContainer'>
 						<div className='iconText'>Lightning</div>
-						<ThunderboltOutlined
-							style={{
-								color: '#fff',
-								width: '25%',
-								height: '25%',
-							}}
-						/>
+						<div className='hrefContainer'>
+							<ThunderboltOutlined
+								style={{
+									color: '#fff',
+									width: '25%',
+									height: '25%',
+								}}
+							/>
+						</div>
+					</div>
+				</Frame>
+				<Frame size={150} radius={30} background={'#aaa'}>
+					<div className='iconContainer'>
+						<div className='iconText'>Swap</div>
+						<div className='hrefContainer'>
+							<SwapOutlined
+								style={{
+									color: '#000',
+									width: '25%',
+									height: '25%',
+								}}
+							/>
+						</div>
+					</div>
+				</Frame>
+				<Frame size={150} radius={30} background={'#bbb'}>
+					<div className='iconContainer'>
+						<div className='iconText'>Pie Chart</div>
+						<div className='hrefContainer'>
+							<PieChartOutlined
+								style={{
+									color: '#000',
+									width: '25%',
+									height: '25%',
+								}}
+							/>
+						</div>
+					</div>
+				</Frame>
+				<Frame size={150} radius={30} background={'#ccc'}>
+					<div className='iconContainer'>
+						<div className='iconText'>Questions</div>
+						<div className='hrefContainer'>
+							<QuestionOutlined
+								style={{
+									color: '#000',
+									width: '25%',
+									height: '25%',
+								}}
+							/>
+						</div>
+					</div>
+				</Frame>
+				<Frame size={150} radius={30} background={'#ddd'}>
+					<div className='iconContainer'>
+						<div className='iconText'>GitHub</div>
+						<a
+							className='hrefContainer'
+							href='https://github.com/davesheinbein'>
+							<GithubOutlined
+								style={{
+									color: '#000',
+									width: '25%',
+									height: '25%',
+								}}
+							/>
+						</a>
+					</div>
+				</Frame>
+				<Frame size={150} radius={30} background={'#eee'}>
+					<div className='iconContainer'>
+						<div className='iconText'>LinkedIn</div>
+						<a
+							className='hrefContainer'
+							href='https://www.linkedin.com/in/david-sheinbein/'>
+							<LinkedinOutlined
+								style={{
+									color: '#000',
+									width: '25%',
+									height: '25%',
+								}}
+							/>
+						</a>
+					</div>
+				</Frame>
+				<Frame size={150} radius={30} background={'#fff'}>
+					<div className='iconContainer'>
+						<div className='iconText'>Swipe</div>
+						<div className='hrefContainer'>
+							<ArrowRightOutlined
+								style={{
+									color: '#000',
+									width: '25%',
+									height: '25%',
+								}}
+							/>
+						</div>
 					</div>
 				</Frame>
 			</Page>

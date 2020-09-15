@@ -14,8 +14,8 @@
 		@include noSelection;
 		z-index: 20000;
 		font-family: 'Montserrat Subrayada', sans-serif;
+		transition: all 0.5s ease-in-out;
 		&:hover {
-			pointer-events: none;
 			color: rgba(255, 255, 100, 0.75);
 		}
 	}

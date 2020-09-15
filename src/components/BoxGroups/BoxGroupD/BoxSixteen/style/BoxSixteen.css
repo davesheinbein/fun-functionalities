@@ -3,6 +3,23 @@
 * Testing
 *
 **/
+@-webkit-keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+@keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
 .formContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,11 +63,15 @@
   font-size: 3rem;
   font-family: 'Permanent Marker', cursive;
   text-shadow: 2px 4px 2px rgba(235, 88, 88, 0.75);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .formContainer .contactTitle:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   text-shadow: 2px 4px 2px #eb5858;
 }
 

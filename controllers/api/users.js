@@ -17,7 +17,7 @@ async function login(req, res) {
 			return res
 				.status(400)
 				.json({ err: 'bad credentials' });
-		user.comparePassword(req.body.pw, (err, isMatch) => {
+		user.comparePassword(req.body.password, (err, isMatch) => {
 			if (isMatch) {
 				const token = createJWT(user);
 				res.json({ token });

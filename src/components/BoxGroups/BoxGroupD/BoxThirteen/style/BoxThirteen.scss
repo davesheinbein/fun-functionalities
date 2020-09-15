@@ -14,9 +14,15 @@
 		color: #ffffff;
 		@include flexCenter(column, center, center);
 		@include heightWidth(100%, 100%);
-		background: linear-gradient(to right, #ffb347, #ffcc33);
+		background: linear-gradient(
+			to right,
+			rgba(255, 251, 213, 0.75),
+			rgba(178, 10, 44, 0.75)
+		);
+		background-size: 400%;
 		color: transparent;
 		background-clip: text;
+		animation: headingAnimation 5s infinite alternate;
 		transition: all 0.5s ease-in-out;
 		&:hover {
 			transform: scale(1.1);
@@ -25,23 +31,26 @@
 			@include heightWidth(fit-content, fit-content);
 			font-size: 5rem;
 			font-family: 'Patua One', cursive;
-			margin-bottom: 0.5em;
+			margin: 1em 0px 0px;
 		}
-		span {
+		.hrefContainer {
 			@include flexCenter(column, center, center);
 			@include heightWidth(100%, 100%);
-			margin: 2em 0px;
-			svg {
+			span {
 				@include flexCenter(column, center, center);
-				// background: linear-gradient(
-				// 	to right,
-				// 	#7b4397,
-				// 	#dc2430
-				// );
 				@include heightWidth(100%, 100%);
-				path {
+				svg {
 					@include flexCenter(column, center, center);
+					// background: linear-gradient(
+					// 	to right,
+					// 	#7b4397,
+					// 	#dc2430
+					// );
 					@include heightWidth(100%, 100%);
+					path {
+						@include flexCenter(column, center, center);
+						@include heightWidth(100%, 100%);
+					}
 				}
 			}
 		}
