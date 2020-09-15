@@ -78,7 +78,7 @@ export class LoginForm extends Component {
 								placeholder='Email'
 								name='email'
 								value={this.state.email}
-								onChange={this.props.handleChange}
+								onChange={this.handleChange}
 							/>
 						</Form.Item>
 					</div>

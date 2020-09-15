@@ -172,15 +172,17 @@ export function BoxThirteen() {
 				</Frame>
 				<Frame size={150} radius={30} background={'#999'}>
 					<div className='iconContainer'>
-						<div className='iconText'>Lightning</div>
+						<div className='iconText'>Power</div>
 						<div className='hrefContainer'>
-							<ThunderboltOutlined
-								style={{
-									color: '#fff',
-									width: '25%',
-									height: '25%',
-								}}
-							/>
+							<Link to='/battery' className='hrefContainer'>
+								<ThunderboltOutlined
+									style={{
+										color: '#fff',
+										width: '25%',
+										height: '25%',
+									}}
+								/>
+							</Link>
 						</div>
 					</div>
 				</Frame>

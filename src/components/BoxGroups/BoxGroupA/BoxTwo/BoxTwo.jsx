@@ -81,8 +81,12 @@ class BoxTwo extends Component {
 				</Spring>
 				<div className='countTextContainer'>
 					<div className='countText'>
-						<div className='countTextHeading'>Last X-Pos</div>
-						<div className='countTextBody'>{this.state.counter}</div>
+						<div className='countTextHeading'>
+							Last X-Pos
+						</div>
+						<div className='countTextBody'>
+							{this.state.counter}
+						</div>
 					</div>
 				</div>
 			</div>

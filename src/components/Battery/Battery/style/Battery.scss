@@ -13,7 +13,7 @@
 	.battery {
 		position: relative;
 		@include flexCenter(column, flex-end, center);
-		@include heightWidth(75%, 3em);
+		@include heightWidth(2.5em, 3em);
 		border: 3px solid rgba(136, 168, 168, 0.75);
 		border-radius: 5px;
 		.tip {

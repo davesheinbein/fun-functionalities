@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Battery from '../Battery/Battery';
-import { register, unregister } from '../../../utils/battery';
+import {
+	register,
+	unregister,
+} from '../../../utils/battery';
 
 function BatteryHookContainer() {
 	const [batteryData, setBatteryData] = useState({
@@ -26,12 +29,6 @@ function BatteryHookContainer() {
 				level={batteryData.level}
 				charging={batteryData.charging}
 			/>
-			{/* <button onClick={() => setBatteryData({
-                level: batteryData.level + .01,
-                charging: false
-            })}>
-                Update Level
-            </button> */}
 		</>
 	);
 }

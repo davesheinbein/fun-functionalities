@@ -46,6 +46,23 @@
 	.profileFormsContainer {
 		@include heightWidth(100%, 100%);
 		@include flexCenter(column, center, center);
+		.returnHomeLink {
+			@include heightWidth(fit-content, fit-content);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			@include topLeftAbsolute(65%, 50%);
+			transform: translate(-50%, -65%);
+			font-size: 50px;
+			font-family: 'Oleo Script', cursive;
+			color: rgba(59, 61, 206, 0.75);
+			transition: all 0.5s ease-in-out;
+			&:hover {
+				color: rgba(59, 61, 206, 1);
+				text-decoration: underline;
+			}
+		}
 	}
 
 	.footer {

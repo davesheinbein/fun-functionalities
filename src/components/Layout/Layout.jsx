@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Link } from 'react-router-dom';
 import { __RouterContext } from 'react-router';
 import { useTransition, animated } from 'react-spring';
 
@@ -45,6 +45,9 @@ import NavGroupA from '../NavBtns/NavGroupLinks/NavGroupA';
 import NavGroupB from '../NavBtns/NavGroupLinks/NavGroupB';
 import NavGroupC from '../NavBtns/NavGroupLinks/NavGroupC';
 import NavGroupD from '../NavBtns/NavGroupLinks/NavGroupD';
+
+// Import Battery
+import BatteryContainer from '../Battery/BatteryContainer/BatteryContainer';
 
 // Signup
 import SignUpPage from '../Signup/SignUpPage';
@@ -162,6 +165,24 @@ function Layout(props) {
 									</div>
 									<div className='boxGroupsContainer'>
 										<BoxGroupD />
+									</div>
+								</div>
+							)}
+						/>
+						<Route
+							exact
+							path='/battery'
+							render={() => (
+								<div className='absoluteContainer'>
+									<div
+										className='profileFormsContainer'
+										style={{
+											position: 'relative',
+										}}>
+										<BatteryContainer />
+										<Link to='/' className='returnHomeLink'>
+											Home
+										</Link>
 									</div>
 								</div>
 							)}
