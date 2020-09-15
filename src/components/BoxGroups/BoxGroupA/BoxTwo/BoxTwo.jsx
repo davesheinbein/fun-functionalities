@@ -4,12 +4,38 @@ import { Spring, animated } from 'react-spring/renderprops';
 import './style/BoxTwo.css';
 
 class BoxTwo extends Component {
+	constructor(props) {
+		super(props);
+		this.state = { counter: 0 };
+	}
+
+	increment(e) {
+		e.preventDefault();
+		this.setState({
+			counter: this.state.counter + 1,
+		});
+	}
+
+	decrement(e) {
+		e.preventDefault();
+		this.setState({
+			counter: this.state.counter - 1,
+		});
+	}
+
 	render() {
+		console.log(this.props.delta, '<<<< this.props.delta');
 		const {
 			delta: [xDelta],
 			down,
 		} = this.props;
 		const to = { x: down ? xDelta : 0 };
+		if (this.props.delta[0] < [100]) {
+			this.state.counter = this.state.counter + 1;
+		}
+		if (this.props.delta[0] > [-100]) {
+			this.state.counter = this.state.counter - 1;
+		}
 		return (
 			<div className='gestures-main'>
 				<Spring
@@ -49,6 +75,11 @@ class BoxTwo extends Component {
 						</animated.div>
 					)}
 				</Spring>
+				<div className='countTextContainer'>
+					<div className='countText'>
+						{this.state.counter}
+					</div>
+				</div>
 			</div>
 		);
 	}

@@ -13,6 +13,22 @@
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
+	position: relative;
+	.countTextContainer {
+		font-size: 20;
+		z-index: 10000;
+		@include heightWidth(100%, 100%);
+		@include flexCenter(row, center, flex-start);
+		margin: 4em 0px;
+		@include topLeftAbsolute(0, 0);
+		.countText {
+			font-size: 40px;
+			background: rgba(91, 0, 176, 0.5);
+			@include heightWidth(fit-content, fit-content);
+			@include flexCenter(row, center, center);
+			padding: 0.5em;
+		}
+	}
 }
 
 .gestures-item {

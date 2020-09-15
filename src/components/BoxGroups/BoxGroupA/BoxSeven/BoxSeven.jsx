@@ -91,7 +91,7 @@ const items = [
 			placeholder='Email'
 			name='email'
 			// value={this.state.email}
-			// onChange={this.handleChange}
+			// onChange={this.props.handleChange}
 		/>
 	</div>,
 	<div className='alignFlex'>
@@ -233,9 +233,12 @@ class BoxSeven extends Component {
 											),
 											...props,
 										}}>
-										<Form className='formLoginContainer'>
+										<Form
+											className='formLoginContainer'
+											onSubmit={this.handleSubmit}>
 											<Form.Item
 												className={i === 0 ? 'middle' : ''}
+												onChange={this.handleChange}
 												onSubmit={this.handleSubmit}>
 												{item}
 											</Form.Item>
