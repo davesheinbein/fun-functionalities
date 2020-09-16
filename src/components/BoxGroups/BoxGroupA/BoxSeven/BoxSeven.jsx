@@ -39,21 +39,7 @@ const Content = Keyframes.Trail({
 	close: { x: -100, opacity: 0, delay: 0 },
 });
 
-const items = [
-	<LoginForm
-	// handleSignupOrLogin={props.handleSignupOrLogin}
-	// {...props}
-	/>,
-];
-
-// const items = (props) => {
-// 	return (
-// 		<LoginForm
-// 			handleSignupOrLogin={props.handleSignupOrLogin}
-// 			{...props}
-// 		/>
-// 	);
-// };
+const items = [<LoginForm />];
 
 class BoxSeven extends Component {
 	state = { open: undefined };

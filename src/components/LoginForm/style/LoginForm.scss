@@ -8,14 +8,27 @@
 		@include flexCenter(row, center, center);
 		@include heightWidth(100%, 100%);
 		position: relative;
-		font-size: 20px;
+		font-size: 24px;
+		font-family: 'Oleo Script', Arial, cursive;
+		color: rgba(255, 255, 255, 0.5);
+		transform: scale(1);
+		transition: all 0.5s ease-in-out;
+		&:hover {
+			color: rgba(255, 255, 255, 1);
+			transform: scale(1.1);
+		}
 		.logoutText {
 			@include flexCenter(row, center, center);
 			@include heightWidth(fit-content, fit-content);
 			@include topLeftAbsolute(60%, 50%);
-			transform: translate(-50%, -60%);
+			transform: translate(-50%, -60%) scale(1);
 			font-size: 40px;
-			font-family: 'Oleo Script', Arial, cursive;
+			color: rgba(255, 98, 98, 0.5);
+			transition: all 0.5s ease-in-out;
+			&:hover {
+				color: rgba(255, 98, 98, 1);
+				transform: translate(-50%, -60%) scale(1.1);
+			}
 		}
 	}
 	.formLoginContainer {

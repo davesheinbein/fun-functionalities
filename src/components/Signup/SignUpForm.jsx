@@ -3,6 +3,11 @@ import { Form, Input, Button } from 'antd';
 import { Link } from 'react-router-dom';
 import Goo from '../Goo/Goo';
 import userService from '../../services/userServices';
+import { connect } from 'react-redux';
+import {
+	handleLogout,
+	handleSignupOrLogin,
+} from '../../actions/index';
 import './style/SignupForm.css';
 
 export class Signup extends Component {
@@ -40,7 +45,25 @@ export class Signup extends Component {
 	}
 
 	render() {
-		return (
+		let signUpPageOr = this.props.user ? (
+			<div className='signupFormContainer'>
+				<div className='signedUpAlreadyForm'>
+					<div className='signedUpAlreadyFormText'>
+						Already Signed up!
+					</div>
+					<div className='signedUpAlreadyFormSubText'>
+						Thanks for Connecting!
+					</div>
+					<div className='signedUpAlreadyIconContainer'>
+						<img
+							className='signedUpAlreadyIcon'
+							src='https://www.flaticon.com/svg/static/icons/svg/826/826955.svg'
+							alt='Sun'
+						/>
+					</div>
+				</div>
+			</div>
+		) : (
 			<div className='signupFormContainer'>
 				<div className='signupForm'>
 					<div className='signupFormText'>Sign up!</div>
@@ -116,7 +139,24 @@ export class Signup extends Component {
 				</div>
 			</div>
 		);
+		return <div>{signUpPageOr}</div>;
 	}
 }
 
-export default Signup;
+const mapStateToProps = (state) => {
+	return {
+		user: state.user,
+	};
+};
+
+const mapDispatchToProps = () => {
+	return {
+		handleSignupOrLogin,
+		handleLogout,
+	};
+};
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps()
+)(Signup);

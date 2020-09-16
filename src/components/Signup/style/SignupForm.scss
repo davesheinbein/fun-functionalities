@@ -19,6 +19,62 @@
 	);
 	background-size: 400%;
 	animation: bgAnimation 5s infinite 0s alternate;
+	.signedUpAlreadyForm {
+		@include heightWidth(50%, 80%);
+		@include flexCenter(column, flex-start, center);
+		@include topLeftAbsolute(50%, 50%);
+		transform: translate(-50%, -50%);
+		background: rgba(255, 151, 151, 0.75);
+		border-radius: 25px;
+		box-shadow: 0px 4px 6px #00000080;
+		font-family: 'Permanent Marker', 'Quicksand', sans-serif,
+			cursive;
+		z-index: 10;
+		pointer-events: none;
+		font-size: 40px;
+		line-height: 40px;
+		.signedUpAlreadyFormText {
+			font-size: 60px;
+			line-height: 60px;
+			@include heightWidth(100%, 100%);
+			@include flexCenter(column, flex-end, center);
+			background-size: cover;
+			background: linear-gradient(
+				90deg,
+				rgb(118, 184, 82) 0%,
+				rgb(61, 128, 106) 100%
+			);
+			color: transparent;
+			background-clip: text;
+			background-size: 400%;
+			animation: bgAnimation 5s infinite 0s alternate;
+		}
+		.signedUpAlreadyFormSubText {
+			@include heightWidth(100%, 100%);
+			@include flexCenter(column, flex-start, center);
+			background-size: cover;
+			background: linear-gradient(
+				90deg,
+				rgb(61, 128, 106) 0%,
+				rgb(118, 184, 82) 100%
+			);
+			color: transparent;
+			background-clip: text;
+			background-size: 400%;
+			animation: bgAnimation 5s infinite 0s alternate;
+		}
+		.signedUpAlreadyIconContainer {
+			@include heightWidth(100%, 100%);
+			@include flexCenter(column, center, center);
+			position: relative;
+			.signedUpAlreadyIcon {
+				@include heightWidth(100%, 100%);
+				@include flexCenter(column, center, center);
+				@include topLeftAbsolute(-25%, 0%);
+				transform: translate(0%, -25%);
+			}
+		}
+	}
 	.signupForm {
 		@include heightWidth(50%, 80%);
 		@include flexCenter(column, flex-start, center);
