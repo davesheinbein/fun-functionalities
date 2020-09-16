@@ -1,5 +1,10 @@
 import React, { Fragment, Component } from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import {
+	handleLogout,
+	handleSignupOrLogin,
+} from '../../actions/index';
 import {
 	Avatar,
 	Form,
@@ -29,13 +34,27 @@ export class LoginForm extends Component {
 		try {
 			await userService.login(this.state);
 			this.props.handleSignupOrLogin();
-			this.props.history.push('/');
+			// this.props.history.push('/'); //might remove keep commented out for now
 		} catch (err) {
 			alert('Invalid Credentials!');
+			console.log(err, '<<<<  This one is the err');
 		}
 	};
+
 	render() {
-		return (
+		let loginPageOr = this.props.user ? (
+			<div className='loginFormContainer'>
+				<div className='logoutHeadText'>
+					Hello {this.props.user.email}
+					<Link
+						to='/boxGroupA'
+						onClick={this.props.handleLogout}
+						className='logoutText'>
+						Log Out
+					</Link>
+				</div>
+			</div>
+		) : (
 			<div className='loginFormContainer'>
 				<Form
 					className='formLoginContainer'
@@ -143,6 +162,7 @@ export class LoginForm extends Component {
 									margin: '0px 1em',
 									padding: '1em 7px',
 								}}
+								onClick={this.handleSubmit}
 							/>
 							<Link to='/signup' className='signup'>
 								<button id='signup'>Signup</button>
@@ -152,7 +172,24 @@ export class LoginForm extends Component {
 				</Form>
 			</div>
 		);
+		return <div>{loginPageOr}</div>;
 	}
 }
 
-export default LoginForm;
+const mapStateToProps = (state) => {
+	return {
+		user: state.user,
+	};
+};
+
+const mapDispatchToProps = () => {
+	return {
+		handleSignupOrLogin,
+		handleLogout,
+	};
+};
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps()
+)(LoginForm);

@@ -4,6 +4,20 @@
 	@include flexCenter(row, center, center);
 	@include heightWidth(100%, 100%);
 	@include topLeftAbsolute(0%, 0%);
+	.logoutHeadText {
+		@include flexCenter(row, center, center);
+		@include heightWidth(100%, 100%);
+		position: relative;
+		font-size: 20px;
+		.logoutText {
+			@include flexCenter(row, center, center);
+			@include heightWidth(fit-content, fit-content);
+			@include topLeftAbsolute(60%, 50%);
+			transform: translate(-50%, -60%);
+			font-size: 40px;
+			font-family: 'Oleo Script', Arial, cursive;
+		}
+	}
 	.formLoginContainer {
 		@include flexCenter(column, center, center);
 		@include heightWidth(100%, 100%);

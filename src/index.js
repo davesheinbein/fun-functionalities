@@ -7,11 +7,22 @@ import {
 	BrowserRouter as Router,
 	Route,
 } from 'react-router-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import reducer from './reducers/reducer';
+
+const store = createStore(
+	reducer,
+	window.__REDUX_DEVTOOLS_EXTENSION__ &&
+		window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 ReactDOM.render(
-	<Router>
-		<Route component={App} />
-	</Router>,
+	<Provider store={store}>
+		<Router>
+			<Route component={App} />
+		</Router>
+	</Provider>,
 	document.getElementById('root')
 );
 
