@@ -4,16 +4,16 @@ import './styles/DavidSPortfolio.css';
 function DavidSPortfolio() {
 	return (
 		<>
-			<div className='portfolioContainer'>
-				<div className='portfolioHeading'>
+			<div className='portfolioContainerDs'>
+				<div className='portfolioHeadingDs'>
 					David Sheinbein Portfolio
 				</div>
 				<br />
-				<div className='portfolioDescription'>
-					<div className='portfolioDescriptionTitle'>
+				<div className='portfolioDescriptionDs'>
+					<div className='portfolioDescriptionTitleDs'>
 						Description:
 					</div>
-					<div className='portfolioDescriptionText'>
+					<div className='portfolioDescriptionTextDs'>
 						I enjoy helping people discover and implement
 						interesting ways to scale and grow their
 						businesses and helping them reach their goals in
@@ -31,8 +31,8 @@ function DavidSPortfolio() {
 						as they arise in the workplace and take pride in
 						the work I accomplish.
 					</div>
-					<div className='portfolioLink'>
-						<button className='btnPortfolio'>
+					<div className='portfolioLinkDs'>
+						<button className='btnPortfolioDs'>
 							<a href='https://github.com/davesheinbein/david-s-portfolio'>
 								Portfolio Link
 							</a>
@@ -52,6 +52,9 @@ function DavidSPortfolio() {
 				</div>
 				<div>
 					Type <span> joke </span> for joke
+				</div>
+				<div>
+					Type <span> haha </span> for laughter
 				</div>
 			</div>
 		</>

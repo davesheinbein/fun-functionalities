@@ -4,16 +4,16 @@ import './styles/JasonHPortfolio.css';
 function JasonHPortfolio() {
 	return (
 		<>
-			<div className='portfolioContainer'>
-				<div className='portfolioHeading'>
+			<div className='portfolioContainerJh'>
+				<div className='portfolioHeadingJh'>
 					Jason Hur's Portfolio
 				</div>
 				<br />
-				<div className='portfolioDescription'>
-					<div className='portfolioDescriptionTitle'>
+				<div className='portfolioDescriptionJh'>
+					<div className='portfolioDescriptionTitleJh'>
 						Description:
 					</div>
-					<div className='portfolioDescriptionText'>
+					<div className='portfolioDescriptionTextJh'>
 						As a software engineer, I love tackling new
 						problems and learning new skills to make clean
 						and responsive web apps. I am a full stack
@@ -22,10 +22,10 @@ function JasonHPortfolio() {
 						CSS, and Javascript. My experiences in back-end
 						technologies include Express and Django.
 					</div>
-					<div className='portfolioLink'>
-						<button className='btnPortfolio'>
+					<div className='portfolioLinkJh'>
+						<button className='btnPortfolioJh'>
 							<a href='https://jasonhur.herokuapp.com/'>
-								Portfolio Link
+								Portfolio
 							</a>
 						</button>
 					</div>
@@ -43,6 +43,9 @@ function JasonHPortfolio() {
 				</div>
 				<div>
 					Type <span> joke </span> for joke
+				</div>
+				<div>
+					Type <span> haha </span> for laughter
 				</div>
 			</div>
 		</>

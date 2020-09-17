@@ -4,52 +4,55 @@ import './styles/JasonHGithub.css';
 function JasonHGithub() {
 	return (
 		<>
-			<div className='githubContainer'>
-				<div className='heading'>Jason Hur Info</div>
+			<div className='githubContainerJh'>
+				<div className='headingJh'>Jason Hur Info</div>
 				<br />
-				<div className='description'>
-					<div className='descriptionTitle'>Github:</div>
-					<div className='descriptionText'>
+				<div className='descriptionJh'>
+					<div className='descriptionTitleJh'>Github:</div>
+					<div className='descriptionTextJh'>
 						I enjoy helping people discover and implement
 						interesting ways to scale and grow their
 						businesses and helping them reach their goals in
 						a logical and creative way.
 					</div>
-					<div className='linkContainer'>
-						<button className='btnPortfolio'>
+					<div className='linkContainerJh'>
+						<button className='btnPortfolioJh'>
 							<a href='https://github.com/davesheinbein'>
-								Github Link
+								Github
 							</a>
 						</button>
 					</div>
-					<div className='descriptionTitle'>LinkedIn:</div>
-					<div className='descriptionText'>
+					<div className='descriptionTitleJh'>
+						LinkedIn:
+					</div>
+					<div className='descriptionTextJh'>
 						<span>
 							Full-Stack Software Engineering Skills:
-						</span>
+						</span>{' '}
+						<br />
 						HTML5, CSS, JavaScript, Express, Node.js,
 						Django, Mongoose, MongoDB, Python, PostreSQL,
 						React, React-spring, Animations, Axios,
 						Nodemailer
 						<br />
-						<span>Developer Tools:</span>
+						<span>Developer Tools:</span> <br />
 						Git, GitHub, MongoDB Atlas, Postman, Heroku,
 						Namecheap, AWS, Third Party APIs
 						<br />
-						<span>Project Management Skills:</span>
-						Scheduling, Timeline Management, Outreach
-						Strategy and Management, Research, Microsoft
-						Office Suite, Teamwork, Marketing
+						<span>Project Management Skills:</span> <br />
+						Scheduling, Timeline Management, Strategy,
+						Management, Research, Microsoft Office Suite,
+						Teamwork, Marketing
 						<br />
-						<span>Creative Skills:</span>
+						<span>Creative Skills:</span> <br />
 						Wireframing, Adobe Creative Suite, Photography,
 						Videography, Canva, Web Design, Undraw,
 						LottieFiles, Google Fonts
 					</div>
-					<div className='linkContainer'>
-						<button className='btnPortfolio'>
+					<div className='linkContainerJh'>
+						<button className='btnPortfolioJh'>
 							<a href='https://www.linkedin.com/in/david-sheinbein/'>
-								LinkedIn Link
+								LinkedIn
 							</a>
 						</button>
 					</div>
@@ -67,6 +70,9 @@ function JasonHGithub() {
 				</div>
 				<div>
 					Type <span> joke </span> for joke
+				</div>
+				<div>
+					Type <span> haha </span> for laughter
 				</div>
 			</div>
 		</>

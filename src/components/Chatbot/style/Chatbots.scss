@@ -6,6 +6,7 @@
 	@include flexCenter(column, center, center);
 	@include heightWidth(55vh, 100vw);
 	@include bottomRightAbsolute(9.5%, 1%);
+	pointer-events: none;
 	.chatbotContainer {
 		@include flexCenter(row, flex-end, center);
 		@include heightWidth(100%, 100%);
@@ -15,7 +16,7 @@
 			z-index: 1002;
 		}
 		.react-chatbot-kit-chat-container {
-			pointer-events: all;
+			pointer-events: auto;
 			width: 50vw;
 			.react-chatbot-kit-chat-inner-container {
 				background: linear-gradient(

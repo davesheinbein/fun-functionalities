@@ -1,48 +1,67 @@
 @import '../../../../../../mixins/mixins.scss';
 
-.githubContainer {
+.githubContainerJh {
+	@include heightWidth(150%, 100%);
 	@include flexCenter(column, center, center);
-	flex-wrap: wrap;
+	// flex-wrap: wrap;
 	padding: 15px;
 	border-radius: 3px;
 	background-color: #f1e6e6;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
 		'Trebuchet MS', sans-serif;
-	.heading {
+	pointer-events: none;
+	.headingJh {
+		@include flexCenter(column, flex-start, center);
+		width: 100%;
 		text-decoration: underline;
 		text-decoration-style: double;
-		margin: 0 0.25em 0.25em;
-		font-size: 20px;
+		margin: 1em 0.5em 0em;
+		font-size: 26px;
+		font-weight: 800;
+		line-height: 30px;
 	}
-	.description {
-		@include flexCenter(column, center, flex-start);
-		flex-wrap: wrap;
+	.descriptionJh {
+		@include flexCenter(column, center, center);
 		text-align: start;
-		margin: 0 1em 0.25em;
-		.descriptionTitle {
+		width: 100%;
+		.descriptionTitleJh {
+			width: 100%;
+			pointer-events: none;
+			padding: 1.5em 0em;
 			text-decoration: underline;
 			font-size: 16px;
+			font-weight: 800;
 		}
-		.descriptionText {
-			margin: 1em 0;
-		}
-		.linkContainer {
-			@include flexCenter(row, center, flex-start);
-			flex-wrap: wrap;
-			text-align: start;
-			margin: 0 0.25em 0.25em;
+		.descriptionTextJh {
 			width: 100%;
-			.btnPortfolio {
-				@include flexCenter(row, center, center);
+			pointer-events: none;
+			flex-wrap: wrap;
+			font-size: 14px;
+			span {
 				width: 100%;
-				margin: 5px;
+				text-decoration: underline;
+				margin: 1em 0;
+				font-weight: 700;
+			}
+		}
+		.linkContainerJh {
+			margin: 0.25em 0;
+			@include heightWidth(fit-content, 100%);
+			pointer-events: auto;
+			.btnPortfolioJh {
+				pointer-events: auto;
+				@include heightWidth(fit-content, 100%);
+				margin: 5px 0px;
 				border-radius: 25px;
 				padding: 8px;
 				background: transparent;
 				border-color: rgba(47, 0, 255, 1);
 				text-align: center;
 				@include noSelection;
+				transform: scale(0.9);
+				transition: all 0.5s ease-in-out;
 				&:hover {
+					transform: scale(1);
 					background: rgba(47, 0, 255, 0.75);
 					border-color: rgba(0, 0, 0, 0.5);
 				}
@@ -55,14 +74,21 @@
 					font-size: 12px;
 					font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
 						'Trebuchet MS', sans-serif;
+					transition: all 0.5s ease-in-out;
+					&:hover {
+						font-size: 14px;
+					}
+					&:focus {
+						outline: none;
+					}
 				}
 			}
 		}
 	}
-	
 }
 
 .optionsAdvice {
+	@include heightWidth(auto, 100%);
 	@include flexCenter(row, center, center);
 	flex-wrap: wrap;
 	margin: 0.5em 0;
@@ -70,6 +96,7 @@
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
 		'Trebuchet MS', sans-serif;
 	div {
+		@include heightWidth(auto, auto);
 		@include flexCenter(row, center, center);
 		flex-wrap: wrap;
 		background-color: #f1e6e6;
@@ -77,10 +104,9 @@
 		margin: 0.25em 0;
 		width: 100%;
 		span {
+			@include heightWidth(auto, auto);
 			text-decoration: underline;
 			margin: 0px 5px;
 		}
 	}
-
-
 }

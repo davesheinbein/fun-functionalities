@@ -3,7 +3,9 @@
 .portfolio-options-container {
 	@include flexCenter(row, center, center);
 	flex-wrap: wrap;
+	@include heightWidth(fit-content, 100%);
 	.portfolio-option-button {
+		@include heightWidth(fit-content, fit-content);
 		margin: 5px;
 		border-radius: 25px;
 		padding: 8px;

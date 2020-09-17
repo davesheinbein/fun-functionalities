@@ -4,50 +4,56 @@ import './styles/DavidSGithub.css';
 function DavidSPortfolio(props) {
 	return (
 		<>
-			<div className='githubContainer'>
-				<div className='heading'>David Sheinbein Info</div>
+			<div className='githubContainerDs'>
+				<div className='headingDs'>
+					David Sheinbein Info
+				</div>
 				<br />
-				<div className='description'>
-					<div className='descriptionTitle'>Github:</div>
-					<div className='descriptionText'>
+				<div className='descriptionDs'>
+					<div className='descriptionTitleDs'>Github:</div>
+					<div className='descriptionTextDs'>
 						I enjoy helping people discover and implement
 						interesting ways to scale and grow their
 						businesses and helping them reach their goals in
 						a logical and creative way.
 					</div>
-					<div className='linkContainer'>
-						<button className='btnPortfolio'>
+					<div className='linkContainerDs'>
+						<button className='btnPortfolioDs'>
 							<a href='https://github.com/davesheinbein'>
 								Github
 							</a>
 						</button>
 					</div>
-					<div className='descriptionTitle'>LinkedIn:</div>
-					<div className='descriptionText'>
+					<div className='descriptionTitleDs'>
+						LinkedIn:
+					</div>
+					<div className='descriptionTextDs'>
 						<span>
 							Full-Stack Software Engineering Skills:
-						</span>
+						</span>{' '}
+						<br />
 						HTML5, CSS, JavaScript, Express, Node.js,
 						Django, Mongoose, MongoDB, Python, PostreSQL,
 						React, React-spring, Animations, Axios,
 						Nodemailer
 						<br />
-						<span>Developer Tools:</span>
+						<span>Developer Tools:</span> <br />
 						Git, GitHub, MongoDB Atlas, Postman, Heroku,
 						Namecheap, AWS, Third Party APIs
 						<br />
-						<span>Project Management Skills:</span>
-						Scheduling, Timeline Management, Outreach
-						Strategy and Management, Research, Microsoft
-						Office Suite, Teamwork, Marketing
+						<span>Project Management Skills:</span> <br />
+						Scheduling, Timeline Management, Outreach,
+						Strategy, Management, Research, Microsoft Office
+						Suite, Teamwork, Marketing, Zoom, Live Share,
+						Entity Relationship Diagram, CRM, Trello
 						<br />
-						<span>Creative Skills:</span>
-						Wireframing, Adobe Creative Suite, Photography,
-						Videography, Canva, Web Design, Undraw,
-						LottieFiles, Google Fonts
+						<span>Creative Skills:</span> <br />
+						Sketch, Wireframing, Adobe Creative Suite,
+						Photography, Videography, Canva, Web Design,
+						Undraw, LottieFiles, Google Fonts
 					</div>
-					<div className='linkContainer'>
-						<button className='btnPortfolio'>
+					<div className='linkContainerDs'>
+						<button className='btnPortfolioDs'>
 							<a href='https://www.linkedin.com/in/david-sheinbein/'>
 								LinkedIn
 							</a>
@@ -67,6 +73,9 @@ function DavidSPortfolio(props) {
 				</div>
 				<div>
 					Type <span> joke </span> for joke
+				</div>
+				<div>
+					Type <span> haha </span> for laughter
 				</div>
 			</div>
 		</>

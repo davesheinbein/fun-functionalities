@@ -37,6 +37,7 @@
   position: absolute;
   bottom: 9.5%;
   right: 1%;
+  pointer-events: none;
 }
 
 .sidebar .chatbotContainer {
@@ -64,7 +65,7 @@
 }
 
 .sidebar .chatbotContainer .react-chatbot-kit-chat-container {
-  pointer-events: all;
+  pointer-events: auto;
   width: 50vw;
 }
 

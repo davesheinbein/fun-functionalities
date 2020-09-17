@@ -1,48 +1,59 @@
 @import '../../../../../../mixins/mixins.scss';
 
-.portfolioContainer {
+.portfolioContainerJh {
 	@include flexCenter(column, center, center);
-	flex-wrap: wrap;
-	padding: 15px;
+	padding: 3em 1em;
 	border-radius: 3px;
 	background-color: #f1e6e6;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
 		'Trebuchet MS', sans-serif;
-	.portfolioHeading {
-		@include flexCenter(row, center, center);
-		margin: 0 0.25em 0.25em;
-		font-size: 20px;
+	width: 100%;
+	.portfolioHeadingJh {
+		@include flexCenter(row, flex-end, center);
+		width: fit-content;
+		margin: 2em 0em 0em;
+		font-size: 30px;
+		line-height: 30px;
+		font-weight: 800;
 	}
-	.portfolioDescription {
+	.portfolioDescriptionJh {
 		@include flexCenter(column, center, flex-start);
-		flex-wrap: wrap;
 		text-align: start;
-		margin: 0 1em 0.25em;
-		.portfolioDescriptionTitle {
+		width: 100%;
+		padding: 1em;
+		.portfolioDescriptionTitleJh {
+			width: 100%;
+			font-size: 16px;
+			font-weight: 700;
 			text-decoration: underline;
 		}
-		.portfolioDescriptionText {
-			margin: 1em 0;
-		}
-		.portfolioLink {
-			@include flexCenter(row, center, flex-start);
-			flex-wrap: wrap;
-			text-align: start;
-			margin: 0 0.25em 0.25em;
+		.portfolioDescriptionTextJh {
 			width: 100%;
-			.btnPortfolio {
-				@include flexCenter(row, center, center);
+			margin: 1em 0 -1em;
+		}
+		.portfolioLinkJh {
+			width: 100%;
+			@include flexCenter(row, center, flex-end);
+			margin: 1em 0em;
+			padding: 1em 0;
+			.btnPortfolioJh {
 				width: 100%;
-				margin: 5px;
+				margin: 5px 0px;
 				border-radius: 25px;
 				padding: 8px;
 				background: transparent;
 				border-color: rgba(47, 0, 255, 1);
 				text-align: center;
 				@include noSelection;
+				transform: scale(0.9);
+				transition: all 0.5s ease-in-out;
 				&:hover {
+					transform: scale(1);
 					background: rgba(47, 0, 255, 0.75);
 					border-color: rgba(0, 0, 0, 0.5);
+				}
+				&:focus {
+					outline: none;
 				}
 				a {
 					text-decoration: none;
@@ -50,6 +61,13 @@
 					font-size: 12px;
 					font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
 						'Trebuchet MS', sans-serif;
+					transition: all 0.5s ease-in-out;
+					&:hover {
+						font-size: 14px;
+					}
+					&:focus {
+						outline: none;
+					}
 				}
 			}
 		}
@@ -74,23 +92,5 @@
 			text-decoration: underline;
 			margin: 0px 5px;
 		}
-	}
-
-	@include media('<=phone') {
-	}
-
-	@include media('>phone', '<=425px') {
-	}
-
-	@include media('>425px', '<=tablet') {
-	}
-
-	@include media('>tablet', '<desktop') {
-	}
-
-	@include media('>=desktop') {
-	}
-
-	@include media('>=LGdesktop', 'retina2x') {
 	}
 }
