@@ -110,7 +110,23 @@
   padding: 1em 0;
 }
 
-.portfolioContainerDs .portfolioDescriptionDs .portfolioLinkDs .btnPortfolioDs {
+.portfolioContainerDs .portfolioDescriptionDs .portfolioLinkDs a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.portfolioContainerDs .portfolioDescriptionDs .portfolioLinkDs a:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background: rgba(47, 0, 255, 0.75);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolioContainerDs .portfolioDescriptionDs .portfolioLinkDs a .btnPortfolioDs {
   width: 100%;
   margin: 5px 0px;
   border-radius: 25px;
@@ -136,31 +152,15 @@
   transition: all 0.5s ease-in-out;
 }
 
-.portfolioContainerDs .portfolioDescriptionDs .portfolioLinkDs .btnPortfolioDs:hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  background: rgba(47, 0, 255, 0.75);
-  border-color: rgba(0, 0, 0, 0.5);
-}
-
-.portfolioContainerDs .portfolioDescriptionDs .portfolioLinkDs .btnPortfolioDs:focus {
+.portfolioContainerDs .portfolioDescriptionDs .portfolioLinkDs a .btnPortfolioDs:focus {
   outline: none;
 }
 
-.portfolioContainerDs .portfolioDescriptionDs .portfolioLinkDs .btnPortfolioDs a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 12px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.portfolioContainerDs .portfolioDescriptionDs .portfolioLinkDs .btnPortfolioDs a:hover {
+.portfolioContainerDs .portfolioDescriptionDs .portfolioLinkDs a .btnPortfolioDs:hover {
   font-size: 14px;
 }
 
-.portfolioContainerDs .portfolioDescriptionDs .portfolioLinkDs .btnPortfolioDs a:focus {
+.portfolioContainerDs .portfolioDescriptionDs .portfolioLinkDs a .btnPortfolioDs:focus {
   outline: none;
 }
 

@@ -18,11 +18,11 @@ function DavidSPortfolio(props) {
 						a logical and creative way.
 					</div>
 					<div className='linkContainerDs'>
-						<button className='btnPortfolioDs'>
-							<a href='https://github.com/davesheinbein'>
+						<a href='https://github.com/davesheinbein'>
+							<button className='btnPortfolioDs'>
 								Github
-							</a>
-						</button>
+							</button>
+						</a>
 					</div>
 					<div className='descriptionTitleDs'>
 						LinkedIn:

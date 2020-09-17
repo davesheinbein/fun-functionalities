@@ -5,12 +5,29 @@ import './style/SwitchBtn.css';
 export class SwitchBtn extends Component {
 	state = {
 		disabled: true,
+		toggled: false,
 	};
 
-	toggle = () => {
+	disable = () => {
 		this.setState({
 			disabled: !this.state.disabled,
 		});
+		console.log(
+			'Test Toggle <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+		);
+	};
+
+	toggle = () => {
+		const toggle = !this.state.toggled;
+		this.setState({
+			toggled: toggle,
+		});
+		this.props.handleThemeChange(
+			toggle ? 'Light' : 'Dark'
+		);
+		console.log(
+			'Test Toggle <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+		);
 	};
 
 	render(props) {
@@ -20,16 +37,12 @@ export class SwitchBtn extends Component {
 					disabled={this.state.disabled}
 					defaultChecked
 					className='switch'
-					onClick={() => {
-						this.props.handleThemeChange(
-							'disabled' ? 'black' : 'default'
-						);
-					}}
+					onClick={this.toggle}
 				/>
 				<br />
 				<Button
 					type='primary'
-					onClick={this.toggle}
+					onClick={this.disable}
 					className='disableBtn'>
 					Disable
 				</Button>

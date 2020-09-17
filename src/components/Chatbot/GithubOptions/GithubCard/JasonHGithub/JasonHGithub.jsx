@@ -50,11 +50,11 @@ function JasonHGithub() {
 						LottieFiles, Google Fonts
 					</div>
 					<div className='linkContainerJh'>
-						<button className='btnPortfolioJh'>
-							<a href='https://www.linkedin.com/in/david-sheinbein/'>
+						<a href='https://www.linkedin.com/in/david-sheinbein/'>
+							<button className='btnPortfolioJh'>
 								LinkedIn
-							</a>
-						</button>
+							</button>
+						</a>
 					</div>
 				</div>
 			</div>

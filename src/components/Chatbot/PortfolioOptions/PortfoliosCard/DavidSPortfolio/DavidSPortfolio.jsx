@@ -32,11 +32,11 @@ function DavidSPortfolio() {
 						the work I accomplish.
 					</div>
 					<div className='portfolioLinkDs'>
-						<button className='btnPortfolioDs'>
-							<a href='https://github.com/davesheinbein/david-s-portfolio'>
+						<a href='https://github.com/davesheinbein/david-s-portfolio'>
+							<button className='btnPortfolioDs'>
 								Portfolio Link
-							</a>
-						</button>
+							</button>
+						</a>
 					</div>
 				</div>
 			</div>

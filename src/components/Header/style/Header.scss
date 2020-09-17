@@ -20,7 +20,7 @@
 		background-image: url('../../../images/cool-background.png');
 		background-clip: text;
 		background-size: 400%;
-		font-size: 40px;
+		font-size: calc(30px + 1vw);
 		line-height: 43px;
 		@include noSelection;
 		animation: bgAnimation 5s infinite 0s alternate;
@@ -34,7 +34,7 @@
 		.listItem {
 			@include heightWidth(100%, 100%);
 			@include flexCenter(row, space-around, flex-start);
-			font-size: 30px;
+			font-size: calc(20px + 1vw);
 			line-height: 50px;
 			.listItemLink {
 				@include heightWidth(100%, 100%);

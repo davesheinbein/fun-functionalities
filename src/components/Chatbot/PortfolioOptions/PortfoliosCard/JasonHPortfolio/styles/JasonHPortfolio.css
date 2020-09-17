@@ -110,7 +110,27 @@
   padding: 1em 0;
 }
 
-.portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh .btnPortfolioJh {
+.portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh a:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background: rgba(47, 0, 255, 0.75);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh a:focus {
+  outline: none;
+}
+
+.portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh a .btnPortfolioJh {
   width: 100%;
   margin: 5px 0px;
   border-radius: 25px;
@@ -136,31 +156,11 @@
   transition: all 0.5s ease-in-out;
 }
 
-.portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh .btnPortfolioJh:hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  background: rgba(47, 0, 255, 0.75);
-  border-color: rgba(0, 0, 0, 0.5);
-}
-
-.portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh .btnPortfolioJh:focus {
-  outline: none;
-}
-
-.portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh .btnPortfolioJh a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 12px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh .btnPortfolioJh a:hover {
+.portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh a .btnPortfolioJh:hover {
   font-size: 14px;
 }
 
-.portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh .btnPortfolioJh a:focus {
+.portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh a .btnPortfolioJh:focus {
   outline: none;
 }
 

@@ -41,6 +41,7 @@
   top: 3%;
   left: 0%;
   z-index: 100;
+  z-index: 200;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -8,6 +8,7 @@
 	.sidebar-toggle {
 		@include topLeftAbsolute(3%, 0%);
 		z-index: 100;
+		z-index: 200;
 		@include flexCenter(column, center, flex-start);
 		@include heightWidth(3vh, 100%);
 		color: #a0a0a0;

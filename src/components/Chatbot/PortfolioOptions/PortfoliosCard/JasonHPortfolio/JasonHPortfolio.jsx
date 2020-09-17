@@ -23,11 +23,11 @@ function JasonHPortfolio() {
 						technologies include Express and Django.
 					</div>
 					<div className='portfolioLinkJh'>
-						<button className='btnPortfolioJh'>
-							<a href='https://jasonhur.herokuapp.com/'>
+						<a href='https://jasonhur.herokuapp.com/'>
+							<button className='btnPortfolioJh'>
 								Portfolio
-							</a>
-						</button>
+							</button>
+						</a>
 					</div>
 				</div>
 			</div>

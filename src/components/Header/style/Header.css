@@ -67,7 +67,7 @@
   background-image: url("../../../images/cool-background.png");
   background-clip: text;
   background-size: 400%;
-  font-size: 40px;
+  font-size: calc(30px + 1vw);
   line-height: 43px;
   -webkit-touch-callout: none;
   /* iOS Safari */
@@ -121,7 +121,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  font-size: 30px;
+  font-size: calc(20px + 1vw);
   line-height: 50px;
 }
 
