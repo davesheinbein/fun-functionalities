@@ -231,9 +231,9 @@ function Layout(props) {
 					</Switch>
 				</animated.div>
 			))}
-			<div className='chatbot'>
-				<Chatbots />
-			</div>
+			{/* <div className='chatbot'> */}
+				{/* <Chatbots /> */}
+			{/* </div> */}
 			<div className='footer'>
 				<Footer />
 			</div>

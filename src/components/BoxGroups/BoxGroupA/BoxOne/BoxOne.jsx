@@ -83,7 +83,7 @@ export default class BoxOne extends Component {
 							</g>
 							<animated.text
 								x='150'
-								y='155'
+								y='180'
 								fill='#03fc8c'
 								fontSize='5rem'
 								pointerEvents='none'>
@@ -99,7 +99,7 @@ export default class BoxOne extends Component {
 							</animated.text>
 							<animated.text
 								x='160'
-								y='155'
+								y='175'
 								fill='#03fc8c'
 								fontSize='3rem'
 								pointerEvents='none'>
@@ -107,7 +107,7 @@ export default class BoxOne extends Component {
 							</animated.text>
 							<animated.text
 								x='212'
-								y='150'
+								y='170'
 								fill='#03fc8c'
 								fontSize='5rem'
 								pointerEvents='none'>
@@ -115,7 +115,7 @@ export default class BoxOne extends Component {
 							</animated.text>
 							<animated.text
 								x='212'
-								y='155'
+								y='175'
 								fill='#03fc8c'
 								fontSize='3rem'
 								pointerEvents='none'>
