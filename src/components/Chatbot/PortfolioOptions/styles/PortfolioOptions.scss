@@ -1,0 +1,25 @@
+@import '../../../../mixins/mixins.scss';
+
+.portfolio-options-container {
+	@include flexCenter(row, center, center);
+	flex-wrap: wrap;
+	.portfolio-option-button {
+		margin: 5px;
+		border-radius: 25px;
+		padding: 8px;
+		border-color: rgba(47, 0, 255, 1);
+		background: transparent;
+		text-align: center;
+		font-size: 12px;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+			'Trebuchet MS', sans-serif;
+		@include noSelection;
+		&:hover {
+			background-color: rgba(47, 0, 255, 0.75);
+			border-color: rgba(0, 0, 0, 0.5);
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+}

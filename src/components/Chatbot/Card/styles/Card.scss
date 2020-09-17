@@ -1,0 +1,68 @@
+@import '../../../../mixins/mixins.scss';
+
+.card {
+	@include flexCenter(column, center, center);
+	@include heightWidth(auto, auto);
+	.card-container {
+		@include flexCenter(column, center, center);
+		@include heightWidth(auto, auto);
+		padding: 2em 4em;
+		border-radius: 5px;
+		background-color: #f1e6e6;
+		margin: 1em 0px 0.25em;
+	}
+
+	.card-button {
+		background: transparent;
+		padding: 8px;
+		border-radius: 3px;
+		border-color: blue;
+		margin: 1em 0px;
+		width: 150px;
+		@include heightWidth(auto, 150px);
+		@include noSelection;
+		&:hover {
+			background-color: rgba(47, 0, 255, 0.75);
+			border-color: rgba(0, 0, 0, 0.5);
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.optionsAdviceContainer {
+	@include flexCenter(column, center, center);
+	@include heightWidth(auto, 100%);
+	.noInfo {
+		@include heightWidth(auto, 100%);
+		padding: 15px;
+		border-radius: 3px;
+		background-color: #f1e6e6;
+		margin-bottom: 1em;
+	}
+
+	.optionsAdvice {
+		@include flexCenter(row, center, center);
+		@include heightWidth(auto, auto);
+		flex-wrap: wrap;
+		margin: 0.5em 0;
+		border-radius: 3px;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+			'Trebuchet MS', sans-serif;
+		div {
+			@include flexCenter(row, center, center);
+			@include heightWidth(auto, auto);
+			flex-wrap: wrap;
+			background-color: #f1e6e6;
+			padding: 15px;
+			margin: 0.25em 0;
+			width: 100%;
+			span {
+				text-decoration: underline;
+				@include heightWidth(auto, auto);
+				margin: 0px 5px;
+			}
+		}
+	}
+}

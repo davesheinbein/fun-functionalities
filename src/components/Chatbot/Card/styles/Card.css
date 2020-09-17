@@ -1,0 +1,171 @@
+@-webkit-keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  width: auto;
+}
+
+.card .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  width: auto;
+  padding: 2em 4em;
+  border-radius: 5px;
+  background-color: #f1e6e6;
+  margin: 1em 0px 0.25em;
+}
+
+.card .card-button {
+  background: transparent;
+  padding: 8px;
+  border-radius: 3px;
+  border-color: blue;
+  margin: 1em 0px;
+  width: 150px;
+  height: auto;
+  width: 150px;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.card .card-button:hover {
+  background-color: rgba(47, 0, 255, 0.75);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.card .card-button:focus {
+  outline: none;
+}
+
+.optionsAdviceContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+.optionsAdviceContainer .noInfo {
+  height: auto;
+  width: 100%;
+  padding: 15px;
+  border-radius: 3px;
+  background-color: #f1e6e6;
+  margin-bottom: 1em;
+}
+
+.optionsAdviceContainer .optionsAdvice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  width: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0.5em 0;
+  border-radius: 3px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.optionsAdviceContainer .optionsAdvice div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  width: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #f1e6e6;
+  padding: 15px;
+  margin: 0.25em 0;
+  width: 100%;
+}
+
+.optionsAdviceContainer .optionsAdvice div span {
+  text-decoration: underline;
+  height: auto;
+  width: auto;
+  margin: 0px 5px;
+}
+/*# sourceMappingURL=Card.css.map */

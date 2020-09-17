@@ -65,6 +65,12 @@
 		}
 	}
 
+	.chatbot {
+		z-index: 2000;
+		// @include heightWidth(100%, 100%);
+		// @include flexCenter(column, center, center);
+	}
+
 	.footer {
 		@include heightWidth(4vh, 100%);
 		@include flexCenter(row, center, center);

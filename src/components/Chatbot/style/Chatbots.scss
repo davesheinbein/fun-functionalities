@@ -1,0 +1,144 @@
+@import '../../../mixins/mixins.scss';
+
+.sidebar {
+	position: relative;
+	text-align: center;
+	@include flexCenter(column, center, center);
+	@include heightWidth(55vh, 100vw);
+	@include bottomRightAbsolute(9.5%, 1%);
+	.chatbotContainer {
+		@include flexCenter(row, flex-end, center);
+		@include heightWidth(100%, 100%);
+		z-index: 1001;
+		pointer-events: none;
+		&:hover {
+			z-index: 1002;
+		}
+		.react-chatbot-kit-chat-container {
+			pointer-events: all;
+			width: 50vw;
+			.react-chatbot-kit-chat-inner-container {
+				background: linear-gradient(
+					0deg,
+					rgba(255, 175, 123, 1) 0%,
+					rgba(148, 233, 219, 1) 100%
+				);
+				@include heightWidth(100%, 100%);
+				@include flexCenter(column, center, center);
+				.react-chatbot-kit-chat-header {
+					position: relative;
+					@include flexCenter(row, center, center);
+					@include heightWidth(10%, 100%);
+					font-size: 22px;
+					font-family: 'Gill Sans', 'Gill Sans MT',
+						'Calibri', 'Trebuchet MS', sans-serif;
+					background: #ffffff;
+					margin: 0;
+					padding: 1em 0em;
+					&::before {
+						content: '';
+						@include flexCenter(row, flex-start, center);
+						@include topLeftAbsolute(0%, 0%);
+						@include heightWidth(100%, 100%);
+						z-index: 3;
+						background: url('../../../images/bot.png');
+						background-position: left;
+						background-size: 50px 50px;
+						background-repeat: no-repeat;
+						margin-left: 1em;
+					}
+					&::after {
+						content: 'Hello how can\aI help you friend!';
+						font-family: 'Gill Sans', 'Gill Sans MT',
+							'Calibri', 'Trebuchet MS', sans-serif;
+						text-align: left;
+						font-weight: 800;
+						@include flexCenter(row, center, center);
+						@include topLeftAbsolute(0%, 0%);
+						@include heightWidth(100%, 100%);
+						background: #ffffff;
+						white-space: pre;
+					}
+				}
+				.react-chatbot-kit-chat-message-container {
+					@include flexCenter(column, center, center);
+					@include heightWidth(100%, 100%);
+					margin-bottom: 2em;
+					.react-chatbot-kit-chat-bot-message-container {
+						display: flex;
+						flex-direction: row;
+						@include heightWidth(100%, 100%);
+						font-family: 'Gill Sans', 'Gill Sans MT',
+							'Calibri', 'Trebuchet MS', sans-serif;
+						font-weight: 800;
+						.avatarIcon {
+							@include heightWidth(5vh, 5vw);
+							#robotImg {
+							}
+						}
+						.react-chatbot-kit-chat-bot-message {
+							margin-left: 0%;
+							@include heightWidth(contain, 55%);
+							span {
+							}
+							.react-chatbot-kit-chat-bot-message-arrow {
+							}
+						}
+					}
+					.react-chatbot-kit-user-chat-message-container {
+						@include heightWidth(100%, 100%);
+						.react-chatbot-kit-user-chat-message {
+							@include heightWidth(contain, 55%);
+							.react-chatbot-kit-user-chat-message-arrow {
+							}
+						}
+						.userIcon {
+							@include heightWidth(5vh, 5vw);
+							#dogImg {
+							}
+						}
+					}
+				}
+				.react-chatbot-kit-chat-input-container {
+					// @include flexCenter(column, center, center);
+					@include heightWidth(10%, 100%);
+					.react-chatbot-kit-chat-input-form {
+						.react-chatbot-kit-chat-input {
+							outline: none;
+							background-color: #ffffff;
+						}
+						.react-chatbot-kit-chat-btn-send {
+							.react-chatbot-kit-chat-btn-send-icon {
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.openbtn {
+	z-index: 1000;
+	@include flexCenter(row, center, center);
+	@include bottomRightAbsolute(5%, 1%);
+	@include heightWidth(calc(50px - 2vw), calc(50px - 2vw));
+	border-radius: 50%;
+	box-shadow: 0 2px 2px #282c34;
+	background-color: lightgray;
+	&:focus {
+		outline: none;
+		z-index: 1002;
+	}
+	&:hover {
+		z-index: 1002;
+	}
+	.chatImg {
+		@include flexCenter(row, center, center);
+		@include heightWidth(
+			calc(50px - 2vw),
+			calc(50px - 2vw)
+		);
+		max-width: 50%;
+		max-height: 50%;
+	}
+}

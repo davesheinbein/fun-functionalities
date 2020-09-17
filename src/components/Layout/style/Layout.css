@@ -173,6 +173,10 @@
   text-decoration: underline;
 }
 
+.layoutContatainer .chatbot {
+  z-index: 2000;
+}
+
 .layoutContatainer .footer {
   height: 4vh;
   width: 100%;

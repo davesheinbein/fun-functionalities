@@ -1,3 +1,21 @@
+@-webkit-keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
 .boxFiveContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,41 +188,5 @@
 
 .boxFiveContainer .boxFiveSubcontainer .puzzleContainer .piece div {
   margin: 1em;
-}
-
-@-webkit-keyframes bgAnimation {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: bottom right;
-  }
-}
-
-@keyframes bgAnimation {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: bottom right;
-  }
-}
-
-@-webkit-keyframes headingAnimation {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
-}
-
-@keyframes headingAnimation {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
 }
 /*# sourceMappingURL=BoxFive.css.map */

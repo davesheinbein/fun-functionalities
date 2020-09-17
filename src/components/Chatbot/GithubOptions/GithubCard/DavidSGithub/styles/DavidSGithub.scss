@@ -1,0 +1,97 @@
+@import '../../../../../../mixins/mixins.scss';
+
+.githubContainer {
+	@include flexCenter(column, center, center);
+	flex-wrap: wrap;
+	padding: 15px;
+	border-radius: 3px;
+	background-color: #f1e6e6;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+		'Trebuchet MS', sans-serif;
+	.heading {
+		text-decoration: underline;
+		text-decoration-style: double;
+		margin: 0 0.25em 0.25em;
+		font-size: 20px;
+	}
+	.description {
+		@include flexCenter(column, center, flex-start);
+		flex-wrap: wrap;
+		text-align: start;
+		margin: 0 1em 0.25em;
+		.descriptionTitle {
+			text-decoration: underline;
+			font-size: 16px;
+		}
+		.descriptionText {
+			margin: 1em 0;
+			span {
+				@include flexCenter(column, center, flex-start);
+				text-decoration: underline;
+				margin: 1em 0;
+			}
+		}
+		.linkContainer {
+			@include flexCenter(row, center, flex-start);
+			flex-wrap: wrap;
+			text-align: start;
+			margin: 0 0.25em 0.25em;
+			width: 100%;
+			.btnPortfolio {
+				@include flexCenter(row, center, center);
+				width: 100%;
+				margin: 5px;
+				border-radius: 25px;
+				padding: 8px;
+				background: transparent;
+				border-color: rgba(47, 0, 255, 1);
+				text-align: center;
+				@include noSelection;
+				&:hover {
+					background: rgba(47, 0, 255, 0.75);
+					border-color: rgba(0, 0, 0, 0.5);
+				}
+				&:focus {
+					outline: none;
+				}
+				a {
+					text-decoration: none;
+					color: #000000;
+					font-size: 12px;
+					font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+						'Trebuchet MS', sans-serif;
+				}
+			}
+		}
+	}
+
+
+}
+
+.optionsAdvice {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0.5em 0;
+	border-radius: 3px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+		'Trebuchet MS', sans-serif;
+	div {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		background-color: #f1e6e6;
+		padding: 15px;
+		margin: 0.25em 0;
+		width: 100%;
+		span {
+			text-decoration: underline;
+			margin: 0px 5px;
+		}
+	}
+	
+}

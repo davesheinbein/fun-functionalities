@@ -49,6 +49,9 @@ import NavGroupD from '../NavBtns/NavGroupLinks/NavGroupD';
 // Import Battery
 import BatteryContainer from '../Battery/BatteryContainer/BatteryContainer';
 
+// Import Chatbot
+import Chatbots from '../Chatbot/Chatbots';
+
 // Signup
 import SignUpPage from '../Signup/SignUpPage';
 // Forgot
@@ -228,6 +231,9 @@ function Layout(props) {
 					</Switch>
 				</animated.div>
 			))}
+			<div className='chatbot'>
+				<Chatbots />
+			</div>
 			<div className='footer'>
 				<Footer />
 			</div>

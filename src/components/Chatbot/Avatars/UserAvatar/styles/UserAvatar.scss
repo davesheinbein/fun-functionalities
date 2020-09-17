@@ -1,0 +1,27 @@
+@import '../../../../../mixins/mixins.scss';
+@import '../../../../../breakpoints/breakpoints.scss';
+
+.userIcon {
+	@include flexCenter(row, center, center);
+	@include heightWidth(100vh, 100vw);
+	border-radius: 50%;
+	padding: 10px;
+	margin: 0px 10px;
+	color: #555555;
+	background-color: orange;
+	#dogImg {
+		@include flexCenter(row, center, center);
+		width: 3.5vw;
+		max-width: 2rem;
+		max-height: 2rem;
+	}
+
+	@include media('<=phone') {
+		#dogImg {
+			@include flexCenter(row, center, center);
+			@include heightWidth(100vh, 10vw);
+			max-width: calc(20px + 1vw);
+			max-height: calc(20px + 1vh);
+		}
+	}
+}

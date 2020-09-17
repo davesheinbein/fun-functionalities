@@ -36,6 +36,12 @@
 	left: $left;
 }
 
+@mixin bottomRightAbsolute($bottom, $right) {
+	position: absolute;
+	bottom: $bottom;
+	right: $right;
+}
+
 @mixin flexCenter($direction, $justified, $alignment) {
 	display: flex;
 	flex-direction: $direction;
