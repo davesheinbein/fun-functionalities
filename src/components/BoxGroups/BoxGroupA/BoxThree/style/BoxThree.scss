@@ -1,22 +1,26 @@
 @import '../../../../../mixins/mixins.scss';
 
 #starContainer {
-	@include flexCenter(column, center, center);
+	@include flexCenter(row, center, center);
 	@include heightWidth(100%, 100%);
 	z-index: 3;
-	cursor: pointer;
 	background: var(--boxThreeBg);
+	cursor: pointer;
 	position: relative;
-	#pathSVG {
+	.pathSVG {
 		@include flexCenter(row, center, center);
 		@include heightWidth(100%, 100%);
-		#starPath {
+		.starPath {
+			@include flexCenter(column, center, center);
+			@include heightWidth(fit-content, 100%);
+			@include topLeftAbsolute(0%, 0%);
+			// @include topLeftAbsolute(0%, 0%);
 		}
 	}
 	.starText {
 		@include heightWidth(100%, 100%);
-		@include flexCenter(row, center, center);
-		@include topLeftAbsolute(0, 0);
+		@include flexCenter(column, center, center);
+		@include topLeftAbsolute(0%, 0%);
 		color: white;
 		font-size: 4rem;
 		font-family: 'Permanent Marker', cursive;

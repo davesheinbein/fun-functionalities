@@ -103,6 +103,7 @@
           align-items: center;
   font-family: 'Rokkitt', 'Hanalei', cursive, serif;
   margin: 0px 1em;
+  font-weight: 600;
 }
 
 .navbarContainer .list .listItem {
@@ -121,7 +122,7 @@
       -ms-flex-align: start;
           align-items: flex-start;
   font-size: 30px;
-  line-height: 55px;
+  line-height: 50px;
 }
 
 .navbarContainer .list .listItem .listItemLink {
@@ -139,10 +140,21 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #101110;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, right top, from(white), to(black));
+  background: linear-gradient(90deg, white 0%, black 100%);
+  background-clip: text;
+  background-size: 400%;
+  -webkit-animation: bgAnimation 5s infinite 0s alternate;
+          animation: bgAnimation 5s infinite 0s alternate;
 }
 
 .navbarContainer .list .listItem .listItemLink:hover {
-  color: violet;
+  color: #360fe6;
+  font-weight: 900;
 }
 
 .navbarContainer .switchBtn {

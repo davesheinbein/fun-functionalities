@@ -36,7 +36,7 @@
 		.signedUpAlreadyFormText {
 			font-size: 60px;
 			line-height: 60px;
-			@include heightWidth(100%, 100%);
+			@include heightWidth(50%, 100%);
 			@include flexCenter(column, flex-end, center);
 			background-size: cover;
 			background: linear-gradient(
@@ -48,9 +48,15 @@
 			background-clip: text;
 			background-size: 400%;
 			animation: bgAnimation 5s infinite 0s alternate;
+			transform: scale(1);
+			pointer-events: auto;
+			transition: all 0.5s ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+			}
 		}
 		.signedUpAlreadyFormSubText {
-			@include heightWidth(100%, 100%);
+			@include heightWidth(fit-content, 100%);
 			@include flexCenter(column, flex-start, center);
 			background-size: cover;
 			background: linear-gradient(
@@ -62,16 +68,52 @@
 			background-clip: text;
 			background-size: 400%;
 			animation: bgAnimation 5s infinite 0s alternate;
+			transform: scale(1);
+			pointer-events: auto;
+			transition: all 0.5s ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+		.signedUpAlreadyFormUserText {
+			@include heightWidth(fit-content, 100%);
+			@include flexCenter(column, flex-start, center);
+			background-size: cover;
+			background: linear-gradient(
+				90deg,
+				rgba(0, 210, 255, 1) 0%,
+				rgba(146, 141, 171, 1) 100%
+			);
+			color: transparent;
+			background-clip: text;
+			background-size: 400%;
+			animation: bgAnimation 5s infinite 0s alternate;
+			transform: scale(1);
+			pointer-events: auto;
+			transition: all 0.5s ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+			}
 		}
 		.signedUpAlreadyIconContainer {
 			@include heightWidth(100%, 100%);
 			@include flexCenter(column, center, center);
 			position: relative;
+			transform: scale(1);
+			transition: all 0.5s ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+			}
 			.signedUpAlreadyIcon {
-				@include heightWidth(100%, 100%);
+				@include heightWidth(90%, 100%);
 				@include flexCenter(column, center, center);
-				@include topLeftAbsolute(-25%, 0%);
-				transform: translate(0%, -25%);
+				@include topLeftAbsolute(5%, 0%);
+				transform: translate(0%, -5%) scale(1);
+				transition: all 0.5s ease-in-out;
+				pointer-events: auto;
+				&:hover {
+					transform: translate(0%, -5%) scale(1.1);
+				}
 			}
 		}
 	}

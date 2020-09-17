@@ -30,16 +30,29 @@
 		@include flexCenter(row, center, center);
 		font-family: 'Rokkitt', 'Hanalei', cursive, serif;
 		margin: 0px 1em;
+		font-weight: 600;
 		.listItem {
 			@include heightWidth(100%, 100%);
 			@include flexCenter(row, space-around, flex-start);
 			font-size: 30px;
-			line-height: 55px;
+			line-height: 50px;
 			.listItemLink {
 				@include heightWidth(100%, 100%);
 				@include flexCenter(row, space-around, flex-start);
+				transition: all 0.5s ease-in-out;
+				color: rgb(16, 17, 16);
+				color: transparent;
+				background: linear-gradient(
+					90deg,
+					rgb(255, 255, 255) 0%,
+					rgb(0, 0, 0) 100%
+				);
+				background-clip: text;
+				background-size: 400%;
+				animation: bgAnimation 5s infinite 0s alternate;
 				&:hover {
-					color: violet;
+					color: rgb(54, 15, 230);
+					font-weight: 900;
 				}
 			}
 		}

@@ -4,6 +4,7 @@ import {
 	animated,
 } from 'react-spring/renderprops';
 import { MenuFoldOutlined } from '@ant-design/icons';
+import { connect } from 'react-redux';
 import delay from 'delay';
 import LoginForm from '../../../LoginForm/LoginForm';
 import './style/BoxSeven.css';
@@ -55,7 +56,59 @@ class BoxSeven extends Component {
 				: this.state.open
 				? 'open'
 				: 'close';
-		return (
+
+		console.log(
+			this.props.user,
+			'<<<<<< Here THis One you idiot'
+		);
+		let loginProfilePageOr = this.props.user ? (
+			<div
+				className='profileContainer'
+				style={{
+					background: 'lightblue',
+					width: '100%',
+					height: '100%',
+				}}>
+				<MenuFoldOutlined
+					className='sidebar-toggle'
+					onClick={this.toggle}
+				/>
+				<Sidebar native state={state}>
+					{({ x }) => (
+						<animated.div
+							className='sidebar'
+							style={{
+								transform: x.interpolate(
+									(x) => `translate3d(${x}%,0,0)`
+								),
+							}}>
+							<Content
+								native
+								items={items}
+								keys={items.map((_, i) => i)}
+								reverse={!this.state.open}
+								state={state}
+								className='contentContainer'>
+								{(item) => ({ x, ...props }) => (
+									<animated.div
+										style={{
+											transform: x.interpolate(
+												(x) => `translate3d(${x}%,0,0)`
+											),
+											...props,
+										}}>
+										<div className='middle'>{item}</div>
+									</animated.div>
+								)}
+							</Content>
+						</animated.div>
+					)}
+				</Sidebar>
+				<div className='boxSevenText'>
+					Click the button to Logout
+				</div>
+			</div>
+		) : (
 			<div
 				className='profileContainer'
 				style={{
@@ -103,7 +156,14 @@ class BoxSeven extends Component {
 				</div>
 			</div>
 		);
+		return <>{loginProfilePageOr}</>;
 	}
 }
 
-export default BoxSeven;
+const mapStateToProps = (state) => {
+	return {
+		user: state.user,
+	};
+};
+
+export default connect(mapStateToProps)(BoxSeven);

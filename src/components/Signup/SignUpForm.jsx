@@ -54,6 +54,10 @@ export class Signup extends Component {
 					<div className='signedUpAlreadyFormSubText'>
 						Thanks for Connecting!
 					</div>
+					<div className='signedUpAlreadyFormUserText'>
+						{this.props.user.name} <br />
+						{this.props.user.email}
+					</div>
 					<div className='signedUpAlreadyIconContainer'>
 						<img
 							className='signedUpAlreadyIcon'

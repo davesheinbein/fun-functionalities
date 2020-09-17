@@ -9,7 +9,8 @@ function Header(props) {
 	const user = useSelector((state) => state.user);
 	const dispatch = useDispatch();
 
-	const HeadPageOr = props.user ? (
+	console.log(user, '<<<<<< userSelector User');
+	const HeadPageOr = user ? (
 		<div className='navbarContainer'>
 			<Link to='/' className='logo'>
 				<div className='logo'>FunFunctionalities</div>
@@ -23,8 +24,11 @@ function Header(props) {
 					</a>
 				</li>
 				<li className='listItem'>
-					<Link to='/signup' className='listItemLink'>
-						Sign Up
+					<Link
+						to='/boxGroupA'
+						onClick={() => dispatch(handleLogout())}
+						className='listItemLink'>
+						Log Out
 					</Link>
 				</li>
 			</ul>
@@ -48,11 +52,8 @@ function Header(props) {
 					</a>
 				</li>
 				<li className='listItem'>
-					<Link
-						to='/boxGroupA'
-						onClick={() => dispatch(handleLogout())}
-						className='listItemLink'>
-						Log Out
+					<Link to='/signup' className='listItemLink'>
+						Sign Up
 					</Link>
 				</li>
 			</ul>

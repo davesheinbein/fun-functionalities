@@ -121,8 +121,10 @@
   resize: both;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 15px;
-  line-height: 15px;
+  line-height: calc(3rem - 1vw);
+  font-size: calc(3rem - 1vw);
+  font-family: 'Quicksand', sans-serif;
+  color: rgba(255, 255, 255, 0.75);
   padding: 0.5em;
 }
 

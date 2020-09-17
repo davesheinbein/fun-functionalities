@@ -138,7 +138,7 @@ export class LoginForm extends Component {
 							/>
 						</Form.Item>
 					</div>
-					<Fragment id='submissionContainer'>
+					<Fragment>
 						<div className='flexDirContainer'>
 							<Checkbox size='small' id='checkbox'>
 								Remember me

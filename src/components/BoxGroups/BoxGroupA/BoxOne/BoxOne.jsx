@@ -6,10 +6,10 @@ import {
 } from 'react-spring/renderprops';
 import './style/BoxOne.css';
 
-const TRIANGLE =
-	'M20,380 L380,380 L380,380 L200,20 L20,380 Z';
-const RECTANGLE =
-	'M20,20 L20,380 L380,380 L380,20 L20,20 Z';
+const HEART =
+	'm 40.5 121.5 a 81 81 90 0 1 162 0 a 81 81 90 0 1 162 0 q 0 121.5 -162 243 q -162 -121.5 -162 -243 z';
+const SMALLHEART =
+	'm 40.5 121.5 a 81 81 90 0 1 162 0 a 81 81 90 0 1 162 0 q 0 121.5 -162 243 q -162 -121.5 -162 -243 z';
 const styles = {
 	container: {
 		height: '100%',
@@ -43,8 +43,8 @@ export default class BoxOne extends Component {
 					fill: toggle ? '#247BA0' : '#70C1B3',
 					backgroundColor: toggle ? '#9F44D3' : '#F3FFBD',
 					rotate: toggle ? '0deg' : '180deg',
-					scale: toggle ? 0.5 : 1,
-					shape: toggle ? RECTANGLE : TRIANGLE,
+					scale: toggle ? 0.75 : 1.5,
+					shape: toggle ? SMALLHEART : HEART,
 				}}
 				toggle={this.toggle}
 				onRest={() => console.log('done')}>
@@ -83,7 +83,7 @@ export default class BoxOne extends Component {
 							</g>
 							<animated.text
 								x='150'
-								y='150'
+								y='155'
 								fill='#03fc8c'
 								fontSize='5rem'
 								pointerEvents='none'>
@@ -91,7 +91,7 @@ export default class BoxOne extends Component {
 							</animated.text>
 							<animated.text
 								x='165'
-								y='145'
+								y='150'
 								fill='#03fc8c'
 								fontSize='5rem'
 								pointerEvents='none'>
@@ -99,7 +99,7 @@ export default class BoxOne extends Component {
 							</animated.text>
 							<animated.text
 								x='160'
-								y='150'
+								y='155'
 								fill='#03fc8c'
 								fontSize='3rem'
 								pointerEvents='none'>
@@ -107,7 +107,7 @@ export default class BoxOne extends Component {
 							</animated.text>
 							<animated.text
 								x='212'
-								y='145'
+								y='150'
 								fill='#03fc8c'
 								fontSize='5rem'
 								pointerEvents='none'>
@@ -115,7 +115,7 @@ export default class BoxOne extends Component {
 							</animated.text>
 							<animated.text
 								x='212'
-								y='150'
+								y='155'
 								fill='#03fc8c'
 								fontSize='3rem'
 								pointerEvents='none'>
@@ -139,7 +139,7 @@ export default class BoxOne extends Component {
 							</animated.text>
 							<animated.text
 								x='130'
-								y='325'
+								y='300'
 								fill='#03fc8c'
 								fontSize='6rem'
 								pointerEvents='none'>

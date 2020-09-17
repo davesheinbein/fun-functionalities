@@ -14,7 +14,7 @@ function BoxSix() {
 
 	useEffect(() => {
 		fetchData();
-	}, []);
+	}, [toggled]);
 
 	const fetchData = async () => {
 		const result = await axios.get(
@@ -32,6 +32,13 @@ function BoxSix() {
 		});
 	};
 
+	// const foo = (obj) => {
+	// 	obj.disabled = true;
+	// 	setTimeout(() => {
+	// 		obj.disabled = false;
+	// 	}, 2000);
+	// };
+
 	const { isLoaded } = state;
 	if (!isLoaded) {
 		return (
@@ -48,8 +55,9 @@ function BoxSix() {
 					<button
 						className='push--skeuo'
 						onClick={
-							(() => fetchData(),
-							() => toggle((toggled) => !toggled))
+							((() => fetchData(),
+							() => toggle((toggled) => !toggled)),
+							// () => foo)
 						}>
 						Chuck
 						<br />
