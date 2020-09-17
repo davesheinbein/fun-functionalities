@@ -4,6 +4,17 @@ class ActionProvider {
 		this.setState = setStateFunc;
 	}
 
+	// Home
+	home = () => {
+		const message = this.createChatBotMessage(
+			'Hello welcome home! Please select an option',
+			{
+				widget: 'mainOptions',
+				delay: 500,
+			}
+		);
+		this.addMessageToState(message);
+	};
 	// Greeting
 	greet = () => {
 		const message = this.createChatBotMessage(

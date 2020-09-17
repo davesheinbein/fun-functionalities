@@ -8,6 +8,13 @@ class MessageParser {
 		const lowercase = message.toLowerCase();
 		const uppercase = message.toUpperCase();
 
+		// Home
+		if (
+			uppercase.includes('home') ||
+			lowercase.includes('home')
+		) {
+			this.actionProvider.home();
+		}
 		// Greet
 		if (
 			uppercase.includes('hello') ||
