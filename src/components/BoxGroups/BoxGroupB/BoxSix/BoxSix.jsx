@@ -55,9 +55,8 @@ function BoxSix() {
 					<button
 						className='push--skeuo'
 						onClick={
-							((() => fetchData(),
-							() => toggle((toggled) => !toggled)),
-							// () => foo)
+							(() => fetchData(),
+							() => toggle((toggled) => !toggled))
 						}>
 						Chuck
 						<br />
