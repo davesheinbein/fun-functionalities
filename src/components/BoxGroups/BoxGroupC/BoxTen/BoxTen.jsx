@@ -1,4 +1,3 @@
-import { words } from 'lodash';
 import React from 'react';
 import { Spring, animated } from 'react-spring/renderprops';
 import './style/BoxTen.css';

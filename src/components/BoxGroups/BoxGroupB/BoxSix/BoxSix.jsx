@@ -3,6 +3,7 @@ import { UncontrolledAlert } from 'reactstrap';
 import axios from 'axios';
 import Loader from '../../../Loader/Loader';
 import './style/BoxSix.css';
+import { Ref } from 'semantic-ui-react';
 
 function BoxSix() {
 	const [toggled, toggle] = useState(false);
@@ -31,13 +32,6 @@ function BoxSix() {
 			isLoaded: true,
 		});
 	};
-
-	// const foo = (obj) => {
-	// 	obj.disabled = true;
-	// 	setTimeout(() => {
-	// 		obj.disabled = false;
-	// 	}, 2000);
-	// };
 
 	const { isLoaded } = state;
 	if (!isLoaded) {

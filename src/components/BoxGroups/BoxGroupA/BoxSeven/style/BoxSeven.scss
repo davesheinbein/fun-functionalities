@@ -14,7 +14,9 @@
 		color: #a0a0a0;
 		z-index: 100;
 		font-size: 1.5em;
+		pointer-events: none;
 		cursor: pointer;
+		pointer-events: all;
 		svg {
 			@include heightWidth(100%, 20%);
 			@include flexCenter(column, center, flex-start);
@@ -43,6 +45,7 @@
 				@include heightWidth(100%, 100%);
 				@include topLeftAbsolute(0%, 0%);
 				margin: 0%;
+				pointer-events: all;
 				.contentContainer {
 					@include flexCenter(column, center, center);
 					@include heightWidth(100%, 100%);
@@ -76,17 +79,18 @@
 		);
 		background-size: cover;
 		background-clip: text;
+		pointer-events: none;
 		transition: all 1s ease-in-out;
-		&:hover {
-			background: linear-gradient(
-				to top,
-				rgba(3, 0, 30, 1),
-				rgba(115, 3, 192, 1),
-				rgba(236, 56, 188, 1),
-				rgba(253, 239, 249, 1)
-			);
-			background-size: cover;
-			background-clip: text;
-		}
+		// &:hover {
+		// 	background: linear-gradient(
+		// 		to top,
+		// 		rgba(3, 0, 30, 1),
+		// 		rgba(115, 3, 192, 1),
+		// 		rgba(236, 56, 188, 1),
+		// 		rgba(253, 239, 249, 1)
+		// 	);
+		// 	background-size: cover;
+		// 	background-clip: text;
+		// }
 	}
 }

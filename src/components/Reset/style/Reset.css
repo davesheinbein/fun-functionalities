@@ -38,8 +38,8 @@
   background: -webkit-gradient(linear, left top, right top, from(#76b852), to(#3d806a));
   background: linear-gradient(90deg, #76b852 0%, #3d806a 100%);
   background-size: 400%;
-  -webkit-animation: bgAnimation 5s infinite 0s alternate;
-          animation: bgAnimation 5s infinite 0s alternate;
+  -webkit-animation: headingAnimation 5s infinite 0s alternate;
+          animation: headingAnimation 5s infinite 0s alternate;
 }
 
 .resetContainer .resetForm {

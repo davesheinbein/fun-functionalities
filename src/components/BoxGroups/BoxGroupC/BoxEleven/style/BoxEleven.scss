@@ -15,11 +15,11 @@
 	.boxElevenContainer {
 		grid-gap: 5px;
 		padding: 5px;
-		border-radius: 5px;
+		border-radius: 50%;
 		cursor: pointer;
 		transition: all 1s ease-in-out;
 		&:hover {
-			border-radius: 50%;
+			border-radius: 5px;
 		}
 		.boxElevenItem {
 			width: 100%;

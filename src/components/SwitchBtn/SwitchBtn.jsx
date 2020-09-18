@@ -13,7 +13,7 @@ export class SwitchBtn extends Component {
 			disabled: !this.state.disabled,
 		});
 		console.log(
-			'Test Toggle <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+			'Test Disable <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
 		);
 	};
 

@@ -10,7 +10,7 @@
 		rgb(61, 128, 106) 100%
 	);
 	background-size: 400%;
-	animation: bgAnimation 5s infinite 0s alternate;
+	animation: headingAnimation 5s infinite 0s alternate;
 	.resetForm {
 		@include heightWidth(30%, 80%);
 		@include flexCenter(column, center, center);

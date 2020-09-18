@@ -3,8 +3,10 @@ import './style/Battery.css';
 
 function Battery(props) {
 	let height = `${props.level * 100}%`;
+	console.log(props.level, '<<<<<<<<Props.level');
+	console.log(height, '<<<<<<<<Height');
 
-	if (`${props.level * 100}%` < '25%') {
+	if (`${props.level * 100}%` < 25) {
 		return (
 			<div className='batteryContain'>
 				<div className='battery'>
@@ -23,7 +25,7 @@ function Battery(props) {
 				</div>
 			</div>
 		);
-	} else if (`${props.level * 100}%` < '50%') {
+	} else if (`${props.level * 100}%` < 50) {
 		return (
 			<div className='batteryContain'>
 				<div className='battery'>

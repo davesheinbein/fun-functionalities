@@ -60,7 +60,9 @@
   color: #a0a0a0;
   z-index: 100;
   font-size: 1.5em;
+  pointer-events: none;
   cursor: pointer;
+  pointer-events: all;
 }
 
 .profileContainer .sidebar-toggle svg {
@@ -161,6 +163,7 @@
   top: 0%;
   left: 0%;
   margin: 0%;
+  pointer-events: all;
 }
 
 .profileContainer .sidebar div .middle .contentContainer {
@@ -243,14 +246,8 @@
   background: linear-gradient(to top, rgba(3, 0, 30, 0.75), rgba(115, 3, 192, 0.75), rgba(236, 56, 188, 0.75), rgba(253, 239, 249, 0.75));
   background-size: cover;
   background-clip: text;
+  pointer-events: none;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-}
-
-.profileContainer .boxSevenText:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(#03001e), color-stop(#7303c0), color-stop(#ec38bc), to(#fdeff9));
-  background: linear-gradient(to top, #03001e, #7303c0, #ec38bc, #fdeff9);
-  background-size: cover;
-  background-clip: text;
 }
 /*# sourceMappingURL=BoxSeven.css.map */

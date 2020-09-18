@@ -6,7 +6,7 @@ import './style/BoxTwo.css';
 class BoxTwo extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { counter: 0 };
+		this.state = { counter: 0, disable: false };
 	}
 
 	increment(e) {
@@ -30,14 +30,23 @@ class BoxTwo extends Component {
 			down,
 		} = this.props;
 		const to = { x: down ? xDelta : 0 };
-		if (this.props.delta[0] < [1]) {
-			this.state.counter = this.state.counter + 1;
+
+		console.log(to, down, 'tekcusbrvu');
+		let localDisable = this.state.disable;
+		if (down === false && localDisable === true) {
+			console.log('ekvrbkuybcwuybckuy');
+			this.setState({
+				disable: false,
+			});
+			localDisable = false;
 		}
-		if (this.props.delta[0] > [-1]) {
-			this.state.counter = this.state.counter - 1;
+		if (!localDisable && this.props.delta[0] < [180]) {
+			this.state.counter = this.state.counter + 1 / 2;
+			this.state.disable = true;
 		}
-		if (this.props.delta[0] == [0]) {
-			this.state.counter = this.state.counter * 0;
+		if (!localDisable && this.props.delta[0] > [-180]) {
+			this.state.counter = this.state.counter - 1 / 2;
+			this.state.disable = true;
 		}
 
 		return (
@@ -81,9 +90,7 @@ class BoxTwo extends Component {
 				</Spring>
 				<div className='countTextContainer'>
 					<div className='countText'>
-						<div className='countTextHeading'>
-							Last X-Pos
-						</div>
+						<div className='countTextHeading'>Count:</div>
 						<div className='countTextBody'>
 							{this.state.counter}
 						</div>

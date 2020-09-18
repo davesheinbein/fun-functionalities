@@ -42,8 +42,8 @@
   color: black;
   background: var(--headerColor);
   background-size: 400%;
-  -webkit-animation: bgAnimation 5s infinite 0s alternate;
-          animation: bgAnimation 5s infinite 0s alternate;
+  -webkit-animation: headingAnimation 5s infinite 0s alternate;
+          animation: headingAnimation 5s infinite 0s alternate;
 }
 
 .navbarContainer .logo {
@@ -81,8 +81,8 @@
   user-select: none;
   /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
-  -webkit-animation: bgAnimation 5s infinite 0s alternate;
-          animation: bgAnimation 5s infinite 0s alternate;
+  -webkit-animation: headingAnimation 5s infinite 0s alternate;
+          animation: headingAnimation 5s infinite 0s alternate;
 }
 
 .navbarContainer .list {
@@ -148,8 +148,8 @@
   background: linear-gradient(90deg, white 0%, black 100%);
   background-clip: text;
   background-size: 400%;
-  -webkit-animation: bgAnimation 5s infinite 0s alternate;
-          animation: bgAnimation 5s infinite 0s alternate;
+  -webkit-animation: headingAnimation 5s infinite 0s alternate;
+          animation: headingAnimation 5s infinite 0s alternate;
 }
 
 .navbarContainer .list .listItem .listItemLink:hover {
