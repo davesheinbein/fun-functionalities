@@ -7,11 +7,13 @@
 ### About Us
 
 Project Work:
+
 David Sheinbein - https://github.com/davesheinbein
 
 Jason Hur - https://github.com/jhur91
 
 LinkedIn:
+
 David Sheinbein - https://www.linkedin.com/in/david-sheinbein/
 
 Jason Hur - https://www.linkedin.com/in/jasonhur/
