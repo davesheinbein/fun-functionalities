@@ -72,7 +72,7 @@ Wireframing | Web Design | Google Fonts
 
 ## Potential Next Steps:
 
-##### - [C] Play with css more to make colors pop even more
+##### - [X] Play with css more to make colors pop even more
 
 ##### - [] Use AWS to store data
 
