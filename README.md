@@ -6,28 +6,32 @@
 
 ### About Us
 
-Project Work:
+#### Project Work:
 
 David Sheinbein - https://github.com/davesheinbein
 
 Jason Hur - https://github.com/jhur91
 
-LinkedIn:
+#### LinkedIn:
 
 David Sheinbein - https://www.linkedin.com/in/david-sheinbein/
 
 Jason Hur - https://www.linkedin.com/in/jasonhur/
 
-Full-Stack Software Engineering Skills:
+#### Full-Stack Software Engineering Skills:
+
 HTML5 | CSS | JavaScript | Express | Node.js | Django | Mongoose | MongoDB | Python | PostreSQL | React | React-spring | Animations | Axios | Nodemailer
 
-Developer Tools:
+#### Developer Tools:
+
 Git | GitHub | MongoDB Atlas | Postman | Heroku | Namecheap | AWS | Third Party APIs
 
-Project Management Skills:
+#### Project Management Skills:
+
 Scheduling | Timeline Management | Research | Teamwork |
 
-Creative Skills:
+#### Creative Skills:
+
 Wireframing | Web Design | Google Fonts
 
 <!-- ### Dependency
