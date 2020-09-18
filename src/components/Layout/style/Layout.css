@@ -157,7 +157,7 @@
           align-items: center;
   position: absolute;
   position: absolute;
-  top: 65%;
+  bottom: 20%;
   left: 50%;
   -webkit-transform: translate(-50%, -65%);
           transform: translate(-50%, -65%);

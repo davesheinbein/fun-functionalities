@@ -52,7 +52,7 @@
 			justify-content: center;
 			align-items: center;
 			position: absolute;
-			@include topLeftAbsolute(65%, 50%);
+			@include bottomLeftAbsolute(20%, 50%);
 			transform: translate(-50%, -65%);
 			font-size: 50px;
 			font-family: 'Oleo Script', cursive;

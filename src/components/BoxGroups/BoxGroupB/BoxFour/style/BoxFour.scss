@@ -17,14 +17,101 @@
 			overflow: auto;
 			opacity: 0.6;
 			.colors {
-				&::after {
-					content: 'hello';
-					@include flexCenter(row, flex-start, center);
-					@include heightWidth(100%, 100%);
-					margin: 0px 3rem;
-					font-size: 60px;
-					color: var(--mainText);
-					font-family: 'Permanent Marker', cursive;
+				&:nth-of-type(1) {
+					&::after {
+						content: 'hello';
+						@include flexCenter(row, flex-start, center);
+						@include heightWidth(100%, 35%);
+						margin: 0px 3rem;
+						font-size: 60px;
+						line-height: 60px;
+						color: var(--mainText);
+						font-family: 'Permanent Marker', cursive;
+					}
+				}
+				&:nth-of-type(2) {
+					&::after {
+						content: 'How are you';
+						@include flexCenter(row, flex-start, center);
+						@include heightWidth(100%, 35%);
+						margin: 0px 3rem;
+						font-size: 60px;
+						line-height: 60px;
+						color: var(--mainText);
+						font-family: 'Permanent Marker', cursive;
+					}
+				}
+				&:nth-of-type(3) {
+					&::after {
+						content: 'I hope you are well';
+						@include flexCenter(row, flex-start, center);
+						@include heightWidth(100%, 35%);
+						margin: 0px 3rem;
+						font-size: 60px;
+						line-height: 60px;
+						color: var(--mainText);
+						font-family: 'Permanent Marker', cursive;
+					}
+				}
+				&:nth-of-type(4) {
+					&::after {
+						content: 'Check out our Github\2019s';
+						@include flexCenter(row, flex-start, center);
+						@include heightWidth(100%, 35%);
+						margin: 0px 3rem;
+						font-size: 60px;
+						line-height: 60px;
+						color: var(--mainText);
+						font-family: 'Permanent Marker', cursive;
+					}
+				}
+				&:nth-of-type(5) {
+					&::after {
+						content: 'Portfolio projects are linked in Git repo README';
+						@include flexCenter(row, flex-start, center);
+						@include heightWidth(100%, 35%);
+						margin: 0px 3rem;
+						font-size: 60px;
+						line-height: 60px;
+						color: var(--mainText);
+						font-family: 'Permanent Marker', cursive;
+					}
+				}
+				&:nth-of-type(6) {
+					&::after {
+						content: 'Check out our Linkedin\2019s!';
+						@include flexCenter(row, flex-start, center);
+						@include heightWidth(100%, 35%);
+						margin: 0px 3rem;
+						font-size: 60px;
+						line-height: 60px;
+						color: var(--mainText);
+						font-family: 'Permanent Marker', cursive;
+					}
+				}
+				&:nth-of-type(7) {
+					&::after {
+						content: 'Our Linkedin\2019s are at the bottom left corner of the footer';
+						@include flexCenter(row, flex-start, center);
+						@include heightWidth(100%, 35%);
+						margin: 0px 3rem;
+						font-size: 60px;
+						line-height: 60px;
+						color: var(--mainText);
+						font-family: 'Permanent Marker', cursive;
+					}
+				}
+				&:nth-of-type(8) {
+					&::after {
+						content: 'Thank you have a great day!';
+						@include flexCenter(row, flex-start, center);
+						@include heightWidth(100%, 35%);
+						margin: 0px 3rem;
+						font-size: 60px;
+						line-height: 60px;
+						color: var(--mainText);
+						font-family: 'Permanent Marker', cursive;
+					}
 				}
 			}
 		}
@@ -34,8 +121,8 @@
 		@include heightWidth(100px, 100px);
 		@include flexCenter(row, center, center);
 		@include topLeftAbsolute(
-			calc(50% + 200px),
-			calc(50% - 175px)
+			calc(50% + 10px),
+			calc(50% - 110px)
 		);
 		border-radius: 50%;
 		border: 5px solid rgba(255, 255, 255, 0.55);

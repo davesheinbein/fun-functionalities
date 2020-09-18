@@ -33,7 +33,7 @@ async function login(req, res) {
 }
 
 async function signup(req, res) {
-	console.log('hitting signup controller');
+	// console.log('hitting signup controller');
 	const user = new User(req.body);
 	try {
 		await user.save();

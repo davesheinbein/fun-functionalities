@@ -22,9 +22,7 @@ export class SwitchBtn extends Component {
 		this.setState({
 			toggled: toggle,
 		});
-		this.props.handleThemeChange(
-			toggle ? 'Light' : 'Dark'
-		);
+		this.props.handleThemeChange(toggle ? 'Dark' : 'Light');
 		console.log(
 			'Test Toggle <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
 		);

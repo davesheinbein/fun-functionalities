@@ -55,7 +55,7 @@
   opacity: 0.6;
 }
 
-.scrollerContainer .scrolltop-main .scrolltop-c .colors::after {
+.scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(1)::after {
   content: 'hello';
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,9 +71,178 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  width: 100%;
+  width: 35%;
   margin: 0px 3rem;
   font-size: 60px;
+  line-height: 60px;
+  color: var(--mainText);
+  font-family: 'Permanent Marker', cursive;
+}
+
+.scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(2)::after {
+  content: 'How are you';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 35%;
+  margin: 0px 3rem;
+  font-size: 60px;
+  line-height: 60px;
+  color: var(--mainText);
+  font-family: 'Permanent Marker', cursive;
+}
+
+.scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(3)::after {
+  content: 'I hope you are well';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 35%;
+  margin: 0px 3rem;
+  font-size: 60px;
+  line-height: 60px;
+  color: var(--mainText);
+  font-family: 'Permanent Marker', cursive;
+}
+
+.scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(4)::after {
+  content: 'Check out our Github\2019s';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 35%;
+  margin: 0px 3rem;
+  font-size: 60px;
+  line-height: 60px;
+  color: var(--mainText);
+  font-family: 'Permanent Marker', cursive;
+}
+
+.scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(5)::after {
+  content: 'Portfolio projects are linked in Git repo README';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 35%;
+  margin: 0px 3rem;
+  font-size: 60px;
+  line-height: 60px;
+  color: var(--mainText);
+  font-family: 'Permanent Marker', cursive;
+}
+
+.scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(6)::after {
+  content: 'Check out our Linkedin\2019s!';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 35%;
+  margin: 0px 3rem;
+  font-size: 60px;
+  line-height: 60px;
+  color: var(--mainText);
+  font-family: 'Permanent Marker', cursive;
+}
+
+.scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(7)::after {
+  content: 'Our Linkedin\2019s are at the bottom left corner of the footer';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 35%;
+  margin: 0px 3rem;
+  font-size: 60px;
+  line-height: 60px;
+  color: var(--mainText);
+  font-family: 'Permanent Marker', cursive;
+}
+
+.scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(8)::after {
+  content: 'Thank you have a great day!';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 35%;
+  margin: 0px 3rem;
+  font-size: 60px;
+  line-height: 60px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
 }
@@ -96,8 +265,8 @@
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: calc(50% + 200px);
-  left: calc(50% - 175px);
+  top: calc(50% + 10px);
+  left: calc(50% - 110px);
   border-radius: 50%;
   border: 5px solid rgba(255, 255, 255, 0.55);
   background: rgba(250, 250, 230, 0.75);

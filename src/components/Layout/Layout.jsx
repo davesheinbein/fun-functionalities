@@ -47,7 +47,7 @@ import NavGroupC from '../NavBtns/NavGroupLinks/NavGroupC';
 import NavGroupD from '../NavBtns/NavGroupLinks/NavGroupD';
 
 // Import Battery
-import BatteryContainer from '../Battery/BatteryContainer/BatteryContainer';
+import BatteryPage from '../../pages/BatteryPage/BatteryPage/BatteryPage';
 
 // Import Chatbot
 import Chatbots from '../Chatbot/Chatbots';
@@ -182,7 +182,7 @@ function Layout(props) {
 										style={{
 											position: 'relative',
 										}}>
-										<BatteryContainer />
+										<BatteryPage />
 										<Link to='/' className='returnHomeLink'>
 											Home
 										</Link>

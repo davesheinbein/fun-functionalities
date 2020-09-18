@@ -1,8 +1,13 @@
-:root {
+:root[themeChanger='Light'] {
   --headerColor: linear-gradient(
 		90deg,
 		#ff6e7f 0%,
 		#bfe9ff 100%
+	);
+  --navColor: linear-gradient(
+		90deg,
+		rgb(255, 255, 255) 0%,
+		rgb(0, 0, 0) 100%
 	);
   --titleColor: #f1f1f1;
   --secondaryColor: #fffcfc;
@@ -29,6 +34,11 @@
 		rgba(255, 175, 123, 1) 0%,
 		rgba(148, 233, 219, 1) 100%
 	);
+  --boxSevenBg: radial-gradient(
+		circle,
+		rgba(123, 255, 130, 1) 0%,
+		rgba(148, 233, 223, 1) 100%
+	);
   --mainText: #000000;
   --subText: rgba(0, 0, 0, 0.75);
   --secondaryText: #084181;
@@ -40,7 +50,12 @@
   --textBoxTextTitle: rgba(0, 0, 0, 1);
   --textBoxText: rgba(0, 0, 0, 1);
   --shadow: rgb(0, 0, 0, 0.75);
-  --background: none;
+  --bg: linear-gradient(
+		43deg,
+		#4158d0 0%,
+		#c850c0 46%,
+		#ffcc70 100%
+	);
   --DisplayNone: none;
 }
 
@@ -49,6 +64,11 @@
 		90deg,
 		#2b5876 0%,
 		#4e4376 100%
+	);
+  --navColor: linear-gradient(
+		90deg,
+		rgba(255, 175, 123, 1) 0%,
+		rgba(148, 233, 219, 1) 100%
 	);
   --titleColor: #000000;
   --secondaryColor: #0b0a0a;
@@ -76,6 +96,12 @@
 		rgba(227, 137, 240, 1) 43.7%,
 		rgba(243, 193, 124, 1) 89.7%
 	);
+  --boxSevenBg: radial-gradient(
+		circle farthest-corner at 10% 20%,
+		rgba(62, 133, 238, 1) 1.1%,
+		rgba(227, 137, 240, 1) 43.7%,
+		rgba(243, 193, 124, 1) 89.7%
+	);
   --mainText: #ffffff;
   --subText: rgba(255, 255, 255, 0.75);
   --secondaryText: #ffffff;
@@ -87,7 +113,12 @@
   --textBoxTextTitle: rgba(255, 255, 255, 1);
   --textBoxText: rgba(255, 255, 255, 0.95);
   --shadow: rgb(255, 255, 255, 0.25);
-  --background: none;
+  --bg: radial-gradient(
+		circle farthest-corner at 10% 20%,
+		rgba(62, 133, 238, 1) 1.1%,
+		rgba(227, 137, 240, 1) 43.7%,
+		rgba(243, 193, 124, 1) 89.7%
+	);
   --DisplayNone: none;
 }
 /*# sourceMappingURL=themechanger.css.map */

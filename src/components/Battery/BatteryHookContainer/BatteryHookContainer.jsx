@@ -13,7 +13,7 @@ function BatteryHookContainer() {
 
 	useEffect(() => {
 		register(updateBattery);
-		console.log('useEffect was called');
+		// console.log('useEffect was called');
 		return () => {
 			unregister(updateBattery);
 		};

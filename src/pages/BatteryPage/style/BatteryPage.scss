@@ -1,0 +1,54 @@
+@import '../../../mixins/mixins.scss';
+
+.batteryBPageContainer {
+	@include flexCenter(row, center, center);
+	@include heightWidth(100%, 100%);
+	background: rgba(238, 129, 27, 0.75);
+	transition: all 0.5s ease-in-out;
+	&:hover {
+		background: rgba(238, 129, 27, 1);
+	}
+	.batteryB {
+		position: relative;
+		@include flexCenter(column, flex-end, center);
+		@include heightWidth(30rem, 25em);
+		@include topLeftAbsolute(50%, 50%);
+		transform: translate(-50%, -50%);
+		border: 3px solid rgba(136, 168, 168, 1);
+		border-radius: 5px;
+		.tipB {
+			@include heightWidth(1vh, 9vmin);
+			@include topLeftAbsolute(-1vh, 15vw);
+			@include flexCenter(row, center, center);
+			background-color: rgba(136, 168, 168, 1);
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+
+		.levelB {
+			@include flexCenter(column, center, center);
+			@include heightWidth(100%, 100%);
+			background: rgba(60, 232, 26, 1);
+			opacity: 0.75;
+			font-size: calc(1vw + 12px);
+			transition: all 0.5s ease-in-out;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	.batteryBText {
+		@include flexCenter(column, center, center);
+		@include heightWidth(100%, 100%);
+		text-align: center;
+		margin: 0px 1em 0px 0.5em;
+		color: rgba(0, 0, 0, 0.75);
+		font-size: calc(1vw + 12px);
+		font-weight: 800;
+		background: rgba(255, 255, 255, 0);
+		transition: all 0.5s ease-in-out;
+		&:hover {
+			color: rgba(0, 0, 0, 1);
+		}
+	}
+}

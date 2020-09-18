@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,sBAAsB,CAAC;EACtB,gBAAgB,EAAE,OAAO;EACzB,gBAAgB,EAAE,6DAKjB;EACD,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACZ",
+    "mappings": "ACyDA,UAAU,CAAV,gBAAU;EACT,EAAE;IACD,mBAAmB,EAAE,IAAI;;EAE1B,IAAI;IACH,mBAAmB,EAAE,KAAK;;;;AD5D5B,AAAA,sBAAsB,CAAC;EACtB,gBAAgB,EAAE,OAAO;EACzB,gBAAgB,EAAE,6DAKjB;ECED,MAAM,EDAe,IAAI;ECCzB,KAAK,EDDsB,IAAI;CAC/B",
     "sources": [
-        "Home.scss"
+        "Home.scss",
+        "../../../mixins/mixins.scss"
     ],
     "names": [],
     "file": "Home.css"
