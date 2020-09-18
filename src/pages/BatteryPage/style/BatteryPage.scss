@@ -18,7 +18,7 @@
 		border-radius: 5px;
 		.tipB {
 			@include heightWidth(1vh, 9vmin);
-			@include topLeftAbsolute(-1vh, 15vw);
+			@include topLeftAbsolute(-1vh, 37%);
 			@include flexCenter(row, center, center);
 			background-color: rgba(136, 168, 168, 1);
 			border-top-left-radius: 5px;

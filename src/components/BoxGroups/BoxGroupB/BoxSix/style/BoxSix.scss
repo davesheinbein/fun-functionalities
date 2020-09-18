@@ -27,14 +27,12 @@
 			@include flexCenter(row, center, center);
 			@include topLeftAbsolute(0%, 0%);
 			z-index: 10;
-			background-color: burlywood;
+			background-color: rgba(222, 184, 135, 1);
 			color: #333333;
 			resize: both;
 			box-sizing: border-box;
-			line-height: calc(3rem - 1vw) * (100% - 360px)/ (1920px -
-						360px);
-			font-size: calc(3rem - 1vw) * (100% - 360px)/ (1920px -
-						360px);
+			line-height: calc(3rem - 1vw);
+			font-size: calc(3rem - 1vw);
 			font-family: 'Quicksand', sans-serif;
 			color: rgba(255, 255, 255, 0.75);
 			padding: 0.5em;

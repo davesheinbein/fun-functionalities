@@ -60,15 +60,19 @@ export function BoxThirteen() {
 				<Frame size={150} radius={30} background={'#111'}>
 					<div className='iconContainer'>
 						<div className='iconText'>Penguin</div>
-						<div className='hrefContainer'>
-							<QqOutlined
-								style={{
-									color: '#fff',
-									width: '25%',
-									height: '25%',
-								}}
-							/>
-						</div>
+						<a
+							className='hrefContainer'
+							href='https://images.unsplash.com/photo-1512505845917-07824a4c8dcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80'>
+							<div className='hrefContainer'>
+								<QqOutlined
+									style={{
+										color: '#fff',
+										width: '25%',
+										height: '25%',
+									}}
+								/>
+							</div>
+						</a>
 					</div>
 				</Frame>
 
@@ -89,15 +93,19 @@ export function BoxThirteen() {
 				<Frame size={150} radius={30} background={'#333'}>
 					<div className='iconContainer'>
 						<div className='iconText'>Smile</div>
-						<div className='hrefContainer'>
-							<SmileOutlined
-								style={{
-									color: '#fff',
-									width: '25%',
-									height: '25%',
-								}}
-							/>
-						</div>
+						<a
+							className='hrefContainer'
+							href='https://images.unsplash.com/photo-1574304916324-9924d079f806?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80'>
+							<div className='hrefContainer'>
+								<SmileOutlined
+									style={{
+										color: '#fff',
+										width: '25%',
+										height: '25%',
+									}}
+								/>
+							</div>
+						</a>
 					</div>
 				</Frame>
 				<Frame size={150} radius={30} background={'#444'}>

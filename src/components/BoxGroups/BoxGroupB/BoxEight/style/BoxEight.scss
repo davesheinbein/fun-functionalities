@@ -13,6 +13,48 @@
 		background-color: #8ec5fc;
 		will-change: transform;
 		z-index: 2;
+		font-family: 'Patua One', cursive;
+		font-size: 28px;
+		&:nth-child(1) {
+			&::after {
+				content: 'Hello';
+				@include flexCenter(column, center, center);
+				@include heightWidth(100%, 100%);
+				color: rgb(245, 62, 108);
+			}
+		}
+		&:nth-child(2) {
+			&::after {
+				content: 'There!';
+				@include flexCenter(column, center, center);
+				@include heightWidth(100%, 100%);
+				color: rgb(245, 62, 108);
+			}
+		}
+		&:nth-child(3) {
+			&::after {
+				content: 'Click';
+				@include flexCenter(column, center, center);
+				@include heightWidth(100%, 100%);
+				color: rgb(245, 62, 108);
+			}
+		}
+		&:nth-child(4) {
+			&::after {
+				content: 'Here';
+				@include flexCenter(column, center, center);
+				@include heightWidth(100%, 100%);
+				color: rgb(245, 62, 108);
+			}
+		}
+		&:nth-child(5) {
+			&::after {
+				content: 'Please';
+				@include flexCenter(column, center, center);
+				@include heightWidth(100%, 100%);
+				color: rgb(245, 62, 108);
+			}
+		}
 	}
 	.boxEightText {
 		@include flexCenter(column, center, flex-start);

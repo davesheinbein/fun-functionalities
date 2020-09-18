@@ -91,7 +91,7 @@ export default class BoxOne extends Component {
 							</animated.text>
 							<animated.text
 								x='165'
-								y='150'
+								y='170'
 								fill='#03fc8c'
 								fontSize='5rem'
 								pointerEvents='none'>
