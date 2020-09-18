@@ -18,7 +18,7 @@ David Sheinbein - https://www.linkedin.com/in/david-sheinbein/
 
 Jason Hur - https://www.linkedin.com/in/jasonhur/
 
-#### Full-Stack Software Engineering Skills:
+<!-- #### Full-Stack Software Engineering Skills:
 
 HTML5 | CSS | JavaScript | Express | Node.js | Django | Mongoose | MongoDB | Python | PostreSQL | React | React-spring | Animations | Axios | Nodemailer
 
@@ -32,7 +32,7 @@ Scheduling | Timeline Management | Research | Teamwork |
 
 #### Creative Skills:
 
-Wireframing | Web Design | Google Fonts
+Wireframing | Web Design | Google Fonts -->
 
 <!-- ### Dependency
 
