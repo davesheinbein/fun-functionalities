@@ -121,7 +121,7 @@ class BoxTwelve extends Component {
 								width: '100%',
 								height: '100%',
 								cursor: 'pointer',
-								background: '#FF1C68',
+								background: 'linear-gradient(90deg, rgba(133,255,160,1) 0%, rgba(240,255,0,1) 100%)',
 							}}
 							className='boxTwelveContainer'
 							onClick={this.toggle}>

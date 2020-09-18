@@ -31,10 +31,10 @@ class BoxTwo extends Component {
 		} = this.props;
 		const to = { x: down ? xDelta : 0 };
 
-		console.log(to, down, 'tekcusbrvu');
+		console.log(to, '<<< to', down, '<<< down');
 		let localDisable = this.state.disable;
 		if (down === false && localDisable === true) {
-			console.log('ekvrbkuybcwuybckuy');
+			// console.log('Hitting Local Disable');
 			this.setState({
 				disable: false,
 			});
@@ -60,7 +60,7 @@ class BoxTwo extends Component {
 							className='gestures-item'
 							style={{
 								backgroundColor:
-									xDelta < 0 ? '#F6416C' : '#81FBB8',
+									xDelta < 0 ? '#81FBB8' : '#F6416C',
 							}}>
 							<animated.div
 								className='gestures-bubble'

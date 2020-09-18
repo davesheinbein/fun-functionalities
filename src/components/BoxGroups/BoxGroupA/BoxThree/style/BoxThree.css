@@ -96,10 +96,12 @@
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 0%;
+  top: -35%;
   left: 0%;
   color: white;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
   font-size: 4rem;
+  line-height: 4rem;
   font-family: 'Permanent Marker', cursive;
   pointer-events: none;
 }
