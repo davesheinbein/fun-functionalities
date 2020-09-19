@@ -9,7 +9,7 @@ function Header(props) {
 	const user = useSelector((state) => state.user);
 	const dispatch = useDispatch();
 
-	console.log(user, '<<<<<< userSelector User');
+	// console.log(user, '<<<<<< userSelector User');
 	const HeadPageOr = user ? (
 		<div className='navbarContainer'>
 			<Link to='/' className='logo'>

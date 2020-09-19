@@ -1,4 +1,4 @@
-:root[themeChanger='Light'] {
+:root[themeChanger='light'] {
 	--headerColor: linear-gradient(
 		90deg,
 		#ff6e7f 0%,
@@ -67,7 +67,7 @@
 	--DisplayNone: none;
 }
 
-:root[themeChanger='Dark'] {
+:root[themeChanger='dark'] {
 	--headerColor: linear-gradient(
 		90deg,
 		#2b5876 0%,

@@ -175,6 +175,8 @@
 
 .layoutContatainer .chatbot {
   z-index: 2000;
+  height: 1px;
+  width: 1px;
 }
 
 .layoutContatainer .footer {

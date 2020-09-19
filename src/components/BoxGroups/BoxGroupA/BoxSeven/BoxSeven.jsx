@@ -49,7 +49,7 @@ class BoxSeven extends Component {
 		this.setState((state) => ({ open: !state.open }));
 
 	render() {
-		console.log(this.state, '<<<<<  this.state');
+		// console.log(this.state, '<<<<<  this.state');
 		const state =
 			this.state.open === undefined
 				? 'peek'
@@ -57,10 +57,7 @@ class BoxSeven extends Component {
 				? 'open'
 				: 'close';
 
-		console.log(
-			this.props.user,
-			'<<<<<< Here THis One you idiot'
-		);
+		// console.log(this.props.user, '<<<<<< this.props.user');
 		let loginProfilePageOr = this.props.user ? (
 			<div
 				className='profileContainer'

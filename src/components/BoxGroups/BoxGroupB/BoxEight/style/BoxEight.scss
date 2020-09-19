@@ -20,7 +20,7 @@
 				content: 'Hello';
 				@include flexCenter(column, center, center);
 				@include heightWidth(100%, 100%);
-				color: rgb(245, 62, 108);
+				color: rgb(248, 54, 128);
 			}
 		}
 		&:nth-child(2) {
@@ -28,31 +28,31 @@
 				content: 'There!';
 				@include flexCenter(column, center, center);
 				@include heightWidth(100%, 100%);
-				color: rgb(245, 62, 108);
+				color: rgb(248, 54, 128);
 			}
 		}
 		&:nth-child(3) {
 			&::after {
-				content: 'Click';
+				content: 'Please';
 				@include flexCenter(column, center, center);
 				@include heightWidth(100%, 100%);
-				color: rgb(245, 62, 108);
+				color: rgb(248, 54, 128);
 			}
 		}
 		&:nth-child(4) {
 			&::after {
-				content: 'Here';
+				content: 'Click';
 				@include flexCenter(column, center, center);
 				@include heightWidth(100%, 100%);
-				color: rgb(245, 62, 108);
+				color: rgb(248, 54, 128);
 			}
 		}
 		&:nth-child(5) {
 			&::after {
-				content: 'Please';
+				content: 'Here!';
 				@include flexCenter(column, center, center);
 				@include heightWidth(100%, 100%);
-				color: rgb(245, 62, 108);
+				color: rgb(248, 54, 128);
 			}
 		}
 	}

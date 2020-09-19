@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Frame, Page } from 'framer';
 import {
@@ -22,6 +23,17 @@ import {
 import './style/BoxThirteen.css';
 
 export function BoxThirteen() {
+	// const [isOpen, setisOpen] = useState(false);
+
+	// useEffect(() => {
+	// 	handleShowDialog();
+	// }, []);
+
+	// const handleShowDialog = () => {
+	// 	this.setisOpen({ isOpen: !this.state.isOpen });
+	// 	console.log('handleShowDialog');
+	// };
+
 	return (
 		<div className='boxThirteenContainer'>
 			<Page

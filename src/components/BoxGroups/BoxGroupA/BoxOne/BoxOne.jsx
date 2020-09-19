@@ -7,7 +7,7 @@ import {
 import './style/BoxOne.css';
 
 const HEART =
-	'm 40.5 121.5 a 81 81 90 0 1 162 0 a 81 81 90 0 1 162 0 q 0 121.5 -162 243 q -162 -121.5 -162 -243 z';
+	'm 106.2 71.4 a 72.9 72.9 90 0 1 180.9 251.1 a 72.9 72.9 90 0 1 -180.9 -251.1 q 0 0 0 0 q 0 0 0 0 z';
 const SMALLHEART =
 	'm 40.5 121.5 a 81 81 90 0 1 162 0 a 81 81 90 0 1 162 0 q 0 121.5 -162 243 q -162 -121.5 -162 -243 z';
 const styles = {
@@ -40,7 +40,7 @@ export default class BoxOne extends Component {
 				native
 				from={{ fill: 'black' }}
 				to={{
-					fill: toggle ? '#247BA0' : '#70C1B3',
+					fill: toggle ? '#ff91f4' : '#70C1B3',
 					backgroundColor: toggle ? '#9F44D3' : '#F3FFBD',
 					rotate: toggle ? '0deg' : '180deg',
 					scale: toggle ? 0.75 : 1.5,
@@ -84,7 +84,7 @@ export default class BoxOne extends Component {
 							<animated.text
 								x='150'
 								y='180'
-								fill='#03fc8c'
+								fill='#fff'
 								fontSize='5rem'
 								pointerEvents='none'>
 								0 0
@@ -92,7 +92,7 @@ export default class BoxOne extends Component {
 							<animated.text
 								x='165'
 								y='170'
-								fill='#03fc8c'
+								fill='#fff'
 								fontSize='5rem'
 								pointerEvents='none'>
 								.
@@ -100,7 +100,7 @@ export default class BoxOne extends Component {
 							<animated.text
 								x='160'
 								y='175'
-								fill='#03fc8c'
+								fill='#fff'
 								fontSize='3rem'
 								pointerEvents='none'>
 								o
@@ -108,7 +108,7 @@ export default class BoxOne extends Component {
 							<animated.text
 								x='212'
 								y='170'
-								fill='#03fc8c'
+								fill='#fff'
 								fontSize='5rem'
 								pointerEvents='none'>
 								.
@@ -116,7 +116,7 @@ export default class BoxOne extends Component {
 							<animated.text
 								x='212'
 								y='175'
-								fill='#03fc8c'
+								fill='#fff'
 								fontSize='3rem'
 								pointerEvents='none'>
 								o
@@ -124,7 +124,7 @@ export default class BoxOne extends Component {
 							<animated.text
 								x='171'
 								y='234'
-								fill='#03fc8c'
+								fill='#fff'
 								fontSize='5rem'
 								pointerEvents='none'>
 								. .
@@ -132,7 +132,7 @@ export default class BoxOne extends Component {
 							<animated.text
 								x='179'
 								y='250'
-								fill='#03fc8c'
+								fill='#fff'
 								fontSize='5rem'
 								pointerEvents='none'>
 								^
@@ -140,7 +140,7 @@ export default class BoxOne extends Component {
 							<animated.text
 								x='130'
 								y='300'
-								fill='#03fc8c'
+								fill='#fff'
 								fontSize='6rem'
 								pointerEvents='none'>
 								\__/

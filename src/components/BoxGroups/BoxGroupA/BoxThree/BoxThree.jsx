@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Spring, animated } from 'react-spring/renderprops';
-import { GradientPinkRed as Gradient } from '@vx/gradient';
+import { GradientPinkBlue as Gradient } from '@vx/gradient';
 import * as easings from 'd3-ease';
 import './style/BoxThree.css';
 
-console.log(easings);
+// console.log(easings);
 class BoxThree extends Component {
 	state = { offset: 0 };
 	path = React.createRef();

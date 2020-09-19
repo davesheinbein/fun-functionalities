@@ -3,8 +3,8 @@ import './style/BatteryPage.css';
 
 function BatteryB(props) {
 	let height = `${props.level * 100}%`;
-	console.log(props.level, '<<<<<<<<Props.level');
-	console.log(height, '<<<<<<<<Height');
+	// console.log(props.level, '<<<<<<<<Props.level');
+	// console.log(height, '<<<<<<<<Height');
 
 	if (`${props.level * 100}%` < 25) {
 		return (

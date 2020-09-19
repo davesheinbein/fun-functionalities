@@ -66,7 +66,7 @@
           align-items: center;
   height: 100%;
   width: 100%;
-  color: #f53e6c;
+  color: #f83680;
 }
 
 .boxEightContainer .box:nth-child(2)::after {
@@ -86,50 +86,10 @@
           align-items: center;
   height: 100%;
   width: 100%;
-  color: #f53e6c;
+  color: #f83680;
 }
 
 .boxEightContainer .box:nth-child(3)::after {
-  content: 'Click';
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-  color: #f53e6c;
-}
-
-.boxEightContainer .box:nth-child(4)::after {
-  content: 'Here';
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-  color: #f53e6c;
-}
-
-.boxEightContainer .box:nth-child(5)::after {
   content: 'Please';
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,7 +106,47 @@
           align-items: center;
   height: 100%;
   width: 100%;
-  color: #f53e6c;
+  color: #f83680;
+}
+
+.boxEightContainer .box:nth-child(4)::after {
+  content: 'Click';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  color: #f83680;
+}
+
+.boxEightContainer .box:nth-child(5)::after {
+  content: 'Here!';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  color: #f83680;
 }
 
 .boxEightContainer .boxEightText {

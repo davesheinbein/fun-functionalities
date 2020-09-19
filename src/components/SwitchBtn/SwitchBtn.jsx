@@ -12,9 +12,10 @@ export class SwitchBtn extends Component {
 		this.setState({
 			disabled: !this.state.disabled,
 		});
-		console.log(
-			'Test Disable <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
-		);
+		console
+			.log
+			// 'Test Disable <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+			();
 	};
 
 	toggle = () => {
@@ -22,10 +23,11 @@ export class SwitchBtn extends Component {
 		this.setState({
 			toggled: toggle,
 		});
-		this.props.handleThemeChange(toggle ? 'Dark' : 'Light');
-		console.log(
-			'Test Toggle <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
-		);
+		this.props.handleThemeChange(toggle ? 'dark' : 'light');
+		console
+			.log
+			// 'Test Toggle <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+			();
 	};
 
 	render(props) {

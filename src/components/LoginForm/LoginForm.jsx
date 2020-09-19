@@ -37,7 +37,7 @@ export class LoginForm extends Component {
 			// this.props.history.push('/'); //might remove keep commented out for now
 		} catch (err) {
 			alert('Invalid Credentials!');
-			console.log(err, '<<<<  This one is the err');
+			// console.log(err, '<<<<  err');
 		}
 	};
 

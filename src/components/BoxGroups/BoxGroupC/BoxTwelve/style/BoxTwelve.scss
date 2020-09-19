@@ -1,6 +1,33 @@
 @import '../../../../../mixins/mixins.scss';
 
-.boxTwelveContainer {
-	// @include flexCenter(row, center, center);
-	// @include heightWidth(100%, 100%);
+.boxTwelveParentContainer {
+	// Don't put height or width values on here
+	.boxTwelveContainer {
+		@include flexCenter(row, center, center);
+		@include heightWidth(100%, 100%);
+		position: relative;
+		cursor: pointer;
+		background: linear-gradient(
+			90deg,
+			rgba(133, 255, 160, 1) 0%,
+			rgba(240, 255, 0, 1) 100%
+		);
+		.boxTwelveSVG {
+			position: 'absolute';
+			bottom: 0;
+			left: 0;
+			.boxTwelvePathGroup {
+				// @include flexCenter(row, center, center);
+				// @include heightWidth(100%, 100%);
+				// @include bottomLeftAbsolute(0%, 0%);
+				// transform: translate(50%, 50%);
+				.boxTwelvePath {
+					// @include flexCenter(row, center, center);
+					// @include heightWidth(100%, 100%);
+					// @include bottomLeftAbsolute(0%, 0%);
+					// transform: translate(-50%, -50%);
+				}
+			}
+		}
+	}
 }

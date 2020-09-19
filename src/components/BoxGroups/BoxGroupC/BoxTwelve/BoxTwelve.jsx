@@ -3,7 +3,7 @@ import { curveBasis } from '@vx/curve';
 import { AreaClosed } from '@vx/shape';
 import { scaleTime, scaleLinear } from '@vx/scale';
 import { ParentSize } from '@vx/responsive';
-import { GradientPurpleTeal } from '@vx/gradient';
+import { GradientPurpleTeal as Gradient } from '@vx/gradient';
 import { extent, max } from 'd3-array';
 import { Spring } from 'react-spring/renderprops';
 import './style/BoxTwelve.css';
@@ -94,13 +94,18 @@ const data = [
 const x = (d) => d.date;
 const y = (d) => d.value;
 
+// console.log(data, '<<<  data');
+// console.log(x, '<<<  x');
+// console.log(y, '<<<  y');
 class BoxTwelve extends Component {
 	state = { toggle: true };
 	toggle = () =>
 		this.setState((state) => ({ toggle: !state.toggle }));
+	// ,
+	// console.log(this.toggle, '<<<  this.toggle') // This disable the toggle but shows when it's being hit
 	render() {
 		return (
-			<ParentSize>
+			<ParentSize className='boxTwelveParentContainer'>
 				{({ width, height }) => {
 					const xScale = scaleTime({
 						range: [0, width],
@@ -115,22 +120,21 @@ class BoxTwelve extends Component {
 					const interpolate = data.map(
 						(d) => Math.random() * yMax
 					);
+					// console.log(xScale, '<<<  xScale');
+					// console.log(yMax, '<<<  yMax');
+					// console.log(yScale, '<<<  yScale');
+					// console.log(interpolate, '<<<  interpolate');
+
 					return (
 						<div
-							style={{
-								width: '100%',
-								height: '100%',
-								cursor: 'pointer',
-								background: 'linear-gradient(90deg, rgba(133,255,160,1) 0%, rgba(240,255,0,1) 100%)',
-							}}
 							className='boxTwelveContainer'
 							onClick={this.toggle}>
 							<svg
-								style={{ position: 'absolute', bottom: 0 }}
 								width={width}
-								height={height / 2}>
-								<GradientPurpleTeal id='gradient' />
-								<g>
+								height={height / 2}
+								className='boxTwelveSVG'>
+								<Gradient id='gradient' />
+								<g className='boxTwelvePathGroup'>
 									<Spring to={{ interpolate }}>
 										{(props) => (
 											<AreaClosed
@@ -146,6 +150,7 @@ class BoxTwelve extends Component {
 												stroke={'url(#gradient)'}
 												fill={'url(#gradient)'}
 												curve={curveBasis}
+												className='boxTwelvePath'
 											/>
 										)}
 									</Spring>

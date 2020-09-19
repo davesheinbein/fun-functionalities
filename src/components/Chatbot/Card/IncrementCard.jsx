@@ -4,7 +4,7 @@ import Card from './Card';
 import './styles/Card.css';
 
 const Quiz = (props) => {
-	console.log(props);
+	// console.log(props);
 	let [informationIndex, setinformationIndex] = useState(0);
 
 	const incrementIndex = () =>

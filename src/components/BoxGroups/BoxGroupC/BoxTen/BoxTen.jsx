@@ -3,13 +3,19 @@ import { Spring, animated } from 'react-spring/renderprops';
 import './style/BoxTen.css';
 
 const Words = [
-	`Hello world`,
-	' I Love You',
-	' Yo',
-	' Elo',
-	' lol',
-	' Hey',
-	' Hola',
+	`Hello`,
+	'Hola',
+	'Bonjour',
+	'Nǐn hǎo',
+	'Ciao',
+	'Shalom',
+	'Guten Tag',
+	'Olá',
+	'Hej',
+	'Hei',
+	'Anyoung',
+	'Zdravstvuyte',
+	'Ahlan',
 ];
 
 export default class BoxTen extends React.Component {
