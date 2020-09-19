@@ -23,7 +23,7 @@ function JasonHPortfolio() {
 						technologies include Express and Django.
 					</div>
 					<div className='portfolioLinkJh'>
-						<a href='https://jasonhur.herokuapp.com/'>
+						<a href='https://jasonhur.netlify.app/'>
 							<button className='btnPortfolioJh'>
 								Portfolio
 							</button>

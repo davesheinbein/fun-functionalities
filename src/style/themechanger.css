@@ -1,4 +1,4 @@
-:root[themeChanger='light'] {
+:root {
   --headerColor: linear-gradient(
 		90deg,
 		#ff6e7f 0%,
