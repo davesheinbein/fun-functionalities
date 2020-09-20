@@ -98,11 +98,26 @@
   position: absolute;
   top: -35%;
   left: 0%;
-  color: white;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+  background-size: 400%;
+  background: -webkit-gradient(linear, left top, right top, from(#7303c0), to(#ec38bc));
+  background: linear-gradient(to right, #7303c0, #ec38bc);
+  background-size: 400%;
+  color: transparent;
+  background-clip: text;
+  -webkit-animation: headingAnimation 5s infinite alternate;
+          animation: headingAnimation 5s infinite alternate;
   font-size: 4rem;
   line-height: 4rem;
   font-family: 'Permanent Marker', cursive;
-  pointer-events: none;
+  pointer-events: text;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#starContainer .starText:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=BoxThree.css.map */

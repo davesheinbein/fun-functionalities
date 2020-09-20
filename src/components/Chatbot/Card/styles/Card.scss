@@ -3,6 +3,8 @@
 .card {
 	@include flexCenter(column, center, center);
 	@include heightWidth(auto, auto);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+		'Trebuchet MS', sans-serif;
 	.card-container {
 		@include flexCenter(column, center, center);
 		@include heightWidth(auto, auto);
@@ -10,18 +12,23 @@
 		border-radius: 5px;
 		background-color: #f1e6e6;
 		margin: 1em 0px 0.25em;
+		font-size: 18px;
 	}
 
 	.card-button {
-		background: transparent;
 		padding: 8px;
-		border-radius: 3px;
+		border-radius: 25px;
 		border-color: blue;
+		color: #000000;
+		background: transparent;
 		margin: 1em 0px;
 		width: 150px;
+		font-size: 14px;
 		@include heightWidth(auto, 150px);
 		@include noSelection;
+		transition: all 0.5s ease-in-out;
 		&:hover {
+			color: #ffffff;
 			background-color: rgba(47, 0, 255, 0.75);
 			border-color: rgba(0, 0, 0, 0.5);
 		}
@@ -37,7 +44,7 @@
 	.noInfo {
 		@include heightWidth(auto, 100%);
 		padding: 15px;
-		border-radius: 3px;
+		border-radius: 5px;
 		background-color: #f1e6e6;
 		margin-bottom: 1em;
 	}
@@ -47,7 +54,7 @@
 		@include heightWidth(auto, auto);
 		flex-wrap: wrap;
 		margin: 0.5em 0;
-		border-radius: 3px;
+		border-radius: 5px;
 		font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
 			'Trebuchet MS', sans-serif;
 		div {

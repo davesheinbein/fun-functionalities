@@ -1,3 +1,21 @@
+@-webkit-keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
 .card1,
 .card2,
 .card3,
@@ -78,12 +96,13 @@
   height: 20%;
   z-index: 10;
   font-size: 6rem;
-  font-family: 'Quicksand', 'Rokkitt', serif, sans-serif;
+  font-weight: 900;
   line-height: 6rem;
+  font-family: 'Quicksand', 'Rokkitt', serif, sans-serif;
   color: white;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 25px;
-  padding: 1.5em 1em;
+  padding: 1.75em 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,9 +114,30 @@
           justify-content: center;
   -webkit-transition: color, background 1s ease-in-out;
   transition: color, background 1s ease-in-out;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card8:hover {
+  color: rgba(0, 0, 0, 0.75);
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.card8 span {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 400;
+  font-family: 'Quicksand', 'Rokkitt', serif, sans-serif;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.card8 span:hover {
   color: rgba(0, 0, 0, 0.75);
   background: rgba(255, 255, 255, 0.75);
 }

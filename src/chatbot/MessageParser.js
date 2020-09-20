@@ -122,6 +122,16 @@ class MessageParser {
 		) {
 			this.actionProvider.portfolioOptions();
 		}
+
+		// Linkedin
+		if (
+			uppercase.includes('linkedin') ||
+			lowercase.includes('linkedin') ||
+			uppercase.includes('skills') ||
+			lowercase.includes('skills')
+		) {
+			this.actionProvider.linkedinOptions();
+		}
 	}
 }
 

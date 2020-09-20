@@ -10,14 +10,19 @@ const MainOptions = (props) => {
 			id: 1,
 		},
 		{
-			text: 'Github',
-			handler: props.actionProvider.githubOptions,
+			text: 'Portfolio',
+			handler: props.actionProvider.portfolioOptions,
 			id: 2,
 		},
 		{
-			text: 'Portfolio',
-			handler: props.actionProvider.portfolioOptions,
+			text: 'Github',
+			handler: props.actionProvider.githubOptions,
 			id: 3,
+		},
+		{
+			text: 'Linkedin',
+			handler: props.actionProvider.linkedinOptions,
+			id: 4,
 		},
 	];
 

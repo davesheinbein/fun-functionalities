@@ -28,7 +28,7 @@ const trans6 = (x, y) =>
 // tree
 const trans7 = (x, y) =>
 	`translate3d(${x / 2 + 200}px,${y / 3 - 250}px,0)`;
-// text
+// Text
 const trans8 = (x, y) =>
 	`translate3d(${x / 7 + 150}px,${y / 7 + 150}px,0)`;
 
@@ -78,6 +78,7 @@ function HomeParallax() {
 					transform: props.xy.interpolate(trans8),
 				}}>
 				Exploring Fun Functionalities
+				<animated.span>Click a bubble</animated.span>
 			</animated.div>
 		</div>
 	);

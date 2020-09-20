@@ -16,43 +16,9 @@ function JasonHGithub() {
 						a logical and creative way.
 					</div>
 					<div className='linkContainerJh'>
-						<button className='btnPortfolioJh'>
-							<a href='https://github.com/davesheinbein'>
-								Github
-							</a>
-						</button>
-					</div>
-					<div className='descriptionTitleJh'>
-						LinkedIn:
-					</div>
-					<div className='descriptionTextJh'>
-						<span>
-							Full-Stack Software Engineering Skills:
-						</span>{' '}
-						<br />
-						HTML5, CSS, JavaScript, Express, Node.js,
-						Django, Mongoose, MongoDB, Python, PostreSQL,
-						React, React-spring, Animations, Axios,
-						Nodemailer
-						<br />
-						<span>Developer Tools:</span> <br />
-						Git, GitHub, MongoDB Atlas, Postman, Heroku,
-						Namecheap, AWS, Third Party APIs
-						<br />
-						<span>Project Management Skills:</span> <br />
-						Scheduling, Timeline Management, Strategy,
-						Management, Research, Microsoft Office Suite,
-						Teamwork, Marketing
-						<br />
-						<span>Creative Skills:</span> <br />
-						Wireframing, Adobe Creative Suite, Photography,
-						Videography, Canva, Web Design, Undraw,
-						LottieFiles, Google Fonts
-					</div>
-					<div className='linkContainerJh'>
-						<a href='https://www.linkedin.com/in/david-sheinbein/'>
+						<a href='https://github.com/davesheinbein'>
 							<button className='btnPortfolioJh'>
-								LinkedIn
+								Github
 							</button>
 						</a>
 					</div>

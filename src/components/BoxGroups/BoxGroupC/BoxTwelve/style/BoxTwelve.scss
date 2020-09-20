@@ -1,32 +1,33 @@
 @import '../../../../../mixins/mixins.scss';
 
-.boxTwelveParentContainer {
-	// Don't put height or width values on here
-	.boxTwelveContainer {
-		@include flexCenter(row, center, center);
+#parentContainer {
+	@include heightWidth(100%, 100%);
+	@include flexCenter(row, center, center);
+	position: relative;
+	background: linear-gradient(to bottom, #77a1d3, #79cbca);
+	#boxTwelveContainer {
 		@include heightWidth(100%, 100%);
-		position: relative;
-		cursor: pointer;
-		background: linear-gradient(
-			90deg,
-			rgba(133, 255, 160, 1) 0%,
-			rgba(240, 255, 0, 1) 100%
-		);
-		.boxTwelveSVG {
-			width: 100%;
-			position: 'absolute';
-			bottom: 0;
-			left: 0;
-			.boxTwelvePathGroup {
-				// @include flexCenter(row, center, center);
-				// @include heightWidth(100%, 100%);
-				// @include bottomLeftAbsolute(0%, 0%);
-				// transform: translate(50%, 50%);
-				.boxTwelvePath {
-					// @include flexCenter(row, center, center);
-					// @include heightWidth(100%, 100%);
-					// @include bottomLeftAbsolute(0%, 0%);
-					// transform: translate(-50%, -50%);
+		@include flexCenter(row, center, center);
+		#boxTwelveHeading {
+			@include heightWidth(100%, 100%);
+			@include flexCenter(column, flex-start, center);
+			margin-top: 2em;
+			pointer-events: none;
+			font-size: 28px;
+			line-height: 28px;
+			font-family: 'Rokkitt', serif;
+			color: #ffffff;
+			&:hover {
+				color: #000000;
+			}
+		}
+		#boxTwelveSVG {
+			@include bottomLeftAbsolute(0px, 0px);
+			transform: translate(-0%, 50%);
+			@include heightWidth(100%, 100%);
+			@include flexCenter(row, center, center);
+			g {
+				#boxTwelveArea {
 				}
 			}
 		}

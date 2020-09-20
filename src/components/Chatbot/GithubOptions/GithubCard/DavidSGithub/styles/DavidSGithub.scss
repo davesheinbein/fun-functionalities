@@ -3,27 +3,28 @@
 .githubContainerDs {
 	@include heightWidth(150%, 100%);
 	@include flexCenter(column, center, center);
-	// flex-wrap: wrap;
 	padding: 15px;
-	border-radius: 3px;
+	border-radius: 5px;
 	background-color: #f1e6e6;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
 		'Trebuchet MS', sans-serif;
 	pointer-events: none;
+	padding: 2em 1em;
 	.headingDs {
-		@include flexCenter(column, flex-start, center);
+		@include flexCenter(column, center, center);
 		width: 100%;
 		text-decoration: underline;
 		text-decoration-style: double;
-		margin: 1em 0.5em 0em;
+		margin: 0em 0.5em;
 		font-size: 26px;
+		line-height: 32px;
 		font-weight: 800;
-		line-height: 30px;
 	}
 	.descriptionDs {
 		@include flexCenter(column, center, center);
 		text-align: start;
 		width: 100%;
+		padding: 0em 1em;
 		.descriptionTitleDs {
 			width: 100%;
 			pointer-events: none;
@@ -48,35 +49,35 @@
 			margin: 0.25em 0;
 			@include heightWidth(fit-content, 100%);
 			pointer-events: auto;
-			.btnPortfolioDs {
-				pointer-events: auto;
-				@include heightWidth(fit-content, 100%);
-				margin: 5px 0px;
-				border-radius: 25px;
-				padding: 8px;
-				background: transparent;
-				border-color: rgba(47, 0, 255, 1);
-				text-align: center;
-				@include noSelection;
-				transform: scale(0.9);
+			a {
+				text-decoration: none;
+				color: #000000;
+				font-size: 14px;
+				font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+					'Trebuchet MS', sans-serif;
 				transition: all 0.5s ease-in-out;
 				&:hover {
-					transform: scale(1);
-					background: rgba(47, 0, 255, 0.75);
-					border-color: rgba(0, 0, 0, 0.5);
+					color: #ffffff;
 				}
 				&:focus {
 					outline: none;
 				}
-				a {
-					text-decoration: none;
-					color: #000000;
-					font-size: 12px;
-					font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
-						'Trebuchet MS', sans-serif;
+				.btnPortfolioDs {
+					pointer-events: auto;
+					@include heightWidth(fit-content, 100%);
+					margin: 5px 0px;
+					border-radius: 25px;
+					padding: 8px;
+					background: transparent;
+					border-color: rgba(47, 0, 255, 1);
+					text-align: center;
+					@include noSelection;
+					transform: scale(0.9);
 					transition: all 0.5s ease-in-out;
 					&:hover {
-						font-size: 14px;
+						transform: scale(1);
+						background: rgba(47, 0, 255, 0.75);
+						border-color: rgba(0, 0, 0, 0.5);
 					}
 					&:focus {
 						outline: none;
@@ -92,7 +93,7 @@
 	@include flexCenter(row, center, center);
 	flex-wrap: wrap;
 	margin: 0.5em 0;
-	border-radius: 3px;
+	border-radius: 5px;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
 		'Trebuchet MS', sans-serif;
 	div {

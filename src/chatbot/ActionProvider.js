@@ -117,6 +117,37 @@ class ActionProvider {
 		this.addMessageToState(message);
 	};
 
+	// linkedin Option
+	linkedinOptions = () => {
+		const message = this.createChatBotMessage(
+			'Select an option',
+			{
+				widget: 'linkedinOptions',
+			}
+		);
+		this.addMessageToState(message);
+	};
+	// DS linkedin Sub Component
+	linkedinDavidSheinbein = () => {
+		const message = this.createChatBotMessage(
+			`Checkout David Sheinbein's Linkedin`,
+			{
+				widget: 'davidSLinkedin',
+			}
+		);
+		this.addMessageToState(message);
+	};
+	// JH linkedin Sub Component
+	linkedinJasonHur = () => {
+		const message = this.createChatBotMessage(
+			`Checkout Jason Hur's Linkedin`,
+			{
+				widget: 'jasonHLinkedin',
+			}
+		);
+		this.addMessageToState(message);
+	};
+
 	// Robot response
 	robot = () => {
 		const message = this.createChatBotMessage(

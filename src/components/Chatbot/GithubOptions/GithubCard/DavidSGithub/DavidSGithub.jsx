@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/DavidSGithub.css';
 
-function DavidSPortfolio(props) {
+function DavidSGithub() {
 	return (
 		<>
 			<div className='githubContainerDs'>
@@ -15,7 +15,26 @@ function DavidSPortfolio(props) {
 						I enjoy helping people discover and implement
 						interesting ways to scale and grow their
 						businesses and helping them reach their goals in
-						a logical and creative way.
+						a logical and creative way. Programming is one
+						of the most versatile and important skills a
+						person can have in today's business world. It
+						enables developers to craft programs unique to
+						any business's specific needs thus facilitating
+						that business' growth.
+					</div>
+					<div className='descriptionTitleDs'>Skills:</div>
+					<div className='descriptionTextDs'>
+						HTML5 | CSS | SASS | SCSS | JavaScript | Express
+						| Node.js | Django | Mongoose | MongoDB | Python
+						| PostgreSQL | React | React-spring | Animations
+						| Axios | Nodemailer | Git | GitHub | MongoDB
+						Atlas | Postman | Heroku | Namecheap | AWS |
+						Third Party APIs | Scheduling | Timeline
+						Management | Outreach Strategy and Management |
+						Research | Microsoft Office Suite | Teamwork |
+						Marketing | Wireframing | Adobe Creative Suite |
+						Photography | Videography | Canva | Web Design |
+						Undraw | LottieFiles | Google Fonts
 					</div>
 					<div className='linkContainerDs'>
 						<a href='https://github.com/davesheinbein'>
@@ -23,41 +42,6 @@ function DavidSPortfolio(props) {
 								Github
 							</button>
 						</a>
-					</div>
-					<div className='descriptionTitleDs'>
-						LinkedIn:
-					</div>
-					<div className='descriptionTextDs'>
-						<span>
-							Full-Stack Software Engineering Skills:
-						</span>{' '}
-						<br />
-						HTML5, CSS, JavaScript, Express, Node.js,
-						Django, Mongoose, MongoDB, Python, PostreSQL,
-						React, React-spring, Animations, Axios,
-						Nodemailer
-						<br />
-						<span>Developer Tools:</span> <br />
-						Git, GitHub, MongoDB Atlas, Postman, Heroku,
-						Namecheap, AWS, Third Party APIs
-						<br />
-						<span>Project Management Skills:</span> <br />
-						Scheduling, Timeline Management, Outreach,
-						Strategy, Management, Research, Microsoft Office
-						Suite, Teamwork, Marketing, Zoom, Live Share,
-						Entity Relationship Diagram, CRM, Trello
-						<br />
-						<span>Creative Skills:</span> <br />
-						Sketch, Wireframing, Adobe Creative Suite,
-						Photography, Videography, Canva, Web Design,
-						Undraw, LottieFiles, Google Fonts
-					</div>
-					<div className='linkContainerDs'>
-						<button className='btnPortfolioDs'>
-							<a href='https://www.linkedin.com/in/david-sheinbein/'>
-								LinkedIn
-							</a>
-						</button>
 					</div>
 				</div>
 			</div>
@@ -82,4 +66,4 @@ function DavidSPortfolio(props) {
 	);
 }
 
-export default DavidSPortfolio;
+export default DavidSGithub;

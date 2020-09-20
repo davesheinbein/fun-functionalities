@@ -12,6 +12,10 @@ import GithubOptions from '../components/Chatbot/GithubOptions/GithubOptions';
 import DavidSGithub from '../components/Chatbot/GithubOptions/GithubCard/DavidSGithub/DavidSGithub';
 import JasonHGithub from '../components/Chatbot/GithubOptions/GithubCard/JasonHGithub/JasonHGithub';
 
+import LinkedinOptions from '../components/Chatbot/LinkedinOptions/LinkedinOptions';
+import DavidSLinkedin from '../components/Chatbot/LinkedinOptions/LinkedinCard/DavidSLinkedin/DavidSLinkedin';
+import JasonHLinkedin from '../components/Chatbot/LinkedinOptions/LinkedinCard/JasonHLinkedin/JasonHLinkedin';
+
 import BotAvatar from '../components/Chatbot/Avatars/BotAvatar/BotAvatar';
 import UserAvatar from '../components/Chatbot/Avatars/UserAvatar/UserAvatar';
 
@@ -52,14 +56,20 @@ const config = {
 			props: {
 				informations: [
 					{
-						information: `Hey buddy`,
-						result: 'How are you?',
+						information: `Hello, this Fun Functionalities explores various different functionalities, packages, and different use cases of the React-Spring and Framer libraries.`,
+						result:
+							'Depending on your websites needs each of these functionalities can be applied to improve user experience and interaction with any website.',
 						id: 1,
 					},
 					{
-						information: `I'm good thanks for asking`,
-						result: 'Enough chit chat',
+						information: `A Users experience are important because they attempt to anticipate and fulfill a users needs.`,
+						result: `It's purpose is to keep that use loyal to your product or brand.`,
 						id: 2,
+					},
+					{
+						information: `A Users interactions are important because it can make or break your customer ase`,
+						result: `It's purpose is to create fewer problems increases user involvement, perfects functionality and creates a strong link between your customers and your website.`,
+						id: 3,
 					},
 				],
 			},
@@ -94,6 +104,21 @@ const config = {
 		{
 			widgetName: 'jasonHGithub',
 			widgetFunc: (props) => <JasonHGithub {...props} />,
+			delay: 500,
+		},
+		{
+			widgetName: 'linkedinOptions',
+			widgetFunc: (props) => <LinkedinOptions {...props} />,
+			delay: 500,
+		},
+		{
+			widgetName: 'davidSLinkedin',
+			widgetFunc: (props) => <DavidSLinkedin {...props} />,
+			delay: 500,
+		},
+		{
+			widgetName: 'jasonHLinkedin',
+			widgetFunc: (props) => <JasonHLinkedin {...props} />,
 			delay: 500,
 		},
 	],

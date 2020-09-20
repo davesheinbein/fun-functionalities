@@ -7,7 +7,7 @@ import { useTransition, animated } from 'react-spring';
 // Box Group A
 // Animate shape - Box One
 // Slide box - Box Two
-// Draw shape path Star - Box Three
+// Draw shape path Sword - Box Three
 // Login profile slider - Box Seven
 import BoxGroupA from '../BoxGroups/BoxGroupA/BoxGroupA';
 

@@ -17,6 +17,8 @@
 }
 
 .portfolioContainerJh {
+  height: 150%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,33 +32,35 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3em 1em;
-  border-radius: 3px;
+  padding: 15px;
+  border-radius: 5px;
   background-color: #f1e6e6;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  width: 100%;
+  pointer-events: none;
+  padding: 2em 1em;
 }
 
 .portfolioContainerJh .portfolioHeadingJh {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 2em 0em 0em;
-  font-size: 30px;
-  line-height: 30px;
+  width: 100%;
+  text-decoration: underline;
+  -webkit-text-decoration-style: double;
+          text-decoration-style: double;
+  margin: 0em 0.5em;
+  font-size: 26px;
+  line-height: 32px;
   font-weight: 800;
 }
 
@@ -71,59 +75,50 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: start;
   width: 100%;
-  padding: 1em;
+  padding: 0em 1em;
 }
 
 .portfolioContainerJh .portfolioDescriptionJh .portfolioDescriptionTitleJh {
   width: 100%;
-  font-size: 16px;
-  font-weight: 700;
+  pointer-events: none;
   text-decoration: underline;
+  font-size: 16px;
+  font-weight: 800;
 }
 
 .portfolioContainerJh .portfolioDescriptionJh .portfolioDescriptionTextJh {
   width: 100%;
-  margin: 1em 0 -1em;
+  pointer-events: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 14px;
 }
 
 .portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh {
+  margin: 0.25em 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin: 1em 0em;
-  padding: 1em 0;
+  pointer-events: auto;
 }
 
 .portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh a {
   text-decoration: none;
   color: #000000;
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh a:hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  background: rgba(47, 0, 255, 0.75);
-  border-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
 }
 
 .portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh a:focus {
@@ -157,7 +152,10 @@
 }
 
 .portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh a .btnPortfolioJh:hover {
-  font-size: 14px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background: rgba(47, 0, 255, 0.75);
+  border-color: rgba(0, 0, 0, 0.5);
 }
 
 .portfolioContainerJh .portfolioDescriptionJh .portfolioLinkJh a .btnPortfolioJh:focus {
@@ -181,7 +179,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0.5em 0;
-  border-radius: 3px;
+  border-radius: 5px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 

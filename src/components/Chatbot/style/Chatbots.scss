@@ -49,7 +49,7 @@
 						margin-left: 1em;
 					}
 					&::after {
-						content: 'Hello how can\aI help you friend!';
+						content: 'Hello! How can\aI help you friend!';
 						font-family: 'Gill Sans', 'Gill Sans MT',
 							'Calibri', 'Trebuchet MS', sans-serif;
 						text-align: left;
@@ -65,10 +65,12 @@
 					@include flexCenter(column, center, center);
 					@include heightWidth(100%, 100%);
 					margin-bottom: 2em;
+					box-sizing: border-box;
+					overflow: scroll;
 					.react-chatbot-kit-chat-bot-message-container {
 						display: flex;
 						flex-direction: row;
-						@include heightWidth(100%, 100%);
+						@include heightWidth(fit-content, 100%);
 						font-family: 'Gill Sans', 'Gill Sans MT',
 							'Calibri', 'Trebuchet MS', sans-serif;
 						font-weight: 800;
@@ -79,7 +81,7 @@
 						}
 						.react-chatbot-kit-chat-bot-message {
 							margin-left: 0%;
-							@include heightWidth(contain, 55%);
+							@include heightWidth(fit-content, 55%);
 							span {
 							}
 							.react-chatbot-kit-chat-bot-message-arrow {
@@ -87,9 +89,9 @@
 						}
 					}
 					.react-chatbot-kit-user-chat-message-container {
-						@include heightWidth(100%, 100%);
+						@include heightWidth(fit-content, 100%);
 						.react-chatbot-kit-user-chat-message {
-							@include heightWidth(contain, 55%);
+							@include heightWidth(fit-content, 55%);
 							.react-chatbot-kit-user-chat-message-arrow {
 							}
 						}

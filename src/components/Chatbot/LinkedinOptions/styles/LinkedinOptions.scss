@@ -1,11 +1,11 @@
 @import '../../../../mixins/mixins.scss';
 
-.mainOptions-container {
+.portfolio-options-container {
 	@include flexCenter(row, center, center);
 	flex-wrap: wrap;
-	margin-bottom: 1em;
 	@include heightWidth(fit-content, 100%);
-	.mainOptions-button {
+	.portfolio-option-button {
+		@include heightWidth(fit-content, fit-content);
 		margin: 5px;
 		border-radius: 25px;
 		padding: 8px;
@@ -14,15 +14,14 @@
 		text-align: center;
 		font-size: 12px;
 		font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
-		'Trebuchet MS', sans-serif;
-		@include heightWidth(fit-content, fit-content);
+			'Trebuchet MS', sans-serif;
 		@include noSelection;
 		&:hover {
 			background-color: rgba(47, 0, 255, 0.75);
 			border-color: rgba(0, 0, 0, 0.5);
 		}
 		&:focus {
-			outline: 0px none;
+			outline: none;
 		}
 	}
 }

@@ -16,7 +16,9 @@
   }
 }
 
-.boxTwelveParentContainer .boxTwelveContainer {
+#parentContainer {
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,18 +32,77 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
-  width: 100%;
   position: relative;
-  cursor: pointer;
-  background: -webkit-gradient(linear, left top, right top, from(#85ffa0), to(#f0ff00));
-  background: linear-gradient(90deg, #85ffa0 0%, #f0ff00 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#77a1d3), to(#79cbca));
+  background: linear-gradient(to bottom, #77a1d3, #79cbca);
 }
 
-.boxTwelveParentContainer .boxTwelveContainer .boxTwelveSVG {
+#parentContainer #boxTwelveContainer {
+  height: 100%;
   width: 100%;
-  position: 'absolute';
-  bottom: 0;
-  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#parentContainer #boxTwelveContainer #boxTwelveHeading {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2em;
+  pointer-events: none;
+  font-size: 28px;
+  line-height: 28px;
+  font-family: 'Rokkitt', serif;
+  color: #ffffff;
+}
+
+#parentContainer #boxTwelveContainer #boxTwelveHeading:hover {
+  color: #000000;
+}
+
+#parentContainer #boxTwelveContainer #boxTwelveSVG {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  -webkit-transform: translate(0%, 50%);
+          transform: translate(0%, 50%);
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=BoxTwelve.css.map */

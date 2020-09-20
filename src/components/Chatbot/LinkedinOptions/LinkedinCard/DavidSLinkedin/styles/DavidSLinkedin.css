@@ -16,7 +16,7 @@
   }
 }
 
-.githubContainerJh {
+.linkedinContainerDs {
   height: 150%;
   width: 100%;
   display: -webkit-box;
@@ -40,7 +40,7 @@
   padding: 2em 1em;
 }
 
-.githubContainerJh .headingJh {
+.linkedinContainerDs .headingDs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +64,7 @@
   font-weight: 800;
 }
 
-.githubContainerJh .descriptionJh {
+.linkedinContainerDs .descriptionDs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,16 +83,20 @@
   padding: 0em 1em;
 }
 
-.githubContainerJh .descriptionJh .descriptionTitleJh {
+.linkedinContainerDs .descriptionDs .descriptionTitleDs {
   width: 100%;
   pointer-events: none;
-  padding: 1.5em 0em;
   text-decoration: underline;
   font-size: 16px;
   font-weight: 800;
 }
 
-.githubContainerJh .descriptionJh .descriptionTextJh {
+.linkedinContainerDs .descriptionDs .descriptionTitleDs span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.linkedinContainerDs .descriptionDs .descriptionTextDs {
   width: 100%;
   pointer-events: none;
   -ms-flex-wrap: wrap;
@@ -100,14 +104,14 @@
   font-size: 14px;
 }
 
-.githubContainerJh .descriptionJh .descriptionTextJh span {
+.linkedinContainerDs .descriptionDs .descriptionTextDs span {
   width: 100%;
   text-decoration: underline;
   margin: 1em 0;
   font-weight: 700;
 }
 
-.githubContainerJh .descriptionJh .linkContainerJh {
+.linkedinContainerDs .descriptionDs .linkContainerDs {
   margin: 0.25em 0;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -116,7 +120,7 @@
   pointer-events: auto;
 }
 
-.githubContainerJh .descriptionJh .linkContainerJh a {
+.linkedinContainerDs .descriptionDs .linkContainerDs a {
   text-decoration: none;
   color: #000000;
   font-size: 14px;
@@ -125,15 +129,15 @@
   transition: all 0.5s ease-in-out;
 }
 
-.githubContainerJh .descriptionJh .linkContainerJh a:hover {
+.linkedinContainerDs .descriptionDs .linkContainerDs a:hover {
   color: #ffffff;
 }
 
-.githubContainerJh .descriptionJh .linkContainerJh a:focus {
+.linkedinContainerDs .descriptionDs .linkContainerDs a:focus {
   outline: none;
 }
 
-.githubContainerJh .descriptionJh .linkContainerJh a .btnPortfolioJh {
+.linkedinContainerDs .descriptionDs .linkContainerDs a .btnPortfolioDs {
   pointer-events: auto;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -163,14 +167,14 @@
   transition: all 0.5s ease-in-out;
 }
 
-.githubContainerJh .descriptionJh .linkContainerJh a .btnPortfolioJh:hover {
+.linkedinContainerDs .descriptionDs .linkContainerDs a .btnPortfolioDs:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
   background: rgba(47, 0, 255, 0.75);
   border-color: rgba(0, 0, 0, 0.5);
 }
 
-.githubContainerJh .descriptionJh .linkContainerJh a .btnPortfolioJh:focus {
+.linkedinContainerDs .descriptionDs .linkContainerDs a .btnPortfolioDs:focus {
   outline: none;
 }
 
@@ -227,4 +231,4 @@
   text-decoration: underline;
   margin: 0px 5px;
 }
-/*# sourceMappingURL=JasonHGithub.css.map */
+/*# sourceMappingURL=DavidSLinkedin.css.map */
