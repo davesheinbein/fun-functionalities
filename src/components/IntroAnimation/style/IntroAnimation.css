@@ -62,8 +62,8 @@
   width: 300px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -webkit-animation: animatedRotateGear 5s linear 0s infinite forwards;
-          animation: animatedRotateGear 5s linear 0s infinite forwards;
+  -webkit-animation: animatedRotateGear 6s linear 0s infinite forwards;
+          animation: animatedRotateGear 6s linear 0s infinite forwards;
 }
 
 .introAnimationContainer .introAnimationMainText {

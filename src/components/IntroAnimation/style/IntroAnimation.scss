@@ -25,7 +25,7 @@
 			pointer-events: all;
 			@include heightWidth(300px, 300px);
 			transition: all 0.5s ease-in-out;
-			animation: animatedRotateGear 5s linear 0s infinite
+			animation: animatedRotateGear 6s linear 0s infinite
 				forwards;
 		}
 	}
