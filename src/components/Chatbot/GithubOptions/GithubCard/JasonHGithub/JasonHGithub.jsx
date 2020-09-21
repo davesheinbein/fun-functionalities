@@ -10,10 +10,10 @@ function JasonHGithub() {
 				<div className='descriptionJh'>
 					<div className='descriptionTitleJh'>Github:</div>
 					<div className='descriptionTextJh'>
-						I enjoy helping people discover and implement
-						interesting ways to scale and grow their
-						businesses and helping them reach their goals in
-						a logical and creative way.
+						As a software engineer, I love tackling new problems 
+						and learning new skills to make clean and responsive 
+						web apps! I am a full stack engineer with a passion 
+						towards the front-end, especially when using React. 
 					</div>
 					<div className='linkContainerJh'>
 						<a href='https://github.com/davesheinbein'>

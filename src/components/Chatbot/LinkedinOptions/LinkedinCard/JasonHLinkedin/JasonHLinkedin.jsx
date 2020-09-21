@@ -16,18 +16,17 @@ function JasonHLinkedin() {
 							Full-Stack Software Engineering Skills:
 						</span>{' '}
 						<br />
-						HTML5, CSS, JavaScript, Express, Node.js,
-						Django, Mongoose, MongoDB, Python, PostreSQL,
-						React
+						React, HTML5, CSS, JavaScript, Express, Node.js,
+						Django, Mongoose, MongoDB, Python, PostreSQL, Sass
 						<br />
 						<span>Developer Tools:</span> <br />
 						Git, GitHub, MongoDB Atlas, Postman, Heroku,
 						AWS, Third Party APIs
 						<br />
 						<span>Project Management Skills:</span> <br />
-						Scheduling, Timeline Management, Strategy,
-						Management, Research, Microsoft Office Suite,
-						Teamwork
+						Teamwork, Data Analysis, Training/Coaching,
+						Public Speaking, Research, Microsoft Excel,
+						Team Management
 						<br />
 						<span>Creative Skills:</span> <br />
 						Wireframing, Web Design, Google Fonts
