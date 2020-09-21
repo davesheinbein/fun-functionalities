@@ -5,6 +5,7 @@
 	@include flexCenter(row, center, center);
 	position: relative;
 	background: linear-gradient(to bottom, #77a1d3, #79cbca);
+	overflow: hidden;
 	#boxTwelveContainer {
 		@include heightWidth(100%, 100%);
 		@include flexCenter(row, center, center);

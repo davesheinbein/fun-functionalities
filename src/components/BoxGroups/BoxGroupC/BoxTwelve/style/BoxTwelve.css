@@ -35,6 +35,7 @@
   position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(#77a1d3), to(#79cbca));
   background: linear-gradient(to bottom, #77a1d3, #79cbca);
+  overflow: hidden;
 }
 
 #parentContainer #boxTwelveContainer {
