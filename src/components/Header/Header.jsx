@@ -12,7 +12,7 @@ function Header(props) {
 	// console.log(user, '<<<<<< userSelector User');
 	const HeadPageOr = user ? (
 		<div className='navbarContainer'>
-			<Link to='/' className='logo'>
+			<Link to='/home' className='logo'>
 				<div className='logo'>FunFunctionalities</div>
 			</Link>
 			<ul className='list'>
@@ -40,7 +40,7 @@ function Header(props) {
 		</div>
 	) : (
 		<div className='navbarContainer'>
-			<Link to='/' className='logo'>
+			<Link to='/home' className='logo'>
 				<div className='logo'>FunFunctionalities</div>
 			</Link>
 			<ul className='list'>

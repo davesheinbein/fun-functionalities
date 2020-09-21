@@ -1,0 +1,153 @@
+@import '../../../mixins/mixins.scss';
+
+.introAnimationContainer {
+	background: linear-gradient(
+		to right,
+		#833ab4,
+		#fd1d1d,
+		#fcb045
+	);
+	font-family: 'Bungee Shade', cursive;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	.introAnimationImgContainer {
+		@include flexCenter(row, center, center);
+		@include topLeftAbsolute(-25%, 0%);
+		@include heightWidth(100%, 100%);
+		overflow: hidden;
+		.introAnimationImg {
+			pointer-events: all;
+			@include heightWidth(300px, 300px);
+			transition: all 0.5s ease-in-out;
+			animation: animatedRotateGear 5s linear 0s infinite
+				forwards;
+		}
+	}
+	.introAnimationMainText {
+		color: #1cb5e0;
+		@include flexCenter(row, center, center);
+		font-size: 50px;
+		line-height: 50px;
+		font-weight: 500;
+		margin-right: 250px;
+		transform: scale(1);
+		transition: all 0.5s ease-in-out;
+		&:hover {
+			transform: scale(1.1);
+		}
+		.begginingText {
+			@include flexCenter(row, flex-end, center);
+			@include heightWidth(fit-content, 100%);
+		}
+		.endTextContainer {
+			margin: 0;
+			position: relative;
+			height: auto;
+			width: auto;
+			height: 65px;
+			z-index: -1;
+			color: #1cb5e0;
+			text-align: center;
+			overflow: hidden;
+			&::before {
+				position: absolute;
+				content: '';
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: -100%;
+				background: transparent;
+				z-index: 1;
+				animation: animatedbefore 2.5s linear infinite;
+				transition: 1s linear;
+				transition-delay: 1s;
+			}
+			ul {
+				margin: 0 0.5%;
+				padding: 0;
+				width: auto;
+				text-align: left;
+				animation: animatedList 3s alternate infinite;
+				li {
+					list-style-type: none;
+					height: 65px;
+					width: 170vw;
+				}
+			}
+		}
+	}
+	.introAnimationLink {
+		pointer-events: none;
+		@include heightWidth(fit-content, 100%);
+		@include topLeftAbsolute(60%, 0%);
+		@include flexCenter(row, center, center);
+		font-size: 30px;
+		.continue {
+			pointer-events: all;
+			@include heightWidth(fit-content, fit-content);
+			color: #000;
+			background: rgba(253, 161, 100, 0.75);
+			border-color: rgba(253, 161, 100, 0.5);
+			border-radius: 25px;
+			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+			padding: 0.25em 1em;
+			transform: scale(1);
+			transition: all 0.5s ease-in-out;
+			&:hover {
+				color: rgba(255, 255, 255, 0.75);
+				border-color: rgba(253, 161, 100, 0.75);
+				background: rgba(253, 161, 100, 1);
+				box-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
+				transform: scale(1.1);
+			}
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+}
+
+@keyframes animatedbefore {
+	0% {
+		left: -100%;
+		background: transparent;
+	}
+	50% {
+		background: linear-gradient(to right, #c33764, #1d2671);
+	}
+	100% {
+		background: linear-gradient(to right, #c33764, #1d2671);
+		left: 100%;
+	}
+}
+
+@keyframes animatedList {
+	0% {
+		transform: translateY(5px);
+	}
+	40% {
+		transform: translateY(5px);
+	}
+	65% {
+		transform: translateY(-60px);
+	}
+	75%,
+	100% {
+		transform: translateY(-60px);
+	}
+}
+
+@keyframes animatedRotateGear {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

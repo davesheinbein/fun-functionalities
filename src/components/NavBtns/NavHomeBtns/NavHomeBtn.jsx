@@ -4,7 +4,7 @@ import './style/NavHomeBtns.css';
 
 export default function NavHomeA() {
 	return (
-		<Link to='/' className='HomeNavLink'>
+		<Link to='/home' className='HomeNavLink'>
 			<div className='HomeCircle'></div>
 		</Link>
 	);

@@ -12,7 +12,8 @@ import './style/Chatbots.css';
 console.log(
 	'Robot, Dog icon made by https://www.flaticon.com/authors/eucalyp - https://www.flaticon.com/',
 	`Chat icon made by https://www.flaticon.com/authors/kiranshastry - https://www.flaticon.com/`,
-	'Bot icons made by https://www.flaticon.com/authors/freepik - www.flaticon.com'
+	'Bot icons made by https://www.flaticon.com/authors/freepik - www.flaticon.com',
+	'Gear icons made by https://www.flaticon.com/authors/freepik - www.flaticon.com'
 );
 export class Chatbots extends Component {
 	state = {

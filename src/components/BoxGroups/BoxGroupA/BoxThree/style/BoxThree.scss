@@ -20,8 +20,6 @@
 		@include heightWidth(100%, 100%);
 		@include flexCenter(column, center, center);
 		@include topLeftAbsolute(-35%, 0%);
-		// color: rgba(255, 255, 255, 0.75);
-		background-size: 400%;
 		background: linear-gradient(
 			to right,
 			rgba(115, 3, 192, 1),

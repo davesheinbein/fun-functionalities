@@ -1,0 +1,316 @@
+@-webkit-keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.introAnimationContainer {
+  background: -webkit-gradient(linear, left top, right top, from(#833ab4), color-stop(#fd1d1d), to(#fcb045));
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  font-family: 'Bungee Shade', cursive;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.introAnimationContainer .introAnimationImgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -25%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.introAnimationContainer .introAnimationImgContainer .introAnimationImg {
+  pointer-events: all;
+  height: 300px;
+  width: 300px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-animation: animatedRotateGear 5s linear 0s infinite forwards;
+          animation: animatedRotateGear 5s linear 0s infinite forwards;
+}
+
+.introAnimationContainer .introAnimationMainText {
+  color: #1cb5e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 500;
+  margin-right: 250px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.introAnimationContainer .introAnimationMainText:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.introAnimationContainer .introAnimationMainText .begginingText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+
+.introAnimationContainer .introAnimationMainText .endTextContainer {
+  margin: 0;
+  position: relative;
+  height: auto;
+  width: auto;
+  height: 65px;
+  z-index: -1;
+  color: #1cb5e0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.introAnimationContainer .introAnimationMainText .endTextContainer::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  background: transparent;
+  z-index: 1;
+  -webkit-animation: animatedbefore 2.5s linear infinite;
+          animation: animatedbefore 2.5s linear infinite;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.introAnimationContainer .introAnimationMainText .endTextContainer ul {
+  margin: 0 0.5%;
+  padding: 0;
+  width: auto;
+  text-align: left;
+  -webkit-animation: animatedList 3s alternate infinite;
+          animation: animatedList 3s alternate infinite;
+}
+
+.introAnimationContainer .introAnimationMainText .endTextContainer ul li {
+  list-style-type: none;
+  height: 65px;
+  width: 170vw;
+}
+
+.introAnimationContainer .introAnimationLink {
+  pointer-events: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  left: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+}
+
+.introAnimationContainer .introAnimationLink .continue {
+  pointer-events: all;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #000;
+  background: rgba(253, 161, 100, 0.75);
+  border-color: rgba(253, 161, 100, 0.5);
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  padding: 0.25em 1em;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.introAnimationContainer .introAnimationLink .continue:hover {
+  color: rgba(255, 255, 255, 0.75);
+  border-color: rgba(253, 161, 100, 0.75);
+  background: #fda164;
+  -webkit-box-shadow: 0px 2px 2px black;
+          box-shadow: 0px 2px 2px black;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.introAnimationContainer .introAnimationLink .continue:focus {
+  outline: none;
+}
+
+@-webkit-keyframes animatedbefore {
+  0% {
+    left: -100%;
+    background: transparent;
+  }
+  50% {
+    background: -webkit-gradient(linear, left top, right top, from(#c33764), to(#1d2671));
+    background: linear-gradient(to right, #c33764, #1d2671);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, right top, from(#c33764), to(#1d2671));
+    background: linear-gradient(to right, #c33764, #1d2671);
+    left: 100%;
+  }
+}
+
+@keyframes animatedbefore {
+  0% {
+    left: -100%;
+    background: transparent;
+  }
+  50% {
+    background: -webkit-gradient(linear, left top, right top, from(#c33764), to(#1d2671));
+    background: linear-gradient(to right, #c33764, #1d2671);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, right top, from(#c33764), to(#1d2671));
+    background: linear-gradient(to right, #c33764, #1d2671);
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes animatedList {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  40% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  65% {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+}
+
+@keyframes animatedList {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  40% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  65% {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+}
+
+@-webkit-keyframes animatedRotateGear {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animatedRotateGear {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=IntroAnimation.css.map */

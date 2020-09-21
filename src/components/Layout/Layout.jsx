@@ -3,6 +3,9 @@ import { Switch, Route, Link } from 'react-router-dom';
 import { __RouterContext } from 'react-router';
 import { useTransition, animated } from 'react-spring';
 
+// Intro Animation
+import IntroAnimation from '../IntroAnimation/IntroAnimation';
+
 // Box Groups
 // Box Group A
 // Animate shape - Box One
@@ -100,6 +103,23 @@ function Layout(props) {
 							render={() => (
 								<div className='absoluteContainer'>
 									<div className='homeContainer'>
+										<IntroAnimation />
+									</div>
+									{/* <div className='homeBtns'>
+										<NavGroupA />
+										<NavGroupB />
+										<NavGroupC />
+										<NavGroupD />
+									</div> */}
+								</div>
+							)}
+						/>
+						<Route
+							exact
+							path='/home'
+							render={() => (
+								<div className='absoluteContainer'>
+									<div className='homeContainer'>
 										<Home />
 									</div>
 									<div className='homeBtns'>
@@ -183,7 +203,9 @@ function Layout(props) {
 											position: 'relative',
 										}}>
 										<BatteryPage />
-										<Link to='/' className='returnHomeLink'>
+										<Link
+											to='/home'
+											className='returnHomeLink'>
 											Home
 										</Link>
 									</div>
