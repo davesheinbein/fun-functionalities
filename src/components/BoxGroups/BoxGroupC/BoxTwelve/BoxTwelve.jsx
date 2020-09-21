@@ -124,6 +124,7 @@ class BoxTwelve extends Component {
 						domain: [0, yMax],
 						nice: true,
 					});
+
 					const interpolate = data.map(
 						(d) => Math.random() * yMax
 					);

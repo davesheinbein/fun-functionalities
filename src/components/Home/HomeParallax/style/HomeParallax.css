@@ -90,10 +90,10 @@
 }
 
 .card8 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 20%;
+  width: 100vw;
+  height: 20vh;
+  height: 25vh;
+  width: 75vw;
   z-index: 10;
   font-size: 6rem;
   font-weight: 900;

@@ -50,15 +50,48 @@
           align-items: center;
   width: 10%;
   margin: 1em;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(44%, white), color-stop(56%, #333333), to(#333333));
+  background: linear-gradient(90deg, white 0%, white 44%, #333333 56%, #333333 100%);
+}
+
+.switchContainer .switch:disabled {
+  background: #fa8787;
+}
+
+.switchContainer .switch .ant-switch-handle::before {
+  background-color: white;
+  border: 1px solid black;
 }
 
 .switchContainer .switch .ant-switch-inner {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .switchContainer .disableBtn {
-  width: 10vw;
+  width: 9vw;
+  border-radius: 25px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(250, 135, 135, 0.5);
+  background: rgba(250, 135, 135, 0.75);
+}
+
+.switchContainer .disableBtn:focus {
+  outline: none;
+}
+
+.switchContainer .disableBtn:hover {
+  border: 1px solid rgba(250, 135, 135, 0.75);
+  background: #fa8787;
 }
 
 .switchContainer .disableBtn span {

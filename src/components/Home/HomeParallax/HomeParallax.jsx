@@ -18,7 +18,7 @@ const trans3 = (x, y) =>
 	`translate3d(${x / 2 + 200}px,${y / 2 - 100}px,0)`;
 // guy
 const trans4 = (x, y) =>
-	`translate3d(${x / 3 + 400}px,${y / 2 - 50}px,0)`;
+	`translate3d(${x / 3 + 300}px,${y / 2 - 50}px,0)`;
 // girl
 const trans5 = (x, y) =>
 	`translate3d(${x / 3.5 + 50}px,${y / 2 - 50}px,0)`;
@@ -77,7 +77,9 @@ function HomeParallax() {
 				style={{
 					transform: props.xy.interpolate(trans8),
 				}}>
-				Exploring Fun Functionalities
+				Exploring Fun
+				<br />
+				Functionalities
 				<animated.span>Click a bubble</animated.span>
 			</animated.div>
 		</div>

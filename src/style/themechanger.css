@@ -57,6 +57,7 @@
 		#ffcc70 100%
 	);
   --DisplayNone: none;
+  --DisableBtn: rgba(250, 135, 135, 1);
 }
 
 :root[themeChanger='dark'] {
@@ -120,5 +121,6 @@
 		rgba(243, 193, 124, 1) 89.7%
 	);
   --DisplayNone: none;
+  --DisableBtn: rgba(250, 135, 135, 1);
 }
 /*# sourceMappingURL=themechanger.css.map */

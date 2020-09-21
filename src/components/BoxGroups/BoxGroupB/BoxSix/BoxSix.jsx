@@ -3,7 +3,6 @@ import { UncontrolledAlert } from 'reactstrap';
 import axios from 'axios';
 import Loader from '../../../Loader/Loader';
 import './style/BoxSix.css';
-import { Ref } from 'semantic-ui-react';
 
 function BoxSix() {
 	const [toggled, toggle] = useState(false);
