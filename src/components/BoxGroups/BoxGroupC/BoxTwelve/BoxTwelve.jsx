@@ -9,7 +9,94 @@ import { extent, max } from 'd3-array';
 import { Spring } from 'react-spring/renderprops';
 import './style/BoxTwelve.css';
 
+// To put my own data in
+// const data = [
+// 	{
+// 		date: new Date('2018-04-08T12:33:40.624Z'),
+// 		value: 2110,
+// 	},
+// 	{
+// 		date: new Date('2018-04-08T11:33:40.624Z'),
+// 		value: 1156,
+// 	},
+// 	{
+// 		date: new Date('2018-04-08T10:33:40.624Z'),
+// 		value: 715,
+// 	},
+// 	{
+// 		date: new Date('2018-04-08T09:33:40.624Z'),
+// 		value: 2797,
+// 	},
+// 	{
+// 		date: new Date('2018-04-08T08:33:40.624Z'),
+// 		value: 2361,
+// 	},
+// 	{
+// 		date: new Date('2018-04-08T07:33:40.624Z'),
+// 		value: 731,
+// 	},
+// 	{
+// 		date: new Date('2018-04-08T06:33:40.624Z'),
+// 		value: 908,
+// 	},
+// 	{
+// 		date: new Date('2018-04-08T05:33:40.624Z'),
+// 		value: 691,
+// 	},
+// 	{
+// 		date: new Date('2018-04-08T04:33:40.624Z'),
+// 		value: 1408,
+// 	},
+// 	{
+// 		date: new Date('2018-04-08T03:33:40.624Z'),
+// 		value: 1748,
+// 	},
+// 	{
+// 		date: new Date('2018-04-08T02:33:40.624Z'),
+// 		value: 2834,
+// 	},
+// 	{
+// 		date: new Date('2018-04-08T01:33:40.624Z'),
+// 		value: 310,
+// 	},
+// 	{
+// 		date: new Date('2018-04-08T00:33:40.624Z'),
+// 		value: 2877,
+// 	},
+// 	{
+// 		date: new Date('2018-04-07T23:33:40.624Z'),
+// 		value: 2792,
+// 	},
+// 	{
+// 		date: new Date('2018-04-07T22:33:40.624Z'),
+// 		value: 250,
+// 	},
+// 	{
+// 		date: new Date('2018-04-07T21:33:40.624Z'),
+// 		value: 1602,
+// 	},
+// 	{
+// 		date: new Date('2018-04-07T20:33:40.624Z'),
+// 		value: 1871,
+// 	},
+// 	{
+// 		date: new Date('2018-04-07T19:33:40.624Z'),
+// 		value: 250,
+// 	},
+// 	{
+// 		date: new Date('2018-04-07T18:33:40.624Z'),
+// 		value: 2897,
+// 	},
+// 	{
+// 		date: new Date('2018-04-07T17:33:40.624Z'),
+// 		value: 1902,
+// 	},
+// ];
+
+// To generate random data
 const data = genDateValue(20);
+
+// sets data to X & Y
 const x = (d) => d.date;
 const y = (d) => d.value;
 
@@ -85,7 +172,7 @@ class BoxTwelve extends Component {
 								<Gradient id='PinkRed' />
 								<g>
 									<Spring to={{ interpolate }}>
-										{(props) => (
+										{() => (
 											<AreaClosed
 												id='boxTwelveArea'
 												data={data.map((d, i) => ({
