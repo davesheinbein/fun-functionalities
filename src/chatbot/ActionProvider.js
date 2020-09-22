@@ -171,9 +171,9 @@ class ActionProvider {
 
 	funny = () => {
 		const message = this.createChatBotMessage(
-			`What kind of shorts do clouds wear? THUNDERWEAR!`,
+			`Check out these hilarious jokes!`,
 			{
-				widget: 'mainOptions',
+				widget: 'funnyJoke',
 			}
 		);
 		this.addMessageToState(message);

@@ -1,81 +1,227 @@
-@import '../../../../../../mixins/mixins.scss';
+@import '../../../../mixins/mixins.scss';
 
-.portfolioContainerDs {
-	@include heightWidth(150%, 100%);
-	@include flexCenter(column, center, center);
-	padding: 15px;
-	border-radius: 5px;
-	background-color: #f1e6e6;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
-		'Trebuchet MS', sans-serif;
-	pointer-events: none;
-	padding: 2em 1em;
-	.portfolioHeadingDs {
-		@include flexCenter(column, center, center);
-		width: 100%;
-		text-decoration: underline;
-		text-decoration-style: double;
-		margin: 0em 0.5em;
-		font-size: 26px;
-		line-height: 32px;
-		font-weight: 800;
-	}
-	.portfolioDescriptionDs {
-		@include flexCenter(column, center, center);
-		text-align: start;
-		width: 100%;
-		padding: 0em 1em;
-		.portfolioDescriptionTitleDs {
-			width: 100%;
-			pointer-events: none;
-			text-decoration: underline;
-			font-size: 16px;
-			font-weight: 800;
-		}
-		.portfolioDescriptionTextDs {
-			width: 100%;
-			pointer-events: none;
-			flex-wrap: wrap;
-			font-size: 14px;
-		}
-		.portfolioLinkDs {
-			margin: 0.25em 0;
-			@include heightWidth(fit-content, 100%);
-			pointer-events: auto;
-			a {
-				text-decoration: none;
-				color: #000000;
-				font-size: 14px;
-				font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
-					'Trebuchet MS', sans-serif;
+.loadingContianer {
+	@include heightWidth(100%, 100%);
+	@include flexCenter(row, center, center);
+	background-color: turquoise;
+}
+
+.btnBackgroundChatbotContainer {
+	background-color: turquoise;
+	@include heightWidth(45vh, 100%);
+	@include flexCenter(row, center, center);
+	position: relative;
+	.alertChatbotContainer {
+		@include heightWidth(100%, 100%);
+		@include flexCenter(row, center, center);
+		@include topLeftAbsolute(0%, 0%);
+		pointer-events: none;
+		.alertJokeChatbotContainer {
+			@include heightWidth(100%, 100%);
+			@include flexCenter(row, center, center);
+			@include topLeftAbsolute(0%, 0%);
+			z-index: 10;
+			background-color: rgba(222, 184, 135, 1);
+			color: #333333;
+			resize: both;
+			box-sizing: border-box;
+			line-height: calc(3rem - 1vw);
+			font-size: calc(3rem - 1vw);
+			font-family: 'Quicksand', sans-serif;
+			color: rgba(255, 255, 255, 0.75);
+			padding: 0.5em;
+			.close {
+				@include flexCenter(column, center, center);
+				@include heightWidth(10%, 10%);
+				@include topLeftAbsolute(0%, 0%);
+				background-color: rgba(255, 74, 74, 1);
+				border: 1px solid rgba(0, 0, 0, 0.25);
+				color: #333333;
+				font-size: 30px;
+				text-align: center;
+				pointer-events: auto;
+				line-height: 42px;
+				border-radius: 5px;
 				transition: all 0.5s ease-in-out;
 				&:hover {
-					color: #ffffff;
+					border-radius: 50%;
+					background-color: rgba(254, 152, 152, 0.95);
+					border: 1px solid rgba(0, 0, 0, 0.5);
 				}
 				&:focus {
-					outline: none;
-				}
-				.btnPortfolioDs {
-					width: 100%;
-					margin: 5px 0px;
-					border-radius: 25px;
-					padding: 8px;
-					background: transparent;
-					border-color: rgba(47, 0, 255, 1);
-					text-align: center;
-					@include noSelection;
-					transform: scale(0.9);
-					transition: all 0.5s ease-in-out;
-					&:hover {
-						transform: scale(1);
-						background: rgba(47, 0, 255, 0.75);
-						border-color: rgba(0, 0, 0, 0.5);
-					}
-					&:focus {
-						outline: none;
-					}
+					outline: transparent;
 				}
 			}
+		}
+	}
+
+	[class*='push'] {
+		position: relative;
+		display: inline-block;
+		width: $push-size;
+		height: $push-size;
+		border: 0;
+		outline: none;
+		background-color: $push-color;
+		border-radius: 50%;
+		cursor: pointer;
+		transition: box-shadow 200ms;
+	}
+
+	.push--skeuoChatbot {
+		@include heightWidth(80%, 80%);
+		font-family: 'Oleo Script', cursive;
+		font-size: 25px;
+		color: lightpink;
+		text-shadow: inset 0 $push-size/24 0
+				lighten($push-color, 5%),
+			inset 0 (-$push-size/24) $push-size/60
+				darken($push-color, 5%),
+			0 0 $push-size/60 $push-color,
+			inset 0 0 $push-size/30 darken($push-color, 15%),
+			inset 0 0 $push-size/30
+				transparentize($bgArcadeBtn, 0.5),
+			inset 0 0 $push-size/60 $push-size/12 $push-color,
+			inset 0 (-$push-size/30) $push-size/40 $push-size/10
+				transparentize($bgArcadeBtn, 0.3),
+			inset 0 0 $push-size/60 $push-size/10
+				darken($push-color, 20%),
+			inset 0 0 $push-size/60 $push-size/10
+				transparentize($bgArcadeBtn, 0.3),
+			inset 0 0 $push-size/120 $push-size/9.2
+				darken($push-color, 50%),
+			inset 0 0 $push-size/120 $push-size/8
+				transparentize(lighten($push-color, 30%), 0.3),
+			inset 0 $push-size/20 0 $push-size/8.5
+				transparentize(lighten($push-color, 15%), 0.3),
+			inset 0 (-$push-size/20) $push-size/60 $push-size/8.5
+				transparentize(darken($push-color, 10%), 0.8),
+			inset 0 0 0 $push-size/5.5 $push-color,
+			inset 0 $push-size/2.5 $push-size/7.5
+				darken($push-color, 5%),
+			inset 0 0 $push-size/10 $push-size/6
+				darken($push-color, 10%),
+			0 $push-size/40 $push-size/20 rgba(0, 0, 0, 0.5);
+		box-shadow: inset 0 $push-size/24 0
+				lighten($push-color, 5%),
+			inset 0 (-$push-size/24) $push-size/60
+				darken($push-color, 5%),
+			0 0 $push-size/60 $push-color,
+			inset 0 0 $push-size/30 darken($push-color, 15%),
+			inset 0 0 $push-size/30
+				transparentize($bgArcadeBtn, 0.5),
+			inset 0 0 $push-size/60 $push-size/12 $push-color,
+			inset 0 (-$push-size/30) $push-size/40 $push-size/10
+				transparentize($bgArcadeBtn, 0.3),
+			inset 0 0 $push-size/60 $push-size/10
+				darken($push-color, 20%),
+			inset 0 0 $push-size/60 $push-size/10
+				transparentize($bgArcadeBtn, 0.3),
+			inset 0 0 $push-size/120 $push-size/9.2
+				darken($push-color, 50%),
+			inset 0 0 $push-size/120 $push-size/8
+				transparentize(lighten($push-color, 30%), 0.3),
+			inset 0 $push-size/20 0 $push-size/8.5
+				transparentize(lighten($push-color, 15%), 0.3),
+			inset 0 (-$push-size/20) $push-size/60 $push-size/8.5
+				transparentize(darken($push-color, 10%), 0.8),
+			inset 0 0 0 $push-size/5.5 $push-color,
+			inset 0 $push-size/2.5 $push-size/7.5
+				darken($push-color, 5%),
+			inset 0 0 $push-size/10 $push-size/6
+				darken($push-color, 10%),
+			0 $push-size/40 $push-size/20 rgba(0, 0, 0, 0.5);
+
+		&:active,
+          // &:hover,
+          &.is-pushed {
+			@include heightWidth(80%, 80%);
+			color: lightsalmon;
+			text-shadow: inset 0 $push-size/24 0
+					lighten($push-color, 5%),
+				inset 0 (-$push-size/24) $push-size/60
+					darken($push-color, 5%),
+				0 0 $push-size/60 $push-color,
+				inset 0 0 $push-size/30 darken($push-color, 15%),
+				inset 0 0 $push-size/30
+					transparentize($bgArcadeBtn, 0.5),
+				inset 0 0 $push-size/60 $push-size/12 $push-color,
+				inset 0 (-$push-size/30) $push-size/40 $push-size/10
+					transparentize($bgArcadeBtn, 0.3),
+				inset 0 0 $push-size/60 $push-size/10
+					darken($push-color, 20%),
+				inset 0 0 $push-size/60 $push-size/10
+					transparentize($bgArcadeBtn, 0.3),
+				inset 0 0 $push-size/40 $push-size/8.5
+					darken($push-color, 40%),
+				inset 0 0 $push-size/120 $push-size/7.5
+					transparentize(lighten($push-color, 30%), 0.8),
+				inset 0 $push-size/20 0 28px
+					transparentize(lighten($push-color, 15%), 0.5),
+				inset 0 (-$push-size/20) $push-size/60 28px
+					transparentize(darken($push-color, 20%), 0.8),
+				inset 0 0 0 $push-size/5.5 darken($push-color, 3%),
+				inset 0 $push-size/2.5 $push-size/7.5
+					darken($push-color, 8%),
+				inset 0 0 $push-size/10 $push-size/6
+					darken($push-color, 15%),
+				0 $push-size/40 $push-size/20 rgba(0, 0, 0, 0.5);
+			background-color: darken($push-color, 2%);
+			box-shadow: inset 0 $push-size/24 0
+					lighten($push-color, 5%),
+				inset 0 (-$push-size/24) $push-size/60
+					darken($push-color, 5%),
+				0 0 $push-size/60 $push-color,
+				inset 0 0 $push-size/30 darken($push-color, 15%),
+				inset 0 0 $push-size/30
+					transparentize($bgArcadeBtn, 0.5),
+				inset 0 0 $push-size/60 $push-size/12 $push-color,
+				inset 0 (-$push-size/30) $push-size/40 $push-size/10
+					transparentize($bgArcadeBtn, 0.3),
+				inset 0 0 $push-size/60 $push-size/10
+					darken($push-color, 20%),
+				inset 0 0 $push-size/60 $push-size/10
+					transparentize($bgArcadeBtn, 0.3),
+				inset 0 0 $push-size/40 $push-size/8.5
+					darken($push-color, 40%),
+				inset 0 0 $push-size/120 $push-size/7.5
+					transparentize(lighten($push-color, 30%), 0.8),
+				inset 0 $push-size/20 0 28px
+					transparentize(lighten($push-color, 15%), 0.5),
+				inset 0 (-$push-size/20) $push-size/60 28px
+					transparentize(darken($push-color, 20%), 0.8),
+				inset 0 0 0 $push-size/5.5 darken($push-color, 3%),
+				inset 0 $push-size/2.5 $push-size/7.5
+					darken($push-color, 8%),
+				inset 0 0 $push-size/10 $push-size/6
+					darken($push-color, 15%),
+				0 $push-size/40 $push-size/20 rgba(0, 0, 0, 0.5);
+			background-color: darken($push-color, 2%);
+
+			&:before {
+				opacity: 0.5;
+			}
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: $push-size/4.5;
+			left: $push-size/2.4;
+			display: block;
+			width: $push-size/1.5;
+			height: $push-size/4.3;
+			background: transparentize(
+				lighten($push-color, 30%),
+				0.8
+			);
+			background: linear-gradient(
+				to top,
+				transparentize(lighten($push-color, 40%), 0.7) 0%,
+				transparentize($push-color, 0.9) 100%
+			);
+			border-radius: 40% 40% 60% 60%;
+			transition: opacity 200ms;
 		}
 	}
 }

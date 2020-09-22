@@ -1,0 +1,258 @@
+@-webkit-keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes headingAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.loadingContianer {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: turquoise;
+}
+
+.btnBackgroundChatbotContainer {
+  background-color: turquoise;
+  height: 45vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.btnBackgroundChatbotContainer .alertChatbotContainer {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  pointer-events: none;
+}
+
+.btnBackgroundChatbotContainer .alertChatbotContainer .alertJokeChatbotContainer {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 10;
+  background-color: burlywood;
+  color: #333333;
+  resize: both;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: calc(3rem - 1vw);
+  font-size: calc(3rem - 1vw);
+  font-family: 'Quicksand', sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0.5em;
+}
+
+.btnBackgroundChatbotContainer .alertChatbotContainer .alertJokeChatbotContainer .close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10%;
+  width: 10%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: #ff4a4a;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  color: #333333;
+  font-size: 30px;
+  text-align: center;
+  pointer-events: auto;
+  line-height: 42px;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.btnBackgroundChatbotContainer .alertChatbotContainer .alertJokeChatbotContainer .close:hover {
+  border-radius: 50%;
+  background-color: rgba(254, 152, 152, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.btnBackgroundChatbotContainer .alertChatbotContainer .alertJokeChatbotContainer .close:focus {
+  outline: transparent;
+}
+
+.btnBackgroundChatbotContainer [class*='push'] {
+  position: relative;
+  display: inline-block;
+  width: 240px;
+  height: 240px;
+  border: 0;
+  outline: none;
+  background-color: #c2290a;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 200ms;
+  transition: -webkit-box-shadow 200ms;
+  transition: box-shadow 200ms;
+  transition: box-shadow 200ms, -webkit-box-shadow 200ms;
+}
+
+.btnBackgroundChatbotContainer .push--skeuoChatbot {
+  height: 80%;
+  width: 80%;
+  font-family: 'Oleo Script', cursive;
+  font-size: 25px;
+  color: lightpink;
+  text-shadow: inset 0 10px 0 #da2e0b, inset 0 -10px 4px #aa2409, 0 0 4px #c2290a, inset 0 0 8px #791a06, inset 0 0 8px rgba(51, 51, 51, 0.5), inset 0 0 4px 20px #c2290a, inset 0 -8px 6px 24px rgba(51, 51, 51, 0.7), inset 0 0 4px 24px #611405, inset 0 0 4px 24px rgba(51, 51, 51, 0.7), inset 0 0 2px 26.08696px black, inset 0 0 2px 30px rgba(247, 133, 110, 0.7), inset 0 12px 0 28.23529px rgba(244, 71, 37, 0.7), inset 0 -12px 4px 28.23529px rgba(145, 31, 8, 0.2), inset 0 0 0 43.63636px #c2290a, inset 0 96px 32px #aa2409, inset 0 0 24px 40px #911f08, 0 6px 12px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 10px 0 #da2e0b, inset 0 -10px 4px #aa2409, 0 0 4px #c2290a, inset 0 0 8px #791a06, inset 0 0 8px rgba(51, 51, 51, 0.5), inset 0 0 4px 20px #c2290a, inset 0 -8px 6px 24px rgba(51, 51, 51, 0.7), inset 0 0 4px 24px #611405, inset 0 0 4px 24px rgba(51, 51, 51, 0.7), inset 0 0 2px 26.08696px black, inset 0 0 2px 30px rgba(247, 133, 110, 0.7), inset 0 12px 0 28.23529px rgba(244, 71, 37, 0.7), inset 0 -12px 4px 28.23529px rgba(145, 31, 8, 0.2), inset 0 0 0 43.63636px #c2290a, inset 0 96px 32px #aa2409, inset 0 0 24px 40px #911f08, 0 6px 12px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 10px 0 #da2e0b, inset 0 -10px 4px #aa2409, 0 0 4px #c2290a, inset 0 0 8px #791a06, inset 0 0 8px rgba(51, 51, 51, 0.5), inset 0 0 4px 20px #c2290a, inset 0 -8px 6px 24px rgba(51, 51, 51, 0.7), inset 0 0 4px 24px #611405, inset 0 0 4px 24px rgba(51, 51, 51, 0.7), inset 0 0 2px 26.08696px black, inset 0 0 2px 30px rgba(247, 133, 110, 0.7), inset 0 12px 0 28.23529px rgba(244, 71, 37, 0.7), inset 0 -12px 4px 28.23529px rgba(145, 31, 8, 0.2), inset 0 0 0 43.63636px #c2290a, inset 0 96px 32px #aa2409, inset 0 0 24px 40px #911f08, 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.btnBackgroundChatbotContainer .push--skeuoChatbot:active, .btnBackgroundChatbotContainer .push--skeuoChatbot.is-pushed {
+  height: 80%;
+  width: 80%;
+  color: lightsalmon;
+  text-shadow: inset 0 10px 0 #da2e0b, inset 0 -10px 4px #aa2409, 0 0 4px #c2290a, inset 0 0 8px #791a06, inset 0 0 8px rgba(51, 51, 51, 0.5), inset 0 0 4px 20px #c2290a, inset 0 -8px 6px 24px rgba(51, 51, 51, 0.7), inset 0 0 4px 24px #611405, inset 0 0 4px 24px rgba(51, 51, 51, 0.7), inset 0 0 6px 28.23529px black, inset 0 0 2px 32px rgba(247, 133, 110, 0.2), inset 0 12px 0 28px rgba(244, 71, 37, 0.5), inset 0 -12px 4px 28px rgba(97, 20, 5, 0.2), inset 0 0 0 43.63636px #b32609, inset 0 96px 32px #9b2108, inset 0 0 24px 40px #791a06, 0 6px 12px rgba(0, 0, 0, 0.5);
+  background-color: #b8270a;
+  -webkit-box-shadow: inset 0 10px 0 #da2e0b, inset 0 -10px 4px #aa2409, 0 0 4px #c2290a, inset 0 0 8px #791a06, inset 0 0 8px rgba(51, 51, 51, 0.5), inset 0 0 4px 20px #c2290a, inset 0 -8px 6px 24px rgba(51, 51, 51, 0.7), inset 0 0 4px 24px #611405, inset 0 0 4px 24px rgba(51, 51, 51, 0.7), inset 0 0 6px 28.23529px black, inset 0 0 2px 32px rgba(247, 133, 110, 0.2), inset 0 12px 0 28px rgba(244, 71, 37, 0.5), inset 0 -12px 4px 28px rgba(97, 20, 5, 0.2), inset 0 0 0 43.63636px #b32609, inset 0 96px 32px #9b2108, inset 0 0 24px 40px #791a06, 0 6px 12px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 10px 0 #da2e0b, inset 0 -10px 4px #aa2409, 0 0 4px #c2290a, inset 0 0 8px #791a06, inset 0 0 8px rgba(51, 51, 51, 0.5), inset 0 0 4px 20px #c2290a, inset 0 -8px 6px 24px rgba(51, 51, 51, 0.7), inset 0 0 4px 24px #611405, inset 0 0 4px 24px rgba(51, 51, 51, 0.7), inset 0 0 6px 28.23529px black, inset 0 0 2px 32px rgba(247, 133, 110, 0.2), inset 0 12px 0 28px rgba(244, 71, 37, 0.5), inset 0 -12px 4px 28px rgba(97, 20, 5, 0.2), inset 0 0 0 43.63636px #b32609, inset 0 96px 32px #9b2108, inset 0 0 24px 40px #791a06, 0 6px 12px rgba(0, 0, 0, 0.5);
+  background-color: #b8270a;
+}
+
+.btnBackgroundChatbotContainer .push--skeuoChatbot:active:before, .btnBackgroundChatbotContainer .push--skeuoChatbot.is-pushed:before {
+  opacity: 0.5;
+}
+
+.btnBackgroundChatbotContainer .push--skeuoChatbot:before {
+  content: '';
+  position: absolute;
+  bottom: 53.33333px;
+  left: 100px;
+  display: block;
+  width: 160px;
+  height: 55.81395px;
+  background: rgba(247, 133, 110, 0.2);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(250, 173, 158, 0.3)), to(rgba(194, 41, 10, 0.1)));
+  background: linear-gradient(to top, rgba(250, 173, 158, 0.3) 0%, rgba(194, 41, 10, 0.1) 100%);
+  border-radius: 40% 40% 60% 60%;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+
+.optionsAdvice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0.5em 0;
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.optionsAdvice div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #f1e6e6;
+  padding: 15px;
+  margin: 0.25em 0;
+  width: 100%;
+}
+
+.optionsAdvice div span {
+  text-decoration: underline;
+  margin: 0px 5px;
+}
+/*# sourceMappingURL=FunnyJoke.css.map */

@@ -16,7 +16,7 @@ import LinkedinOptions from '../components/Chatbot/LinkedinOptions/LinkedinOptio
 import DavidSLinkedin from '../components/Chatbot/LinkedinOptions/LinkedinCard/DavidSLinkedin/DavidSLinkedin';
 import JasonHLinkedin from '../components/Chatbot/LinkedinOptions/LinkedinCard/JasonHLinkedin/JasonHLinkedin';
 
-import FunnyJoke from '../components/Chatbot/FunnyJoke/Funnyjoke';
+import FunnyJoke from '../components/Chatbot/FunnyJoke/FunnyJoke';
 
 import BotAvatar from '../components/Chatbot/Avatars/BotAvatar/BotAvatar';
 import UserAvatar from '../components/Chatbot/Avatars/UserAvatar/UserAvatar';
@@ -77,10 +77,8 @@ const config = {
 			},
 		},
 		{
-			widgetName: 'funnyjoke',
-			widgetFunc: (props) => (
-				<FunnyJoke {...props} />
-			),
+			widgetName: 'funnyJoke',
+			widgetFunc: (props) => <FunnyJoke {...props} />,
 			delay: 500,
 		},
 		{
