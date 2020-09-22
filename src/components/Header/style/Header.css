@@ -142,8 +142,7 @@
   transition: all 0.5s ease-in-out;
   color: #101110;
   color: transparent;
-  background: -webkit-gradient(linear, left top, right top, from(white), to(black));
-  background: linear-gradient(90deg, white 0%, black 100%);
+  background: var(--navColor);
   background-clip: text;
   background-size: 400%;
   -webkit-animation: headingAnimation 5s infinite 0s alternate;

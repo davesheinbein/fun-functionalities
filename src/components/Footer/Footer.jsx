@@ -10,13 +10,17 @@ function Footer() {
 				<a
 					href='https://www.linkedin.com/in/david-sheinbein/'
 					className='footerLink'>
-					David Sheinbein
+					<div style={{ width: 'fit-content' }}>
+						David Sheinbein
+					</div>
 				</a>
 				&nbsp; & &nbsp;
 				<a
 					href='https://www.linkedin.com/in/jasonhur/'
 					className='footerLink'>
-					Jason Hur
+					<div style={{ width: 'fit-content' }}>
+						Jason Hur
+					</div>
 				</a>
 			</div>
 			<div className='batteryContainer'>

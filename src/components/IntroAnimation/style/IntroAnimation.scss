@@ -1,12 +1,7 @@
 @import '../../../mixins/mixins.scss';
 
 .introAnimationContainer {
-	background: linear-gradient(
-		to right,
-		#833ab4,
-		#fd1d1d,
-		#fcb045
-	);
+	background: var(--bg);
 	font-family: 'Bungee Shade', cursive;
 	position: relative;
 	display: flex;
@@ -25,12 +20,11 @@
 			pointer-events: all;
 			@include heightWidth(300px, 300px);
 			transition: all 0.5s ease-in-out;
-			animation: animatedRotateGear 6s linear 0s infinite
+			animation: animatedRotateGear 14s linear 0s infinite
 				forwards;
 		}
 	}
 	.introAnimationMainText {
-		color: #1cb5e0;
 		@include flexCenter(row, center, center);
 		font-size: 50px;
 		line-height: 50px;
@@ -41,43 +35,48 @@
 		&:hover {
 			transform: scale(1.1);
 		}
-		.begginingText {
+		.introAnimationListLink {
 			@include flexCenter(row, flex-end, center);
 			@include heightWidth(fit-content, 100%);
-		}
-		.endTextContainer {
-			margin: 0;
-			position: relative;
-			height: auto;
-			width: auto;
-			height: 65px;
-			z-index: -1;
-			color: #1cb5e0;
-			text-align: center;
-			overflow: hidden;
-			&::before {
-				position: absolute;
-				content: '';
-				height: 100%;
-				width: 100%;
-				top: 0;
-				left: -100%;
-				background: transparent;
-				z-index: 1;
-				animation: animatedbefore 2.5s linear infinite;
-				transition: 1s linear;
-				transition-delay: 1s;
+			color: transparent;
+			color: var(--colorFive);
+			.begginingText {
+				@include flexCenter(row, flex-end, center);
+				@include heightWidth(fit-content, 100%);
 			}
-			ul {
-				margin: 0 0.5%;
-				padding: 0;
+			.endTextContainer {
+				margin: 0;
+				position: relative;
+				height: auto;
 				width: auto;
-				text-align: left;
-				animation: animatedList 3s alternate infinite;
-				li {
-					list-style-type: none;
-					height: 65px;
-					width: 170vw;
+				height: 65px;
+				z-index: -1;
+				text-align: center;
+				overflow: hidden;
+				&::before {
+					position: absolute;
+					content: '';
+					height: 100%;
+					width: 100%;
+					top: 0;
+					left: -100%;
+					background: transparent;
+					z-index: 1;
+					animation: animatedbefore 2.5s linear infinite;
+					transition: 1s linear;
+					transition-delay: 1s;
+				}
+				ul {
+					margin: 0 0.5%;
+					padding: 0;
+					width: auto;
+					text-align: left;
+					animation: animatedList 3s alternate infinite;
+					li {
+						list-style-type: none;
+						height: 65px;
+						width: 170vw;
+					}
 				}
 			}
 		}
@@ -119,20 +118,20 @@
 		background: transparent;
 	}
 	50% {
-		background: linear-gradient(to right, #c33764, #1d2671);
+		background: var(--bg);
 	}
 	100% {
-		background: linear-gradient(to right, #c33764, #1d2671);
+		background: var(--bg);
 		left: 100%;
 	}
 }
 
 @keyframes animatedList {
 	0% {
-		transform: translateY(5px);
+		transform: translateY(6px);
 	}
 	40% {
-		transform: translateY(5px);
+		transform: translateY(6px);
 	}
 	65% {
 		transform: translateY(-60px);

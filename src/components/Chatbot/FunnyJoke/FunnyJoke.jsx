@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { UncontrolledAlert } from 'reactstrap';
 import axios from 'axios';
-import Loader from '../../Loader/Loader';
+import Loader from '../Loader/Loader';
 import './styles/FunnyJoke.css';
 
 function FunnyJoke() {
@@ -26,9 +26,7 @@ function FunnyJoke() {
 				});
 			});
 			return () => {
-				console.log(
-					'hitting useEffect - Chuck Norris Button'
-				);
+				console.log('hitting useEffect - Jokes Button');
 			};
 		},
 		[toggled]

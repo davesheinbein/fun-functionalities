@@ -17,8 +17,7 @@
 }
 
 .introAnimationContainer {
-  background: -webkit-gradient(linear, left top, right top, from(#833ab4), color-stop(#fd1d1d), to(#fcb045));
-  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  background: var(--bg);
   font-family: 'Bungee Shade', cursive;
   position: relative;
   display: -webkit-box;
@@ -62,12 +61,11 @@
   width: 300px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -webkit-animation: animatedRotateGear 6s linear 0s infinite forwards;
-          animation: animatedRotateGear 6s linear 0s infinite forwards;
+  -webkit-animation: animatedRotateGear 14s linear 0s infinite forwards;
+          animation: animatedRotateGear 14s linear 0s infinite forwards;
 }
 
 .introAnimationContainer .introAnimationMainText {
-  color: #1cb5e0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,7 +94,29 @@
           transform: scale(1.1);
 }
 
-.introAnimationContainer .introAnimationMainText .begginingText {
+.introAnimationContainer .introAnimationMainText .introAnimationListLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  color: transparent;
+  color: var(--colorFive);
+}
+
+.introAnimationContainer .introAnimationMainText .introAnimationListLink .begginingText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,19 +136,18 @@
   width: 100%;
 }
 
-.introAnimationContainer .introAnimationMainText .endTextContainer {
+.introAnimationContainer .introAnimationMainText .introAnimationListLink .endTextContainer {
   margin: 0;
   position: relative;
   height: auto;
   width: auto;
   height: 65px;
   z-index: -1;
-  color: #1cb5e0;
   text-align: center;
   overflow: hidden;
 }
 
-.introAnimationContainer .introAnimationMainText .endTextContainer::before {
+.introAnimationContainer .introAnimationMainText .introAnimationListLink .endTextContainer::before {
   position: absolute;
   content: '';
   height: 100%;
@@ -145,7 +164,7 @@
           transition-delay: 1s;
 }
 
-.introAnimationContainer .introAnimationMainText .endTextContainer ul {
+.introAnimationContainer .introAnimationMainText .introAnimationListLink .endTextContainer ul {
   margin: 0 0.5%;
   padding: 0;
   width: auto;
@@ -154,7 +173,7 @@
           animation: animatedList 3s alternate infinite;
 }
 
-.introAnimationContainer .introAnimationMainText .endTextContainer ul li {
+.introAnimationContainer .introAnimationMainText .introAnimationListLink .endTextContainer ul li {
   list-style-type: none;
   height: 65px;
   width: 170vw;
@@ -226,12 +245,10 @@
     background: transparent;
   }
   50% {
-    background: -webkit-gradient(linear, left top, right top, from(#c33764), to(#1d2671));
-    background: linear-gradient(to right, #c33764, #1d2671);
+    background: var(--bg);
   }
   100% {
-    background: -webkit-gradient(linear, left top, right top, from(#c33764), to(#1d2671));
-    background: linear-gradient(to right, #c33764, #1d2671);
+    background: var(--bg);
     left: 100%;
   }
 }
@@ -242,24 +259,22 @@
     background: transparent;
   }
   50% {
-    background: -webkit-gradient(linear, left top, right top, from(#c33764), to(#1d2671));
-    background: linear-gradient(to right, #c33764, #1d2671);
+    background: var(--bg);
   }
   100% {
-    background: -webkit-gradient(linear, left top, right top, from(#c33764), to(#1d2671));
-    background: linear-gradient(to right, #c33764, #1d2671);
+    background: var(--bg);
     left: 100%;
   }
 }
 
 @-webkit-keyframes animatedList {
   0% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
   }
   40% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
   }
   65% {
     -webkit-transform: translateY(-60px);
@@ -274,12 +289,12 @@
 
 @keyframes animatedList {
   0% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
   }
   40% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
   }
   65% {
     -webkit-transform: translateY(-60px);

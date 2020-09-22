@@ -140,12 +140,7 @@ function Layout(props) {
 										<NavHome />
 									</div>
 									<div className='boxGroupsContainer'>
-										<BoxGroupA
-											handleSignupOrLogin={
-												props.handleSignupOrLogin
-											}
-											{...props}
-										/>
+										<BoxGroupA />
 									</div>
 								</div>
 							)}

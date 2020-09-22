@@ -25,14 +25,14 @@ class BoxTwo extends Component {
 
 	render() {
 		// VV needs to be refactored
-		console.log(this.props.delta, '<<<< this.props.delta');
+		// console.log(this.props.delta, '<<<< this.props.delta');
 		const {
 			delta: [xDelta],
 			down,
 		} = this.props;
 		const to = { x: down ? xDelta : 0 };
 
-		console.log(to, '<<< to', down, '<<< down');
+		// console.log(to, '<<< to', down, '<<< down');
 		let localDisable = this.state.disable;
 		if (down === false && localDisable === true) {
 			// console.log('Hitting Local Disable');

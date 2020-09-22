@@ -21,9 +21,17 @@ import 'antd/dist/antd.css';
 import './style/LoginForm.css';
 
 export class LoginForm extends Component {
-	state = { email: '', password: '' };
+	constructor(props) {
+		super(props);
+		this.state = { email: '', password: '', message: '' };
+	}
+
+	updateMessage = (msg) => {
+		this.setState({ message: msg });
+	};
 
 	handleChange = (e) => {
+		this.updateMessage('');
 		this.setState({
 			[e.target.name]: e.target.value,
 		});
@@ -34,11 +42,14 @@ export class LoginForm extends Component {
 		try {
 			await userService.login(this.state);
 			this.props.handleSignupOrLogin();
-			// VVVVVVVV Here !!!!
-			// this.props.history.push('/'); //might remove keep commented out for now
+			this.props.history.push('/');
+			console.log(this.props.history, 'this.props.history');
+			console.log(
+				this.props.history.push('/'),
+				'this.props.history.push(' / ');'
+			);
 		} catch (err) {
-			alert('Invalid Credentials!');
-			// console.log(err, '<<<<  err');
+			this.updateMessage(err.message);
 		}
 	};
 
@@ -145,11 +156,9 @@ export class LoginForm extends Component {
 								Remember me
 							</Checkbox>
 							<Link to='/forgot' className='signup'>
-								<a
-									className='login-form-forgot'
-									children='Forgot password'
-									href='/forgot'
-								/>
+								<div className='login-form-forgot'>
+									Forgot password
+								</div>
 							</Link>
 						</div>
 						<div className='flexDirContainer'>

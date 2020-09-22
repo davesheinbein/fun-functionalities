@@ -11,10 +11,7 @@ function BoxGroupA(props) {
 			<BoxOne />
 			<BoxTwo />
 			<BoxThree />
-			<BoxSeven
-				handleSignupOrLogin={props.handleSignupOrLogin}
-				{...props}
-			/>
+			<BoxSeven />
 		</div>
 	);
 }
