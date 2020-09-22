@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react'; // Full screen mode Modal Idea requires
 import { Link } from 'react-router-dom';
 import { Frame, Page } from 'framer';
 import {
@@ -23,6 +23,7 @@ import {
 import './style/BoxThirteen.css';
 
 export function BoxThirteen() {
+	// Full screen mode Modal Idea in progress
 	// const [isOpen, setisOpen] = useState(false);
 
 	// useEffect(() => {

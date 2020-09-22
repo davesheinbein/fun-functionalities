@@ -24,6 +24,7 @@ class BoxTwo extends Component {
 	}
 
 	render() {
+		// VV needs to be refactored
 		console.log(this.props.delta, '<<<< this.props.delta');
 		const {
 			delta: [xDelta],
@@ -48,6 +49,7 @@ class BoxTwo extends Component {
 			this.state.counter = this.state.counter - 1 / 2;
 			this.state.disable = true;
 		}
+		//  ^^^^ needs to be refactored
 
 		return (
 			<div className='gestures-main'>
