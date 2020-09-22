@@ -16,6 +16,8 @@ import LinkedinOptions from '../components/Chatbot/LinkedinOptions/LinkedinOptio
 import DavidSLinkedin from '../components/Chatbot/LinkedinOptions/LinkedinCard/DavidSLinkedin/DavidSLinkedin';
 import JasonHLinkedin from '../components/Chatbot/LinkedinOptions/LinkedinCard/JasonHLinkedin/JasonHLinkedin';
 
+import FunnyJoke from '../components/Chatbot/FunnyJoke/Funnyjoke';
+
 import BotAvatar from '../components/Chatbot/Avatars/BotAvatar/BotAvatar';
 import UserAvatar from '../components/Chatbot/Avatars/UserAvatar/UserAvatar';
 
@@ -62,17 +64,24 @@ const config = {
 						id: 1,
 					},
 					{
-						information: `A Users experience are important because they attempt to anticipate and fulfill a users needs.`,
+						information: `A users experience are important because they attempt to anticipate and fulfill a users needs.`,
 						result: `It's purpose is to keep that use loyal to your product or brand.`,
 						id: 2,
 					},
 					{
-						information: `A Users interactions are important because it can make or break your customer ase`,
+						information: `A users interactions are important because it can make or break your customer ase`,
 						result: `It's purpose is to create fewer problems increases user involvement, perfects functionality and creates a strong link between your customers and your website.`,
 						id: 3,
 					},
 				],
 			},
+		},
+		{
+			widgetName: 'funnyjoke',
+			widgetFunc: (props) => (
+				<FunnyJoke {...props} />
+			),
+			delay: 500,
 		},
 		{
 			widgetName: 'portfolioOptions',

@@ -2,7 +2,7 @@
 
 ### Click the link to view the website
 
-<!-- [Fun Functionalities Webstite](http://www.davidsheinbeinportfolio.com/) -->
+[Fun Functionalities Webstite](https://funfunctionalities.herokuapp.com/)
 
 ### About Us
 
