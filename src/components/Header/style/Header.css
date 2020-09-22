@@ -81,8 +81,6 @@
   user-select: none;
   /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
-  -webkit-animation: headingAnimation 5s infinite 0s alternate;
-          animation: headingAnimation 5s infinite 0s alternate;
 }
 
 .navbarContainer .list {

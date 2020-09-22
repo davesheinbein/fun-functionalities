@@ -14,6 +14,10 @@
 			rgba(51, 51, 51, 1) 56%,
 			rgba(51, 51, 51, 1) 100%
 		);
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+		&:hover {
+			box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
+		}
 		&:disabled {
 			background: rgba(250, 135, 135, 1);
 		}
@@ -37,12 +41,14 @@
 		align-items: center;
 		border: 1px solid rgba(250, 135, 135, 0.5);
 		background: rgba(250, 135, 135, 0.75);
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
 		&:focus {
 			outline: none;
 		}
 		&:hover {
 			border: 1px solid rgba(250, 135, 135, 0.75);
 			background: rgba(250, 135, 135, 1);
+			box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
 		}
 		span {
 			@include flexCenter(row, flex-end, center);

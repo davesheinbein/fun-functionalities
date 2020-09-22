@@ -6,33 +6,34 @@ import './style/BoxSix.css';
 
 function BoxSix() {
 	const [toggled, toggle] = useState(false);
-	const [state, setState] = useState({
+	const [joke, setJoke] = useState({
 		jokes: '',
-		error: null,
 		isLoaded: false,
 	});
 
-	useEffect(() => {
-		fetchData();
-	}, [toggled]);
+	useEffect(
+		(joke) => {
+			setJoke({ isLoaded: false });
+			axios({
+				method: 'GET',
+				url: 'https://api.chucknorris.io/jokes/random',
+			}).then((res) => {
+				setJoke({
+					...joke,
+					jokes: res.data,
+					isLoaded: true,
+				});
+			});
+			return () => {
+				console.log(
+					'hitting useEffect - Chuck Norris Button'
+				);
+			};
+		},
+		[toggled]
+	);
 
-	const fetchData = async () => {
-		const result = await axios.get(
-			'https://api.chucknorris.io/jokes/random'
-		);
-		console.log(result, ' <<< result');
-		console.log(
-			result.data.value,
-			' <<< result.data.value'
-		);
-		setState({
-			...state,
-			jokes: result.data,
-			isLoaded: true,
-		});
-	};
-
-	const { isLoaded } = state;
+	const { isLoaded } = joke;
 	if (!isLoaded) {
 		return (
 			<>
@@ -47,10 +48,7 @@ function BoxSix() {
 				<div className='btnbackgroundContainer'>
 					<button
 						className='push--skeuo'
-						onClick={
-							(() => fetchData(),
-							() => toggle((toggled) => !toggled))
-						}>
+						onClick={() => toggle((toggled) => !toggled)}>
 						Chuck
 						<br />
 						Norris
@@ -58,10 +56,10 @@ function BoxSix() {
 					<div className='alertContainer'>
 						{toggled && (
 							<UncontrolledAlert
-								id={state.jokes.id}
+								id={joke.jokes.id}
 								color='dark'
 								className='alertNorrisFactContainer'>
-								{state.jokes.value}
+								{joke.jokes.value}
 							</UncontrolledAlert>
 						)}
 					</div>

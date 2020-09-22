@@ -34,6 +34,7 @@ export class LoginForm extends Component {
 		try {
 			await userService.login(this.state);
 			this.props.handleSignupOrLogin();
+			// VVVVVVVV Here !!!!
 			// this.props.history.push('/'); //might remove keep commented out for now
 		} catch (err) {
 			alert('Invalid Credentials!');
