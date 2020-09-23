@@ -1,4 +1,5 @@
 @import '../../../mixins/mixins.scss';
+@import '../../../breakpoints/breakpoints.scss';
 
 .layoutContatainer {
 	position: relative;
@@ -9,8 +10,6 @@
 	.headerContainer {
 		@include heightWidth(4vh, 100%);
 		@include flexCenter(row, center, center);
-		// z-index: 10000;
-		// background: blue;
 		grid-column: 1 / 5;
 	}
 	.container {
@@ -19,7 +18,6 @@
 		display: grid;
 		grid-template-columns: repeat(2, 50%);
 		grid-template-rows: repeat(2, 50%);
-		// margin-top: 8vh;
 		z-index: 9;
 	}
 	.absoluteContainer {
@@ -31,8 +29,8 @@
 		}
 		.homeBtns {
 			@include topLeftAbsolute(0%, 0%);
-			pointer-events: auto;
 			@include heightWidth(100%, 100%);
+			pointer-events: auto;
 		}
 		.navHomeContainer {
 			@include heightWidth(fit-content, fit-content);
@@ -73,5 +71,186 @@
 	.footer {
 		@include heightWidth(4vh, 100%);
 		@include flexCenter(row, center, center);
+	}
+
+	@include media('<=phone') {
+		.headerContainer {
+			
+		}
+		.container {
+		}
+		.absoluteContainer {
+			.homeContainer {
+			}
+			.homeBtns {
+			}
+			.navHomeContainer {
+			}
+
+			.boxGroupsContainer {
+			}
+		}
+		.profileFormsContainer {
+			.returnHomeLink {
+				&:hover {
+				}
+			}
+		}
+
+		.chatbot {
+		}
+
+		.footer {
+		}
+	}
+
+	@include media('>phone', '<=425px') {
+		.headerContainer {
+		}
+		.container {
+		}
+		.absoluteContainer {
+			.homeContainer {
+			}
+			.homeBtns {
+			}
+			.navHomeContainer {
+			}
+
+			.boxGroupsContainer {
+			}
+		}
+		.profileFormsContainer {
+			.returnHomeLink {
+				&:hover {
+				}
+			}
+		}
+
+		.chatbot {
+		}
+
+		.footer {
+		}
+	}
+
+	@include media('>425px', '<=tablet') {
+		.headerContainer {
+		}
+		.container {
+		}
+		.absoluteContainer {
+			.homeContainer {
+			}
+			.homeBtns {
+			}
+			.navHomeContainer {
+			}
+
+			.boxGroupsContainer {
+			}
+		}
+		.profileFormsContainer {
+			.returnHomeLink {
+				&:hover {
+				}
+			}
+		}
+
+		.chatbot {
+		}
+
+		.footer {
+		}
+	}
+
+	@include media('>tablet', '<desktop') {
+		.headerContainer {
+		}
+		.container {
+		}
+		.absoluteContainer {
+			.homeContainer {
+			}
+			.homeBtns {
+			}
+			.navHomeContainer {
+			}
+
+			.boxGroupsContainer {
+			}
+		}
+		.profileFormsContainer {
+			.returnHomeLink {
+				&:hover {
+				}
+			}
+		}
+
+		.chatbot {
+		}
+
+		.footer {
+		}
+	}
+
+	@include media('>=desktop') {
+		.headerContainer {
+		}
+		.container {
+		}
+		.absoluteContainer {
+			.homeContainer {
+			}
+			.homeBtns {
+			}
+			.navHomeContainer {
+			}
+
+			.boxGroupsContainer {
+			}
+		}
+		.profileFormsContainer {
+			.returnHomeLink {
+				&:hover {
+				}
+			}
+		}
+
+		.chatbot {
+		}
+
+		.footer {
+		}
+	}
+
+	@include media('>=LGdesktop', 'retina2x') {
+		.headerContainer {
+		}
+		.container {
+		}
+		.absoluteContainer {
+			.homeContainer {
+			}
+			.homeBtns {
+			}
+			.navHomeContainer {
+			}
+
+			.boxGroupsContainer {
+			}
+		}
+		.profileFormsContainer {
+			.returnHomeLink {
+				&:hover {
+				}
+			}
+		}
+
+		.chatbot {
+		}
+
+		.footer {
+		}
 	}
 }

@@ -16,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 .layoutContatainer {
   position: relative;
   height: 100%;
@@ -101,9 +106,9 @@
   position: absolute;
   top: 0%;
   left: 0%;
-  pointer-events: auto;
   height: 100%;
   width: 100%;
+  pointer-events: auto;
 }
 
 .layoutContatainer .absoluteContainer .navHomeContainer {

@@ -16,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 .navbarContainer {
   z-index: 10000;
   height: 4vh;
@@ -171,5 +176,33 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0px 1em;
+}
+
+@media (max-width: 360px) {
+  .navbarContainer {
+    padding: 0px;
+  }
+  .navbarContainer .logo {
+    font-size: 14px;
+    line-height: calc(34px + 1vw);
+    padding-left: 0.5em;
+  }
+  .navbarContainer .list {
+    margin: 0;
+  }
+  .navbarContainer .list .listItem {
+    font-size: calc(6px + 1vw);
+    line-height: calc(36px + 1vw);
+  }
+  .navbarContainer .list .listItem .listItemLink {
+    margin: 0px 1em;
+  }
+  .navbarContainer .switchBtn {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-right: 0.5em;
+  }
 }
 /*# sourceMappingURL=Header.css.map */
