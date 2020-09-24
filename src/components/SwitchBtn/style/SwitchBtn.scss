@@ -61,7 +61,9 @@
 	}
 
 	@include media('<=phone') {
+		transform: scale(0.75);
 		.switch {
+			margin: 0px 1em;
 			&:hover {
 			}
 			&:disabled {
@@ -75,7 +77,7 @@
 		}
 
 		.disableBtn {
-			@include heightWidth(80%, 50%);
+			@include heightWidth(100%, 100%);
 			font-size: calc(6px + 1vw);
 			&:focus {
 			}
@@ -87,7 +89,10 @@
 	}
 
 	@include media('>phone', '<=425px') {
+		transform: scale(0.5);
+		margin: 0.1em 0.5em 0em;
 		.switch {
+			margin: 0px 1em;
 			&:hover {
 			}
 			&:disabled {
@@ -101,6 +106,8 @@
 		}
 
 		.disableBtn {
+			@include heightWidth(100%, 100%);
+			font-size: calc(6px + 1vw);
 			&:focus {
 			}
 			&:hover {
@@ -111,7 +118,10 @@
 	}
 
 	@include media('>425px', '<=tablet') {
+		transform: scale(0.75);
+		margin: 0.1em 0em 0em;
 		.switch {
+			margin: 0px 1em;
 			&:hover {
 			}
 			&:disabled {
@@ -125,6 +135,8 @@
 		}
 
 		.disableBtn {
+			@include heightWidth(fit-content, 100%);
+			font-size: calc(6px + 1vw);
 			&:focus {
 			}
 			&:hover {
@@ -149,6 +161,8 @@
 		}
 
 		.disableBtn {
+			@include heightWidth(fit-content, 100%);
+			font-size: calc(6px + 1vw);
 			&:focus {
 			}
 			&:hover {
@@ -173,6 +187,8 @@
 		}
 
 		.disableBtn {
+			@include heightWidth(75%, 100%);
+			font-size: calc(6px + 1vw);
 			&:focus {
 			}
 			&:hover {
@@ -197,6 +213,9 @@
 		}
 
 		.disableBtn {
+			@include heightWidth(75%, fit-content);
+			font-size: calc(6px + 1vw);
+			padding: 0.5em 1em;
 			&:focus {
 			}
 			&:hover {

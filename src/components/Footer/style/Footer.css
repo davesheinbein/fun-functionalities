@@ -16,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 .footerContainer {
   height: 4vh;
   width: 100%;
@@ -55,8 +60,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Nunito', sans-serif;
   margin: 0px 1em;
+  font-family: 'Nunito', sans-serif;
+  font-size: 10px;
   font-weight: 800;
 }
 
@@ -82,8 +88,8 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .footerContainer .footerText .footerLink:hover {
@@ -106,5 +112,29 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 581px) and (max-width: 768px) {
+  .footerContainer .footerText {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1365px) {
+  .footerContainer .footerText {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .footerContainer .footerText {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  .footerContainer .footerText {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=Footer.css.map */

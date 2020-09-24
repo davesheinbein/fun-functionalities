@@ -1,4 +1,5 @@
 @import '../../../../mixins/mixins.scss';
+@import '../../../../breakpoints/breakpoints.scss';
 
 .batteryContain {
 	@include flexCenter(row, center, center);
@@ -50,6 +51,138 @@
 		&:hover {
 			color: rgba(0, 0, 0, 1);
 			background: rgba(255, 255, 255, 0.5);
+		}
+	}
+
+	@include media('<=phone') {
+		@include heightWidth(100%, 35vw);
+		&:hover {
+		}
+		.battery {
+			@include heightWidth(1.5em, 10vw);
+			.tip {
+				@include heightWidth(5px, 2vmin);
+				@include topLeftAbsolute(-6px, 1vw);
+			}
+
+			.level {
+				&:hover {
+				}
+			}
+		}
+		.batteryText {
+			&:hover {
+			}
+		}
+	}
+
+	@include media('>phone', '<=425px') {
+		@include heightWidth(100%, 35vw);
+		&:hover {
+		}
+		.battery {
+			@include heightWidth(1.5em, 10vw);
+			.tip {
+				@include heightWidth(5px, 2vmin);
+				@include topLeftAbsolute(-6px, 1vw);
+			}
+
+			.level {
+				&:hover {
+				}
+			}
+		}
+		.batteryText {
+			&:hover {
+			}
+		}
+	}
+
+	@include media('>425px', '<=tablet') {
+		@include heightWidth(100%, 35vw);
+		&:hover {
+		}
+		.battery {
+			@include heightWidth(1.5em, 10vw);
+			.tip {
+				@include heightWidth(5px, 2vmin);
+				@include topLeftAbsolute(-6px, 1vw);
+			}
+
+			.level {
+				&:hover {
+				}
+			}
+		}
+		.batteryText {
+			&:hover {
+			}
+		}
+	}
+
+	@include media('>tablet', '<desktop') {
+		@include heightWidth(100%, 35vw);
+		&:hover {
+		}
+		.battery {
+			@include heightWidth(1.5em, 10vw);
+			.tip {
+				@include heightWidth(5px, 2vmin);
+				@include topLeftAbsolute(-6px, 1vw);
+			}
+
+			.level {
+				&:hover {
+				}
+			}
+		}
+		.batteryText {
+			&:hover {
+			}
+		}
+	}
+
+	@include media('>=desktop') {
+		@include heightWidth(100%, 35vw);
+		&:hover {
+		}
+		.battery {
+			@include heightWidth(1.5em, 10vw);
+			.tip {
+				@include heightWidth(5px, 2vmin);
+				@include topLeftAbsolute(-6px, 1vw);
+			}
+
+			.level {
+				&:hover {
+				}
+			}
+		}
+		.batteryText {
+			&:hover {
+			}
+		}
+	}
+
+	@include media('>=LGdesktop', 'retina2x') {
+		@include heightWidth(100%, 35vw);
+		&:hover {
+		}
+		.battery {
+			@include heightWidth(1.5em, 10vw);
+			.tip {
+				@include heightWidth(5px, 2vmin);
+				@include topLeftAbsolute(-6px, 1vw);
+			}
+
+			.level {
+				&:hover {
+				}
+			}
+		}
+		.batteryText {
+			&:hover {
+			}
 		}
 	}
 }

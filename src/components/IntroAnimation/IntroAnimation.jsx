@@ -15,12 +15,11 @@ function IntroAnimation() {
 			</div>
 			<div className='introAnimationMainText'>
 				<Link to='/home' className='introAnimationListLink'>
-					<div className='begginingText'>Fu</div>
 					<div className='endTextContainer'>
 						<ul className='endTextList'>
-							<li className='endTextListItem'>n</li>
+							<li className='endTextListItem'>Fun</li>
 							<li className='endTextListItem'>
-								nctionalities
+								Functionalities
 							</li>
 						</ul>
 					</div>

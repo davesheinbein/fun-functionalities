@@ -1,4 +1,5 @@
 @import '../../../mixins/mixins.scss';
+@import '../../../breakpoints/breakpoints.scss';
 
 .footerContainer {
 	@include heightWidth(4vh, 100%);
@@ -9,15 +10,16 @@
 	.footerText {
 		@include heightWidth(100%, 100%);
 		@include flexCenter(row, flex-start, center);
-		font-family: 'Nunito', sans-serif;
 		margin: 0px 1em;
+		font-family: 'Nunito', sans-serif;
+		font-size: 10px;
 		font-weight: 800;
 		.footerLink {
 			color: rgba(250, 250, 24, 0.75);
 			@include heightWidth(fit-content, fit-content);
 			@include flexCenter(row, center, center);
 			margin: 0;
-			transition: all .5s ease-in-out;
+			transition: all 0.5s ease-in-out;
 			&:hover {
 				color: rgb(0, 238, 198);
 			}
@@ -26,5 +28,86 @@
 	.batteryContainer {
 		@include heightWidth(100%, 100%);
 		@include flexCenter(row, flex-end, center);
+	}
+
+	@include media('<=phone') {
+		.footerText {
+			.footerLink {
+				&:hover {
+				}
+			}
+		}
+		.batteryContainer {
+		}
+	}
+
+	@include media('>phone', '<=425px') {
+		.footerText {
+			.footerLink {
+				&:hover {
+				}
+			}
+		}
+		.batteryContainer {
+		}
+	}
+
+	@include media('>425px', '<=tablet') {
+		.footerText {
+			.footerLink {
+				&:hover {
+				}
+			}
+		}
+		.batteryContainer {
+		}
+	}
+
+	@include media('>580px', '<=tablet') {
+		.footerText {
+			font-size: 20px;
+			.footerLink {
+				&:hover {
+				}
+			}
+		}
+		.batteryContainer {
+		}
+	}
+
+	@include media('>tablet', '<desktop') {
+		.footerText {
+			font-size: 20px;
+			.footerLink {
+				&:hover {
+				}
+			}
+		}
+		.batteryContainer {
+		}
+	}
+
+	@include media('>=desktop') {
+		.footerText {
+			font-size: 20px;
+			.footerLink {
+				&:hover {
+				}
+			}
+		}
+		.batteryContainer {
+		}
+	}
+
+	@include media('>=LGdesktop', 'retina2x') {
+		.footerText {
+			font-size: 20px;
+			.footerLink {
+				&:hover {
+				}
+			}
+		}
+		.batteryContainer {
+		}
 	}
 }

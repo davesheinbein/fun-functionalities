@@ -30,7 +30,7 @@ const trans7 = (x, y) =>
 	`translate3d(${x / 2 + 200}px,${y / 3 - 250}px,0)`;
 // Text
 const trans8 = (x, y) =>
-	`translate3d(${x / 7 + 150}px,${y / 7 + 150}px,0)`;
+	`translate3d(${x / 7 + 150}px,${y / 7 - 150}px,0)`;
 
 function HomeParallax() {
 	const [props, set] = useSpring(() => ({

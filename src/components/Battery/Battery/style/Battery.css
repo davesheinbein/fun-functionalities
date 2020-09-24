@@ -16,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 .batteryContain {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,5 +149,113 @@
 .batteryContain .batteryText:hover {
   color: black;
   background: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 360px) {
+  .batteryContain {
+    height: 100%;
+    width: 35vw;
+  }
+  .batteryContain .battery {
+    height: 1.5em;
+    width: 10vw;
+  }
+  .batteryContain .battery .tip {
+    height: 5px;
+    width: 2vmin;
+    position: absolute;
+    top: -6px;
+    left: 1vw;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .batteryContain {
+    height: 100%;
+    width: 35vw;
+  }
+  .batteryContain .battery {
+    height: 1.5em;
+    width: 10vw;
+  }
+  .batteryContain .battery .tip {
+    height: 5px;
+    width: 2vmin;
+    position: absolute;
+    top: -6px;
+    left: 1vw;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .batteryContain {
+    height: 100%;
+    width: 35vw;
+  }
+  .batteryContain .battery {
+    height: 1.5em;
+    width: 10vw;
+  }
+  .batteryContain .battery .tip {
+    height: 5px;
+    width: 2vmin;
+    position: absolute;
+    top: -6px;
+    left: 1vw;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1365px) {
+  .batteryContain {
+    height: 100%;
+    width: 35vw;
+  }
+  .batteryContain .battery {
+    height: 1.5em;
+    width: 10vw;
+  }
+  .batteryContain .battery .tip {
+    height: 5px;
+    width: 2vmin;
+    position: absolute;
+    top: -6px;
+    left: 1vw;
+  }
+}
+
+@media (min-width: 1366px) {
+  .batteryContain {
+    height: 100%;
+    width: 35vw;
+  }
+  .batteryContain .battery {
+    height: 1.5em;
+    width: 10vw;
+  }
+  .batteryContain .battery .tip {
+    height: 5px;
+    width: 2vmin;
+    position: absolute;
+    top: -6px;
+    left: 1vw;
+  }
+}
+
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  .batteryContain {
+    height: 100%;
+    width: 35vw;
+  }
+  .batteryContain .battery {
+    height: 1.5em;
+    width: 10vw;
+  }
+  .batteryContain .battery .tip {
+    height: 5px;
+    width: 2vmin;
+    position: absolute;
+    top: -6px;
+    left: 1vw;
+  }
 }
 /*# sourceMappingURL=Battery.css.map */

@@ -87,7 +87,6 @@
   font-size: 50px;
   line-height: 50px;
   font-weight: 500;
-  margin-right: 250px;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: all 0.5s ease-in-out;
@@ -107,9 +106,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -119,26 +118,6 @@
   width: 100%;
   color: transparent;
   color: var(--colorFive);
-}
-
-.introAnimationContainer .introAnimationMainText .introAnimationListLink .begginingText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 100%;
 }
 
 .introAnimationContainer .introAnimationMainText .introAnimationListLink .endTextContainer {
@@ -161,8 +140,8 @@
   left: -100%;
   background: transparent;
   z-index: 1;
-  -webkit-animation: animatedbefore 2.5s linear infinite;
-          animation: animatedbefore 2.5s linear infinite;
+  -webkit-animation: animatedbefore 3s linear infinite;
+          animation: animatedbefore 3s linear infinite;
   -webkit-transition: 1s linear;
   transition: 1s linear;
   -webkit-transition-delay: 1s;
@@ -172,8 +151,7 @@
 .introAnimationContainer .introAnimationMainText .introAnimationListLink .endTextContainer ul {
   margin: 0 0.5%;
   padding: 0;
-  width: auto;
-  text-align: left;
+  text-align: center;
   -webkit-animation: animatedList 3s alternate infinite;
           animation: animatedList 3s alternate infinite;
 }
@@ -181,7 +159,6 @@
 .introAnimationContainer .introAnimationMainText .introAnimationListLink .endTextContainer ul li {
   list-style-type: none;
   height: 65px;
-  width: 170vw;
 }
 
 .introAnimationContainer .introAnimationLink {
@@ -244,6 +221,81 @@
   outline: none;
 }
 
+@media (max-width: 360px) {
+  .introAnimationContainer .introAnimationImgContainer .introAnimationImg {
+    height: 200px;
+    width: 200px;
+  }
+  .introAnimationContainer .introAnimationMainText {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .introAnimationContainer .introAnimationMainText .introAnimationListLink ul {
+    width: auto;
+  }
+  .introAnimationContainer .introAnimationMainText .introAnimationListLink ul li {
+    width: auto;
+  }
+  .introAnimationContainer .introAnimationLink {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .introAnimationContainer .introAnimationImgContainer .introAnimationImg {
+    height: 200px;
+    width: 200px;
+  }
+  .introAnimationContainer .introAnimationMainText {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .introAnimationContainer .introAnimationMainText .introAnimationListLink ul {
+    width: auto;
+  }
+  .introAnimationContainer .introAnimationMainText .introAnimationListLink ul li {
+    width: auto;
+  }
+  .introAnimationContainer .introAnimationLink {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .introAnimationContainer .introAnimationImgContainer .introAnimationImg {
+    height: 200px;
+    width: 200px;
+  }
+  .introAnimationContainer .introAnimationMainText {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1365px) {
+  .introAnimationContainer .introAnimationMainText {
+    font-size: 44px;
+    line-height: 44px;
+  }
+  .introAnimationContainer .introAnimationMainText .introAnimationListLink ul {
+    width: auto;
+  }
+}
+
+@media (min-width: 1366px) {
+  .introAnimationContainer .introAnimationMainText .introAnimationListLink ul {
+    width: auto;
+  }
+}
+
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  .introAnimationContainer .introAnimationMainText .introAnimationListLink ul {
+    width: auto;
+  }
+}
+
 @-webkit-keyframes animatedbefore {
   0% {
     left: -100%;
@@ -274,41 +326,41 @@
 
 @-webkit-keyframes animatedList {
   0% {
-    -webkit-transform: translateY(6px);
-            transform: translateY(6px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
   40% {
-    -webkit-transform: translateY(6px);
-            transform: translateY(6px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
   65% {
-    -webkit-transform: translateY(-60px);
-            transform: translateY(-60px);
+    -webkit-transform: translateY(-55px);
+            transform: translateY(-55px);
   }
   75%,
   100% {
-    -webkit-transform: translateY(-60px);
-            transform: translateY(-60px);
+    -webkit-transform: translateY(-55px);
+            transform: translateY(-55px);
   }
 }
 
 @keyframes animatedList {
   0% {
-    -webkit-transform: translateY(6px);
-            transform: translateY(6px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
   40% {
-    -webkit-transform: translateY(6px);
-            transform: translateY(6px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
   65% {
-    -webkit-transform: translateY(-60px);
-            transform: translateY(-60px);
+    -webkit-transform: translateY(-55px);
+            transform: translateY(-55px);
   }
   75%,
   100% {
-    -webkit-transform: translateY(-60px);
-            transform: translateY(-60px);
+    -webkit-transform: translateY(-55px);
+            transform: translateY(-55px);
   }
 }
 
