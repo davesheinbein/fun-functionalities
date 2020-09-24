@@ -1,4 +1,5 @@
 @import '../../../mixins/mixins.scss';
+@import '../../../breakpoints/breakpoints.scss';
 
 .sidebar {
 	position: relative;
@@ -119,6 +120,171 @@
 			}
 		}
 	}
+	@include media('<=phone') {
+		// position chatbot container
+		@include bottomRightAbsolute(22%, 1%);
+		.chatbotContainer {
+			@include flexCenter(row, flex-end, center);
+			@include heightWidth(100%, 100%);
+			z-index: 1001;
+			pointer-events: none;
+			&:hover {
+				z-index: 1002;
+			}
+			.react-chatbot-kit-chat-container {
+				pointer-events: auto;
+				// adjust chatbot height & width
+				@include heightWidth(75vh, 98vw);
+				.react-chatbot-kit-chat-inner-container {
+					.react-chatbot-kit-chat-header {
+						font-size: 14px;
+						padding: 1em 0em;
+						&::before {
+							@include flexCenter(row, flex-start, center);
+							margin-left: 0.5em;
+							background-size: 25px 25px;
+						}
+						&::after {
+							content: '   Hello! How can I help you friend!';
+						}
+					}
+					.react-chatbot-kit-chat-message-container {
+						.react-chatbot-kit-chat-bot-message-container {
+							.avatarIcon {
+								@include heightWidth(fit-content, 12vw);
+								#robotImg {
+									@include heightWidth(
+										fit-content,
+										fit-content
+									);
+								}
+							}
+							.react-chatbot-kit-chat-bot-message {
+								span {
+								}
+								.react-chatbot-kit-chat-bot-message-arrow {
+								}
+							}
+						}
+						.react-chatbot-kit-user-chat-message-container {
+							.react-chatbot-kit-user-chat-message {
+								.react-chatbot-kit-user-chat-message-arrow {
+								}
+							}
+							.userIcon {
+								@include heightWidth(fit-content, 12vw);
+								#dogImg {
+									@include heightWidth(
+										fit-content,
+										fit-content
+									);
+								}
+							}
+						}
+					}
+					.react-chatbot-kit-chat-input-container {
+						.react-chatbot-kit-chat-input-form {
+							.react-chatbot-kit-chat-input {
+							}
+							.react-chatbot-kit-chat-btn-send {
+								.react-chatbot-kit-chat-btn-send-icon {
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include media('>phone', '<=425px') {
+		// position chatbot container
+		@include bottomRightAbsolute(22%, 1%);
+		.chatbotContainer {
+			@include flexCenter(row, flex-end, center);
+			@include heightWidth(100%, 100%);
+			z-index: 1001;
+			pointer-events: none;
+			&:hover {
+				z-index: 1002;
+			}
+			.react-chatbot-kit-chat-container {
+				pointer-events: auto;
+				// adjust chatbot height & width
+				@include heightWidth(75vh, 98vw);
+				.react-chatbot-kit-chat-inner-container {
+					.react-chatbot-kit-chat-header {
+						font-size: 14px;
+						padding: 1em 0em;
+						&::before {
+							@include flexCenter(row, flex-start, center);
+							margin-left: 0.5em;
+							background-size: 25px 25px;
+						}
+						&::after {
+							content: '   Hello! How can I help you friend!';
+						}
+					}
+					.react-chatbot-kit-chat-message-container {
+						.react-chatbot-kit-chat-bot-message-container {
+							.avatarIcon {
+								@include heightWidth(fit-content, 12vw);
+								#robotImg {
+									@include heightWidth(
+										fit-content,
+										fit-content
+									);
+								}
+							}
+							.react-chatbot-kit-chat-bot-message {
+								span {
+								}
+								.react-chatbot-kit-chat-bot-message-arrow {
+								}
+							}
+						}
+						.react-chatbot-kit-user-chat-message-container {
+							.react-chatbot-kit-user-chat-message {
+								.react-chatbot-kit-user-chat-message-arrow {
+								}
+							}
+							.userIcon {
+								@include heightWidth(fit-content, 12vw);
+								#dogImg {
+									@include heightWidth(
+										fit-content,
+										fit-content
+									);
+								}
+							}
+						}
+					}
+					.react-chatbot-kit-chat-input-container {
+						.react-chatbot-kit-chat-input-form {
+							.react-chatbot-kit-chat-input {
+							}
+							.react-chatbot-kit-chat-btn-send {
+								.react-chatbot-kit-chat-btn-send-icon {
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include media('>425px', '<=tablet') {
+	}
+
+	@include media('>tablet', '<desktop') {
+	}
+
+	@include media('>=desktop') {
+	}
+
+	@include media('>=LGdesktop', 'retina2x') {
+	}
 }
 .openbtn {
 	z-index: 1000;
@@ -143,5 +309,88 @@
 		);
 		max-width: 50%;
 		max-height: 50%;
+	}
+
+	@include media('<=phone') {
+		&:focus {
+		}
+		&:hover {
+		}
+		.chatImg {
+		}
+	}
+
+	@include media('>phone', '<=425px') {
+		&:focus {
+		}
+		&:hover {
+		}
+		.chatImg {
+		}
+	}
+
+	@include media('>425px', '<=tablet') {
+		@include heightWidth(
+			calc(40px - 2vw),
+			calc(40px - 2vw)
+		);
+		&:focus {
+		}
+		&:hover {
+		}
+		.chatImg {
+		}
+	}
+
+	@include media('>600px', '<=tablet') {
+		@include heightWidth(
+			calc(55px - 2vw),
+			calc(55px - 2vw)
+		);
+		&:focus {
+		}
+		&:hover {
+		}
+		.chatImg {
+		}
+	}
+
+	@include media('>tablet', '<desktop') {
+		@include heightWidth(
+			calc(65px - 2vw),
+			calc(65px - 2vw)
+		);
+		&:focus {
+		}
+		&:hover {
+		}
+		.chatImg {
+		}
+	}
+
+	@include media('>=desktop') {
+		@include heightWidth(
+			calc(65px - 2vw),
+			calc(65px - 2vw)
+		);
+		&:focus {
+		}
+		&:hover {
+		}
+		.chatImg {
+		}
+	}
+
+	@include media('>=LGdesktop', 'retina2x') {
+		@include heightWidth(
+			calc(70px - 2vw),
+			calc(70px - 2vw)
+		);
+		&:focus {
+		}
+		&:hover {
+		}
+		.chatImg {
+		}
 	}
 }

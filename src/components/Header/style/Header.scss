@@ -13,16 +13,17 @@
 	background: var(--headerColor);
 	background-size: 400%;
 	animation: headingAnimation 5s infinite 0s alternate;
+
 	.logo {
 		@include heightWidth(100%, 100%);
-		@include flexCenter(row, flex-start, flex-start);
+		@include flexCenter(row, flex-start, flex-end);
 		font-family: 'Oleo Script', 'Hanalei', cursive;
 		color: transparent;
 		background-image: url('../../../images/cool-background.png');
 		background-clip: text;
 		background-size: 400%;
 		font-size: calc(30px + 1vw);
-		line-height: 43px;
+		// line-height: 43px;
 		@include noSelection;
 	}
 	.list {
@@ -33,12 +34,12 @@
 		font-weight: 600;
 		.listItem {
 			@include heightWidth(100%, 100%);
-			@include flexCenter(row, space-around, flex-start);
+			@include flexCenter(row, center, flex-end);
 			font-size: calc(20px + 1vw);
-			line-height: 50px;
+			// line-height: 50px;
 			.listItemLink {
 				@include heightWidth(100%, 100%);
-				@include flexCenter(row, space-around, flex-start);
+				@include flexCenter(row, center, center);
 				transition: all 0.5s ease-in-out;
 				color: rgb(16, 17, 16);
 				color: transparent;
@@ -46,9 +47,14 @@
 				background-clip: text;
 				background-size: 400%;
 				animation: headingAnimation 5s infinite 0s alternate;
-				&:hover {
-					color: rgb(54, 15, 230);
-					font-weight: 900;
+				.listItems {
+					@include heightWidth(100%, 100%);
+					@include flexCenter(row, flex-end, flex-end);
+					&:hover {
+						color: rgb(54, 15, 230);
+						text-decoration: double overline;
+						font-weight: 900;
+					}
 				}
 			}
 		}
@@ -63,18 +69,20 @@
 		padding: 0px;
 		.logo {
 			font-size: 18px;
-			line-height: 34px;
+			// line-height: 34px;
 			padding-left: 0.25em;
 		}
 		.list {
 			margin: 0;
 			.listItem {
 				font-size: 12px;
-				line-height: 36px;
+				// line-height: 36px;
 				.listItemLink {
 					margin: 0 0.5em;
 					white-space: nowrap;
 					&:hover {
+					}
+					.listItems {
 					}
 				}
 			}
@@ -91,7 +99,7 @@
 		padding: 0px;
 		.logo {
 			font-size: 22px;
-			line-height: 46px;
+			// line-height: 26px;
 			padding-left: 0.25em;
 			margin-left: 0.5em;
 		}
@@ -99,11 +107,13 @@
 			margin: 0;
 			.listItem {
 				font-size: 14px;
-				line-height: 42px;
+				// line-height: 32px;
 				.listItemLink {
 					margin: 0 0.5em;
 					white-space: nowrap;
 					&:hover {
+					}
+					.listItems {
 					}
 				}
 			}
@@ -120,18 +130,20 @@
 		padding: 0px;
 		.logo {
 			font-size: 24px;
-			line-height: 46px;
+			// line-height: 46px;
 			padding-left: 0.25em;
 		}
 		.list {
 			margin: 0;
 			.listItem {
 				font-size: 14px;
-				line-height: 54px;
+				// line-height: 54px;
 				.listItemLink {
 					margin: 0 0.5em;
 					white-space: nowrap;
 					&:hover {
+					}
+					.listItems {
 					}
 				}
 			}
@@ -144,18 +156,42 @@
 		}
 	}
 
-	@include media('>580px', '<=tablet') {
+	@include media('>600px', '<=tablet') {
 		.logo {
-			font-size: 30px;
-			line-height: 46px;
+			font-size: 32px;
+			line-height: 36px;
 			padding-left: 0.25em;
 		}
 		.list {
 			.listItem {
 				font-size: 24px;
-				line-height: 46px;
+				line-height: 28px;
 				.listItemLink {
 					&:hover {
+					}
+					.listItems {
+					}
+				}
+			}
+		}
+		.switchBtn {
+		}
+	}
+
+	@include media('>740px', '<=tablet') {
+		.logo {
+			font-size: 42px;
+			line-height: 36px;
+			padding-left: 0.25em;
+		}
+		.list {
+			.listItem {
+				font-size: 34px;
+				line-height: 28px;
+				.listItemLink {
+					&:hover {
+					}
+					.listItems {
 					}
 				}
 			}
@@ -165,21 +201,22 @@
 	}
 
 	@include media('>tablet', '<desktop') {
-		padding: 0px;
 		.logo {
-			font-size: 36px;
-			line-height: 46px;
+			font-size: 42px;
+			line-height: 36px;
 			padding-left: 0.25em;
 		}
 		.list {
 			margin: 0;
 			.listItem {
-				font-size: 24px;
-				line-height: 50px;
+				font-size: 34px;
+				line-height: 28px;
 				.listItemLink {
 					margin: 0 0.5em;
 					white-space: nowrap;
 					&:hover {
+					}
+					.listItems {
 					}
 				}
 			}
@@ -195,15 +232,15 @@
 	@include media('>1000px', '<desktop') {
 		.logo {
 			font-size: 46px;
-			line-height: 46px;
 			padding-left: 0.25em;
 		}
 		.list {
 			.listItem {
 				font-size: 44px;
-				line-height: 46px;
 				.listItemLink {
 					&:hover {
+					}
+					.listItems {
 					}
 				}
 			}
@@ -219,15 +256,17 @@
 	@include media('>=desktop') {
 		.logo {
 			font-size: 46px;
-			line-height: 46px;
+			line-height: 36px;
 			padding-left: 0.25em;
 		}
 		.list {
 			.listItem {
 				font-size: 44px;
-				line-height: 46px;
 				.listItemLink {
 					&:hover {
+					}
+					.listItems {
+						line-height: 36px;
 					}
 				}
 			}
@@ -243,15 +282,17 @@
 	@include media('>=LGdesktop', 'retina2x') {
 		.logo {
 			font-size: 46px;
-			line-height: 46px;
+			line-height: 36px;
 			padding-left: 0.25em;
 		}
 		.list {
 			.listItem {
 				font-size: 44px;
-				line-height: 46px;
 				.listItemLink {
 					&:hover {
+					}
+					.listItems {
+						line-height: 36px;
 					}
 				}
 			}

@@ -29,6 +29,8 @@ class MessageParser {
 
 		// Options
 		if (
+			uppercase.includes('help') ||
+			lowercase.includes('help') ||
 			uppercase.includes('option') ||
 			lowercase.includes('option') ||
 			uppercase.includes('options') ||

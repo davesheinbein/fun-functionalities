@@ -50,14 +50,20 @@ function Header(props) {
 					<a
 						className='listItemLink'
 						href='https://github.com/davesheinbein/fun-functionalities'>
-						<div style={{ width: 'fit-content' }}>
+						<div
+							style={{ width: 'fit-content' }}
+							className='listItems'>
 							Github
 						</div>
 					</a>
 				</li>
 				<li className='listItem'>
 					<Link to='/signup' className='listItemLink'>
-						Sign Up
+						<div
+							style={{ width: 'fit-content' }}
+							className='listItems'>
+							Sign Up
+						</div>
 					</Link>
 				</li>
 			</ul>

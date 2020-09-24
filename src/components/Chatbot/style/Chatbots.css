@@ -16,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 .sidebar {
   position: relative;
   text-align: center;
@@ -248,6 +253,180 @@
   background-color: #ffffff;
 }
 
+@media (max-width: 360px) {
+  .sidebar {
+    position: absolute;
+    bottom: 22%;
+    right: 1%;
+  }
+  .sidebar .chatbotContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1001;
+    pointer-events: none;
+  }
+  .sidebar .chatbotContainer:hover {
+    z-index: 1002;
+  }
+  .sidebar .chatbotContainer .react-chatbot-kit-chat-container {
+    pointer-events: auto;
+    height: 75vh;
+    width: 98vw;
+  }
+  .sidebar .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header {
+    font-size: 14px;
+    padding: 1em 0em;
+  }
+  .sidebar .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header::before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0.5em;
+    background-size: 25px 25px;
+  }
+  .sidebar .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header::after {
+    content: '   Hello! How can I help you friend!';
+  }
+  .sidebar .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-message-container .react-chatbot-kit-chat-bot-message-container .avatarIcon {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 12vw;
+  }
+  .sidebar .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-message-container .react-chatbot-kit-chat-bot-message-container .avatarIcon #robotImg {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .sidebar .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-message-container .react-chatbot-kit-user-chat-message-container .userIcon {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 12vw;
+  }
+  .sidebar .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-message-container .react-chatbot-kit-user-chat-message-container .userIcon #dogImg {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .sidebar {
+    position: absolute;
+    bottom: 22%;
+    right: 1%;
+  }
+  .sidebar .chatbotContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1001;
+    pointer-events: none;
+  }
+  .sidebar .chatbotContainer:hover {
+    z-index: 1002;
+  }
+  .sidebar .chatbotContainer .react-chatbot-kit-chat-container {
+    pointer-events: auto;
+    height: 75vh;
+    width: 98vw;
+  }
+  .sidebar .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header {
+    font-size: 14px;
+    padding: 1em 0em;
+  }
+  .sidebar .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header::before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0.5em;
+    background-size: 25px 25px;
+  }
+  .sidebar .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-header::after {
+    content: '   Hello! How can I help you friend!';
+  }
+  .sidebar .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-message-container .react-chatbot-kit-chat-bot-message-container .avatarIcon {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 12vw;
+  }
+  .sidebar .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-message-container .react-chatbot-kit-chat-bot-message-container .avatarIcon #robotImg {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .sidebar .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-message-container .react-chatbot-kit-user-chat-message-container .userIcon {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 12vw;
+  }
+  .sidebar .chatbotContainer .react-chatbot-kit-chat-container .react-chatbot-kit-chat-inner-container .react-chatbot-kit-chat-message-container .react-chatbot-kit-user-chat-message-container .userIcon #dogImg {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
 .openbtn {
   z-index: 1000;
   display: -webkit-box;
@@ -301,5 +480,40 @@
   width: calc(50px - 2vw);
   max-width: 50%;
   max-height: 50%;
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .openbtn {
+    height: calc(40px - 2vw);
+    width: calc(40px - 2vw);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .openbtn {
+    height: calc(55px - 2vw);
+    width: calc(55px - 2vw);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1365px) {
+  .openbtn {
+    height: calc(65px - 2vw);
+    width: calc(65px - 2vw);
+  }
+}
+
+@media (min-width: 1366px) {
+  .openbtn {
+    height: calc(65px - 2vw);
+    width: calc(65px - 2vw);
+  }
+}
+
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  .openbtn {
+    height: calc(70px - 2vw);
+    width: calc(70px - 2vw);
+  }
 }
 /*# sourceMappingURL=Chatbots.css.map */

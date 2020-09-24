@@ -64,16 +64,15 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-family: 'Oleo Script', 'Hanalei', cursive;
   color: transparent;
   background-image: url("../../../images/cool-background.png");
   background-clip: text;
   background-size: 400%;
   font-size: calc(30px + 1vw);
-  line-height: 43px;
   -webkit-touch-callout: none;
   /* iOS Safari */
   -webkit-user-select: none;
@@ -119,13 +118,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-size: calc(20px + 1vw);
-  line-height: 50px;
 }
 
 .navbarContainer .list .listItem .listItemLink {
@@ -138,11 +137,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   color: #101110;
@@ -154,8 +154,28 @@
           animation: headingAnimation 5s infinite 0s alternate;
 }
 
-.navbarContainer .list .listItem .listItemLink:hover {
+.navbarContainer .list .listItem .listItemLink .listItems {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.navbarContainer .list .listItem .listItemLink .listItems:hover {
   color: #360fe6;
+  -webkit-text-decoration: double overline;
+          text-decoration: double overline;
   font-weight: 900;
 }
 
@@ -184,7 +204,6 @@
   }
   .navbarContainer .logo {
     font-size: 18px;
-    line-height: 34px;
     padding-left: 0.25em;
   }
   .navbarContainer .list {
@@ -192,7 +211,6 @@
   }
   .navbarContainer .list .listItem {
     font-size: 12px;
-    line-height: 36px;
   }
   .navbarContainer .list .listItem .listItemLink {
     margin: 0 0.5em;
@@ -213,7 +231,6 @@
   }
   .navbarContainer .logo {
     font-size: 22px;
-    line-height: 46px;
     padding-left: 0.25em;
     margin-left: 0.5em;
   }
@@ -222,7 +239,6 @@
   }
   .navbarContainer .list .listItem {
     font-size: 14px;
-    line-height: 42px;
   }
   .navbarContainer .list .listItem .listItemLink {
     margin: 0 0.5em;
@@ -243,7 +259,6 @@
   }
   .navbarContainer .logo {
     font-size: 24px;
-    line-height: 46px;
     padding-left: 0.25em;
   }
   .navbarContainer .list {
@@ -251,7 +266,6 @@
   }
   .navbarContainer .list .listItem {
     font-size: 14px;
-    line-height: 54px;
   }
   .navbarContainer .list .listItem .listItemLink {
     margin: 0 0.5em;
@@ -266,33 +280,42 @@
   }
 }
 
-@media (min-width: 581px) and (max-width: 768px) {
+@media (min-width: 601px) and (max-width: 768px) {
   .navbarContainer .logo {
-    font-size: 30px;
-    line-height: 46px;
+    font-size: 32px;
+    line-height: 36px;
     padding-left: 0.25em;
   }
   .navbarContainer .list .listItem {
     font-size: 24px;
-    line-height: 46px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 741px) and (max-width: 768px) {
+  .navbarContainer .logo {
+    font-size: 42px;
+    line-height: 36px;
+    padding-left: 0.25em;
+  }
+  .navbarContainer .list .listItem {
+    font-size: 34px;
+    line-height: 28px;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1365px) {
-  .navbarContainer {
-    padding: 0px;
-  }
   .navbarContainer .logo {
-    font-size: 36px;
-    line-height: 46px;
+    font-size: 42px;
+    line-height: 36px;
     padding-left: 0.25em;
   }
   .navbarContainer .list {
     margin: 0;
   }
   .navbarContainer .list .listItem {
-    font-size: 24px;
-    line-height: 50px;
+    font-size: 34px;
+    line-height: 28px;
   }
   .navbarContainer .list .listItem .listItemLink {
     margin: 0 0.5em;
@@ -310,12 +333,10 @@
 @media (min-width: 1001px) and (max-width: 1365px) {
   .navbarContainer .logo {
     font-size: 46px;
-    line-height: 46px;
     padding-left: 0.25em;
   }
   .navbarContainer .list .listItem {
     font-size: 44px;
-    line-height: 46px;
   }
   .navbarContainer .switchBtn {
     height: 100%;
@@ -329,12 +350,14 @@
 @media (min-width: 1366px) {
   .navbarContainer .logo {
     font-size: 46px;
-    line-height: 46px;
+    line-height: 36px;
     padding-left: 0.25em;
   }
   .navbarContainer .list .listItem {
     font-size: 44px;
-    line-height: 46px;
+  }
+  .navbarContainer .list .listItem .listItemLink .listItems {
+    line-height: 36px;
   }
   .navbarContainer .switchBtn {
     height: 100%;
@@ -348,12 +371,14 @@
 @media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
   .navbarContainer .logo {
     font-size: 46px;
-    line-height: 46px;
+    line-height: 36px;
     padding-left: 0.25em;
   }
   .navbarContainer .list .listItem {
     font-size: 44px;
-    line-height: 46px;
+  }
+  .navbarContainer .list .listItem .listItemLink .listItems {
+    line-height: 36px;
   }
   .navbarContainer .switchBtn {
     height: 100%;
