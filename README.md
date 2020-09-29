@@ -22,9 +22,29 @@ Jason Hur - https://www.linkedin.com/in/jasonhur/
 
 ## Screenshot:
 
-<!-- ![Home Page Sceenshot](screenshots/portfolio-screenshot.png)
+![Into Page Sceenshot](screenshots/homeScreenshot.png)
 
-[Home Page Sceenshot](https://imgur.com/UE1XA40) -->
+[Into Page Sceenshot](https://imgur.com/egZiSaH)
+
+![Home Page Sceenshot](screenshots/subHomeScreenshot.png)
+
+[Home Page Sceenshot](https://imgur.com/QKz9QnP)
+
+![Group A Sceenshot](screenshots/mainAScreenshot.png)
+
+[Group A Sceenshot](https://imgur.com/QaccQr7)
+
+![Group B Sceenshot](screenshots/mainBScreenshot.png)
+
+[Group B Sceenshot](https://imgur.com/xHPaEbR)
+
+![Group C Sceenshot](screenshots/mainCScreenshot.png)
+
+[Group C Sceenshot](https://imgur.com/UJIxEai)
+
+![Group D Sceenshot](screenshots/mainCScreenshot.png)
+
+[Group D Sceenshot](https://imgur.com/zv8GiV4)
 
 ## Technologies Used:
 
