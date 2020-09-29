@@ -42,7 +42,7 @@ Jason Hur - https://www.linkedin.com/in/jasonhur/
 
 [Group C Sceenshot](https://imgur.com/UJIxEai)
 
-![Group D Sceenshot](screenshots/mainCScreenshot.png)
+![Group D Sceenshot](screenshots/mainDScreenshot.png)
 
 [Group D Sceenshot](https://imgur.com/zv8GiV4)
 
