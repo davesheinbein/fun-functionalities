@@ -6,6 +6,8 @@
 
 ### About Us
 
+Application that explores different functionalities and there use cases. Utilizing react-spring and framer libraries to create flawless animations and transitions.
+
 #### Project Work:
 
 David Sheinbein - https://github.com/davesheinbein
@@ -17,32 +19,6 @@ Jason Hur - https://github.com/jhur91
 David Sheinbein - https://www.linkedin.com/in/david-sheinbein/
 
 Jason Hur - https://www.linkedin.com/in/jasonhur/
-
-<!-- #### Full-Stack Software Engineering Skills:
-
-HTML5 | CSS | JavaScript | Express | Node.js | Django | Mongoose | MongoDB | Python | PostreSQL | React | React-spring | Animations | Axios | Nodemailer
-
-#### Developer Tools:
-
-Git | GitHub | MongoDB Atlas | Postman | Heroku | Namecheap | AWS | Third Party APIs
-
-#### Project Management Skills:
-
-Scheduling | Timeline Management | Research | Teamwork |
-
-#### Creative Skills:
-
-Wireframing | Web Design | Google Fonts -->
-
-<!-- ### Dependency
-
-- npm i
-
-- npm install
-
-- npm install
-
-- npm install -->
 
 ## Screenshot:
 
@@ -82,6 +58,6 @@ Wireframing | Web Design | Google Fonts -->
 
 [David Sheinbein Portfolio Webstite](http://www.davidsheinbeinportfolio.com/)
 
-<!-- ### Click the link to view Jason Hur Portfolio website -->
+### Click the link to view Jason Hur Portfolio website
 
-<!-- [Jason Hur Portfolio Webstite]()  -->
+[Jason Hur Portfolio Webstite](https://jasonhur.netlify.app/)
