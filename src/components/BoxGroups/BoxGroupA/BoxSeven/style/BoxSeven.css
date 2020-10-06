@@ -118,6 +118,7 @@
   height: 100%;
   width: 100%;
   background: radial-gradient(circle, #7bff82 0%, #94e9df 100%);
+  background: var(--boxSevenBg);
   font-size: 15px;
   overflow: hidden;
   position: absolute;

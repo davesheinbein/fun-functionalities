@@ -44,6 +44,12 @@
 		rgba(148, 233, 223, 1) 100%
 	);
 
+	--boxEightBg: radial-gradient(
+		90deg,
+		rgba(255, 175, 123, 1) 0%,
+		rgba(148, 233, 219, 1) 100%
+	);
+
 	--mainText: #000000;
 	--subText: rgba(0, 0, 0, 0.75);
 	--secondaryText: #084181;
@@ -115,6 +121,11 @@
 		rgba(62, 133, 238, 1) 1.1%,
 		rgba(227, 137, 240, 1) 43.7%,
 		rgba(243, 193, 124, 1) 89.7%
+	);
+	--boxEightBg: radial-gradient(
+		circle,
+		rgba(233, 216, 148, 1) 0%,
+		rgba(123, 189, 255, 1) 100%
 	);
 
 	--mainText: #ffffff;

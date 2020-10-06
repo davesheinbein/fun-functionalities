@@ -103,7 +103,7 @@ class App extends Component {
 	// 	});
 	// }
 
-	// Reuires the themeChnager File
+	// Requires the themeChanger File
 	handleThemeChange(color) {
 		this.setState({
 			color,
