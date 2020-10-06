@@ -9,7 +9,7 @@ module.exports = {
 };
 
 async function login(req, res) {
-	console.log('hitting');
+	console.log('hitting req > ', req, req.body.email, '<< req.body.email');
 	try {
 		const user = await User.findOne({
 			email: req.body.email,
@@ -39,7 +39,7 @@ async function login(req, res) {
 }
 
 async function signup(req, res) {
-	// console.log('hitting signup controller');
+	console.log('hitting signup controller');
 	const user = new User(req.body);
 	try {
 		await user.save();
