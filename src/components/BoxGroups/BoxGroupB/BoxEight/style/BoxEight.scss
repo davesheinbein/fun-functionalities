@@ -20,7 +20,7 @@
 				content: 'Hello';
 				@include flexCenter(column, center, center);
 				@include heightWidth(100%, 100%);
-				color: rgb(248, 54, 128);
+				color: var(--boxEightBg);
 			}
 		}
 		&:nth-child(2) {

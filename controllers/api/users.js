@@ -9,24 +9,30 @@ module.exports = {
 };
 
 async function login(req, res) {
+	console.log('hitting');
 	try {
 		const user = await User.findOne({
 			email: req.body.email,
 		});
+		console.log('hitting try');
 		if (!user)
 			return res
 				.status(400)
 				.json({ err: 'bad credentials' });
-		user.comparePassword(req.body.password, (err, isMatch) => {
-			if (isMatch) {
-				const token = createJWT(user);
-				res.json({ token });
-			} else {
-				return res
-					.status(400)
-					.json({ err: 'bad credentials' });
+		user.comparePassword(
+			req.body.password,
+			(err, isMatch) => {
+				console.log('hitting isMatch');
+				if (isMatch) {
+					const token = createJWT(user);
+					res.json({ token });
+				} else {
+					return res
+						.status(400)
+						.json({ err: 'bad credentials' });
+				}
 			}
-		});
+		);
 	} catch (err) {
 		return res.status(400).json(err);
 	}
@@ -55,6 +61,7 @@ async function signup(req, res) {
 /*---  Helper Functions ---*/
 
 function createJWT(user) {
+	console.log('hitting createJWT');
 	return jwt.sign(
 		{ user }, // data payload
 		SECRET,
