@@ -85,7 +85,7 @@ class BoxTwo extends Component {
 										(x) => `translate3d(${x}px,0,0)`
 									),
 								}}>
-								Slide me!
+								+ Slide me! -
 							</animated.div>
 						</animated.div>
 					)}
