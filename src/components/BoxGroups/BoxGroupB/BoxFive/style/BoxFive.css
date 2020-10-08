@@ -16,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 .boxFiveContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,8 +138,6 @@
 }
 
 .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
-  -webkit-transform: scale(2.5);
-          transform: scale(2.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,7 +155,9 @@
   width: 100%;
   position: absolute;
   top: 0%;
-  left: 0%;
+  left: 50%;
+  -webkit-transform: scale(1) translate(-55%, 0%);
+          transform: scale(1) translate(-55%, 0%);
   border: none;
   background-color: transparent;
   pointer-events: none;
@@ -161,8 +166,12 @@
 .boxFiveContainer .boxFiveSubcontainer .puzzleContainer div {
   pointer-events: none;
   border: none;
-  height: 4vh;
-  width: 4.7vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .boxFiveContainer .boxFiveSubcontainer .puzzleContainer div:focus {
@@ -188,5 +197,68 @@
 
 .boxFiveContainer .boxFiveSubcontainer .puzzleContainer .piece div {
   margin: 1em;
+}
+
+@media (max-width: 360px) {
+  .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
+    -webkit-transform: scale(1) translate(-55%, 0%);
+            transform: scale(1) translate(-55%, 0%);
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
+    -webkit-transform: scale(1) translate(-55%, 0%);
+            transform: scale(1) translate(-55%, 0%);
+  }
+}
+
+@media (min-width: 401px) and (max-width: 425px) {
+  .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
+    -webkit-transform: scale(1.25) translate(-45%, 0%);
+            transform: scale(1.25) translate(-45%, 0%);
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
+    -webkit-transform: scale(1.25) translate(-45%, 0%);
+            transform: scale(1.25) translate(-45%, 0%);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
+    -webkit-transform: scale(2.25) translate(-23%, 0%);
+            transform: scale(2.25) translate(-23%, 0%);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1365px) {
+  .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
+    -webkit-transform: scale(2.25) translate(-23%, 0%);
+            transform: scale(2.25) translate(-23%, 0%);
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1365px) {
+  .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
+    -webkit-transform: scale(2.5) translate(-20%, 2%);
+            transform: scale(2.5) translate(-20%, 2%);
+  }
+}
+
+@media (min-width: 1366px) {
+  .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
+    -webkit-transform: scale(2.5) translate(-20%, 2%);
+            transform: scale(2.5) translate(-20%, 2%);
+  }
+}
+
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
+    -webkit-transform: scale(2.75) translate(-18%, 2%);
+            transform: scale(2.75) translate(-18%, 2%);
+  }
 }
 /*# sourceMappingURL=BoxFive.css.map */

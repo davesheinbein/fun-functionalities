@@ -1,4 +1,5 @@
 @import '../../../../../mixins/mixins.scss';
+@import '../../../../../breakpoints/breakpoints.scss';
 
 .boxFiveContainer {
 	@include flexCenter(column, center, center);
@@ -47,18 +48,17 @@
 			}
 		}
 		.puzzleContainer {
-			transform: scale(2.5);
 			@include flexCenter(column, center, center);
 			@include heightWidth(100%, 100%);
-			@include topLeftAbsolute(0%, 0%);
+			@include topLeftAbsolute(0%, 50%);
+			transform: scale(1) translate(-55%, 0%);
 			border: none;
 			background-color: transparent;
 			pointer-events: none;
 			div {
 				pointer-events: none;
 				border: none;
-				@include heightWidth(4vh, 4.7vw);
-				// margin: 2px;
+				@include heightWidth(fit-content, fit-content);
 				&:focus {
 					outline: transparent;
 				}
@@ -75,6 +75,257 @@
 				}
 				div {
 					margin: 1em;
+				}
+			}
+		}
+	}
+}
+
+@include media('<=phone') {
+	.boxFiveContainer {
+		.boxFiveSubcontainer {
+			> .ui.segments {
+			}
+			.btnsContainer {
+				.segment {
+					.btn {
+					}
+				}
+			}
+			.puzzleContainer {
+				transform: scale(1) translate(-55%, 0%);
+				div {
+					&:focus {
+					}
+				}
+				.piece {
+					&:hover {
+					}
+					div {
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>phone', '<=425px') {
+	.boxFiveContainer {
+		.boxFiveSubcontainer {
+			> .ui.segments {
+			}
+			.btnsContainer {
+				.segment {
+					.btn {
+					}
+				}
+			}
+			.puzzleContainer {
+				transform: scale(1) translate(-55%, 0%);
+				div {
+					&:focus {
+					}
+				}
+				.piece {
+					&:hover {
+					}
+					div {
+					}
+				}
+			}
+		}
+	}
+}
+@include media('>400px', '<=425px') {
+	.boxFiveContainer {
+		.boxFiveSubcontainer {
+			> .ui.segments {
+			}
+			.btnsContainer {
+				.segment {
+					.btn {
+					}
+				}
+			}
+			.puzzleContainer {
+				transform: scale(1.25) translate(-45%, 0%);
+				div {
+					&:focus {
+					}
+				}
+				.piece {
+					&:hover {
+					}
+					div {
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>425px', '<=tablet') {
+	.boxFiveContainer {
+		.boxFiveSubcontainer {
+			> .ui.segments {
+			}
+			.btnsContainer {
+				.segment {
+					.btn {
+					}
+				}
+			}
+			.puzzleContainer {
+				transform: scale(1.25) translate(-45%, 0%);
+				div {
+					&:focus {
+					}
+				}
+				.piece {
+					&:hover {
+					}
+					div {
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>600px', '<=tablet') {
+	.boxFiveContainer {
+		.boxFiveSubcontainer {
+			> .ui.segments {
+			}
+			.btnsContainer {
+				.segment {
+					.btn {
+					}
+				}
+			}
+			.puzzleContainer {
+				transform: scale(2.25) translate(-23%, 0%);
+				div {
+					&:focus {
+					}
+				}
+				.piece {
+					&:hover {
+					}
+					div {
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>tablet', '<desktop') {
+	.boxFiveContainer {
+		.boxFiveSubcontainer {
+			> .ui.segments {
+			}
+			.btnsContainer {
+				.segment {
+					.btn {
+					}
+				}
+			}
+			.puzzleContainer {
+				transform: scale(2.25) translate(-23%, 0%);
+				div {
+					&:focus {
+					}
+				}
+				.piece {
+					&:hover {
+					}
+					div {
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>1200px', '<desktop') {
+	.boxFiveContainer {
+		.boxFiveSubcontainer {
+			> .ui.segments {
+			}
+			.btnsContainer {
+				.segment {
+					.btn {
+					}
+				}
+			}
+			.puzzleContainer {
+				transform: scale(2.5) translate(-20%, 2%);
+				div {
+					&:focus {
+					}
+				}
+				.piece {
+					&:hover {
+					}
+					div {
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>=desktop') {
+	.boxFiveContainer {
+		.boxFiveSubcontainer {
+			> .ui.segments {
+			}
+			.btnsContainer {
+				.segment {
+					.btn {
+					}
+				}
+			}
+			.puzzleContainer {
+				transform: scale(2.5) translate(-20%, 2%);
+				div {
+					&:focus {
+					}
+				}
+				.piece {
+					&:hover {
+					}
+					div {
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>=LGdesktop', 'retina2x') {
+	.boxFiveContainer {
+		.boxFiveSubcontainer {
+			> .ui.segments {
+			}
+			.btnsContainer {
+				.segment {
+					.btn {
+					}
+				}
+			}
+			.puzzleContainer {
+				transform: scale(2.75) translate(-18%, 2%);
+				div {
+					&:focus {
+					}
+				}
+				.piece {
+					&:hover {
+					}
+					div {
+					}
 				}
 			}
 		}
