@@ -22,3 +22,91 @@
 		}
 	}
 }
+
+@include media('<=phone') {
+	.HomeNavLink {
+		.HomeCircle {
+			@include topRightAbsolute(42%, -15%);
+			transform: translateX(42%, -15%);
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>phone', '<=425px') {
+	.HomeNavLink {
+		.HomeCircle {
+			@include topRightAbsolute(43%, -14%);
+			transform: translateX(43%, -14%);
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>425px', '<=tablet') {
+	.HomeNavLink {
+		.HomeCircle {
+			@include topRightAbsolute(43%, -12%);
+			transform: translateX(43%, -12%);
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>600px', '<=tablet') {
+	.HomeNavLink {
+		.HomeCircle {
+			@include topRightAbsolute(45%, -6%);
+			transform: translateX(45%, -6%);
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>tablet', '<desktop') {
+	.HomeNavLink {
+		.HomeCircle {
+			@include topRightAbsolute(45.5%, -6%);
+			transform: translateX(45.5%, -6%);
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>1200px', '<desktop') {
+	.HomeNavLink {
+		.HomeCircle {
+			@include topRightAbsolute(45.5%, -4%);
+			transform: translateX(45.5%, -4%);
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>=desktop') {
+	.HomeNavLink {
+		.HomeCircle {
+			@include topRightAbsolute(45.5%, -4%);
+			transform: translateX(45.5%, -4%);
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>=LGdesktop', 'retina2x') {
+	.HomeNavLink {
+		.HomeCircle {
+			@include topRightAbsolute(45.5%, -2.5%);
+			transform: translateX(45.5%, -2.5%);
+			&:hover {
+			}
+		}
+	}
+}
