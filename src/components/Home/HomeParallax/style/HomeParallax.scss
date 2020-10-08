@@ -7,8 +7,7 @@
 .card4,
 .card5,
 .card6,
-.card7,
-.card8 {
+.card7 {
 	position: absolute;
 	margin-left: 25vw;
 	margin-top: 20vh;
@@ -79,39 +78,36 @@
 	z-index: 1;
 	background-image: url(../../../../images/blackboard.png);
 }
-
-.card8 {
-	width: 100vw;
-	height: 20vh;
-	@include heightWidth(25vh, 75vw);
-	z-index: 10;
-	font-size: 6rem;
-	font-weight: 900;
-	line-height: 6rem;
-	font-family: 'Quicksand', 'Rokkitt', serif, sans-serif;
+.cardTitleContainer {
+	@include heightWidth(fit-content, 70vw);
+	@include flexCenter(column, center, center);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	color: white;
 	background: rgba(0, 0, 0, 0.5);
 	border-radius: 25px;
 	padding: 1.75em 1em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transition: color, background 1s ease-in-out;
-	@include flexCenter(column, center, center);
+	z-index: 100;
+	transition: background 1s ease-in-out;
 	&:hover {
-		color: rgba(0, 0, 0, 0.75);
-		background: rgba(255, 255, 255, 0.75);
+		background: rgba(150, 150, 150, 0.5);
 	}
-	span {
-		font-size: 3rem;
-		line-height: 3rem;
-		font-weight: 400;
+	.cardTitle {
+		z-index: 100;
+		@include flexCenter(column, center, center);
+		font-size: 6rem;
+		font-weight: 900;
+		line-height: 1em;
 		font-family: 'Quicksand', 'Rokkitt', serif, sans-serif;
-		color: white;
-		background: rgba(0, 0, 0, 0.5);
-		&:hover {
-			color: rgba(0, 0, 0, 0.75);
-			background: rgba(255, 255, 255, 0.75);
+		transition: color 1s ease-in-out;
+		.cardSubTitle {
+			font-size: 3rem;
+			line-height: 4em;
+			font-weight: 400;
+			font-family: 'Quicksand', 'Rokkitt', serif, sans-serif;
+			color: white;
 		}
 	}
 }
@@ -131,79 +127,293 @@
 	.card4,
 	.card5,
 	.card6,
-	.card7,
-	.card8 {
+	.card7 {
 	}
 
 	// Blog
 	.card1 {
-		width: 100vw;
-		height: 60vw;
-		max-width: 140ch;
-		max-height: 100ch;
 	}
 
 	// Blog
 	.card2 {
-		width: 50vw;
-		height: 50vw;
-		min-width: 60ch;
-		min-height: 60ch;
 	}
 
 	// Computer
 	.card3 {
-		width: 25ch;
-		height: 32ch;
 	}
 
 	// Guy
 	.card4 {
-		width: 25ch;
-		height: 45ch;
 	}
 
 	// Girl
 	.card5 {
-		width: 25ch;
-		height: 45ch;
 	}
 	// Tree
 	.card6 {
-		width: 25ch;
-		height: 36ch;
 	}
 	// Blackboard
 	.card7 {
-		width: 60ch;
-		height: 60ch;
 	}
 
-	.card8 {
-		&:hover {
-		}
-		span {
-			&:hover {
+	.cardTitleContainer {
+		.cardTitle {
+			font-size: 2rem;
+
+			.cardSubTitle {
+				font-size: 1rem;
 			}
 		}
 	}
 
 	.container {
-		transform: scale(0.5);
+		transform: scale(0.5) translateX(-25%);
 	}
 }
 
 @include media('>phone', '<=425px') {
+	.card1,
+	.card2,
+	.card3,
+	.card4,
+	.card5,
+	.card6,
+	.card7 {
+	}
+
+	// Blog
+	.card1 {
+	}
+
+	// Blog
+	.card2 {
+	}
+
+	// Computer
+	.card3 {
+	}
+
+	// Guy
+	.card4 {
+	}
+
+	// Girl
+	.card5 {
+	}
+	// Tree
+	.card6 {
+	}
+	// Blackboard
+	.card7 {
+	}
+
+	.cardTitleContainer {
+		.cardTitle {
+			font-size: 2.25rem;
+			.cardSubTitle {
+				font-size: 1.25rem;
+			}
+		}
+	}
+
+	.container {
+		transform: scale(0.45) translateX(-25%);
+	}
 }
 
 @include media('>425px', '<=tablet') {
+	.card1,
+	.card2,
+	.card3,
+	.card4,
+	.card5,
+	.card6,
+	.card7 {
+	}
+
+	// Blog
+	.card1 {
+	}
+
+	// Blog
+	.card2 {
+	}
+
+	// Computer
+	.card3 {
+	}
+
+	// Guy
+	.card4 {
+	}
+
+	// Girl
+	.card5 {
+	}
+	// Tree
+	.card6 {
+	}
+	// Blackboard
+	.card7 {
+	}
+
+	.cardTitleContainer {
+		.cardTitle {
+			font-size: 2.25rem;
+			.cardSubTitle {
+				font-size: 1.75rem;
+			}
+		}
+	}
+
+	.container {
+		transform: scale(0.45);
+	}
 }
 
 @include media('>tablet', '<desktop') {
+	.card1,
+	.card2,
+	.card3,
+	.card4,
+	.card5,
+	.card6,
+	.card7 {
+	}
+
+	// Blog
+	.card1 {
+	}
+
+	// Blog
+	.card2 {
+	}
+
+	// Computer
+	.card3 {
+	}
+
+	// Guy
+	.card4 {
+	}
+
+	// Girl
+	.card5 {
+	}
+	// Tree
+	.card6 {
+	}
+	// Blackboard
+	.card7 {
+	}
+
+	.cardTitleContainer {
+		.cardTitle {
+			font-size: 3.5rem;
+			.cardSubTitle {
+				font-size: 2.5rem;
+			}
+		}
+	}
+
+	.container {
+	}
 }
 
 @include media('>=desktop') {
+	.card1,
+	.card2,
+	.card3,
+	.card4,
+	.card5,
+	.card6,
+	.card7 {
+	}
+
+	// Blog
+	.card1 {
+	}
+
+	// Blog
+	.card2 {
+	}
+
+	// Computer
+	.card3 {
+	}
+
+	// Guy
+	.card4 {
+	}
+
+	// Girl
+	.card5 {
+	}
+	// Tree
+	.card6 {
+	}
+	// Blackboard
+	.card7 {
+	}
+
+	.cardTitleContainer {
+		.cardTitle {
+			font-size: 3.5rem;
+			.cardSubTitle {
+				font-size: 2.5rem;
+			}
+		}
+	}
+
+	.container {
+	}
 }
 
 @include media('>=LGdesktop', 'retina2x') {
+	.card1,
+	.card2,
+	.card3,
+	.card4,
+	.card5,
+	.card6,
+	.card7 {
+	}
+
+	// Blog
+	.card1 {
+	}
+
+	// Blog
+	.card2 {
+	}
+
+	// Computer
+	.card3 {
+	}
+
+	// Guy
+	.card4 {
+	}
+
+	// Girl
+	.card5 {
+	}
+	// Tree
+	.card6 {
+	}
+	// Blackboard
+	.card7 {
+	}
+
+	.cardTitleContainer {
+		.cardTitle {
+			font-size: 4rem;
+			.cardSubTitle {
+				font-size: 3rem;
+			}
+		}
+	}
+
+	.container {
+	}
 }

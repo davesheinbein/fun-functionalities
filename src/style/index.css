@@ -39,6 +39,7 @@
 		rgba(123, 255, 130, 1) 0%,
 		rgba(148, 233, 223, 1) 100%
 	);
+  --boxEightBg: rgba(255, 175, 123, 1) 0%;
   --mainText: #000000;
   --subText: rgba(0, 0, 0, 0.75);
   --secondaryText: #084181;
@@ -103,6 +104,7 @@
 		rgba(227, 137, 240, 1) 43.7%,
 		rgba(243, 193, 124, 1) 89.7%
 	);
+  --boxEightBg: rgba(233, 216, 148, 1) 0%;
   --mainText: #ffffff;
   --subText: rgba(255, 255, 255, 0.75);
   --secondaryText: #ffffff;

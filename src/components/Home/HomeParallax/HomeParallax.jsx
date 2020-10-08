@@ -28,9 +28,6 @@ const trans6 = (x, y) =>
 // tree
 const trans7 = (x, y) =>
 	`translate3d(${x / 2 + 200}px,${y / 3 - 250}px,0)`;
-// Text
-const trans8 = (x, y) =>
-	`translate3d(${x / 7 + 150}px,${y / 7 - 150}px,0)`;
 
 function HomeParallax() {
 	const [props, set] = useSpring(() => ({
@@ -38,51 +35,65 @@ function HomeParallax() {
 		config: { mass: 10, tension: 550, friction: 140 },
 	}));
 	return (
-		<div
-			className='container'
-			onMouseMove={({ clientX: x, clientY: y }) =>
-				set({ xy: calc(x, y) })
-			}>
-			<animated.div
-				className='card1'
-				style={{ transform: props.xy.interpolate(trans1) }}
-			/>
-			<animated.div
-				className='card2'
-				style={{ transform: props.xy.interpolate(trans2) }}
-			/>
-			<animated.div
-				className='card3'
-				style={{ transform: props.xy.interpolate(trans3) }}
-			/>
-			<animated.div
-				className='card4'
-				style={{ transform: props.xy.interpolate(trans4) }}
-			/>
-			<animated.div
-				className='card5'
-				style={{ transform: props.xy.interpolate(trans5) }}
-			/>
+		<>
+			<div
+				className='container'
+				onMouseMove={({ clientX: x, clientY: y }) =>
+					set({ xy: calc(x, y) })
+				}>
+				<animated.div
+					className='card1'
+					style={{
+						transform: props.xy.interpolate(trans1),
+					}}
+				/>
+				<animated.div
+					className='card2'
+					style={{
+						transform: props.xy.interpolate(trans2),
+					}}
+				/>
+				<animated.div
+					className='card3'
+					style={{
+						transform: props.xy.interpolate(trans3),
+					}}
+				/>
+				<animated.div
+					className='card4'
+					style={{
+						transform: props.xy.interpolate(trans4),
+					}}
+				/>
+				<animated.div
+					className='card5'
+					style={{
+						transform: props.xy.interpolate(trans5),
+					}}
+				/>
 
-			<animated.div
-				className='card6'
-				style={{ transform: props.xy.interpolate(trans6) }}
-			/>
-			<animated.div
-				className='card7'
-				style={{ transform: props.xy.interpolate(trans7) }}
-			/>
-			<animated.div
-				className='card8'
-				style={{
-					transform: props.xy.interpolate(trans8),
-				}}>
-				Exploring Fun
-				<br />
-				Functionalities
-				<animated.span>Click a bubble</animated.span>
-			</animated.div>
-		</div>
+				<animated.div
+					className='card6'
+					style={{
+						transform: props.xy.interpolate(trans6),
+					}}
+				/>
+				<animated.div
+					className='card7'
+					style={{
+						transform: props.xy.interpolate(trans7),
+					}}
+				/>
+			</div>
+			<div className='cardTitleContainer'>
+				<div className='cardTitle'>
+					Exploring Fun
+					<br />
+					Functionalities
+					<div className='cardSubTitle'>Click a bubble</div>
+				</div>
+			</div>
+		</>
 	);
 }
 
