@@ -16,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 .scrollerContainer {
   height: 105%;
   width: 105%;
@@ -53,6 +58,11 @@
   background: peachpuff;
   overflow: auto;
   opacity: 0.6;
+  overflow-y: scroll;
+}
+
+.scrollerContainer .scrolltop-main .scrolltop-c::-webkit-scrollbar {
+  display: none;
 }
 
 .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(1)::after {
@@ -72,9 +82,9 @@
           align-items: center;
   height: 100%;
   width: 35%;
-  margin: 0px 3rem;
+  margin: 0px 1em;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
 }
@@ -96,9 +106,9 @@
           align-items: center;
   height: 100%;
   width: 35%;
-  margin: 0px 3rem;
+  margin: 0px 1em;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
 }
@@ -120,9 +130,9 @@
           align-items: center;
   height: 100%;
   width: 35%;
-  margin: 0px 3rem;
+  margin: 0px 1em;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
 }
@@ -144,9 +154,9 @@
           align-items: center;
   height: 100%;
   width: 35%;
-  margin: 0px 3rem;
+  margin: 0px 1em;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
 }
@@ -168,9 +178,9 @@
           align-items: center;
   height: 100%;
   width: 35%;
-  margin: 0px 3rem;
+  margin: 0px 1em;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
 }
@@ -192,9 +202,9 @@
           align-items: center;
   height: 100%;
   width: 35%;
-  margin: 0px 3rem;
+  margin: 0px 1em;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
 }
@@ -216,9 +226,9 @@
           align-items: center;
   height: 100%;
   width: 35%;
-  margin: 0px 3rem;
+  margin: 0px 1em;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
 }
@@ -240,9 +250,9 @@
           align-items: center;
   height: 100%;
   width: 35%;
-  margin: 0px 3rem;
+  margin: 0px 1em;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
 }
@@ -285,5 +295,83 @@
 .scrollerContainer .scrolltop-b:hover {
   background: rgba(255, 221, 159, 0.75);
   border-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 360px) {
+  .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(1)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(2)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(3)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(4)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(5)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(6)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(7)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(8)::after {
+    font-size: 2rem;
+  }
+  .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(1)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(2)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(3)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(4)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(5)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(6)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(7)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(8)::after {
+    font-size: 2rem;
+  }
+  .scrollerContainer .scrolltop-b {
+    -webkit-transform: scale(0.5) translate(calc(50% + 10px), calc(50% - 110px));
+            transform: scale(0.5) translate(calc(50% + 10px), calc(50% - 110px));
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  .scrollerContainer .scrolltop-b::after {
+    content: 'Random Scroll';
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(1)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(2)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(3)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(4)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(5)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(6)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(7)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(8)::after {
+    font-size: 2rem;
+  }
+  .scrollerContainer .scrolltop-b {
+    -webkit-transform: scale(0.5) translate(calc(50% + 10px), calc(50% - 110px));
+            transform: scale(0.5) translate(calc(50% + 10px), calc(50% - 110px));
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 600px) {
+  .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(1)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(2)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(3)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(4)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(5)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(6)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(7)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(8)::after {
+    font-size: 2rem;
+  }
+  .scrollerContainer .scrolltop-b {
+    -webkit-transform: scale(0.75) translate(calc(15% + 10px), calc(85% - 110px));
+            transform: scale(0.75) translate(calc(15% + 10px), calc(85% - 110px));
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  .scrollerContainer .scrolltop-b::after {
+    content: 'Random Scroll';
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1365px) {
+  .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(1)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(2)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(3)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(4)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(5)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(6)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(7)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(8)::after {
+    font-size: 3.5rem;
+  }
+  .scrollerContainer .scrolltop-b::after {
+    content: 'Random Scroll';
+  }
+}
+
+@media (min-width: 1366px) {
+  .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(1)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(2)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(3)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(4)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(5)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(6)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(7)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(8)::after {
+    font-size: 3.5rem;
+  }
+  .scrollerContainer .scrolltop-b::after {
+    content: 'Random Scroll';
+  }
+}
+
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(1)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(2)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(3)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(4)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(5)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(6)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(7)::after, .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(8)::after {
+    font-size: 3.5rem;
+  }
+  .scrollerContainer .scrolltop-b {
+    -webkit-transform: scale(1.5) translate(calc(-35% + 10px), calc(130% - 110px));
+            transform: scale(1.5) translate(calc(-35% + 10px), calc(130% - 110px));
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  .scrollerContainer .scrolltop-b::after {
+    content: 'Random Scroll';
+  }
 }
 /*# sourceMappingURL=BoxFour.css.map */

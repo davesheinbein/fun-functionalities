@@ -1,7 +1,7 @@
 @import '../../../../../mixins/mixins.scss';
+@import '../../../../../breakpoints/breakpoints.scss';
 
 .scrollerContainer {
-	// @include flexCenter(row, center, center);
 	@include heightWidth(105%, 105%);
 	.scrolltop-main {
 		position: relative;
@@ -16,15 +16,19 @@
 			background: peachpuff;
 			overflow: auto;
 			opacity: 0.6;
+			overflow-y: scroll;
+			&::-webkit-scrollbar {
+				display: none;
+			}
 			.colors {
 				&:nth-of-type(1) {
 					&::after {
 						content: 'hello';
 						@include flexCenter(row, flex-start, center);
 						@include heightWidth(100%, 35%);
-						margin: 0px 3rem;
+						margin: 0px 1em;
 						font-size: 60px;
-						line-height: 60px;
+						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
 					}
@@ -34,9 +38,9 @@
 						content: 'How are you';
 						@include flexCenter(row, flex-start, center);
 						@include heightWidth(100%, 35%);
-						margin: 0px 3rem;
+						margin: 0px 1em;
 						font-size: 60px;
-						line-height: 60px;
+						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
 					}
@@ -46,9 +50,9 @@
 						content: 'I hope you are well';
 						@include flexCenter(row, flex-start, center);
 						@include heightWidth(100%, 35%);
-						margin: 0px 3rem;
+						margin: 0px 1em;
 						font-size: 60px;
-						line-height: 60px;
+						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
 					}
@@ -58,9 +62,9 @@
 						content: 'Check out our Github\2019s';
 						@include flexCenter(row, flex-start, center);
 						@include heightWidth(100%, 35%);
-						margin: 0px 3rem;
+						margin: 0px 1em;
 						font-size: 60px;
-						line-height: 60px;
+						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
 					}
@@ -70,9 +74,9 @@
 						content: 'Portfolio projects are linked in Git repo README';
 						@include flexCenter(row, flex-start, center);
 						@include heightWidth(100%, 35%);
-						margin: 0px 3rem;
+						margin: 0px 1em;
 						font-size: 60px;
-						line-height: 60px;
+						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
 					}
@@ -82,9 +86,9 @@
 						content: 'Check out our Linkedin\2019s!';
 						@include flexCenter(row, flex-start, center);
 						@include heightWidth(100%, 35%);
-						margin: 0px 3rem;
+						margin: 0px 1em;
 						font-size: 60px;
-						line-height: 60px;
+						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
 					}
@@ -94,9 +98,9 @@
 						content: 'Our Linkedin\2019s are at the bottom left corner of the footer';
 						@include flexCenter(row, flex-start, center);
 						@include heightWidth(100%, 35%);
-						margin: 0px 3rem;
+						margin: 0px 1em;
 						font-size: 60px;
-						line-height: 60px;
+						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
 					}
@@ -106,9 +110,9 @@
 						content: 'Thank you have a great day!';
 						@include flexCenter(row, flex-start, center);
 						@include heightWidth(100%, 35%);
-						margin: 0px 3rem;
+						margin: 0px 1em;
 						font-size: 60px;
-						line-height: 60px;
+						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
 					}
@@ -138,6 +142,401 @@
 		&:hover {
 			background: rgba(255, 221, 159, 0.75);
 			border-color: rgba(0, 0, 0, 0.5);
+		}
+	}
+}
+
+@include media('<=phone') {
+	.scrollerContainer {
+		.scrolltop-main {
+			.scrolltop-c {
+				.colors {
+					&:nth-of-type(1) {
+						&::after {
+						}
+					}
+					&:nth-of-type(2) {
+						&::after {
+						}
+					}
+					&:nth-of-type(3) {
+						&::after {
+						}
+					}
+					&:nth-of-type(4) {
+						&::after {
+						}
+					}
+					&:nth-of-type(5) {
+						&::after {
+						}
+					}
+					&:nth-of-type(6) {
+						&::after {
+						}
+					}
+					&:nth-of-type(7) {
+						&::after {
+						}
+					}
+					&:nth-of-type(8) {
+						&::after {
+						}
+					}
+					&:nth-of-type(1),
+					&:nth-of-type(2),
+					&:nth-of-type(3),
+					&:nth-of-type(4),
+					&:nth-of-type(5),
+					&:nth-of-type(6),
+					&:nth-of-type(7),
+					&:nth-of-type(8) {
+						&::after {
+							font-size: 2rem;
+						}
+					}
+					&:nth-of-type(1),
+					&:nth-of-type(2),
+					&:nth-of-type(3),
+					&:nth-of-type(4),
+					&:nth-of-type(5),
+					&:nth-of-type(6),
+					&:nth-of-type(7),
+					&:nth-of-type(8) {
+						&::after {
+							font-size: 2rem;
+						}
+					}
+				}
+			}
+		}
+		.scrolltop-b {
+			transform: scale(0.5)
+				translate(calc(50% + 10px), calc(50% - 110px));
+			transform-origin: center;
+			&::after {
+				content: 'Random Scroll';
+			}
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>phone', '<=425px') {
+	.scrollerContainer {
+		.scrolltop-main {
+			.scrolltop-c {
+				.colors {
+					&:nth-of-type(1) {
+						&::after {
+						}
+					}
+					&:nth-of-type(2) {
+						&::after {
+						}
+					}
+					&:nth-of-type(3) {
+						&::after {
+						}
+					}
+					&:nth-of-type(4) {
+						&::after {
+						}
+					}
+					&:nth-of-type(5) {
+						&::after {
+						}
+					}
+					&:nth-of-type(6) {
+						&::after {
+						}
+					}
+					&:nth-of-type(7) {
+						&::after {
+						}
+					}
+					&:nth-of-type(8) {
+						&::after {
+						}
+					}
+					&:nth-of-type(1),
+					&:nth-of-type(2),
+					&:nth-of-type(3),
+					&:nth-of-type(4),
+					&:nth-of-type(5),
+					&:nth-of-type(6),
+					&:nth-of-type(7),
+					&:nth-of-type(8) {
+						&::after {
+							font-size: 2rem;
+						}
+					}
+				}
+			}
+		}
+		.scrolltop-b {
+			transform: scale(0.5)
+				translate(calc(50% + 10px), calc(50% - 110px));
+			transform-origin: center;
+			&::after {
+			}
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>425px', '<=600px') {
+	.scrollerContainer {
+		.scrolltop-main {
+			.scrolltop-c {
+				.colors {
+					&:nth-of-type(1) {
+						&::after {
+						}
+					}
+					&:nth-of-type(2) {
+						&::after {
+						}
+					}
+					&:nth-of-type(3) {
+						&::after {
+						}
+					}
+					&:nth-of-type(4) {
+						&::after {
+						}
+					}
+					&:nth-of-type(5) {
+						&::after {
+						}
+					}
+					&:nth-of-type(6) {
+						&::after {
+						}
+					}
+					&:nth-of-type(7) {
+						&::after {
+						}
+					}
+					&:nth-of-type(8) {
+						&::after {
+						}
+					}
+					&:nth-of-type(1),
+					&:nth-of-type(2),
+					&:nth-of-type(3),
+					&:nth-of-type(4),
+					&:nth-of-type(5),
+					&:nth-of-type(6),
+					&:nth-of-type(7),
+					&:nth-of-type(8) {
+						&::after {
+							font-size: 2rem;
+						}
+					}
+				}
+			}
+		}
+		.scrolltop-b {
+			transform: scale(0.75)
+				translate(calc(15% + 10px), calc(85% - 110px));
+			transform-origin: center;
+			&::after {
+				content: 'Random Scroll';
+			}
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>600px', '<desktop') {
+	.scrollerContainer {
+		.scrolltop-main {
+			.scrolltop-c {
+				.colors {
+					&:nth-of-type(1) {
+						&::after {
+						}
+					}
+					&:nth-of-type(2) {
+						&::after {
+						}
+					}
+					&:nth-of-type(3) {
+						&::after {
+						}
+					}
+					&:nth-of-type(4) {
+						&::after {
+						}
+					}
+					&:nth-of-type(5) {
+						&::after {
+						}
+					}
+					&:nth-of-type(6) {
+						&::after {
+						}
+					}
+					&:nth-of-type(7) {
+						&::after {
+						}
+					}
+					&:nth-of-type(8) {
+						&::after {
+						}
+					}
+					&:nth-of-type(1),
+					&:nth-of-type(2),
+					&:nth-of-type(3),
+					&:nth-of-type(4),
+					&:nth-of-type(5),
+					&:nth-of-type(6),
+					&:nth-of-type(7),
+					&:nth-of-type(8) {
+						&::after {
+							font-size: 3.5rem;
+						}
+					}
+				}
+			}
+		}
+		.scrolltop-b {
+			&::after {
+				content: 'Random Scroll';
+			}
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>=desktop') {
+	.scrollerContainer {
+		.scrolltop-main {
+			.scrolltop-c {
+				.colors {
+					&:nth-of-type(1) {
+						&::after {
+						}
+					}
+					&:nth-of-type(2) {
+						&::after {
+						}
+					}
+					&:nth-of-type(3) {
+						&::after {
+						}
+					}
+					&:nth-of-type(4) {
+						&::after {
+						}
+					}
+					&:nth-of-type(5) {
+						&::after {
+						}
+					}
+					&:nth-of-type(6) {
+						&::after {
+						}
+					}
+					&:nth-of-type(7) {
+						&::after {
+						}
+					}
+					&:nth-of-type(8) {
+						&::after {
+						}
+					}
+					&:nth-of-type(1),
+					&:nth-of-type(2),
+					&:nth-of-type(3),
+					&:nth-of-type(4),
+					&:nth-of-type(5),
+					&:nth-of-type(6),
+					&:nth-of-type(7),
+					&:nth-of-type(8) {
+						&::after {
+							font-size: 3.5rem;
+						}
+					}
+				}
+			}
+		}
+		.scrolltop-b {
+			&::after {
+				content: 'Random Scroll';
+			}
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>=LGdesktop', 'retina2x') {
+	.scrollerContainer {
+		.scrolltop-main {
+			.scrolltop-c {
+				.colors {
+					&:nth-of-type(1) {
+						&::after {
+						}
+					}
+					&:nth-of-type(2) {
+						&::after {
+						}
+					}
+					&:nth-of-type(3) {
+						&::after {
+						}
+					}
+					&:nth-of-type(4) {
+						&::after {
+						}
+					}
+					&:nth-of-type(5) {
+						&::after {
+						}
+					}
+					&:nth-of-type(6) {
+						&::after {
+						}
+					}
+					&:nth-of-type(7) {
+						&::after {
+						}
+					}
+					&:nth-of-type(8) {
+						&::after {
+						}
+					}
+					&:nth-of-type(1),
+					&:nth-of-type(2),
+					&:nth-of-type(3),
+					&:nth-of-type(4),
+					&:nth-of-type(5),
+					&:nth-of-type(6),
+					&:nth-of-type(7),
+					&:nth-of-type(8) {
+						&::after {
+							font-size: 3.5rem;
+						}
+					}
+				}
+			}
+		}
+		.scrolltop-b {
+			transform: scale(1.5)
+				translate(calc(-35% + 10px), calc(130% - 110px));
+			transform-origin: center;
+			&::after {
+				content: 'Random Scroll';
+			}
+			&:hover {
+			}
 		}
 	}
 }

@@ -201,43 +201,43 @@
 
 @media (max-width: 360px) {
   .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
-    -webkit-transform: scale(1) translate(-55%, 0%);
-            transform: scale(1) translate(-55%, 0%);
+    -webkit-transform: scale(1) translate(-50%, 0%);
+            transform: scale(1) translate(-50%, 0%);
   }
 }
 
 @media (min-width: 361px) and (max-width: 425px) {
   .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
-    -webkit-transform: scale(1) translate(-55%, 0%);
-            transform: scale(1) translate(-55%, 0%);
+    -webkit-transform: scale(1) translate(-50%, 0%);
+            transform: scale(1) translate(-50%, 0%);
   }
 }
 
 @media (min-width: 401px) and (max-width: 425px) {
   .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
-    -webkit-transform: scale(1.25) translate(-45%, 0%);
-            transform: scale(1.25) translate(-45%, 0%);
+    -webkit-transform: scale(1.25) translate(-38%, 0%);
+            transform: scale(1.25) translate(-38%, 0%);
   }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
   .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
-    -webkit-transform: scale(1.25) translate(-45%, 0%);
-            transform: scale(1.25) translate(-45%, 0%);
+    -webkit-transform: scale(1.25) translate(-40%, 0%);
+            transform: scale(1.25) translate(-40%, 0%);
   }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
   .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
-    -webkit-transform: scale(2.25) translate(-23%, 0%);
-            transform: scale(2.25) translate(-23%, 0%);
+    -webkit-transform: scale(2.25) translate(-21%, 0%);
+            transform: scale(2.25) translate(-21%, 0%);
   }
 }
 
 @media (min-width: 769px) and (max-width: 1365px) {
   .boxFiveContainer .boxFiveSubcontainer .puzzleContainer {
-    -webkit-transform: scale(2.25) translate(-23%, 0%);
-            transform: scale(2.25) translate(-23%, 0%);
+    -webkit-transform: scale(2.25) translate(-22%, 0%);
+            transform: scale(2.25) translate(-22%, 0%);
   }
 }
 
