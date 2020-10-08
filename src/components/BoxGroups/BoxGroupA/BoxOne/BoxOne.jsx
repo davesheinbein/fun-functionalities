@@ -86,6 +86,7 @@ export default class BoxOne extends Component {
 								y='180'
 								fill='#fff'
 								fontSize='5rem'
+								className='face'
 								pointerEvents='none'>
 								0 0
 							</animated.text>
@@ -94,6 +95,7 @@ export default class BoxOne extends Component {
 								y='170'
 								fill='#fff'
 								fontSize='5rem'
+								className='face'
 								pointerEvents='none'>
 								.
 							</animated.text>
@@ -102,6 +104,7 @@ export default class BoxOne extends Component {
 								y='175'
 								fill='#fff'
 								fontSize='3rem'
+								className='face'
 								pointerEvents='none'>
 								o
 							</animated.text>
@@ -110,6 +113,7 @@ export default class BoxOne extends Component {
 								y='170'
 								fill='#fff'
 								fontSize='5rem'
+								className='face'
 								pointerEvents='none'>
 								.
 							</animated.text>
@@ -118,6 +122,7 @@ export default class BoxOne extends Component {
 								y='175'
 								fill='#fff'
 								fontSize='3rem'
+								className='face'
 								pointerEvents='none'>
 								o
 							</animated.text>
@@ -126,6 +131,7 @@ export default class BoxOne extends Component {
 								y='234'
 								fill='#fff'
 								fontSize='5rem'
+								className='face'
 								pointerEvents='none'>
 								. .
 							</animated.text>
@@ -134,6 +140,7 @@ export default class BoxOne extends Component {
 								y='250'
 								fill='#fff'
 								fontSize='5rem'
+								className='face'
 								pointerEvents='none'>
 								^
 							</animated.text>
@@ -142,6 +149,7 @@ export default class BoxOne extends Component {
 								y='300'
 								fill='#fff'
 								fontSize='6rem'
+								className='face'
 								pointerEvents='none'>
 								\__/
 							</animated.text>

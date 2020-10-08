@@ -1,4 +1,5 @@
 @import '../../../../../mixins/mixins.scss';
+@import '../../../../../breakpoints/breakpoints.scss';
 
 .shapeAnimationContainer {
 	@include flexCenter(row, center, center);
@@ -14,6 +15,8 @@
 					ease-in-out;
 			}
 		}
+		.face {
+		}
 	}
 }
 
@@ -23,5 +26,135 @@
 	}
 	100% {
 		opacity: 0.75;
+	}
+}
+
+@include media('<=phone') {
+	.shapeAnimationContainer {
+		.shapeSVG {
+			#path-1 {
+				transform: scale(0.75);
+				transform-origin: center;
+				&:hover {
+				}
+			}
+			.face {
+				transform: scale(0.75);
+				transform-origin: center;
+			}
+		}
+	}
+}
+
+@include media('>phone', '<=425px') {
+	.shapeAnimationContainer {
+		.shapeSVG {
+			#path-1 {
+				transform: scale(0.75);
+				transform-origin: center;
+				&:hover {
+				}
+			}
+		}
+		.face {
+			transform: scale(0.75);
+			transform-origin: center;
+		}
+	}
+}
+
+@include media('>425px', '<=tablet') {
+	.shapeAnimationContainer {
+		.shapeSVG {
+			#path-1 {
+				transform: scale(0.75);
+				transform-origin: center;
+				&:hover {
+				}
+			}
+		}
+		.face {
+			transform: scale(0.75);
+			transform-origin: center;
+		}
+	}
+}
+
+@include media('>600px', '<=tablet') {
+	.shapeAnimationContainer {
+		.shapeSVG {
+			#path-1 {
+				transform: scale(1);
+				transform-origin: center;
+				&:hover {
+				}
+			}
+		}
+		.face {
+			transform: scale(1);
+			transform-origin: center;
+		}
+	}
+}
+
+@include media('>tablet', '<desktop') {
+	.shapeAnimationContainer {
+		.shapeSVG {
+			#path-1 {
+				&:hover {
+				}
+			}
+		}
+		.face {
+		}
+	}
+}
+
+@include media('>1200px', '<desktop') {
+	.shapeAnimationContainer {
+		.shapeSVG {
+			#path-1 {
+				transform: scale(1.15);
+				transform-origin: center;
+				&:hover {
+				}
+			}
+		}
+		.face {
+			transform: scale(1.15);
+			transform-origin: center;
+		}
+	}
+}
+
+@include media('>=desktop') {
+	.shapeAnimationContainer {
+		.shapeSVG {
+			#path-1 {
+				transform: scale(1.15);
+				transform-origin: center;
+				&:hover {
+				}
+			}
+		}
+		.face {
+			transform: scale(1.15);
+			transform-origin: center;
+		}
+	}
+}
+
+@include media('>=LGdesktop', 'retina2x') {
+	.shapeAnimationContainer {
+		.shapeSVG {
+			#path-1 {
+				transform: scale(1.15);
+				&:hover {
+				}
+			}
+		}
+		.face {
+			transform-origin: center;
+		}
 	}
 }

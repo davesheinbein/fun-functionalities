@@ -16,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 .gestures-main {
   background: var(--boxTwoBg);
   color: #fff;
@@ -208,5 +213,122 @@
   background-color: white;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 360px) {
+  .gestures-item {
+    -webkit-transform: scale(0.8) translateY(50px);
+            transform: scale(0.8) translateY(50px);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .gestures-item {
+    -webkit-transform: scale(0.8) translateY(50px);
+            transform: scale(0.8) translateY(50px);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 425px) {
+  .gestures-item {
+    -webkit-transform: scale(1) translateY(50px);
+            transform: scale(1) translateY(50px);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .gestures-item {
+    -webkit-transform: scale(1) translateY(50px);
+            transform: scale(1) translateY(50px);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  .countTextContainer {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .gestures-item {
+    -webkit-transform: scale(1.5) translateY(50px);
+            transform: scale(1.5) translateY(50px);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  .countTextContainer {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1365px) {
+  .gestures-item {
+    -webkit-transform: scale(1.5) translateY(50px);
+            transform: scale(1.5) translateY(50px);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  .countTextContainer {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1365px) {
+  .gestures-item {
+    -webkit-transform: scale(2) translateY(50px);
+            transform: scale(2) translateY(50px);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  .countTextContainer {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+}
+
+@media (min-width: 1366px) {
+  .gestures-item {
+    -webkit-transform: scale(2) translateY(50px);
+            transform: scale(2) translateY(50px);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  .countTextContainer {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+}
+
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  .gestures-item {
+    -webkit-transform: scale(2) translateY(50px);
+            transform: scale(2) translateY(50px);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  .countTextContainer {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
 }
 /*# sourceMappingURL=BoxTwo.css.map */

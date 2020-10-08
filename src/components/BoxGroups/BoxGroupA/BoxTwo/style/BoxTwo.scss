@@ -1,4 +1,5 @@
 @import '../../../../../mixins/mixins.scss';
+@import '../../../../../breakpoints/breakpoints.scss';
 
 .gestures-main {
 	background: var(--boxTwoBg);
@@ -102,4 +103,91 @@
 	border-radius: 50%;
 	background-color: white;
 	transition: all 0.5s ease-in-out;
+}
+
+@include media('<=phone') {
+	.gestures-item {
+		transform: scale(0.8) translateY(50px);
+		transform-origin: bottom center;
+	}
+}
+
+@include media('>phone', '<=425px') {
+	.gestures-item {
+		transform: scale(0.8) translateY(50px);
+		transform-origin: bottom center;
+	}
+}
+
+@include media('>400px', '<=425px') {
+	.gestures-item {
+		transform: scale(1) translateY(50px);
+		transform-origin: bottom center;
+	}
+}
+
+@include media('>425px', '<=tablet') {
+	.gestures-item {
+		transform: scale(1) translateY(50px);
+		transform-origin: bottom center;
+	}
+	.countTextContainer {
+		transform: translateY(0px);
+		transform-origin: bottom center;
+	}
+}
+
+@include media('>600px', '<=tablet') {
+	.gestures-item {
+		transform: scale(1.5) translateY(50px);
+		transform-origin: bottom center;
+	}
+	.countTextContainer {
+		transform: translateY(20px);
+		transform-origin: bottom center;
+	}
+}
+
+@include media('>tablet', '<desktop') {
+	.gestures-item {
+		transform: scale(1.5) translateY(50px);
+		transform-origin: bottom center;
+	}
+	.countTextContainer {
+		transform: translateY(20px);
+		transform-origin: bottom center;
+	}
+}
+
+@include media('>1200px', '<desktop') {
+	.gestures-item {
+		transform: scale(2) translateY(50px);
+		transform-origin: bottom center;
+	}
+	.countTextContainer {
+		transform: translateY(20px);
+		transform-origin: bottom center;
+	}
+}
+
+@include media('>=desktop') {
+	.gestures-item {
+		transform: scale(2) translateY(50px);
+		transform-origin: bottom center;
+	}
+	.countTextContainer {
+		transform: translateY(20px);
+		transform-origin: bottom center;
+	}
+}
+
+@include media('>=LGdesktop', 'retina2x') {
+	.gestures-item {
+		transform: scale(2) translateY(50px);
+		transform-origin: bottom center;
+	}
+	.countTextContainer {
+		transform: translateY(20px);
+		transform-origin: bottom center;
+	}
 }

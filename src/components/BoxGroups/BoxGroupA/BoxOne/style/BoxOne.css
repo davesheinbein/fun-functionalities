@@ -16,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 .shapeAnimationContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,6 +66,107 @@
   }
   100% {
     opacity: 0.75;
+  }
+}
+
+@media (max-width: 360px) {
+  .shapeAnimationContainer .shapeSVG #path-1 {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  .shapeAnimationContainer .shapeSVG .face {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .shapeAnimationContainer .shapeSVG #path-1 {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  .shapeAnimationContainer .face {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .shapeAnimationContainer .shapeSVG #path-1 {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  .shapeAnimationContainer .face {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .shapeAnimationContainer .shapeSVG #path-1 {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  .shapeAnimationContainer .face {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1365px) {
+  .shapeAnimationContainer .shapeSVG #path-1 {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  .shapeAnimationContainer .face {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@media (min-width: 1366px) {
+  .shapeAnimationContainer .shapeSVG #path-1 {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  .shapeAnimationContainer .face {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  .shapeAnimationContainer .shapeSVG #path-1 {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  .shapeAnimationContainer .face {
+    -webkit-transform-origin: center;
+            transform-origin: center;
   }
 }
 /*# sourceMappingURL=BoxOne.css.map */
