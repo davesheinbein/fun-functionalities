@@ -61,3 +61,177 @@
 		}
 	}
 }
+
+@include media('<=phone') {
+	.NavLink {
+		.rightCircle {
+			@include topRightAbsolute(41.75%, -7.5vw);
+			transform: translateX(-41.75%, -7.5vw);
+			&:hover {
+			}
+		}
+		.leftCircle {
+			@include topLeftAbsolute(41.75%, -7.5vw);
+			transform: translateX(-41.75%, -7.5vw);
+			&:hover {
+			}
+		}
+		.bottomCircle {
+			@include bottomLeftAbsolute(4%, 38%);
+			transform: translateX(4%, -38%);
+			&:hover {
+			}
+		}
+		.topCircle {
+			@include topLeftAbsolute(4vh, 38%);
+			transform: translateX(-1vh, -38%);
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>phone', '<=425px') {
+	.NavLink {
+		.rightCircle {
+			@include topRightAbsolute(41.75%, -7.5vw);
+			transform: translateX(-41.75%, -7.5vw);
+			&:hover {
+			}
+		}
+		.leftCircle {
+			@include topLeftAbsolute(41.75%, -7.5vw);
+			transform: translateX(-41.75%, -7.5vw);
+			&:hover {
+			}
+		}
+		.bottomCircle {
+			@include bottomLeftAbsolute(4%, 38%);
+			transform: translateX(4%, -38%);
+			&:hover {
+			}
+		}
+		.topCircle {
+			@include topLeftAbsolute(4vh, 38%);
+			transform: translateX(-1vh, -38%);
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>425px', '<=tablet') {
+	.NavLink {
+		.rightCircle {
+			@include topRightAbsolute(41.75%, -6vw);
+			transform: translateX(-41.75%, -6vw);
+			&:hover {
+			}
+		}
+		.leftCircle {
+			@include topLeftAbsolute(41.75%, -6vw);
+			transform: translateX(-41.75%, -6vw);
+			&:hover {
+			}
+		}
+		.bottomCircle {
+			@include bottomLeftAbsolute(4%, 43%);
+			transform: translateX(4%, -43%);
+			&:hover {
+			}
+		}
+		.topCircle {
+			@include topLeftAbsolute(4vh, 43%);
+			transform: translateX(-1vh, -43%);
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>tablet', '<desktop') {
+	.NavLink {
+		.rightCircle {
+			@include topRightAbsolute(41.75%, -3.5vw);
+			transform: translateX(-41.75%, -3.5vw);
+			&:hover {
+			}
+		}
+		.leftCircle {
+			@include topLeftAbsolute(41.75%, -3.5vw);
+			transform: translateX(-41.75%, -3.5vw);
+			&:hover {
+			}
+		}
+		.bottomCircle {
+			@include bottomLeftAbsolute(4%, 43%);
+			transform: translateX(4%, -43%);
+			&:hover {
+			}
+		}
+		.topCircle {
+			@include topLeftAbsolute(4vh, 43%);
+			transform: translateX(-1vh, -43%);
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>=desktop') {
+	.NavLink {
+		.rightCircle {
+			@include topRightAbsolute(41.75%, -2vw);
+			transform: translateX(-41.75%, -2vw);
+			&:hover {
+			}
+		}
+		.leftCircle {
+			@include topLeftAbsolute(41.75%, -2vw);
+			transform: translateX(-41.75%, -2vw);
+			&:hover {
+			}
+		}
+		.bottomCircle {
+			@include bottomLeftAbsolute(4%, 46.5%);
+			transform: translateX(4%, -46.5%);
+			&:hover {
+			}
+		}
+		.topCircle {
+			@include topLeftAbsolute(4vh, 46.5%);
+			transform: translateX(-1vh, -46.5%);
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>=LGdesktop', 'retina2x') {
+	.NavLink {
+		.rightCircle {
+			@include topRightAbsolute(41.75%, -1.5vw);
+			transform: translateX(-41.75%, -1.5vw);
+			&:hover {
+			}
+		}
+		.leftCircle {
+			@include topLeftAbsolute(41.75%, -1.5vw);
+			transform: translateX(-41.75%, -1.5vw);
+			&:hover {
+			}
+		}
+		.bottomCircle {
+			@include bottomLeftAbsolute(4%, 46.5%);
+			transform: translateX(4%, -46.5%);
+			&:hover {
+			}
+		}
+		.topCircle {
+			@include topLeftAbsolute(4vh, 46.5%);
+			transform: translateX(-1vh, -46.5%);
+			&:hover {
+			}
+		}
+	}
+}

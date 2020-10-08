@@ -112,4 +112,190 @@
 .NavLink .topCircle:hover {
   background: rgba(25, 255, 255, 0.5);
 }
+
+@media (max-width: 360px) {
+  .NavLink .rightCircle {
+    position: absolute;
+    top: 41.75%;
+    right: -7.5vw;
+    -webkit-transform: translateX(-41.75%, -7.5vw);
+            transform: translateX(-41.75%, -7.5vw);
+  }
+  .NavLink .leftCircle {
+    position: absolute;
+    top: 41.75%;
+    left: -7.5vw;
+    -webkit-transform: translateX(-41.75%, -7.5vw);
+            transform: translateX(-41.75%, -7.5vw);
+  }
+  .NavLink .bottomCircle {
+    position: absolute;
+    bottom: 4%;
+    left: 38%;
+    -webkit-transform: translateX(4%, -38%);
+            transform: translateX(4%, -38%);
+  }
+  .NavLink .topCircle {
+    position: absolute;
+    top: 4vh;
+    left: 38%;
+    -webkit-transform: translateX(-1vh, -38%);
+            transform: translateX(-1vh, -38%);
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .NavLink .rightCircle {
+    position: absolute;
+    top: 41.75%;
+    right: -7.5vw;
+    -webkit-transform: translateX(-41.75%, -7.5vw);
+            transform: translateX(-41.75%, -7.5vw);
+  }
+  .NavLink .leftCircle {
+    position: absolute;
+    top: 41.75%;
+    left: -7.5vw;
+    -webkit-transform: translateX(-41.75%, -7.5vw);
+            transform: translateX(-41.75%, -7.5vw);
+  }
+  .NavLink .bottomCircle {
+    position: absolute;
+    bottom: 4%;
+    left: 38%;
+    -webkit-transform: translateX(4%, -38%);
+            transform: translateX(4%, -38%);
+  }
+  .NavLink .topCircle {
+    position: absolute;
+    top: 4vh;
+    left: 38%;
+    -webkit-transform: translateX(-1vh, -38%);
+            transform: translateX(-1vh, -38%);
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .NavLink .rightCircle {
+    position: absolute;
+    top: 41.75%;
+    right: -6vw;
+    -webkit-transform: translateX(-41.75%, -6vw);
+            transform: translateX(-41.75%, -6vw);
+  }
+  .NavLink .leftCircle {
+    position: absolute;
+    top: 41.75%;
+    left: -6vw;
+    -webkit-transform: translateX(-41.75%, -6vw);
+            transform: translateX(-41.75%, -6vw);
+  }
+  .NavLink .bottomCircle {
+    position: absolute;
+    bottom: 4%;
+    left: 43%;
+    -webkit-transform: translateX(4%, -43%);
+            transform: translateX(4%, -43%);
+  }
+  .NavLink .topCircle {
+    position: absolute;
+    top: 4vh;
+    left: 43%;
+    -webkit-transform: translateX(-1vh, -43%);
+            transform: translateX(-1vh, -43%);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1365px) {
+  .NavLink .rightCircle {
+    position: absolute;
+    top: 41.75%;
+    right: -3.5vw;
+    -webkit-transform: translateX(-41.75%, -3.5vw);
+            transform: translateX(-41.75%, -3.5vw);
+  }
+  .NavLink .leftCircle {
+    position: absolute;
+    top: 41.75%;
+    left: -3.5vw;
+    -webkit-transform: translateX(-41.75%, -3.5vw);
+            transform: translateX(-41.75%, -3.5vw);
+  }
+  .NavLink .bottomCircle {
+    position: absolute;
+    bottom: 4%;
+    left: 43%;
+    -webkit-transform: translateX(4%, -43%);
+            transform: translateX(4%, -43%);
+  }
+  .NavLink .topCircle {
+    position: absolute;
+    top: 4vh;
+    left: 43%;
+    -webkit-transform: translateX(-1vh, -43%);
+            transform: translateX(-1vh, -43%);
+  }
+}
+
+@media (min-width: 1366px) {
+  .NavLink .rightCircle {
+    position: absolute;
+    top: 41.75%;
+    right: -2vw;
+    -webkit-transform: translateX(-41.75%, -2vw);
+            transform: translateX(-41.75%, -2vw);
+  }
+  .NavLink .leftCircle {
+    position: absolute;
+    top: 41.75%;
+    left: -2vw;
+    -webkit-transform: translateX(-41.75%, -2vw);
+            transform: translateX(-41.75%, -2vw);
+  }
+  .NavLink .bottomCircle {
+    position: absolute;
+    bottom: 4%;
+    left: 46.5%;
+    -webkit-transform: translateX(4%, -46.5%);
+            transform: translateX(4%, -46.5%);
+  }
+  .NavLink .topCircle {
+    position: absolute;
+    top: 4vh;
+    left: 46.5%;
+    -webkit-transform: translateX(-1vh, -46.5%);
+            transform: translateX(-1vh, -46.5%);
+  }
+}
+
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  .NavLink .rightCircle {
+    position: absolute;
+    top: 41.75%;
+    right: -1.5vw;
+    -webkit-transform: translateX(-41.75%, -1.5vw);
+            transform: translateX(-41.75%, -1.5vw);
+  }
+  .NavLink .leftCircle {
+    position: absolute;
+    top: 41.75%;
+    left: -1.5vw;
+    -webkit-transform: translateX(-41.75%, -1.5vw);
+            transform: translateX(-41.75%, -1.5vw);
+  }
+  .NavLink .bottomCircle {
+    position: absolute;
+    bottom: 4%;
+    left: 46.5%;
+    -webkit-transform: translateX(4%, -46.5%);
+            transform: translateX(4%, -46.5%);
+  }
+  .NavLink .topCircle {
+    position: absolute;
+    top: 4vh;
+    left: 46.5%;
+    -webkit-transform: translateX(-1vh, -46.5%);
+            transform: translateX(-1vh, -46.5%);
+  }
+}
 /*# sourceMappingURL=NavBtns.css.map */

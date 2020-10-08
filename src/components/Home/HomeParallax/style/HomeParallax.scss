@@ -97,12 +97,14 @@
 	.cardTitle {
 		z-index: 100;
 		@include flexCenter(column, center, center);
+		width: 100%;
 		font-size: 6rem;
 		font-weight: 900;
 		line-height: 1em;
 		font-family: 'Quicksand', 'Rokkitt', serif, sans-serif;
 		transition: color 1s ease-in-out;
 		.cardSubTitle {
+			width: 100%;
 			font-size: 3rem;
 			line-height: 4em;
 			font-weight: 400;
