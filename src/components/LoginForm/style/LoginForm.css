@@ -16,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 .loginFormContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,5 +567,159 @@
           align-items: center;
   height: 100%;
   width: 100%;
+}
+
+@media (max-width: 360px) {
+  .loginFormContainer .logoutHeadText {
+    font-size: 1rem;
+  }
+  .loginFormContainer .logoutHeadText .logoutText {
+    font-size: 1rem;
+  }
+  .loginFormContainer .formLoginContainer .ant-avatar {
+    width: 70px;
+    height: 70px;
+  }
+  .loginFormContainer .formLoginContainer .alignFlex {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  .loginFormContainer .formLoginContainer .flexDirContainer {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  .loginFormContainer .formLoginContainer .flexDirContainer .signup #signup {
+    padding: 0;
+  }
+  .loginFormContainer .formLoginContainer .flexDirContainer .login-form-button {
+    padding: 0%;
+  }
+  .loginFormContainer .formLoginContainer .flexDirContainer .ant-checkbox-wrapper .ant-checkbox {
+    margin-left: 1em;
+    margin-bottom: 0.25em;
+  }
+  .loginFormContainer .formLoginContainer .flexDirContainer .ant-checkbox-wrapper .ant-checkbox + span {
+    font-size: 0.5rem;
+    white-space: nowrap;
+  }
+  .loginFormContainer .formLoginContainer .flexDirContainer .login-form-forgot {
+    font-size: 0.5rem;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .loginFormContainer .logoutHeadText {
+    font-size: 1rem;
+  }
+  .loginFormContainer .logoutHeadText .logoutText {
+    font-size: 1.5rem;
+  }
+  .loginFormContainer .formLoginContainer .ant-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  .loginFormContainer .formLoginContainer .alignFlex {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  .loginFormContainer .formLoginContainer .flexDirContainer {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  .loginFormContainer .formLoginContainer .flexDirContainer .ant-checkbox-wrapper .ant-checkbox {
+    margin-left: 1em;
+    margin-bottom: 0.25em;
+  }
+  .loginFormContainer .formLoginContainer .flexDirContainer .ant-checkbox-wrapper .ant-checkbox + span {
+    font-size: 0.6rem;
+    white-space: nowrap;
+  }
+  .loginFormContainer .formLoginContainer .flexDirContainer .login-form-forgot {
+    font-size: 0.6rem;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .loginFormContainer .logoutHeadText {
+    font-size: 1.25rem;
+  }
+  .loginFormContainer .logoutHeadText .logoutText {
+    font-size: 1.5rem;
+  }
+  .loginFormContainer .formLoginContainer .ant-avatar {
+    width: 80px;
+    height: 80px;
+  }
+  .loginFormContainer .formLoginContainer .flexDirContainer .signup #signup {
+    padding: 0%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .loginFormContainer .logoutHeadText {
+    font-size: 1.9rem;
+  }
+  .loginFormContainer .logoutHeadText .logoutText {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1365px) {
+  .loginFormContainer .logoutHeadText {
+    font-size: 2.25rem;
+  }
+  .loginFormContainer .logoutHeadText .logoutText {
+    font-size: 2.5rem;
+  }
+  .loginFormContainer .formLoginContainer .ant-avatar {
+    width: 100px;
+    height: 100px;
+  }
+  .loginFormContainer .formLoginContainer .flexDirContainer .signup #signup {
+    padding: 0%;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1365px) {
+  .loginFormContainer .logoutHeadText {
+    font-size: 3rem;
+  }
+  .loginFormContainer .logoutHeadText .logoutText {
+    font-size: 3.5rem;
+  }
+  .loginFormContainer .formLoginContainer .flexDirContainer .signup #signup {
+    padding: 0%;
+  }
+}
+
+@media (min-width: 1366px) {
+  .loginFormContainer .logoutHeadText {
+    font-size: 4rem;
+    line-height: 1em;
+    padding-bottom: 1.5em;
+  }
+  .loginFormContainer .logoutHeadText .logoutText {
+    font-size: 4rem;
+    line-height: 1em;
+  }
+  .loginFormContainer .formLoginContainer .ant-avatar {
+    width: 100px;
+    height: 100px;
+  }
+  .loginFormContainer .formLoginContainer .flexDirContainer .signup #signup {
+    padding: 0%;
+  }
+}
+
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  .loginFormContainer .formLoginContainer .ant-avatar {
+    width: 120px;
+    height: 120px;
+  }
+  .loginFormContainer .formLoginContainer .flexDirContainer .ant-checkbox-wrapper .ant-checkbox {
+    margin-left: 10em;
+    margin-bottom: 0.25em;
+  }
 }
 /*# sourceMappingURL=LoginForm.css.map */

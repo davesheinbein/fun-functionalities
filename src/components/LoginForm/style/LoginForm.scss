@@ -1,4 +1,5 @@
 @import '../../../mixins/mixins.scss';
+@import '../../../breakpoints/breakpoints.scss';
 
 .loginFormContainer {
 	@include flexCenter(row, center, center);
@@ -171,6 +172,589 @@
 			span {
 				@include flexCenter(row, center, center);
 				@include heightWidth(100%, 100%);
+			}
+		}
+	}
+}
+
+@include media('<=phone') {
+	.loginFormContainer {
+		.logoutHeadText {
+			font-size: 1rem;
+			&:hover {
+			}
+			.logoutText {
+				font-size: 1rem;
+				&:hover {
+				}
+			}
+		}
+		.formLoginContainer {
+			.ant-avatar {
+				width: 70px;
+				height: 70px;
+				img {
+				}
+			}
+			.alignFlex {
+				transform: translateY(-20px);
+				.ant-row {
+					.ant-col {
+						.ant-form-item-control-input {
+							.ant-form-item-control-input-content {
+								.ant-input {
+								}
+							}
+						}
+					}
+				}
+				.dirFlexContainer {
+					.anticon {
+						svg {
+							path {
+							}
+						}
+					}
+				}
+			}
+			.flexDirContainer {
+				transform: translateY(-20px);
+				.signup {
+					#signup {
+						padding: 0;
+						&:hover {
+						}
+					}
+				}
+				.login-form-button {
+					padding: 0%;
+					&:hover {
+					}
+				}
+				.ant-checkbox-wrapper {
+					.ant-checkbox {
+						margin-left: 1em;
+						margin-bottom: 0.25em;
+						#checkbox {
+						}
+						.ant-checkbox-inner {
+						}
+						+ span {
+							font-size: 0.5rem;
+							white-space: nowrap;
+						}
+					}
+				}
+				.login-form-forgot {
+					font-size: 0.5rem;
+				}
+			}
+		}
+	}
+}
+
+@include media('>phone', '<=425px') {
+	.loginFormContainer {
+		.logoutHeadText {
+			font-size: 1rem;
+			&:hover {
+			}
+			.logoutText {
+				font-size: 1.5rem;
+				&:hover {
+				}
+			}
+		}
+		.formLoginContainer {
+			.ant-avatar {
+				width: 60px;
+				height: 60px;
+				img {
+				}
+			}
+			.alignFlex {
+				transform: translateY(-20px);
+				.ant-row {
+					.ant-col {
+						.ant-form-item-control-input {
+							.ant-form-item-control-input-content {
+								.ant-input {
+								}
+							}
+						}
+					}
+				}
+				.dirFlexContainer {
+					.anticon {
+						svg {
+							path {
+							}
+						}
+					}
+				}
+			}
+			.flexDirContainer {
+				transform: translateY(-20px);
+				.signup {
+					#signup {
+						&:hover {
+						}
+					}
+				}
+				.login-form-button {
+					&:hover {
+					}
+				}
+				.ant-checkbox-wrapper {
+					.ant-checkbox {
+						margin-left: 1em;
+						margin-bottom: 0.25em;
+						#checkbox {
+						}
+						.ant-checkbox-inner {
+						}
+						+ span {
+							font-size: 0.6rem;
+							white-space: nowrap;
+						}
+					}
+				}
+				.login-form-forgot {
+					font-size: 0.6rem;
+					white-space: nowrap;
+				}
+			}
+			.ant-btn {
+				span {
+				}
+			}
+		}
+	}
+}
+
+@include media('>425px', '<=tablet') {
+	.loginFormContainer {
+		.logoutHeadText {
+			font-size: 1.25rem;
+			&:hover {
+			}
+			.logoutText {
+				font-size: 1.5rem;
+				&:hover {
+				}
+			}
+		}
+		.formLoginContainer {
+			.ant-avatar {
+				width: 80px;
+				height: 80px;
+				img {
+				}
+			}
+			.alignFlex {
+				.ant-row {
+					.ant-col {
+						.ant-form-item-control-input {
+							.ant-form-item-control-input-content {
+								.ant-input {
+								}
+							}
+						}
+					}
+				}
+				.dirFlexContainer {
+					.anticon {
+						svg {
+							path {
+							}
+						}
+					}
+				}
+			}
+			.flexDirContainer {
+				.signup {
+					#signup {
+						padding: 0%;
+						&:hover {
+						}
+					}
+				}
+				.login-form-button {
+					&:hover {
+					}
+				}
+				.ant-checkbox-wrapper {
+					.ant-checkbox {
+						#checkbox {
+						}
+						.ant-checkbox-inner {
+						}
+						+ span {
+						}
+					}
+				}
+				.login-form-forgot {
+				}
+			}
+			.ant-btn {
+				span {
+				}
+			}
+		}
+	}
+}
+@include media('>600px', '<=tablet') {
+	.loginFormContainer {
+		.logoutHeadText {
+			font-size: 1.9rem;
+			&:hover {
+			}
+			.logoutText {
+				font-size: 2rem;
+				&:hover {
+				}
+			}
+		}
+		.formLoginContainer {
+			.ant-avatar {
+				img {
+				}
+			}
+			.alignFlex {
+				.ant-row {
+					.ant-col {
+						.ant-form-item-control-input {
+							.ant-form-item-control-input-content {
+								.ant-input {
+								}
+							}
+						}
+					}
+				}
+				.dirFlexContainer {
+					.anticon {
+						svg {
+							path {
+							}
+						}
+					}
+				}
+			}
+			.flexDirContainer {
+				.signup {
+					#signup {
+						&:hover {
+						}
+					}
+				}
+				.login-form-button {
+					&:hover {
+					}
+				}
+				.ant-checkbox-wrapper {
+					.ant-checkbox {
+						#checkbox {
+						}
+						.ant-checkbox-inner {
+						}
+						+ span {
+						}
+					}
+				}
+				.login-form-forgot {
+				}
+			}
+			.ant-btn {
+				span {
+				}
+			}
+		}
+	}
+}
+
+@include media('>tablet', '<desktop') {
+	.loginFormContainer {
+		.logoutHeadText {
+			font-size: 2.25rem;
+			&:hover {
+			}
+			.logoutText {
+				font-size: 2.5rem;
+				&:hover {
+				}
+			}
+		}
+		.formLoginContainer {
+			.ant-avatar {
+				width: 100px;
+				height: 100px;
+				img {
+				}
+			}
+			.alignFlex {
+				.ant-row {
+					.ant-col {
+						.ant-form-item-control-input {
+							.ant-form-item-control-input-content {
+								.ant-input {
+								}
+							}
+						}
+					}
+				}
+				.dirFlexContainer {
+					.anticon {
+						svg {
+							path {
+							}
+						}
+					}
+				}
+			}
+			.flexDirContainer {
+				.signup {
+					#signup {
+						padding: 0%;
+						&:hover {
+						}
+					}
+				}
+				.login-form-button {
+					&:hover {
+					}
+				}
+				.ant-checkbox-wrapper {
+					.ant-checkbox {
+						#checkbox {
+						}
+						.ant-checkbox-inner {
+						}
+						+ span {
+						}
+					}
+				}
+				.login-form-forgot {
+				}
+			}
+			.ant-btn {
+				span {
+				}
+			}
+		}
+	}
+}
+
+@include media('>1200px', '<desktop') {
+	.loginFormContainer {
+		.logoutHeadText {
+			font-size: 3rem;
+			&:hover {
+			}
+			.logoutText {
+				font-size: 3.5rem;
+				&:hover {
+				}
+			}
+		}
+		.formLoginContainer {
+			.ant-avatar {
+				img {
+				}
+			}
+			.alignFlex {
+				.ant-row {
+					.ant-col {
+						.ant-form-item-control-input {
+							.ant-form-item-control-input-content {
+								.ant-input {
+								}
+							}
+						}
+					}
+				}
+				.dirFlexContainer {
+					.anticon {
+						svg {
+							path {
+							}
+						}
+					}
+				}
+			}
+			.flexDirContainer {
+				.signup {
+					#signup {
+						padding: 0%;
+						&:hover {
+						}
+					}
+				}
+				.login-form-button {
+					&:hover {
+					}
+				}
+				.ant-checkbox-wrapper {
+					.ant-checkbox {
+						#checkbox {
+						}
+						.ant-checkbox-inner {
+						}
+						+ span {
+						}
+					}
+				}
+				.login-form-forgot {
+				}
+			}
+			.ant-btn {
+				span {
+				}
+			}
+		}
+	}
+}
+
+@include media('>=desktop') {
+	.loginFormContainer {
+		.logoutHeadText {
+			font-size: 4rem;
+			line-height: 1em;
+			padding-bottom: 1.5em;
+			&:hover {
+			}
+			.logoutText {
+				font-size: 4rem;
+				line-height: 1em;
+				&:hover {
+				}
+			}
+		}
+		.formLoginContainer {
+			.ant-avatar {
+				width: 100px;
+				height: 100px;
+				img {
+				}
+			}
+			.alignFlex {
+				.ant-row {
+					.ant-col {
+						.ant-form-item-control-input {
+							.ant-form-item-control-input-content {
+								.ant-input {
+								}
+							}
+						}
+					}
+				}
+				.dirFlexContainer {
+					.anticon {
+						svg {
+							path {
+							}
+						}
+					}
+				}
+			}
+			.flexDirContainer {
+				.signup {
+					#signup {
+						padding: 0%;
+						&:hover {
+						}
+					}
+				}
+				.login-form-button {
+					&:hover {
+					}
+				}
+				.ant-checkbox-wrapper {
+					.ant-checkbox {
+						#checkbox {
+						}
+						.ant-checkbox-inner {
+						}
+						+ span {
+						}
+					}
+				}
+				.login-form-forgot {
+				}
+			}
+			.ant-btn {
+				span {
+				}
+			}
+		}
+	}
+}
+
+@include media('>=LGdesktop', 'retina2x') {
+	.loginFormContainer {
+		.logoutHeadText {
+			&:hover {
+			}
+			.logoutText {
+				&:hover {
+				}
+			}
+		}
+		.formLoginContainer {
+			.ant-avatar {
+				width: 120px;
+				height: 120px;
+				img {
+				}
+			}
+			.alignFlex {
+				.ant-row {
+					.ant-col {
+						.ant-form-item-control-input {
+							.ant-form-item-control-input-content {
+								.ant-input {
+								}
+							}
+						}
+					}
+				}
+				.dirFlexContainer {
+					.anticon {
+						svg {
+							path {
+							}
+						}
+					}
+				}
+			}
+			.flexDirContainer {
+				.signup {
+					#signup {
+						&:hover {
+						}
+					}
+				}
+				.login-form-button {
+					&:hover {
+					}
+				}
+				.ant-checkbox-wrapper {
+					.ant-checkbox {
+						margin-left: 10em;
+						margin-bottom: 0.25em;
+						#checkbox {
+						}
+						.ant-checkbox-inner {
+						}
+						+ span {
+						}
+					}
+				}
+				.login-form-forgot {
+				}
+			}
+			.ant-btn {
+				span {
+				}
 			}
 		}
 	}

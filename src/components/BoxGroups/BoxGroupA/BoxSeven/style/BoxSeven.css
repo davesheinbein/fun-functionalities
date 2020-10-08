@@ -16,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 .profileContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,5 +255,44 @@
   pointer-events: none;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+}
+
+@media (max-width: 360px) {
+  .profileContainer .sidebar div .middle .contentContainer .middle {
+    margin: 0%;
+  }
+  .profileContainer .boxSevenText {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .profileContainer .sidebar div .middle .contentContainer .middle {
+    margin: 0%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .profileContainer .sidebar div .middle .contentContainer .middle {
+    margin: 0%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1365px) {
+  .profileContainer .sidebar div .middle .contentContainer .middle {
+    margin: 0%;
+  }
+}
+
+@media (min-width: 1366px) {
+  .profileContainer .sidebar div .middle .contentContainer .middle {
+    margin: 0%;
+  }
+}
+
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  .profileContainer .sidebar div .middle .contentContainer .middle {
+    margin: 0%;
+  }
 }
 /*# sourceMappingURL=BoxSeven.css.map */

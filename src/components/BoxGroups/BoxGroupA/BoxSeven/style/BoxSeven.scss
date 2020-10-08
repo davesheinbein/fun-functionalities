@@ -1,4 +1,5 @@
 @import '../../../../../mixins/mixins.scss';
+@import '../../../../../breakpoints/breakpoints.scss';
 
 .profileContainer {
 	@include flexCenter(column, center, center);
@@ -93,5 +94,162 @@
 		// 	background-size: cover;
 		// 	background-clip: text;
 		// }
+	}
+}
+
+@include media('<=phone') {
+	.profileContainer {
+		.sidebar-toggle {
+			svg {
+				path {
+				}
+			}
+		}
+		.sidebar {
+			div {
+				.middle {
+					.contentContainer {
+						.middle {
+							margin: 0%;
+							.ant-form-item-control {
+							}
+						}
+					}
+				}
+			}
+		}
+		.boxSevenText {
+			font-size: 2rem;
+		}
+	}
+}
+
+@include media('>phone', '<=425px') {
+	.profileContainer {
+		.sidebar-toggle {
+			svg {
+				path {
+				}
+			}
+		}
+		.sidebar {
+			div {
+				.middle {
+					.contentContainer {
+						.middle {
+							margin: 0%;
+							.ant-form-item-control {
+							}
+						}
+					}
+				}
+			}
+		}
+		.boxSevenText {
+		}
+	}
+}
+
+@include media('>425px', '<=tablet') {
+	.profileContainer {
+		.sidebar-toggle {
+			svg {
+				path {
+				}
+			}
+		}
+		.sidebar {
+			div {
+				.middle {
+					.contentContainer {
+						.middle {
+							margin: 0%;
+							.ant-form-item-control {
+							}
+						}
+					}
+				}
+			}
+		}
+		.boxSevenText {
+		}
+	}
+}
+
+@include media('>tablet', '<desktop') {
+	.profileContainer {
+		.sidebar-toggle {
+			svg {
+				path {
+				}
+			}
+		}
+		.sidebar {
+			div {
+				.middle {
+					.contentContainer {
+						.middle {
+							margin: 0%;
+							.ant-form-item-control {
+							}
+						}
+					}
+				}
+			}
+		}
+		.boxSevenText {
+		}
+	}
+}
+
+@include media('>=desktop') {
+	.profileContainer {
+		.sidebar-toggle {
+			svg {
+				path {
+				}
+			}
+		}
+		.sidebar {
+			div {
+				.middle {
+					.contentContainer {
+						.middle {
+							margin: 0%;
+							.ant-form-item-control {
+							}
+						}
+					}
+				}
+			}
+		}
+		.boxSevenText {
+		}
+	}
+}
+
+@include media('>=LGdesktop', 'retina2x') {
+	.profileContainer {
+		.sidebar-toggle {
+			svg {
+				path {
+				}
+			}
+		}
+		.sidebar {
+			div {
+				.middle {
+					.contentContainer {
+						.middle {
+							margin: 0%;
+							.ant-form-item-control {
+							}
+						}
+					}
+				}
+			}
+		}
+		.boxSevenText {
+		}
 	}
 }

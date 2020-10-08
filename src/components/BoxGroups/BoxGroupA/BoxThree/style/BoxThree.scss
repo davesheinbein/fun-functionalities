@@ -1,4 +1,5 @@
 @import '../../../../../mixins/mixins.scss';
+@import '../../../../../breakpoints/breakpoints.scss';
 
 #starContainer {
 	@include flexCenter(row, center, center);
@@ -17,9 +18,9 @@
 		}
 	}
 	.starText {
-		@include heightWidth(100%, 100%);
+		@include heightWidth(fit-content, 100%);
 		@include flexCenter(column, center, center);
-		@include topLeftAbsolute(-35%, 0%);
+		@include topLeftAbsolute(3%, 0%);
 		background: linear-gradient(
 			to right,
 			rgba(115, 3, 192, 1),
@@ -30,13 +31,114 @@
 		background-clip: text;
 		animation: headingAnimation 5s infinite alternate;
 		font-size: 4rem;
-		line-height: 4rem;
+		line-height: 1em;
 		font-family: 'Permanent Marker', cursive;
 		pointer-events: text;
 		transform: scale(1);
 		transition: all 0.5s ease-in-out;
 		&:hover {
 			transform: scale(1.1);
+		}
+	}
+}
+
+@include media('<=phone') {
+	#starContainer {
+		.pathSVG {
+			.starPath {
+			}
+		}
+		.starText {
+			font-size: 2rem;
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>phone', '<=425px') {
+	#starContainer {
+		.pathSVG {
+			.starPath {
+			}
+		}
+		.starText {
+			font-size: 2rem;
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>425px', '<=tablet') {
+	#starContainer {
+		.pathSVG {
+			.starPath {
+			}
+		}
+		.starText {
+			font-size: 2.75rem;
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>600px', '<=tablet') {
+	#starContainer {
+		.pathSVG {
+			.starPath {
+			}
+		}
+		.starText {
+			font-size: 4rem;
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>tablet', '<desktop') {
+	#starContainer {
+		.pathSVG {
+			transform: scale(0.9) translateY(20px);
+			.starPath {
+			}
+		}
+		.starText {
+			font-size: 5rem;
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>=desktop') {
+	#starContainer {
+		.pathSVG {
+			transform: scale(0.9) translateY(20px);
+			.starPath {
+			}
+		}
+		.starText {
+			font-size: 5rem;
+			&:hover {
+			}
+		}
+	}
+}
+
+@include media('>=LGdesktop', 'retina2x') {
+	#starContainer {
+		.pathSVG {
+			transform: scale(0.85) translateY(30px);
+			.starPath {
+			}
+		}
+		.starText {
+			font-size: 5.75rem;
+			&:hover {
+			}
 		}
 	}
 }

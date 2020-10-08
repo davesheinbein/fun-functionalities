@@ -16,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 #starContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,7 +85,9 @@
 }
 
 #starContainer .starText {
-  height: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,7 +103,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: -35%;
+  top: 3%;
   left: 0%;
   background: -webkit-gradient(linear, left top, right top, from(#7303c0), to(#ec38bc));
   background: linear-gradient(to right, #7303c0, #ec38bc);
@@ -106,7 +113,7 @@
   -webkit-animation: headingAnimation 5s infinite alternate;
           animation: headingAnimation 5s infinite alternate;
   font-size: 4rem;
-  line-height: 4rem;
+  line-height: 1em;
   font-family: 'Permanent Marker', cursive;
   pointer-events: text;
   -webkit-transform: scale(1);
@@ -118,5 +125,59 @@
 #starContainer .starText:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media (max-width: 360px) {
+  #starContainer .starText {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  #starContainer .starText {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  #starContainer .starText {
+    font-size: 2.75rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  #starContainer .starText {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1365px) {
+  #starContainer .pathSVG {
+    -webkit-transform: scale(0.9) translateY(20px);
+            transform: scale(0.9) translateY(20px);
+  }
+  #starContainer .starText {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1366px) {
+  #starContainer .pathSVG {
+    -webkit-transform: scale(0.9) translateY(20px);
+            transform: scale(0.9) translateY(20px);
+  }
+  #starContainer .starText {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  #starContainer .pathSVG {
+    -webkit-transform: scale(0.85) translateY(30px);
+            transform: scale(0.85) translateY(30px);
+  }
+  #starContainer .starText {
+    font-size: 5.75rem;
+  }
 }
 /*# sourceMappingURL=BoxThree.css.map */

@@ -174,7 +174,7 @@ export class LoginForm extends Component {
 								}}
 								onClick={this.handleSubmit}
 							/>
-							<Link to='/signup' className='signup'>
+							<Link to='/signup' className='signup '>
 								<button id='signup'>Signup</button>
 							</Link>
 						</div>
