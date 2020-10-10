@@ -1,3 +1,6 @@
+// Remember to save index.scss where this file is required to
+// see changes or place directly in index.css
+
 :root {
 	--headerColor: linear-gradient(
 		90deg,
@@ -37,6 +40,16 @@
 		90deg,
 		rgba(255, 175, 123, 1) 0%,
 		rgba(148, 233, 219, 1) 100%
+	);
+	--boxSixBg: radial-gradient(
+		circle,
+		rgb(100, 65, 165) 0%,
+		rgb(42, 8, 69) 100%
+	);
+	--boxSixAlertBg: linear-gradient(
+		to top,
+		rgb(255, 126, 95),
+		rgb(254, 180, 123)
 	);
 	--boxSevenBg: radial-gradient(
 		circle,
@@ -111,6 +124,17 @@
 		rgba(62, 133, 238, 1) 1.1%,
 		rgba(227, 137, 240, 1) 43.7%,
 		rgba(243, 193, 124, 1) 89.7%
+	);
+	--boxSixBg: radial-gradient(
+		circle,
+		rgba(62, 133, 238, 1) 1.1%,
+		rgba(227, 137, 240, 1) 43.7%,
+		rgba(243, 193, 124, 1) 89.7%
+	);
+	--boxSixAlertBg: linear-gradient(
+		to top,
+		rgb(238, 9, 121),
+		rgb(255, 106, 0)
 	);
 	--boxSevenBg: radial-gradient(
 		circle farthest-corner at 10% 20%,

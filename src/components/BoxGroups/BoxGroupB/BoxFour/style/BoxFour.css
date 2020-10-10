@@ -22,8 +22,8 @@
 *
 **/
 .scrollerContainer {
-  height: 105%;
-  width: 105%;
+  height: 100%;
+  width: 100%;
 }
 
 .scrollerContainer .scrolltop-main {
@@ -46,6 +46,12 @@
   overflow-y: scroll;
 }
 
+.scrollerContainer .scrolltop-main::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+  background: transparent;
+}
+
 .scrollerContainer .scrolltop-main .scrolltop-c {
   height: 100%;
   width: 100%;
@@ -58,11 +64,17 @@
   background: peachpuff;
   overflow: auto;
   opacity: 0.6;
-  overflow-y: scroll;
 }
 
 .scrollerContainer .scrolltop-main .scrolltop-c::-webkit-scrollbar {
   display: none;
+  width: 0px;
+  background: transparent;
+}
+
+.scrollerContainer .scrolltop-main .scrolltop-c .colors {
+  height: 100%;
+  width: 100%;
 }
 
 .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(1)::after {
@@ -84,6 +96,7 @@
   width: 35%;
   margin: 0px 1em;
   font-size: 60px;
+  text-align: left;
   line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
@@ -108,6 +121,7 @@
   width: 35%;
   margin: 0px 1em;
   font-size: 60px;
+  text-align: left;
   line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
@@ -132,6 +146,7 @@
   width: 35%;
   margin: 0px 1em;
   font-size: 60px;
+  text-align: left;
   line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
@@ -156,6 +171,7 @@
   width: 35%;
   margin: 0px 1em;
   font-size: 60px;
+  text-align: left;
   line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
@@ -180,6 +196,7 @@
   width: 35%;
   margin: 0px 1em;
   font-size: 60px;
+  text-align: left;
   line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
@@ -204,6 +221,7 @@
   width: 35%;
   margin: 0px 1em;
   font-size: 60px;
+  text-align: left;
   line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
@@ -228,6 +246,7 @@
   width: 35%;
   margin: 0px 1em;
   font-size: 60px;
+  text-align: left;
   line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
@@ -252,6 +271,7 @@
   width: 35%;
   margin: 0px 1em;
   font-size: 60px;
+  text-align: left;
   line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;

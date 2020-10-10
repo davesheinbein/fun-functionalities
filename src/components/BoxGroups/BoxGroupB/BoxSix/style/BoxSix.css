@@ -16,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 .loadingContianer {
   height: 100%;
   width: 100%;
@@ -32,7 +37,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: turquoise;
+  background: var(--boxSixBg);
 }
 
 .errorContianer {
@@ -51,11 +56,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: turquoise;
+  background: var(--boxSixBg);
 }
 
 .btnbackgroundContainer {
-  background-color: turquoise;
+  background: var(--boxSixBg);
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -119,11 +124,11 @@
   resize: both;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  line-height: calc(3rem - 1vw);
+  line-height: calc(3rem - 1vh);
   font-size: calc(3rem - 1vw);
   font-family: 'Quicksand', sans-serif;
   color: rgba(255, 255, 255, 0.75);
-  background-color: #41aa46;
+  background: var(--boxSixAlertBg);
   padding: 0.5em;
 }
 
@@ -203,19 +208,21 @@
 }
 
 .btnbackgroundContainer .push--skeuo {
-  height: 80%;
-  width: 80%;
+  height: 400px;
+  width: 400px;
   font-family: 'Oleo Script', cursive;
   font-size: 25px;
   color: lightpink;
   text-shadow: inset 0 10px 0 #da2e0b, inset 0 -10px 4px #aa2409, 0 0 4px #c2290a, inset 0 0 8px #791a06, inset 0 0 8px rgba(51, 51, 51, 0.5), inset 0 0 4px 20px #c2290a, inset 0 -8px 6px 24px rgba(51, 51, 51, 0.7), inset 0 0 4px 24px #611505, inset 0 0 4px 24px rgba(51, 51, 51, 0.7), inset 0 0 2px 26.08696px black, inset 0 0 2px 30px rgba(248, 133, 110, 0.7), inset 0 12px 0 28.23529px rgba(244, 72, 37, 0.7), inset 0 -12px 4px 28.23529px rgba(146, 31, 8, 0.2), inset 0 0 0 43.63636px #c2290a, inset 0 96px 32px #aa2409, inset 0 0 24px 40px #921f08, 0 6px 12px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: inset 0 10px 0 #da2e0b, inset 0 -10px 4px #aa2409, 0 0 4px #c2290a, inset 0 0 8px #791a06, inset 0 0 8px rgba(51, 51, 51, 0.5), inset 0 0 4px 20px #c2290a, inset 0 -8px 6px 24px rgba(51, 51, 51, 0.7), inset 0 0 4px 24px #611505, inset 0 0 4px 24px rgba(51, 51, 51, 0.7), inset 0 0 2px 26.08696px black, inset 0 0 2px 30px rgba(248, 133, 110, 0.7), inset 0 12px 0 28.23529px rgba(244, 72, 37, 0.7), inset 0 -12px 4px 28.23529px rgba(146, 31, 8, 0.2), inset 0 0 0 43.63636px #c2290a, inset 0 96px 32px #aa2409, inset 0 0 24px 40px #921f08, 0 6px 12px rgba(0, 0, 0, 0.5);
           box-shadow: inset 0 10px 0 #da2e0b, inset 0 -10px 4px #aa2409, 0 0 4px #c2290a, inset 0 0 8px #791a06, inset 0 0 8px rgba(51, 51, 51, 0.5), inset 0 0 4px 20px #c2290a, inset 0 -8px 6px 24px rgba(51, 51, 51, 0.7), inset 0 0 4px 24px #611505, inset 0 0 4px 24px rgba(51, 51, 51, 0.7), inset 0 0 2px 26.08696px black, inset 0 0 2px 30px rgba(248, 133, 110, 0.7), inset 0 12px 0 28.23529px rgba(244, 72, 37, 0.7), inset 0 -12px 4px 28.23529px rgba(146, 31, 8, 0.2), inset 0 0 0 43.63636px #c2290a, inset 0 96px 32px #aa2409, inset 0 0 24px 40px #921f08, 0 6px 12px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .btnbackgroundContainer .push--skeuo:active, .btnbackgroundContainer .push--skeuo.is-pushed {
-  height: 80%;
-  width: 80%;
+  height: 400px;
+  width: 400px;
   color: lightsalmon;
   text-shadow: inset 0 10px 0 #da2e0b, inset 0 -10px 4px #aa2409, 0 0 4px #c2290a, inset 0 0 8px #791a06, inset 0 0 8px rgba(51, 51, 51, 0.5), inset 0 0 4px 20px #c2290a, inset 0 -8px 6px 24px rgba(51, 51, 51, 0.7), inset 0 0 4px 24px #611505, inset 0 0 4px 24px rgba(51, 51, 51, 0.7), inset 0 0 6px 28.23529px black, inset 0 0 2px 32px rgba(248, 133, 110, 0.2), inset 0 12px 0 28px rgba(244, 72, 37, 0.5), inset 0 -12px 4px 28px rgba(97, 21, 5, 0.2), inset 0 0 0 43.63636px #b32609, inset 0 96px 32px #9b2108, inset 0 0 24px 40px #791a06, 0 6px 12px rgba(0, 0, 0, 0.5);
   background-color: #b8270a;
@@ -231,16 +238,108 @@
 .btnbackgroundContainer .push--skeuo:before {
   content: '';
   position: absolute;
-  bottom: 53.33333px;
-  left: 100px;
-  display: block;
-  width: 160px;
+  width: 192px;
   height: 55.81395px;
+  bottom: 53.33333px;
+  left: 106.66667px;
+  display: block;
   background: rgba(248, 133, 110, 0.2);
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(250, 174, 158, 0.3)), to(rgba(194, 41, 10, 0.1)));
   background: linear-gradient(to top, rgba(250, 174, 158, 0.3) 0%, rgba(194, 41, 10, 0.1) 100%);
   border-radius: 40% 40% 60% 60%;
   -webkit-transition: opacity 200ms;
   transition: opacity 200ms;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 360px) {
+  .btnbackgroundContainer .alertContainer .alertNorrisFactContainer {
+    line-height: calc(1.25rem - 1vh);
+    font-size: calc(1.25rem - 1vw);
+  }
+  .btnbackgroundContainer .push--skeuo {
+    height: 160px;
+    width: 160px;
+    font-size: 1.25rem;
+  }
+  .btnbackgroundContainer .push--skeuo:before {
+    width: 68.57143px;
+    height: 43.63636px;
+    bottom: 43.63636px;
+    left: 44.44444px;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .btnbackgroundContainer .alertContainer .alertNorrisFactContainer {
+    line-height: calc(1.5rem - 1vh);
+    font-size: calc(1.5rem - 1vw);
+  }
+  .btnbackgroundContainer .push--skeuo {
+    height: 180px;
+    width: 180px;
+    font-size: 1.25rem;
+  }
+  .btnbackgroundContainer .push--skeuo:before {
+    width: 96px;
+    height: 43.63636px;
+    bottom: 43.63636px;
+    left: 43.63636px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .btnbackgroundContainer .alertContainer .alertNorrisFactContainer {
+    line-height: calc(1.5rem - 1vh);
+    font-size: calc(1.5rem - 1vw);
+  }
+  .btnbackgroundContainer .push--skeuo {
+    height: 180px;
+    width: 180px;
+    font-size: 1.25rem;
+  }
+  .btnbackgroundContainer .push--skeuo:before {
+    width: 96px;
+    height: 43.63636px;
+    bottom: 43.63636px;
+    left: 43.63636px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .btnbackgroundContainer .alertContainer .alertNorrisFactContainer {
+    line-height: calc(1.5rem - 1vh);
+    font-size: calc(1.5rem - 1vw);
+  }
+  .btnbackgroundContainer .push--skeuo {
+    height: 280px;
+    width: 280px;
+    font-size: 2.5rem;
+  }
+  .btnbackgroundContainer .push--skeuo:before {
+    width: 120px;
+    height: 43.63636px;
+    bottom: 43.63636px;
+    left: 80px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1365px) {
+  .btnbackgroundContainer .alertContainer .alertNorrisFactContainer {
+    line-height: calc(2.5rem - 1vh);
+    font-size: calc(2.5rem - 1vw);
+  }
+  .btnbackgroundContainer .push--skeuo {
+    height: 350px;
+    width: 350px;
+    font-size: 2.5rem;
+  }
+  .btnbackgroundContainer .push--skeuo:before {
+    width: 120px;
+    height: 43.63636px;
+    bottom: 43.63636px;
+    left: 80px;
+  }
 }
 /*# sourceMappingURL=BoxSix.css.map */

@@ -210,4 +210,25 @@
     line-height: 0.75em;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1365px) {
+  .boxEightContainer .boxEightText {
+    font-size: 1.9rem;
+    line-height: 0.71em;
+  }
+}
+
+@media (min-width: 1366px) {
+  .boxEightContainer .boxEightText {
+    font-size: 1.9rem;
+    line-height: 0.71em;
+  }
+}
+
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  .boxEightContainer .boxEightText {
+    font-size: 1.9rem;
+    line-height: 0.71em;
+  }
+}
 /*# sourceMappingURL=BoxEight.css.map */

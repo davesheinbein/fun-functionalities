@@ -2,12 +2,17 @@
 @import '../../../../../breakpoints/breakpoints.scss';
 
 .scrollerContainer {
-	@include heightWidth(105%, 105%);
+	@include heightWidth(100%, 100%);
 	.scrolltop-main {
 		position: relative;
 		@include flexCenter(row, center, center);
 		@include heightWidth(100%, 100%);
 		overflow-y: scroll;
+		&::-webkit-scrollbar {
+			display: none;
+			width: 0px;
+			background: transparent;
+		}
 		.scrolltop-c {
 			@include heightWidth(100%, 100%);
 			margin: 0;
@@ -16,11 +21,13 @@
 			background: peachpuff;
 			overflow: auto;
 			opacity: 0.6;
-			overflow-y: scroll;
 			&::-webkit-scrollbar {
 				display: none;
+				width: 0px;
+				background: transparent;
 			}
 			.colors {
+				@include heightWidth(100%, 100%);
 				&:nth-of-type(1) {
 					&::after {
 						content: 'hello';
@@ -28,6 +35,7 @@
 						@include heightWidth(100%, 35%);
 						margin: 0px 1em;
 						font-size: 60px;
+						text-align: left;
 						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
@@ -40,6 +48,7 @@
 						@include heightWidth(100%, 35%);
 						margin: 0px 1em;
 						font-size: 60px;
+						text-align: left;
 						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
@@ -52,6 +61,7 @@
 						@include heightWidth(100%, 35%);
 						margin: 0px 1em;
 						font-size: 60px;
+						text-align: left;
 						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
@@ -64,6 +74,7 @@
 						@include heightWidth(100%, 35%);
 						margin: 0px 1em;
 						font-size: 60px;
+						text-align: left;
 						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
@@ -76,6 +87,7 @@
 						@include heightWidth(100%, 35%);
 						margin: 0px 1em;
 						font-size: 60px;
+						text-align: left;
 						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
@@ -88,6 +100,7 @@
 						@include heightWidth(100%, 35%);
 						margin: 0px 1em;
 						font-size: 60px;
+						text-align: left;
 						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
@@ -100,6 +113,7 @@
 						@include heightWidth(100%, 35%);
 						margin: 0px 1em;
 						font-size: 60px;
+						text-align: left;
 						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
@@ -112,6 +126,7 @@
 						@include heightWidth(100%, 35%);
 						margin: 0px 1em;
 						font-size: 60px;
+						text-align: left;
 						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
