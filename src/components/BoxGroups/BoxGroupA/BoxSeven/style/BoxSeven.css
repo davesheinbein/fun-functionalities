@@ -270,11 +270,17 @@
   .profileContainer .sidebar div .middle .contentContainer .middle {
     margin: 0%;
   }
+  .profileContainer .boxSevenText {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
   .profileContainer .sidebar div .middle .contentContainer .middle {
     margin: 0%;
+  }
+  .profileContainer .boxSevenText {
+    font-size: 2.75rem;
   }
 }
 

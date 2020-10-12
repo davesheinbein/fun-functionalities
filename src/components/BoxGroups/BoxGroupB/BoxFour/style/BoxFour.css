@@ -100,6 +100,28 @@
   line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(2)::after {
@@ -125,6 +147,17 @@
   line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(3)::after {
@@ -150,6 +183,17 @@
   line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(4)::after {
@@ -175,6 +219,17 @@
   line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(5)::after {
@@ -200,6 +255,17 @@
   line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(6)::after {
@@ -225,6 +291,17 @@
   line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(7)::after {
@@ -250,6 +327,17 @@
   line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .scrollerContainer .scrolltop-main .scrolltop-c .colors:nth-of-type(8)::after {
@@ -275,6 +363,17 @@
   line-height: 50px;
   color: var(--mainText);
   font-family: 'Permanent Marker', cursive;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .scrollerContainer .scrolltop-b {

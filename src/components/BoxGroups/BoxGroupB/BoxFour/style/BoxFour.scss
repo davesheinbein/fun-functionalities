@@ -39,6 +39,8 @@
 						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
+						@include noSelection;
+						@include noSelection;
 					}
 				}
 				&:nth-of-type(2) {
@@ -52,6 +54,7 @@
 						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
+						@include noSelection;
 					}
 				}
 				&:nth-of-type(3) {
@@ -65,6 +68,7 @@
 						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
+						@include noSelection;
 					}
 				}
 				&:nth-of-type(4) {
@@ -78,6 +82,7 @@
 						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
+						@include noSelection;
 					}
 				}
 				&:nth-of-type(5) {
@@ -91,6 +96,7 @@
 						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
+						@include noSelection;
 					}
 				}
 				&:nth-of-type(6) {
@@ -104,6 +110,7 @@
 						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
+						@include noSelection;
 					}
 				}
 				&:nth-of-type(7) {
@@ -117,6 +124,7 @@
 						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
+						@include noSelection;
 					}
 				}
 				&:nth-of-type(8) {
@@ -130,6 +138,7 @@
 						line-height: 50px;
 						color: var(--mainText);
 						font-family: 'Permanent Marker', cursive;
+						@include noSelection;
 					}
 				}
 			}

@@ -185,14 +185,14 @@
 
 @media (max-width: 360px) {
   .boxEightContainer .boxEightText {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 0.75em;
   }
 }
 
 @media (min-width: 361px) and (max-width: 425px) {
   .boxEightContainer .boxEightText {
-    font-size: 1.4rem;
+    font-size: 1rem;
     line-height: 0.75em;
   }
 }
@@ -213,15 +213,15 @@
 
 @media (min-width: 769px) and (max-width: 1365px) {
   .boxEightContainer .boxEightText {
-    font-size: 1.9rem;
-    line-height: 0.71em;
+    font-size: 1.8rem;
+    line-height: 0.7em;
   }
 }
 
 @media (min-width: 1366px) {
   .boxEightContainer .boxEightText {
-    font-size: 1.9rem;
-    line-height: 0.71em;
+    font-size: 2rem;
+    line-height: 0.6em;
   }
 }
 

@@ -1,4 +1,5 @@
 @import '../../../../../mixins/mixins.scss';
+@import '../../../../../breakpoints/breakpoints.scss';
 
 .framerContainer {
 	margin: 0;
@@ -6,4 +7,63 @@
 	@include flexCenter(row, center, center);
 	@include heightWidth(100%, 100%);
 	background: rgba(0, 85, 255, 1);
+	.frame {
+	}
+}
+
+@include media('<=phone') {
+	.framerContainer {
+		.frame {
+			max-width: 140px;
+			max-height: 140px;
+		}
+	}
+}
+
+@include media('>phone', '<=425px') {
+	.framerContainer {
+		.frame {
+			max-width: 160px;
+			max-height: 160px;
+		}
+	}
+}
+
+@include media('>425px', '<=tablet') {
+	.framerContainer {
+		.frame {
+			max-width: 160px;
+			max-height: 160px;
+		}
+	}
+}
+
+@include media('>600px', '<=tablet') {
+	.framerContainer {
+		.frame {
+			max-width: 280px;
+			max-height: 280px;
+		}
+	}
+}
+
+@include media('>tablet', '<1000px') {
+	.framerContainer {
+		.frame {
+			max-width: 280px;
+			max-height: 280px;
+		}
+	}
+}
+@include media('>tablet', '<desktop') {
+	.framerContainer {
+		.frame {
+		}
+	}
+}
+
+@include media('>=desktop') {
+}
+
+@include media('>=LGdesktop', 'retina2x') {
 }
