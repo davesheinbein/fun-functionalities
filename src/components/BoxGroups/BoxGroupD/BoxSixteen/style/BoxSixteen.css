@@ -1,8 +1,3 @@
-/**
-*
-* Testing
-*
-**/
 @-webkit-keyframes headingAnimation {
   0% {
     background-position: left;
@@ -11,6 +6,7 @@
     background-position: right;
   }
 }
+
 @keyframes headingAnimation {
   0% {
     background-position: left;
@@ -20,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 .formContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,7 +37,7 @@
           align-items: center;
   height: 100%;
   width: 100%;
-  background: radial-gradient(circle farthest-corner at 12.3% 19.3%, #5558da 0%, #5fd1f9 100.2%);
+  background: var(--boxSixteenBg);
 }
 
 .formContainer .contactTitle {
@@ -62,7 +63,7 @@
   width: fit-content;
   font-size: 3rem;
   font-family: 'Permanent Marker', cursive;
-  text-shadow: 2px 4px 2px rgba(235, 88, 88, 0.75);
+  text-shadow: 2px 4px 2px var(--boxSixteenTextShadow);
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: all 0.5s ease-in-out;
@@ -253,5 +254,70 @@
 
 .formContainer #contact-form #submit-btn:focus {
   outline: none;
+}
+
+@media (max-width: 360px) {
+  .formContainer .contactTitle {
+    margin-top: 18px;
+    font-size: 1.5rem;
+  }
+  .formContainer #contact-form .form-group .form-inputs-container .input-field {
+    padding: 0em 0em;
+    margin: 0.25em 0px;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .formContainer .contactTitle {
+    margin-top: 14px;
+    font-size: 1.5rem;
+  }
+  .formContainer #contact-form .form-group .form-inputs-container .input-field {
+    padding: 0em;
+    margin: 0.25em 0px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .formContainer .contactTitle {
+    margin-top: 14px;
+    font-size: 1.5rem;
+  }
+  .formContainer #contact-form .form-group .form-inputs-container .input-field {
+    padding: 0em;
+    margin: 0.25em 0px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .formContainer .contactTitle {
+    margin-top: 14px;
+    font-size: 3rem;
+  }
+  .formContainer #contact-form .form-group .form-inputs-container .input-field {
+    padding: 0em;
+    margin: 0.25em 0px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1365px) {
+  .formContainer .contactTitle {
+    margin-top: 14px;
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1366px) {
+  .formContainer .contactTitle {
+    margin-top: 14px;
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1920px) and (min-resolution: 192dpi) {
+  .formContainer .contactTitle {
+    margin-top: 14px;
+    font-size: 6rem;
+  }
 }
 /*# sourceMappingURL=BoxSixteen.css.map */

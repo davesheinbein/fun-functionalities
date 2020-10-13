@@ -1,4 +1,5 @@
 @import '../../../../../mixins/mixins.scss';
+@import '../../../../../breakpoints/breakpoints.scss';
 
 * {
 	box-sizing: border-box;
@@ -30,6 +31,84 @@
 			transition: all 0.5s ease-in-out;
 			&:hover {
 				border-radius: 50%;
+			}
+		}
+	}
+}
+
+@include media('<=phone') {
+	.boxEleven {
+		.boxElevenContainer {
+			&:hover {
+			}
+			.boxElevenItem {
+				&:hover {
+				}
+			}
+		}
+	}
+}
+
+@include media('>phone', '<=425px') {
+	.boxEleven {
+		.boxElevenContainer {
+			&:hover {
+			}
+			.boxElevenItem {
+				&:hover {
+				}
+			}
+		}
+	}
+}
+
+@include media('>425px', '<=tablet') {
+	.boxEleven {
+		.boxElevenContainer {
+			&:hover {
+			}
+			.boxElevenItem {
+				&:hover {
+				}
+			}
+		}
+	}
+}
+
+@include media('>tablet', '<desktop') {
+	.boxEleven {
+		.boxElevenContainer {
+			&:hover {
+			}
+			.boxElevenItem {
+				&:hover {
+				}
+			}
+		}
+	}
+}
+
+@include media('>=desktop') {
+	.boxEleven {
+		.boxElevenContainer {
+			&:hover {
+			}
+			.boxElevenItem {
+				&:hover {
+				}
+			}
+		}
+	}
+}
+
+@include media('>=LGdesktop', 'retina2x') {
+	.boxEleven {
+		.boxElevenContainer {
+			&:hover {
+			}
+			.boxElevenItem {
+				&:hover {
+				}
 			}
 		}
 	}

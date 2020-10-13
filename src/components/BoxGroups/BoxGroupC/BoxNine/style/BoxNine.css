@@ -51,8 +51,8 @@
 
 @media (min-width: 361px) and (max-width: 425px) {
   .framerContainer .frame {
-    max-width: 160px;
-    max-height: 160px;
+    max-width: 145px;
+    max-height: 145px;
   }
 }
 
