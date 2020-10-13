@@ -1,24 +1,19 @@
 @import '../../../../../mixins/mixins.scss';
+@import '../../../../../breakpoints/breakpoints.scss';
 
 .boxThirteenContainer {
 	margin: 0;
 	padding: 0;
 	@include flexCenter(row, center, center);
 	@include heightWidth(100%, 100%);
-	background: radial-gradient(
-		circle,
-		rgba(238, 174, 202, 1) 0%,
-		rgba(148, 187, 233, 1) 100%
-	);
+	background: var(--boxThirteenBg);
+	#boxThirteenPage {
+	}
 	.iconContainer {
 		color: #ffffff;
 		@include flexCenter(column, center, center);
 		@include heightWidth(100%, 100%);
-		background: linear-gradient(
-			to right,
-			rgba(255, 251, 213, 0.75),
-			rgba(178, 10, 44, 0.75)
-		);
+		background: var(--boxThirteenText);
 		background-size: 400%;
 		color: transparent;
 		background-clip: text;
@@ -50,6 +45,165 @@
 					path {
 						@include flexCenter(column, center, center);
 						@include heightWidth(100%, 100%);
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('<=phone') {
+	.boxThirteenContainer {
+		#boxThirteenPage {
+			max-width: 160px;
+			max-height: 160px;
+		}
+		.iconContainer {
+			&:hover {
+			}
+			.iconText {
+				font-size: 2.5rem;
+			}
+			.hrefContainer {
+				span {
+					svg {
+						path {
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>phone', '<=425px') {
+	.boxThirteenContainer {
+		#boxThirteenPage {
+			max-width: 170px;
+			max-height: 170px;
+		}
+		.iconContainer {
+			&:hover {
+			}
+			.iconText {
+				font-size: 2rem;
+			}
+			.hrefContainer {
+				span {
+					svg {
+						path {
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>425px', '<=tablet') {
+	.boxThirteenContainer {
+		#boxThirteenPage {
+			max-width: 200px;
+			max-height: 200px;
+		}
+		.iconContainer {
+			&:hover {
+			}
+			.iconText {
+				font-size: 4rem;
+			}
+			.hrefContainer {
+				span {
+					svg {
+						path {
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>600px', '<=tablet') {
+	.boxThirteenContainer {
+		#boxThirteenPage {
+			max-width: 300px;
+			max-height: 300px;
+		}
+		.iconContainer {
+			&:hover {
+			}
+			.iconText {
+				font-size: 4rem;
+			}
+			.hrefContainer {
+				span {
+					svg {
+						path {
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>tablet', '<desktop') {
+	.boxThirteenContainer {
+		#boxThirteenPage {
+		}
+		.iconContainer {
+			&:hover {
+			}
+			.iconText {
+			}
+			.hrefContainer {
+				span {
+					svg {
+						path {
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>=desktop') {
+	.boxThirteenContainer {
+		#boxThirteenPage {
+		}
+		.iconContainer {
+			&:hover {
+			}
+			.iconText {
+			}
+			.hrefContainer {
+				span {
+					svg {
+						path {
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>=LGdesktop', 'retina2x') {
+	.boxThirteenContainer {
+		#boxThirteenPage {
+		}
+		.iconContainer {
+			&:hover {
+			}
+			.iconText {
+			}
+			.hrefContainer {
+				span {
+					svg {
+						path {
+						}
 					}
 				}
 			}

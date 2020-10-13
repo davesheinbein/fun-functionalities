@@ -9,7 +9,7 @@
 }
 
 .mouse {
-	background-color: #1b1b1b;
+	background: var(--boxFifteenMouseBg);
 	@include heightWidth(100%, 100%);
 	@include flexCenter(row, center, center);
 	@include noSelection;
@@ -24,7 +24,6 @@
 		@include flexCenter(row, center, center);
 		@include topLeftAbsolute(0%, 0%);
 		@include noSelection;
-		// border: 1px solid lightblue;
 		animation: radiusAnimation 4s infinite 0s alternate
 			ease-in-out;
 	}

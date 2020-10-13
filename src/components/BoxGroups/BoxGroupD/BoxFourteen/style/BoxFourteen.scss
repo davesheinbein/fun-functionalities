@@ -1,8 +1,6 @@
 @import '../../../../../mixins/mixins.scss';
+@import '../../../../../breakpoints/breakpoints.scss';
 
-// @include heightWidth(50%, 100%);
-// @include topLeftAbsolute(0%, 0%);
-// @include flexCenter(row, center, center);
 .boxFourteenContain {
 	@include heightWidth(100%, 100%);
 	margin: 0;
@@ -15,7 +13,7 @@
 	-ms-user-select: none;
 	user-select: none;
 	cursor: default;
-	background-color: #7ff585;
+	background: var(--boxFourteenMouseBg);
 	.trails-main {
 		position: relative;
 		overflow: hidden;
@@ -28,11 +26,11 @@
 				position: relative;
 				@include heightWidth(80px, 100%);
 				line-height: 80px;
-				color: rgba(150, 90, 62, 0.75);
-				font-size: 6em;
+				font-size: 80px;
 				font-weight: 800;
 				font-family: 'Hanalei', cursive;
 				text-transform: uppercase;
+				color: rgba(150, 90, 62, 0.75);
 				will-change: transform, opacity;
 				overflow: hidden;
 				text-shadow: 2px 4px 2px rgba(55, 55, 55, 1);
@@ -44,6 +42,111 @@
 				}
 				> div {
 					overflow: hidden;
+				}
+			}
+		}
+	}
+}
+
+@include media('<=phone') {
+	.boxFourteenContain {
+		.trails-main {
+			.trails-container {
+				.trails-text {
+					@include heightWidth(40px, 100%);
+					line-height: 40px;
+					font-size: 40px;
+					&:hover {
+						@include heightWidth(50px, 100%);
+						font-size: 50px;
+					}
+					> div {
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>phone', '<=425px') {
+	.boxFourteenContain {
+		.trails-main {
+			.trails-container {
+				.trails-text {
+					@include heightWidth(40px, 100%);
+					line-height: 40px;
+					font-size: 40px;
+					&:hover {
+						@include heightWidth(50px, 100%);
+						font-size: 50px;
+					}
+					> div {
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>425px', '<=tablet') {
+	.boxFourteenContain {
+		.trails-main {
+			.trails-container {
+				.trails-text {
+					@include heightWidth(70px, 100%);
+					line-height: 70px;
+					font-size: 70px;
+					&:hover {
+						@include heightWidth(80px, 100%);
+						font-size: 80px;
+					}
+					> div {
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>tablet', '<desktop') {
+	.boxFourteenContain {
+		.trails-main {
+			.trails-container {
+				.trails-text {
+					&:hover {
+					}
+					> div {
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>=desktop') {
+	.boxFourteenContain {
+		.trails-main {
+			.trails-container {
+				.trails-text {
+					&:hover {
+					}
+					> div {
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>=LGdesktop', 'retina2x') {
+	.boxFourteenContain {
+		.trails-main {
+			.trails-container {
+				.trails-text {
+					&:hover {
+					}
+					> div {
+					}
 				}
 			}
 		}

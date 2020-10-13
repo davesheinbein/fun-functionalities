@@ -38,6 +38,7 @@ export function BoxThirteen() {
 	return (
 		<div className='boxThirteenContainer'>
 			<Page
+				id='boxThirteenPage'
 				currentPage={0}
 				width={350}
 				height={350}

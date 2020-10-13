@@ -16,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 .boxFifteenContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,7 +40,7 @@
 }
 
 .boxFifteenContainer #textBox {
-  color: rgba(0, 255, 255, 0.75);
+  color: var(--boxFifteenText);
   font-size: 80px;
   line-height: 80px;
   position: absolute;
@@ -77,5 +82,26 @@
 
 .boxFifteenContainer #textBox:hover {
   color: rgba(255, 255, 100, 0.75);
+}
+
+@media (max-width: 360px) {
+  .boxFifteenContainer #textBox {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .boxFifteenContainer #textBox {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .boxFifteenContainer #textBox {
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 /*# sourceMappingURL=BoxFifteen.css.map */

@@ -50,6 +50,32 @@
 		rgba(148, 233, 223, 1) 100%
 	);
   --boxEightBg: rgba(255, 175, 123, 1) 0%;
+  --boxThirteenText: linear-gradient(
+		to right,
+		rgba(255, 251, 213, 0.75),
+		rgba(178, 10, 44, 0.75)
+	);
+  --boxThirteenBg: radial-gradient(
+		circle,
+		rgba(238, 174, 202, 1) 0%,
+		rgba(148, 187, 233, 1) 100%
+	);
+  --boxFourteenMouseBg: radial-gradient(
+		circle,
+		rgb(29, 151, 108),
+		rgb(147, 249, 185)
+	);
+  --boxFifteenMouseBg: linear-gradient(
+		to right,
+		#232526,
+		#414345
+	);
+  --boxFifteenMouseBg: linear-gradient(
+		to right,
+		#232526,
+		#414345
+	);
+  --boxFifteenText: rgba(0, 255, 255, 0.75);
   --mainText: #000000;
   --subText: rgba(0, 0, 0, 0.75);
   --secondaryText: #084181;
@@ -126,6 +152,27 @@
 		rgba(243, 193, 124, 1) 89.7%
 	);
   --boxEightBg: rgba(233, 216, 148, 1) 0%;
+  --boxThirteenText: linear-gradient(
+		to right,
+		rgba(255, 251, 213, 0.75),
+		rgba(178, 10, 44, 0.75)
+	);
+  --boxThirteenBg: radial-gradient(
+		circle,
+		rgb(26, 41, 128),
+		rgb(38, 208, 206)
+	);
+  --boxFourteenMouseBg: radial-gradient(
+		circle,
+		rgb(255, 128, 8),
+		rgb(255, 200, 55)
+	);
+  --boxFifteenMouseBg: linear-gradient(
+		to left,
+		rgb(97, 67, 133),
+		rgb(81, 99, 149)
+	);
+  --boxFifteenText: rgba(255, 115, 0, 0.75);
   --mainText: #ffffff;
   --subText: rgba(255, 255, 255, 0.75);
   --secondaryText: #ffffff;

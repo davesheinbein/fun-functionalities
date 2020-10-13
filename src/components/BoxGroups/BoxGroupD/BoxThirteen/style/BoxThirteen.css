@@ -16,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 .boxThirteenContainer {
   margin: 0;
   padding: 0;
@@ -34,7 +39,7 @@
           align-items: center;
   height: 100%;
   width: 100%;
-  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+  background: var(--boxThirteenBg);
 }
 
 .boxThirteenContainer .iconContainer {
@@ -54,8 +59,7 @@
           align-items: center;
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 251, 213, 0.75)), to(rgba(178, 10, 44, 0.75)));
-  background: linear-gradient(to right, rgba(255, 251, 213, 0.75), rgba(178, 10, 44, 0.75));
+  background: var(--boxThirteenText);
   background-size: 400%;
   color: transparent;
   background-clip: text;
@@ -152,5 +156,45 @@
           align-items: center;
   height: 100%;
   width: 100%;
+}
+
+@media (max-width: 360px) {
+  .boxThirteenContainer #boxThirteenPage {
+    max-width: 160px;
+    max-height: 160px;
+  }
+  .boxThirteenContainer .iconContainer .iconText {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .boxThirteenContainer #boxThirteenPage {
+    max-width: 170px;
+    max-height: 170px;
+  }
+  .boxThirteenContainer .iconContainer .iconText {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .boxThirteenContainer #boxThirteenPage {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .boxThirteenContainer .iconContainer .iconText {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .boxThirteenContainer #boxThirteenPage {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .boxThirteenContainer .iconContainer .iconText {
+    font-size: 4rem;
+  }
 }
 /*# sourceMappingURL=BoxThirteen.css.map */

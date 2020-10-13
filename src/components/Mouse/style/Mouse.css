@@ -26,7 +26,7 @@
 }
 
 .mouse {
-  background-color: #1b1b1b;
+  background: var(--boxFifteenMouseBg);
   height: 100%;
   width: 100%;
   display: -webkit-box;

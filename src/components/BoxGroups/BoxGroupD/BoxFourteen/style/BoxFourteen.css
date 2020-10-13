@@ -16,6 +16,11 @@
   }
 }
 
+/**
+*
+* Testing
+*
+**/
 .boxFourteenContain {
   height: 100%;
   width: 100%;
@@ -28,7 +33,7 @@
   -ms-user-select: none;
   user-select: none;
   cursor: default;
-  background-color: #7ff585;
+  background: var(--boxFourteenMouseBg);
 }
 
 .boxFourteenContain .trails-main {
@@ -73,11 +78,11 @@
   height: 80px;
   width: 100%;
   line-height: 80px;
-  color: rgba(150, 90, 62, 0.75);
-  font-size: 6em;
+  font-size: 80px;
   font-weight: 800;
   font-family: 'Hanalei', cursive;
   text-transform: uppercase;
+  color: rgba(150, 90, 62, 0.75);
   will-change: transform, opacity;
   overflow: hidden;
   text-shadow: 2px 4px 2px #373737;
@@ -93,5 +98,47 @@
 
 .boxFourteenContain .trails-main .trails-container .trails-text > div {
   overflow: hidden;
+}
+
+@media (max-width: 360px) {
+  .boxFourteenContain .trails-main .trails-container .trails-text {
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    font-size: 40px;
+  }
+  .boxFourteenContain .trails-main .trails-container .trails-text:hover {
+    height: 50px;
+    width: 100%;
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .boxFourteenContain .trails-main .trails-container .trails-text {
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    font-size: 40px;
+  }
+  .boxFourteenContain .trails-main .trails-container .trails-text:hover {
+    height: 50px;
+    width: 100%;
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .boxFourteenContain .trails-main .trails-container .trails-text {
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    font-size: 70px;
+  }
+  .boxFourteenContain .trails-main .trails-container .trails-text:hover {
+    height: 80px;
+    width: 100%;
+    font-size: 80px;
+  }
 }
 /*# sourceMappingURL=BoxFourteen.css.map */
