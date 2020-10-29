@@ -2,11 +2,14 @@
 
 ### Click the link to view the website
 
-[Fun Functionalities Webstite](https://funfunctionalities.herokuapp.com/)
+[Fun Functionalities Webstite - Firebase](https://fun-functionalities.web.app/)
+[Fun Functionalities Webstite - Heroku](https://funfunctionalities.herokuapp.com/)
 
 ### About Us
 
-Application that explores different functionalities and there use cases. Utilizing react-spring and framer libraries to create flawless animations and transitions.
+An application that explores different functionalities and
+their use cases. Utilizing react-spring and framer libraries
+to create flawless animations and transitions.
 
 #### Project Work:
 
@@ -16,7 +19,8 @@ Jason Hur - https://github.com/jhur91
 
 #### LinkedIn:
 
-David Sheinbein - https://www.linkedin.com/in/david-sheinbein/
+David Sheinbein -
+https://www.linkedin.com/in/david-sheinbein/
 
 Jason Hur - https://www.linkedin.com/in/jasonhur/
 
@@ -64,7 +68,11 @@ Jason Hur - https://www.linkedin.com/in/jasonhur/
 
 #### 8. Heroku
 
-#### 9. Git
+#### 9. Firebase
+
+#### 10. Git
+
+#### 11. Github
 
 ## Potential Next Steps:
 
