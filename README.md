@@ -62,17 +62,31 @@ Jason Hur - https://www.linkedin.com/in/jasonhur/
 
 #### 5. React
 
-#### 6. React-spring
+#### 6. Framer
 
-#### 7. Node.js
+#### 7. styled-components
 
-#### 8. Heroku
+#### 8. React-spring
 
-#### 9. Firebase
+#### 9. React-Chatbot-Kit
 
-#### 10. Git
+#### 10. React-Motion
 
-#### 11. Github
+#### 11. D3
+
+#### 12. Mongoose
+
+#### 13. Cors
+
+#### 14. Node.js
+
+#### 15. Heroku
+
+#### 16. Firebase
+
+#### 17. Git
+
+#### 18. Github
 
 ## Potential Next Steps:
 
