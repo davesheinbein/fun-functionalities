@@ -2,8 +2,7 @@
 
 ### Click the link to view the website
 
-[Fun Functionalities Webstite - Firebase](https://fun-functionalities.web.app/)
-[Fun Functionalities Webstite - Heroku](https://funfunctionalities.herokuapp.com/)
+[Fun Functionalities Website - Firebase](https://fun-functionalities.web.app/)
 
 ### About Us
 
@@ -26,29 +25,29 @@ Jason Hur - https://www.linkedin.com/in/jasonhur/
 
 ## Screenshot:
 
-![Into Page Sceenshot](screenshots/homeScreenshot.png)
+![Into Page Screenshot](screenshots/homeScreenshot.png)
 
-[Into Page Sceenshot](https://imgur.com/egZiSaH)
+[Into Page Screenshot](https://imgur.com/egZiSaH)
 
-![Home Page Sceenshot](screenshots/subHomeScreenshot.png)
+![Home Page Screenshot](screenshots/subHomeScreenshot.png)
 
-[Home Page Sceenshot](https://imgur.com/QKz9QnP)
+[Home Page Screenshot](https://imgur.com/QKz9QnP)
 
-![Group A Sceenshot](screenshots/mainAScreenshot.png)
+![Group A Screenshot](screenshots/mainAScreenshot.png)
 
-[Group A Sceenshot](https://imgur.com/QaccQr7)
+[Group A Screenshot](https://imgur.com/QaccQr7)
 
-![Group B Sceenshot](screenshots/mainBScreenshot.png)
+![Group B Screenshot](screenshots/mainBScreenshot.png)
 
-[Group B Sceenshot](https://imgur.com/xHPaEbR)
+[Group B Screenshot](https://imgur.com/xHPaEbR)
 
-![Group C Sceenshot](screenshots/mainCScreenshot.png)
+![Group C Screenshot](screenshots/mainCScreenshot.png)
 
-[Group C Sceenshot](https://imgur.com/UJIxEai)
+[Group C Screenshot](https://imgur.com/UJIxEai)
 
-![Group D Sceenshot](screenshots/mainDScreenshot.png)
+![Group D Screenshot](screenshots/mainDScreenshot.png)
 
-[Group D Sceenshot](https://imgur.com/zv8GiV4)
+[Group D Screenshot](https://imgur.com/zv8GiV4)
 
 ## Technologies Used:
 
@@ -96,10 +95,10 @@ Jason Hur - https://www.linkedin.com/in/jasonhur/
 
 ##### - [] Update CSS further for additional media queries
 
-### Click the link to view David Sheinbeins Portfolio website
+### Click the link to view David Sheinbein's Portfolio website
 
-[David Sheinbein Portfolio Webstite](http://www.davidsheinbeinportfolio.com/)
+[David Sheinbein Portfolio Website](http://www.davidsheinbeinportfolio.com/)
 
-### Click the link to view Jason Hur Portfolio website
+### Click the link to view Jason Hur's Portfolio website
 
-[Jason Hur Portfolio Webstite](https://jasonhur.netlify.app/)
+[Jason Hur Portfolio Website](https://jasonhur.netlify.app/)
